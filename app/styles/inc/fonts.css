@@ -1,0 +1,35 @@
+@font-face {
+     font-family: 'PT Astra Fact';
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Regular.eot');
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Regular.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Regular.woff2') format('woff2'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Regular.woff') format('woff'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Regular.ttf') format('truetype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Regular.svg#pt_astra_sansregular') format('svg');
+     font-weight: 400;
+     font-style: normal;
+}
+
+@font-face {
+     font-family: 'PT Astra Fact';
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Italic.eot');
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Italic.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Italic.woff2') format('woff2'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Italic.woff') format('woff'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Italic.ttf') format('truetype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Italic.svg#pt_astra_sansregular') format('svg');
+     font-weight: 400;
+     font-style: italic;
+}
+
+@font-face {
+     font-family: 'PT Astra Fact';
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Bold.eot');
+     src: url('../fonts/PT Astra Fact/PTAstraFact-Bold.eot?#iefix') format('embedded-opentype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Bold.woff2') format('woff2'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Bold.woff') format('woff'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Bold.ttf') format('truetype'),
+          url('../fonts/PT Astra Fact/PTAstraFact-Bold.svg#pt_astra_sansbold') format('svg');
+     font-weight: 700;
+     font-style: normal;
+}

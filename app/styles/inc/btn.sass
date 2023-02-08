@@ -1,0 +1,42 @@
+.btn
+  font-family: $font
+  text: $neutral 700 16px
+  white-space: nowrap
+  line-height: unset
+  position: relative
+  text-decoration: none
+  background: transparent
+  display: inline-flex
+  align-items: center
+  justify-content: center
+  padding: 0 20px
+  min-height: 48px
+  transition: .2s
+  border-radius: 8px
+  outline: 0
+  cursor: pointer
+  user-select: none
+  border: none
+
+  &--light
+    margin: 0
+    padding: 0
+    outline: 0
+    border: 0
+    min-height: 1px
+    border-radius: 0
+    background: transparent
+    cursor: pointer
+
+  &--block
+    display: flex
+
+  &--huge
+    min-height: @md 64px
+    font-size: 14px @md 20px
+
+  &--wide
+    padding: @md 0 36px
+
+
+    
