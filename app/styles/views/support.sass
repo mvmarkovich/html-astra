@@ -1,0 +1,149 @@
+.support-cases
+    &__row
+        margin-bottom: -24px @sm -32px
+
+    &__col
+        margin-bottom: 24px @sm 32px
+
+        &--body
+            padding: 24px @sm 24px 32px
+            border: 1px solid #D5DADD
+            height: 100%
+            display: block
+
+        &-img
+            position: absolute 50% auto auto 50%
+            transform: translate(-50%, -50%)
+            width: 75%
+            max-height: 70%
+
+            &--wrap
+                position: relative
+                margin: 0 0 32px @xl 0 0 48px
+                padding: 71% 0 0
+                overflow: hidden
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5 @sm 18px @lg 20px
+            text-transform: uppercase
+            margin: 0 0 8px
+
+        &-desc
+            color: #4A5A68
+            text: 400 14px 1.5 @sm 16px
+            margin: 0 
+
+.doc-layout
+    counter-reset: doc-count-par
+
+    &__count
+        &:first-child
+            margin-top: 56px @sm 64px @lg 80px
+
+        .container
+            > p
+                color: #071C27
+                text: 400 14px 1.5 @md 16px
+                margin: 32px 0
+
+        h2
+            margin: 0 0 32px
+
+            &:before
+                content: counter(doc-count-par) ". "
+                counter-increment: doc-count-par
+                display: inline
+
+        h3
+            margin: 56px 0 24px @md 64px 0 24px @lg 80px 0 32px
+
+        .features
+            margin: 32px 0
+
+.table-plan
+    &__head
+        border-bottom: 1px solid #D5DADD
+
+        ^&__col
+            color: #071C27
+            text: 700 16px 1.6 @lg 18px
+            border: none
+            word-break: break-all
+
+        &:first-child
+            ^^&__col
+                min-height: 184px
+                border-right: 1px solid #D5DADD
+
+                &:nth-child(1),
+                &:nth-child(4)
+                    border: none
+
+    &__row
+        display: flex
+
+    &__body
+        border-bottom: 1px solid #D5DADD
+
+        ^&__col
+            background: #F2F5F7
+            justify-content: center
+
+            &:nth-child(1)
+                background: transparent
+                justify-content: flex-start
+
+        &:last-child
+            border: none
+
+    &__col
+        color: #071C27
+        text: 400 14px 1.3
+        padding: 10px 16px
+        min-height: 100px
+        display: flex
+        align-items: center
+        border-right: 1px solid #D5DADD
+
+        p
+            color: #071C27
+            text: 400 14px 1.3
+            margin: 0
+
+        strong
+            margin: 0 4px 0 0
+
+        .icons
+            &:before
+                size: 24px
+
+        &:nth-child(1)
+            width: 34%
+            border: none
+
+        &:nth-child(2)
+            width: 22%
+
+        &:nth-child(3)
+            width: 22%
+
+        &:nth-child(4)
+            width: 22%
+            border: none
+
+.table-plan-mobile
+    .tarrifs__col--body
+        background: #fff
+
+    .tarrifs__col-title
+        color: #071C27
+
+    .tarrifs__col-desc 
+        color: #4A5A68
+
+    .list-icons-inside li
+        color: #4A5A68
+            
+            
+            

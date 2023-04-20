@@ -1,0 +1,128 @@
+extends layouts/layout.pug
+
+block title
+    title ОР Государственный сектор | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="industry.html") Отраслевые решения
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Государственный сектор
+
+    .main-block
+        .page-preview(style="background-image:url(img/content/industry/preview/gos_sector.webp)")
+            .container
+                .page-preview__info
+                    h1 Государственный сектор
+                    p В соответствии с приказами Минцифры России от 29.06.2017 № 334 и от 04.07.2018 № 335, перейти на использование отечественного офисного программного обеспечения необходимо:
+
+        section.section.section-first-type-mt-tiny
+            .container
+                .features.features--tiny
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/industry/features/gos_sector/item_1.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Органам исполнительной власти субъектов Российской Федерации
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/industry/features/gos_sector/item_2.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Органам местного самоуправления муниципальных образований Российской Федерации.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/industry/features/gos_sector/item_3.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Государственным внебюджетным фондам
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/industry/features/gos_sector/item_4.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Федеральным органам исполнительной власти
+
+        section.section
+            .container
+                .industry-lead
+                    .industry-lead__row
+                        .industry-lead__text
+                            .industry-lead__title.h3 Astra Linux в науке и госудаственном секторе
+                            .industry-lead__desc Защищённая операционная система Astra Linux Special Edition обеспечивает безопасность IT-структур и отвечает требованиям, установленными постановлением Правительства Российской Федерации от 01.11.2012 № 1119 и приказом ФСТЭК России от 18.02.2013 № 21, что позволяет:
+
+                            ul.list-counter.row
+                                li.col-12.col-lg-6 Обеспечивать безопасность носителей информации с персональными данными;
+                                li.col-12.col-lg-6 Выявлять инциденты и на них реагировать;
+                                li.col-12.col-lg-6 Настраивать ограничения программной среды в информационных системах образовательных и научных учреждений;
+                                li.col-12.col-lg-6 Способствует обеспечению безопасности носителей информации с персональными данными;
+                                li.col-12.col-lg-6 Регистрировать события безопасности;
+                                li.col-12.col-lg-6 Обеспечивать контроль целостности данных и защиту информации в IT-системах, включая среды виртуализации, средства связи и т.д., согласно приказу ФСТЭК России от 21.09.2016 № 131.
+
+                        .industry-lead__img--wrap
+                            img.industry-lead__img(src="img/content/industry/lead/gos_sector.webp" width="405" height="362" alt="Название")
+
+        section.section.section-panel.section-panel--industry
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h2.section-panel__title Экосистема ГК "Астра"
+                        p.section-panel__desc Продукты Astra Linux успешно работают с широким спектром как отечественного и зарубежного ПО, так и периферии. <br> Количество совместных решений, работоспособность которых проверена практикой, постоянно растёт. IT-инфраструктуры учреждений с уже имеющимися у заказчика программно-аппаратными средствами легко переводятся на платформу Astra Linux. Все необходимые элементы уже совместимы с операционной системой:
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/industry/section-panel-svg.svg" width="340" height="500" alt="Название блока")
+
+        section.section
+            .container
+                .os-set
+                    .os-set__row
+                        .os-set__text
+                            .os-set__title.h3 Все необходимые элементы уже совместимы с операционной системой
+
+                        .os-set__content
+                            .os-set__list.row
+                                .os-set__item.col-12.col-sm-6.col-md-7
+                                    .os-set__item--inner
+                                        .os-set__item-title Semantic
+                                        .os-set__item-desc Система управления нормативно-справочной информацией
+
+                                .os-set__item.col-12.col-sm-6.col-md-5
+                                    .os-set__item--inner
+                                        .os-set__item-title СЭД «ДЕЛО»
+                                        .os-set__item-desc «Логика:СЭД.БП.СПО», «Приоритет» и т.п
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title Офисные пакеты приложений
+                                        .os-set__item-desc «МойОфис», LibreOffice и «P7-Офис»
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title Антивирусное ПО
+                                        .os-set__item-desc Dr.Web, ESET и Kaspersky
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title Гос-информационные системы
+                                        .os-set__item-desc ССТУ РФ, СМЭВ, ЕПГУ, ЕСКИ и др.
+
+
+
+

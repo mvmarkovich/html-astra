@@ -1,0 +1,309 @@
+extends layouts/layout.pug
+
+block title
+    title Стажировка | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item.is-current
+                            a.anchors__nav-link(href="#anchor-0") Почему мы
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Как это работает
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") О знаниях
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Процесс
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Отзывы
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career.html") Карьера
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Стажировки
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Стажировка в ГК «Астра»
+                        p.intro__desc Ты студент 2,3,4 курса ВУЗа? <br><br> Напиши письмо на почтовый адрес estukanova@astralinux.ru или в WhatsApp на номер +7 903 772-55-98 с указанием позиции или направления, в котором заинтересован и приложи резюме или напиши о себе в свободной форме. <br><br> Если не получилось определиться с выбором сразу — позвони по номеру +7 903 772-55-98 или пиши на почту estukanova@astralinux.ru чтобы узнать о вакансиях подробнее.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/internship/intro.webp" width="457" height="398" alt="Название")
+
+        section.section.section-anchor#anchor-0
+            .container
+                .title__block
+                    h2 Почему ГК «Астра»
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_1.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Мы лидер
+                                        .features__item-desc Ведущий производитель программного обеспечения, в том числе защищённых операционных систем и платформ виртуализации
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_2.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Система наставничества
+                                        .features__item-desc У каждого стажёра есть свой наставник, готовый поделиться опытом и передать необходимые знания,поддерживающий на этапе входа в профессию
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_3.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Команда
+                                        .features__item-desc Попадая к нам в команду, ты получаешь возможность развития, расширения кругозора, получения опыта и новых друзей
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_4.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Старт в карьере
+                                        .features__item-desc Мы не просто вкладываемся в стажёров, мы заинтересованы в долгосрочном сотрудничестве и ищем коллегу на долгие годы
+
+                            .features__item.col-12
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_5.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Корпоративная жизнь
+                                        .features__item-desc Ты сможешь полноценно принимать участие в жизни компании, посещать обучающие и развлекательные мероприятия и многое другое
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Как это работает
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_6.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Продолжительность
+                                        .features__item-desc Продолжительность стажировки — 6 месяцев
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_7.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Занятость
+                                        .features__item-desc 20, 30 или 40 часов в неделю, гибридный формат работы
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_8.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Направления
+                                        .features__item-desc Разработка, Тестирование, Сопровождение продуктов
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_9.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Оплата
+                                        .features__item-desc Мы сделаем для тебя индивидуальное предложение по итогам собеседования
+
+        section.section.section-anchor#anchor-2
+            .container
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-7
+                                .os-hero__text
+                                    .os-hero__subtitle Какие знания нужны, чтобы попасть в ГК «Астра»
+                                    .os-hero__desc Мы приветствуем базовые знания по выбранному тобой направлению для стажировки несомненным плюсом будет владение ОС семейста Linux так же немаловажно огромное желание к развитию в профессии именно в нашей компании и чёткое понимание того, для чего тебе необходима стажировка и чем интересна будущая профессия. Если это все про тебя — ждём твоего резюме на почту estukanova@astralinux.ru <br><br> Не забудь указать свои достижения за время обучения,любимые книги и ресурсы из IT-сферы,прикрепить пару примеров выполненных проектов, если таковые есть.
+                                
+                            .os-hero__img--wrap.col-12.col-md-5
+                                img.os-hero__img(src="img/content/hero/intership.webp" width="583" height="444" alt="Название")
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Процесс прохождения собеседования <br> на стажировку
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_10.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Анкета
+                                        .features__item-desc Заполни анкету или напиши на почту estukanova@astralinux.ru или в WhatsApp на номер +7 903 772-55-98
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_11.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Интервью
+                                        .features__item-desc Пройди 2 этапа интервью с нашими коллегами через Zoom
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_12.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Тестовое задание
+                                        .features__item-desc По итогам интервью, если у нас будут вопросы, то можем попросить выполнить тестовое задание
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/internship/features/item_13.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Принятие решения
+                                        .features__item-desc Если ты прошёл все этапы — поздравляем, ты в команде!
+
+        section.section.section-anchor#anchor-4
+            .container
+                .title__block
+                    h2 Пока ждём твоё резюме, ознакомься с отзывами <br> наших стажёров
+
+                .reviews
+                    .reviews__row.row
+                        .reviews__col.col-12.col-sm-6.col-lg-4
+                            .reviews__col--body
+                                .reviews__col-img--wrap
+                                    img.reviews__col-img(src="img/content/avatars/person_huge_1.webp" width="357" height="320" alt="Имя")
+
+                                .reviews__col-info
+                                    .reviews__col-data
+                                        .reviews__col-name Данила Плотников
+                                        .reviews__col-post Инженер Linux
+
+                                    .reviews__col-desc Для меня стажировка в ASTRA LINUX — потрясающая возможность для развития, я очень рад попасть именно в такую команду
+
+                        .reviews__col.col-12.col-sm-6.col-lg-4
+                            .reviews__col--body
+                                .reviews__col-img--wrap
+                                    img.reviews__col-img(src="img/content/avatars/person_huge_2.webp" width="357" height="320" alt="Имя")
+
+                                .reviews__col-info
+                                    .reviews__col-data
+                                        .reviews__col-name Александр Никитцов
+                                        .reviews__col-post Тестировщик
+
+                                    .reviews__col-desc У меня перестроился образ мышления, выработались новые полезные привычки к поиску и обработке информации, я получаю сильный буст, как в карьерном плане, так и в личном развитии
+
+                        .reviews__col.col-12.col-sm-6.col-lg-4
+                            .reviews__col--body
+                                .reviews__col-img--wrap
+                                    img.reviews__col-img(src="img/content/avatars/person_huge_3.webp" width="357" height="320" alt="Имя")
+
+                                .reviews__col-info
+                                    .reviews__col-data
+                                        .reviews__col-name Данила Лавренцов
+                                        .reviews__col-post Тестировщик
+
+                                    .reviews__col-desc Мне нравятся задачи, которые ставит перед мной наставник, я получаю опыт и очень доволен командой. Я рад такой классной возможности.
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

@@ -1,2 +1,139 @@
+/* Footer */
 .footer
-    
+    position: relative
+    background: #071C27
+    padding: 40px 0 @md 48px 0 @lg 72px 0 80px
+    margin: 40px 0 0
+    z-index: 20
+
+    &__row
+        display: @md flex
+        align-items: @md flex-start
+        justify-content: @md space-between
+        flex-wrap: @md wrap @lg nowrap
+
+    &__logo
+        img
+            size: 187px 48px
+            min-width: 187px
+            display: block
+
+    &__copy
+        margin: 16px 0 0
+
+        p
+            color: #6A7E95
+            text: 400 16px 1.5 @lg 14px @xl 16px
+            margin: 0
+
+    &__panel
+        display: @sm flex
+        justify-content: @md flex-end @lg flex-start
+        margin: 32px 0 @md 0 0 0 32px @lg 0 32px
+        width: @md calc(100% - 200px - 32px) @lg auto
+
+    &__nav
+        display: flex
+
+        ul
+            list-style: none
+            padding: 0
+            margin: 0 32px 0 0 @xl 0 40px 0 0
+
+            li
+                margin: 0 0 12px
+
+                &:last-child
+                    margin: 0
+
+            a
+                color: rgba(239, 239, 239, .8)
+                text: 400 14px 1.7
+
+                &:hover
+                    color: #efefef
+
+            &:last-child
+                margin: 0
+
+    &__contacts
+        margin: 32px 0 0 @sm 0 0 0 32px @xl 0 0 0 40px
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+
+        &-item
+            margin: 0 0 12px
+
+            &--phone
+                ^^&-link
+                    &:before
+                        background-image: resolve("icons/phone.svg")
+
+            &--email
+                ^^&-link
+                    &:before
+                        background-image: resolve("icons/email.svg")
+
+            &:last-child
+                margin: 0
+
+        &-link
+            color: rgba(239, 239, 239, .8)
+            text: 400 14px 1.7
+            display: inline-flex
+            align-items: center
+            white-space: nowrap
+
+            &:before
+                content: ''
+                size: 16px
+                margin: 0 8px 0 0
+                display: inline-flex
+                align-items: center
+                background-position: center
+                background-repeat: no-repeat
+                background-size: contain
+            
+    &__title
+        color: rgba(239, 239, 239, .8)
+        text: 400 14px 1.7
+
+    &__link
+        display: inline-block
+        color: rgba(239, 239, 239, .8)
+        text: 400 14px 1.7
+        max-width: @sm 145px
+        margin: 0 0 32px @sm 0 0 16px
+
+        &:hover
+            color: #efefef
+
+    &__social
+        margin: 0 0 24px
+        justify-content: @md flex-end
+
+        .social__link
+            margin: @md-down 0 16px 0 0
+            display: @sm-down none
+
+            &:before
+                size: @md-down 40px
+                min-width: @md-down 40px
+
+            &:nth-child(1),
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5)
+                display: @sm-down inline-flex 
+
+    &__
+        width: 100% @lg auto
+        text-align: @md right @lg left
+        margin: 32px 0 0 @lg 0
+
+        .btn
+            width: @sm-down 100%

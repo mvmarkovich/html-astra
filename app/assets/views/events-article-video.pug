@@ -1,0 +1,92 @@
+extends layouts/layout.pug
+
+block title
+    title Предстоящие мероприятия | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="events.html") Мероприятия
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="events-future.html") Предстоящие мероприятия
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Мероприятие
+
+    .page-title
+        .container
+            h1 АСТРАКОНФ-2022: ИТ-ТРАНСФОРМАЦИЯ
+
+    .main-block
+        .article
+            .container
+                .article__panel
+                    .btns-spacer
+                        a.btn.btn--tiny.btn--tag(href="#") Интервью
+                        a.btn.btn--tiny.btn--tag(href="#")
+
+                    .briefly__row
+                        span.briefly.briefly--time 50:30
+                        span.briefly.briefly--views 567
+
+                .article__desc-anounce
+                    p «Основы безопасности операционной системы astra linux special edition. Управление доступом»
+
+                .article__content
+                    .article__preview
+                        .article__preview-item
+                            .article__preview-item--body
+                                a.article__preview-item-img--wrap(href="#")
+                                    img.article__preview-item-img(src="img/content/event-article/preview.webp" width="1280" height="450" alt="Название ивента")
+                        
+                                    button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                    .article__video-timing
+                        .article__video-timing__title Регламент видео
+
+                        ul.article__video-timing__list
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 0:15
+                                .article__video-timing__item-desc Введение
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 0:35
+                                .article__video-timing__item-desc Знакомство с программой
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 5:50
+                                .article__video-timing__item-desc 1. Базовый уровень защищённости («Орёл»)
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 10:15
+                                .article__video-timing__item-desc 2. Усиленный уровень защищённости («Воронеж»)
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 30:15
+                                .article__video-timing__item-desc 3. Максимальный уровень защищённости («Смоленск»)
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 40:45
+                                .article__video-timing__item-desc 4. Лабораторный практикум
+
+                            li.article__video-timing__item
+                                .article__video-timing__item-time 50:23
+                                .article__video-timing__item-desc Разбор работ
+
+        
+
+
+        
+                        
+
+    
+

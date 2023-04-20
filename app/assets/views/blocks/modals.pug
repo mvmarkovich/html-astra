@@ -1,0 +1,206 @@
+.modal.modal--tiny#filter-city
+    .modal__item
+        .modal__item-header
+            h3.modal__item-title Выберите город
+            button.btn.btn--reset.btn--cross.modal__close(aria-label="Close modal" data-close-modal)
+
+        .modal__item-body
+            .modal__filter
+                form.modal__form(action="/" method="/")
+                    .input
+                        i.input__icon.input__icon--loc
+                        input.input__elem(type="text" placeholder="Адрес, город")  
+
+                .tabs
+                    .tabs__header
+                        .tabs__nav.tabs__nav--full
+                            ul.tabs__nav-list
+                                li.tabs__nav-item.tabs__nav-item--active(data-active-tab="country-russia")
+                                    button.tabs__nav-btn(aria-label="Switch tab") Россия
+
+                                li.tabs__nav-item(data-active-tab="country-other")
+                                    button.tabs__nav-btn(aria-label="Switch tab") Страны СНГ
+
+                    .tabs__body
+                        .tabs__content.tabs__content--open(data-tab="country-russia")                        
+                            form.modal__form(action="/" method="/")
+                                .filter__form-item-inputs
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-0(type="checkbox" name="career-country-russia-city-0")
+                                        label.input__checkbox-label(for="career-country-russia-city-0") Москва
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-1(type="checkbox" name="career-country-russia-city-1")
+                                        label.input__checkbox-label(for="career-country-russia-city-1") Санкт-Петербург
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-2(type="checkbox" name="career-country-russia-city-2")
+                                        label.input__checkbox-label(for="career-country-russia-city-2") Абакан
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-3(type="checkbox" name="career-country-russia-city-3")
+                                        label.input__checkbox-label(for="career-country-russia-city-3") Абдулино
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-4(type="checkbox" name="career-country-russia-city-4")
+                                        label.input__checkbox-label(for="career-country-russia-city-4") Абинск
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-6(type="checkbox" name="career-country-russia-city-5")
+                                        label.input__checkbox-label(for="career-country-russia-city-5") Агидель
+
+                                    .input
+                                        input.input__checkbox#career-country-russia-city-6(type="checkbox" name="career-country-russia-city-6")
+                                        label.input__checkbox-label(for="career-country-russia-city-6") Город 7
+
+                                .modal__form-footer.justify-content-end
+                                    .btns-spacer
+                                        button.btn.btn--tiny.btn--border(aria-label="Reset form") Отмена
+                                        button.btn.btn--tiny.btn--accent(type="button" aria-label="Send form" disabled) Применить
+
+                        .tabs__content(data-tab="country-other")   
+                            form.modal__form(action="/" method="/")
+                                .filter__form-item-inputs
+                                    .input
+                                        input.input__checkbox#career-country-other-city-0(type="checkbox" name="career-country-other-city-0")
+                                        label.input__checkbox-label(for="career-country-other-city-0") Город 1
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-1(type="checkbox" name="career-country-other-city-1")
+                                        label.input__checkbox-label(for="career-country-other-city-1") Город 2
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-2(type="checkbox" name="career-country-other-city-2")
+                                        label.input__checkbox-label(for="career-country-other-city-2") Город 3
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-3(type="checkbox" name="career-country-other-city-3")
+                                        label.input__checkbox-label(for="career-country-other-city-3") Город 4
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-4(type="checkbox" name="career-country-other-city-4")
+                                        label.input__checkbox-label(for="career-country-other-city-4") Город 5
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-6(type="checkbox" name="career-country-other-city-5")
+                                        label.input__checkbox-label(for="career-country-other-city-5") Город 6
+
+                                    .input
+                                        input.input__checkbox#career-country-other-city-6(type="checkbox" name="career-country-other-city-6")
+                                        label.input__checkbox-label(for="career-country-other-city-6") Город 7
+
+                                .modal__form-footer.justify-content-end
+                                    .btns-spacer
+                                        button.btn.btn--tiny.btn--border(aria-label="Reset form") Отмена
+                                        button.btn.btn--tiny.btn--accent(type="button" aria-label="Send form" disabled) Применить
+
+.modal#feedback
+    .modal__item
+        .modal__item-header
+            h3.modal__item-title Сообщить об уязвимости
+            button.btn.btn--reset.btn--cross.modal__close(aria-label="Close modal" data-close-modal)
+
+        .modal__item-body
+            form.form.feedback__form(action="/" method="/")
+                .feedback__form-content
+                    .form__desc Выберите тему обращения:
+
+                    .feedback__tags
+                        .feedback__tags-list
+                            .input
+                                input.input__radio--bg#modal-feedback-theme-0(type="radio" name="modal-feedback-theme")
+                                label.input__radio--bg-label(for="modal-feedback-theme-0") Проблемы с работой сайта
+
+                            .input
+                                input.input__radio--bg#modal-feedback-theme-1(type="radio" name="modal-feedback-theme")
+                                label.input__radio--bg-label(for="modal-feedback-theme-1") Сообщить об уязвимости
+
+                            .input
+                                input.input__radio--bg#modal-feedback-theme-3(type="radio" name="modal-feedback-theme")
+                                label.input__radio--bg-label(for="modal-feedback-theme-3") Другой вопрос
+
+                    .form__desc Данные для связи:
+
+                    .form__group
+                        .input
+                            input.input__elem(type="text" placeholder="ФИО" name="modal-feedback-name")
+
+                        .input
+                            input.input__elem(type="text" placeholder="Номер телефона" name="modal-feedback-phone")
+
+                    .input
+                        textarea.input__elem(name="modal-feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                .modal__form-footer.justify-content-between
+                    p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+                    .btns-spacer
+                        button.btn.btn--tiny.btn--border(aria-label="Reset form") Отмена
+                        button.btn.btn--tiny.btn--accent(type="button" aria-label="Send form" disabled) Применить
+
+.modal.modal--tiny#summary
+    .modal__item
+        .modal__item-header
+            h3.modal__item-title Отправьте нам заявку
+            button.btn.btn--reset.btn--cross.modal__close(aria-label="Close modal" data-close-modal)
+
+        .modal__item-body
+            form.form(action="/" method="/")
+                .input
+                    input.input__elem(type="text" placeholder="ФИО" name="modal-summary-name")
+
+                .input
+                    input.input__elem(type="text" placeholder="Телефон" name="modal-summary-phone")
+
+                .input
+                    input.input__elem(type="text" placeholder="Email" name="modal-summary-email")
+
+                .input
+                    textarea.input__elem(name="modal-summary-massage", cols="30", rows="5" placeholder="Дополнительные сведения")
+
+                .input
+                    input.input__file#feedback-partners-file(type="file" name="feedback-partners-file")
+                    label.input__file-label(for="feedback-partners-file") 
+                        i.icons.icons--doc-gray
+                        .input__file-label-title Прикрепить документ
+                        i.icons.icons--attach
+
+                    .input__warning Максимум 1 файл размером до 5 МБ.
+
+                .input
+                    input.input__checkbox#modal-summary-agree(type="checkbox" name="modal-summary-agree")
+                    label.input__checkbox-label(for="modal-summary-agree") 
+                        .input__checkbox-label-text Я согласен/согласна на <a href="#">обработку персональных данных</a>
+
+                .modal__form-footer.justify-content-end
+                    .btns-spacer
+                        button.btn.btn--tiny.btn--border(aria-label="Reset form") Отмена
+                        button.btn.btn--tiny.btn--accent(type="button" aria-label="Send form" disabled) Применить
+
+.modal.modal--tiny#provider
+    .modal__item
+        .modal__item-header
+            h3.modal__item-title Стать поставщиком
+            button.btn.btn--reset.btn--cross.modal__close(aria-label="Close modal" data-close-modal)
+
+        .modal__item-body
+            form.form(action="/" method="/")
+                .input
+                    input.input__elem(type="text" placeholder="ФИО" name="modal-provider-name")
+
+                .input
+                    input.input__elem(type="text" placeholder="Email" name="modal-provider-org")
+
+                .input
+                    input.input__elem(type="text" placeholder="Телефон" name="modal-provider-phone")
+
+                .input
+                    input.input__elem(type="text" placeholder="Email" name="modal-provider-email")
+
+                .input
+                    textarea.input__elem(name="modal-provider-massage", cols="30", rows="5" placeholder="Комментарий")
+
+                .modal__form-footer.justify-content-end
+                    .btns-spacer
+                        button.btn.btn--tiny.btn--border(aria-label="Reset form") Отмена
+                        button.btn.btn--tiny.btn--accent(type="button" aria-label="Send form" disabled) Применить

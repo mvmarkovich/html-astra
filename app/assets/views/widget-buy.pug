@@ -1,0 +1,39 @@
+extends layouts/layout.pug
+
+block title
+    title Где купить | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Где купить
+
+    .main-block
+        include blocks/widget
+
+        section.section.section-panel.section-panel--illustration
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h3.section-panel__title Стать партнёром
+                        p.section-panel__desc Партнёр имеет право получать информацию о скидках, специальных акциях, получать консультации и дополнительную поддержку после авторизации  и присвоения компании статуса официального партнёра.
+
+                        .btn--block
+                            a.btn.btn--border-light(href="#") Узнать больше
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/software/software-hero/item_2.svg" width="336" height="244" alt="Название блока")
+
+        include blocks/widget-partners
+
+block scripts
+    script(type="text/javascript").
+        document.querySelector('.tabs__nav-list').firstElementChild.classList.add('tabs__nav-item--active');
+        document.querySelector('.tabs__body').firstElementChild.classList.add('tabs__content--open');
+
+            

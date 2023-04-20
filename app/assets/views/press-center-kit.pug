@@ -1,0 +1,437 @@
+extends layouts/layout.pug
+
+block title
+    title Пресс центр Новости | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="press-center.html") Пресс центр
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Press kit
+
+    .main-block
+        .container
+            .main-aside-container
+                .aside  
+                    .aside__title Пресс-Центр
+
+                    .aside__nav
+                        ul.aside__nav-list
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-news.html") Новости
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-news.html") СМИ о нас
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-news.html") Материалы
+
+                            li.aside__nav-item.is-current
+                                a.aside__nav-link(href="press-center-kit.html") Press kit
+
+                    .aside__feedback.hide-lg-down
+                        .aside__feedback-title Связаться с нами
+                        .aside__feedback-desc Для представителей СМИ  и организаций, желающих пообщаться с нами
+
+                        a.btn.btn--border-accent.aside__feedback-btn(href="#") Связаться
+                            
+                .main-container
+                    h1 Press kit
+
+                    section.section.section-panel.section-panel--illustration.section-panel--kit
+                        .container
+                            .section-panel__body
+                                .section-panel__info
+                                    h4.section-panel__title Почему мы любим СМИ и журналистов
+                                    p.section-panel__desc Потому что они помогают нам расти и развиваться. Благодаря их усилиям о нас узнаёт больше людей: потенциальных клиентов, партнёров и будущих коллег. А мы в свою очередь рады протянуть прессе руку помощи: компания открыта для любых запросов, проектов и совместных инициатив. Обращайтесь к нам, пишите, звоните, приходите в гости — мы постараемся ответить вам как можно быстрее и как можно полнее. <br><br><br><br> PR служба: <a href="mailto:pr@astralinux.ru">pr@astralinux.ru</a>
+
+                                .section-panel__img--wrap
+                                    img.section-panel__img(src="img/content/section-panel/bg-6.svg" width="336" height="244" alt="Название блока")
+
+                    section.section
+                        .accordion
+                            .accordion__list
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Чем мы занимаемся
+                                    .accordion__item-content
+                                        p.accordion__item-desc Мы разрабатываем и развиваем российские программные продукты: от операционной системы Astra Linux до специализированного ПО. Мы прикладываем все силы, чтобы сделать Россию технологически суверенной страной. Наверняка вы знаете об экосистемах компаний Microsoft, Apple и Google. У нас тоже есть своя экосистема, и мы хотим сделать её как минимум такой же, как у этих глобальных ИТ-лидеров, а как максимум — намного круче. <br> <br> Мы сотрудничаем с российскими разработчиками ПО и производителями техники, чтобы расширить нашу экосистему совместимых решений. В идеале в России всё должно быть своё, отечественное: и технологии, и железо, и софт. К такому идеалу мы стремимся и даже уже достигли известного прогресса на этом пути. <br><br> Если вы хотите получать самую интересную и свежую информацию от одного из лидеров российского ИТ — вы пришли по адресу. Давайте дружить.
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Описание продуктов
+                                    .accordion__item-content
+                                        p.accordion__item-desc Наш продуктовый портфель комплексно закрывает потребности заказчиков при проектировании и создании информационных систем. В него входят:
+
+                                        ul.list-dots-accent
+                                            li
+                                                p <strong>Astra Linux</strong> — отказоустойчивая защищённая ОС, сертифицированная всеми регуляторами, рекомендована для работы с любыми конфиденциальными данными, включая гостайну «особой важности»
+
+                                            li <strong>«Средства виртуализации „Брест“</strong> — программный комплекс для создания и управления виртуальными структурами любой сложности с применением средств защиты Astra Linux Special Edition
+                                            li <strong>Termidesk — диспетчер подключений виртуальных рабочих мест, позволяющий быстро развёртывать VDI-инфраструктуры любого масштаба</strong>
+                                            li <strong>RuBackup</strong> — профессиональные средства резервного копирования
+                                            li <strong>WorksPad</strong> — программный комплекс для создания защищённых мобильных рабочих мест
+                                            li <strong>RuPost</strong> — клиент-серверный продукт для организации и администрирования корпоративной почты
+                                            li <strong>ALD Pro</strong> — программный комплекс для управления доменом
+                                            li <strong>DCImanager</strong> — платформа для управления парком мультивендорного физического оборудования в едином web-интерфейсе
+                                            li <strong>VMmanager</strong> — платформа для развёртывания и управления облачными виртуальными инфраструктурами
+                                            li <strong>BILLmanager</strong> — биллинговая платформа для автоматизации учёта, тарификации и предоставления заказчикам облачных услуг, виртуальных data-центров, выделенных серверов и т.д.
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Основные факты компании
+
+                                    .accordion__item-content
+                                        ul.list-dots-accent
+                                            li Существует с 2008 года сначала как обособленное подразделение холдинга «Русбитех-Астра», затем как отдельное юрлицо.
+                                            
+                                            li 
+                                                | По состоянию на июль 2022 года нематериальные активы включают:
+
+                                                .info-numbers.info-numbers--tiny
+                                                    .info-numbers__list.row
+                                                        .info-numbers__item.col-sm-6.col-lg-4
+                                                            .info-numbers__item--inner
+                                                                .info-numbers__item-value 37
+                                                                .info-numbers__item-title свидетельств
+                                                                p.info-numbers__item-desc о государственной регистрации программы  для ЭВМ
+
+                                                        .info-numbers__item.col-sm-6.col-lg-4
+                                                            .info-numbers__item--inner
+                                                                .info-numbers__item-value 7
+                                                                .info-numbers__item-title знаков
+                                                                p.info-numbers__item-desc товарных знаков
+
+                                                        .info-numbers__item.col-sm-6.col-lg-4
+                                                            .info-numbers__item--inner
+                                                                .info-numbers__item-value 1
+                                                                .info-numbers__item-title патент
+                                                                p.info-numbers__item-desc патент на изобретение
+
+                                                li Все решения вендора включены в «Единый реестр российских программ для ЭВМ и баз данных» Минцифры
+
+                    section.section
+                        .container
+                            .title__block
+                                h2 Мультимедийная информация
+
+                            .faq-links
+                                .faq-links__body
+                                    .faq-links__list.row
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Документы
+
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Видео для ТВ — панелей
+
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Плакаты и листовки
+
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Документы
+
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Документы
+
+                                        .faq-links__item.faq-links__item--bg.col-12.col-sm-6.col-lg-4
+                                            a.faq-links__item--inner(href="#")
+                                                .faq-links__info
+                                                    .faq-links__item-title Документы
+
+                    section.section
+                        .container
+                            .section__filter
+                                .section__filter-head
+                                    .title__block 
+                                        h2 Презентационные материалы
+
+                                    .dropdown
+                                        button.btn.btn--tiny.btn--border-accent.dropdown__btn(aria-label="Dropdown menu") Выберите разделы для скачивания
+                                        
+                                        form.dropdown__menu(action="/" method="/")
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-0(type="checkbox" name="catalog-sort-special-0")
+                                                label.input__checkbox-label(for="catalog-sort-special-0") Вариант 1
+
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-1(type="checkbox" name="catalog-sort-special-1")
+                                                label.input__checkbox-label(for="catalog-sort-special-1") Вариант 2
+
+                                            button.btn.btn--tiny.btn--full.btn--border.form__send(type="submit" aria-label="Send form") Показать выбраное
+
+                                .section__filter-body.hide-md-down
+                                    form.section__filter-form(action="/" method="/")
+                                        .form__row
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-0(type="checkbox" name="press-kit-materials-0" checked)
+                                                label.input__checkbox--border-label(for="press-kit-materials-0") Astra linux
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-1(type="checkbox" name="press-kit-materials-1")
+                                                label.input__checkbox--border-label(for="press-kit-materials-1") RuPost
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-2(type="checkbox" name="press-kit-materials-2")
+                                                label.input__checkbox--border-label(for="press-kit-materials-2") Termidesk
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-3(type="checkbox" name="press-kit-materials-3")
+                                                label.input__checkbox--border-label(for="press-kit-materials-3") RuBackup
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-4(type="checkbox" name="press-kit-materials-4")
+                                                label.input__checkbox--border-label(for="press-kit-materials-4") WorksPad
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-5(type="checkbox" name="press-kit-materials-5")
+                                                label.input__checkbox--border-label(for="press-kit-materials-5") ALD Pro
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-6(type="checkbox" name="press-kit-materials-6")
+                                                label.input__checkbox--border-label(for="press-kit-materials-6") DCIManager
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-7(type="checkbox" name="press-kit-materials-7")
+                                                label.input__checkbox--border-label(for="press-kit-materials-7") VMmanager
+
+                                            .input
+                                                input.input__checkbox--border#press-kit-materials-8(type="checkbox" name="press-kit-materials-8")
+                                                label.input__checkbox--border-label(for="press-kit-materials-8") BILLmanager
+
+                            .materials
+                                .materials__list
+                                    .materials__item
+                                        .materials__item--inner
+                                            .materials__item-title Возможности реализации мер защиты информации в соответствии с приказами ФСТЭК России № 17, № 21, № 239, № 31 средствами Astra Linux Special Edition x.7
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                    .materials__item
+                                        .materials__item--inner
+                                            .materials__item-title Листовка – Astra Linux Special Edition (1.7)
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                    .materials__item
+                                        .materials__item--inner
+                                            .materials__item-title Буклет — О компании и продуктах Astra Linux
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                    .materials__item
+                                        .materials__item--inner
+                                            .materials__item-title Листовка Astra Linux Mobile
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                    .materials__item
+                                        .materials__item--inner
+                                            .materials__item-title Часто задаваемые вопросы о системе виртуализации Astra Linux
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                    section.section
+                        .accordion
+                            .accordion__list
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Брендбук
+                                    .accordion__item-content
+                                        p.accordion__item-desc Контент в Figma не отрисован
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Фото
+                                    .accordion__item-content
+                                        p.accordion__item-desc Контент в Figma не отрисован 
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Видео
+
+                                    .accordion__item-content
+                                        p.accordion__item-desc Контент в Figma не отрисован
+                                        
+                    section.section
+                        .container
+                            .contacts
+                                .contacts__body
+                                    .contacts__main.row
+                                        .contacts__main-info.col-12
+                                            h2.contacts__title Контакты для СМИ
+                                            .contacts__desc Вы можете связаться с нами удобным для вас способом:
+
+                                            .contacts__subtitle Головной офис
+                                            
+                                            ul.contacts__data-address.list-reset
+                                                li 117105, Москва, Варшавское шоссе, д. 26;
+
+                                            .contacts__data.contacts__data
+                                                a.contacts__data-phone(href="tel:+7 495 369-48-16") +7 495 369-48-16
+
+                                    .contacts__cards.row
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:info@astralinux.ru")
+                                                .contacts__card-title ГОЛОВНОЙ ОФИС
+                                                .contacts__card-desc info@astralinux.ru
+
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:sales@astralinux.ru")
+                                                .contacts__card-title ОТДЕЛ ПРОДАЖ
+                                                .contacts__card-desc sales@astralinux.ru
+
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:education@astralinux.ru")
+                                                .contacts__card-title ДЕПАРТАМЕНТ ОБРАЗОВАНИЯ
+                                                .contacts__card-desc education@astralinux.ru
+
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:partner@astralinux.ru")
+                                                .contacts__card-title ПАРТНЁРCКИЙ ОТДЕЛ
+                                                .contacts__card-desc partner@astralinux.ru
+
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:sales@astralinux.ru")
+                                                .contacts__card-title ОТДЕЛ ПРОДАЖ
+                                                .contacts__card-desc sales@astralinux.ru
+
+                                        .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                            a.contacts__card--inner(href="mailto:readyfor@astralinux.ru")
+                                                .contacts__card-title ДЕПАРТАМЕНТ ОБРАЗОВАНИЯ
+                                                .contacts__card-desc education@astralinux.ru
+
+                    section.section.feedback.feedback--narrow
+                        .container
+                            .feedback__body
+                                form.form.feedback__form(action="/" method="/")
+                                    .feedback__form-header
+                                        h3.feedback__title Связаться с нами
+
+                                    .feedback__form-content
+                                        .form__desc Выберите тему обращения:
+
+                                        .feedback__tags
+                                            .feedback__tags-list
+                                                .input
+                                                    input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                                    label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                                .input
+                                                    input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                                    label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                                .input
+                                                    input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                                    label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                                .input
+                                                    input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                                    label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                                        .form__desc Данные для связи:
+
+                                        .form__group
+                                            .input
+                                                input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                            .input
+                                                input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                                        .input
+                                            textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                                    .feedback__form-footer
+                                        button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                                        p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Mobile aside menu
+        //
+
+        function move(){
+            let viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            
+            if (viewport_width <= 992) {
+                for(let i = 0; i < document.querySelectorAll('.aside__nav-item').length; ++i) {
+                    document.querySelectorAll('.aside__nav-item')[0].before(document.querySelector('.aside__nav-item.is-current'));
+                }
+            
+                document.querySelector('.aside__nav-item.is-current').addEventListener("click", () => {
+                    let asideNavList = document.querySelector('.aside__nav-list');
+
+                    asideNavList.classList.toggle('is-show');
+                });
+            }
+        }
+
+        window.addEventListener('resize', move);
+        move();
+
+        //
+        // Accordion
+        //
+
+        let items = document.querySelectorAll(".accordion button");
+        
+        function toggleAccordion() {
+            let itemToggle = this.getAttribute('aria-expanded');
+            
+            for (i = 0; i < items.length; i++) {
+                items[i].setAttribute('aria-expanded', 'false');
+                items[i].parentElement.classList.remove('is-show');
+            }
+            
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.parentElement.classList.add('is-show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        //
+        // Dropdown
+        //
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }

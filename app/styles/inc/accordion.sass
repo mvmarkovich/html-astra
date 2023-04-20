@@ -1,0 +1,171 @@
+.accordion
+    &__item
+        border: 1px solid #E8ECEF
+        border-left-color: transparent
+        border-right-color: transparent
+        margin: 0 0 -1px
+        transition: .2s
+        padding: @sm 0 24px
+
+        &-btn
+            justify-content: space-between
+            align-items: flex-start
+            white-space: pre-wrap
+            text-align: left
+            width: 100%
+            text: #071C27 700 16px 1.5 @sm 18px @lg 20px
+            padding: 32px 0
+
+            &:after
+                content: ''
+                background-size: 24px
+                background-repeat: no-repeat
+                background-position: center
+                border: 1px solid #D5DADD
+                border-radius: 50%
+                background-image: resolve("icons/plus.svg")
+                size: 32px
+                min-width: 32px
+                background-size: 20px
+                margin: 0 0 0 24px
+                transition: .2s
+
+            &[aria-expanded='true']
+                &:after
+                    background-image: resolve("icons/minus.svg")
+
+                & + ^^&-content
+                    opacity: 1
+                    height: auto
+                    
+
+        &-content
+            opacity: 0
+            height: 0
+            overflow: hidden
+            transition: opacity 200ms linear
+
+            .info-numbers--tiny
+                padding: 16px 16px 24px
+                margin: 16px 0 0 -36px
+
+                .info-numbers__list
+                    margin: 0 -12px -32px
+                    
+                .info-numbers__item
+                    padding: 0 12px
+                    margin: 0 0 32px
+
+            > *
+                &:first-child
+                    margin-top: 0
+
+                &:last-child
+                    margin-bottom: 40px
+
+        &.is-show
+            border-left-color: #E8ECEF
+            border-right-color: #E8ECEF
+            padding: @sm-down 0 24px
+
+    &--tiny
+        ^&__item
+            margin: 0 0 20px
+            border: none
+            padding: 0
+
+            &-btn
+                text: 16px
+                padding: 0
+
+                &:after
+                    background-image: svg-load("icons/chevron-down.svg", stroke="#071C27")
+                    size: 24px
+                    min-width: 24px
+                    background-size: contain
+                    border: none 
+
+                &[aria-expanded='true']
+                    margin: 0 0 8px
+
+                    &:after
+                        transform: rotate(180deg)
+
+            &-content
+                > *
+                    &:last-child
+                        margin-bottom: 0
+
+            &.is-show
+                padding: 0
+
+            &:last-child
+                margin: 0
+
+    &--bg
+        margin: 0 -12px -24px
+
+        ^&__item
+            margin-bottom: 24px
+            border: none
+            padding: 0 12px
+
+            &-btn
+                color: #003A5C
+                text: 24px
+                padding: 0
+                padding: 40px
+                background: #F2F5F7
+                border: 1px solid #E8ECEF
+                align-items: center
+
+                &:after
+                    background-image: svg-load("icons/chevron-down.svg", stroke="#071C27")
+                    size: 24px
+                    min-width: 24px
+                    background-size: contain
+                    border: none 
+
+                &[aria-expanded='true']
+                    &:after
+                        transform: rotate(180deg)
+
+            &-content
+                background: #F2F5F7
+                border: 1px solid #E8ECEF
+                border-top: none
+                padding: 0 40px
+
+                p
+                    color: #4A5A68
+                    text: 400 14px 1.5 @md 16px
+                    margin: 24px 0
+
+                ul
+                    margin: 12px 0
+                    padding: 0 0 0 16px
+
+                    li
+                        color: #4A5A68
+                        text: 400 14px 1.5 @md 16px
+                        margin-bottom: 4px
+
+                        p
+                            margin: 0
+
+                > *
+                    &:first-child
+                        margin-top: 0
+
+                    &:last-child
+                        margin-bottom: 40px
+
+            &.is-show
+                ^^^&__item-btn
+                    border-bottom-color: transparent
+                    padding-bottom: 12px
+
+                ^^^&__item-content
+                    border-color: #E8ECEF
+                    height: @lg calc(100% - 90px)
+

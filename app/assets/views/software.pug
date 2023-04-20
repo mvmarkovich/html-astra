@@ -1,0 +1,173 @@
+extends layouts/layout.pug
+
+block title
+    title ПО | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Программное обеспечение
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info.col-lg-7
+                        h1.intro__title Ready For Astra
+                        p.intro__desc <strong>Полный программный стек для решения максимально широкого круга практических задач</strong> <br><br>Наша цель — дать клиентам наиболее полный набор ИТ-инструментов для решения бизнес-задач в организациях любого масштаба: от микропредприятий до крупных корпораций с разветвлённой филиальной сетью. Всё прикладное ПО ГК «Астра» является российским и внесено в национальный Реестр Министерства цифрового развития.
+
+                    .intro__img--wrap.col-lg-3
+                        img.intro__img(src="img/content/ecosystem/ecosystem-main.webp" width="507" height="467" alt="Название")
+
+        section.software-road
+            .container
+                .software-road__body
+                    .software-road__list
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/astra.svg" width="345" height="107" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title Операционная система Astra Linux
+                                    .software-road__item-desc Не имеющая аналогов сертифицированная операционная система со встроенными средствами защиты информации для стабильных и безопасных ИТ-инфраструктур любого масштаба и работы с данными любой степени конфиденциальности.
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-astra.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/brest.svg" width="345" height="346" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title Брест
+                                    .software-road__item-desc Программный комплекс «Средства виртуализации „Брест“ — российская платформа со встроенными средствами защиты информации ОС Astra Linux Special Edition для создания и управления виртуальными ИТ-инфраструктурами любой сложности.
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-brest.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/termidesk.svg" width="345" height="300" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title Termidesk
+                                    .software-road__item-desc Инфраструктура виртуальных рабочих мест (ВРМ) Termidesk — мультиплатформенный продукт для организации безопасной и удалённой работы сотрудников. Termidesk устойчив к внешнеполитическим рискам — центр разработки и репозиторий находятся в России и не подвержены иностранному влиянию.
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-termidesk.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/rubackup.svg" width="345" height="300" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title RuBackup
+                                    .software-road__item-desc Профессиональное программное решение резервного копирования, ориентированное на ИТ-инфраструктуру государственных и корпоративных заказчиков, которые переходят на российское программное обеспечение
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-rubackup.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/aldpro.svg" width="345" height="300" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title ALD Pro
+                                    .software-road__item-desc Программный комплекс на базе ОС Astra Linux для централизованного управления объектами организаций различного масштаба
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-aldpro.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/workspad.svg" width="345" height="300" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title WorksPad
+                                    .software-road__item-desc WorksPad — клиент-серверное корпоративное решение класса Enterprise Mobility Management (EMM) для организации защищённой мобильной работы сотрудников на смартфонах и планшетах под управлением iOS и Android.
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-workspad.html") Узнать больше
+
+                        .software-road__item
+                            .software-road__item-wrap
+                                .software-road__item-media
+                                    .software-road__item-img--wrap
+                                        img.software-road__item-img(src="img/content/software/rupost.svg" width="345" height="300" alt="Название ПО")
+
+                                .software-road__item-info
+                                    h2.software-road__item-title RuPost
+                                    .software-road__item-desc Система управления корпоративной почтой, легко интегрируется в ИТ-инфраструктуру на основе OC Astra Linux. Поддерживает кластеризацию и может масштабироваться без ограничений. Полностью совместима со всем стеком ПО производства ГК «Астра».
+
+                                    .btn--block.software-road__item-btns
+                                        a.btn.btn--border(href="software-rupost.html") Узнать больше
+
+        section.software-cards
+            .container
+                .title__block
+                    h2 Програмное обеспечение
+
+                .software-cards__body
+                    .software-cards__list.row
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-dcimanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/dcimanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title DCImanager
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-vmmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/vmmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title VMmanager
+                                    .software-cards__item-desc Система виртуализации Astra Linux
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-billmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/billmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title BILLmanager
+                                    .software-cards__item-desc Программный комплекс для автоматизации и централизованного управления
+                
+
+
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

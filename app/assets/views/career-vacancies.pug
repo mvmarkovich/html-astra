@@ -1,0 +1,323 @@
+extends layouts/layout.pug
+
+block title
+    title Вакансии | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career.html") Карьера в компании
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Вакансии
+
+    .main-block
+        .career-vacansies
+            .container
+                .filter-mobile-btns
+                    button.btn.btn--border.js-reset-filter(aria="Reset form") Сбросить
+                    button.btn.btn--accent.js-open-filter(aria-label="Open mobile filter") Фильтр
+
+                .career-vacansies__nav
+                    .career-vacansies__nav-head
+                        h1 Вакансии <span class="search-result-value">144</span>
+                        form.career-vacansies__nav-search(action="/" method="/")
+                            input.search__form-input(type="text" placeholder="Ввести" required)
+                            button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                    form.hide-lg-down(action="/" method="/")
+                        .form__row
+                            .input
+                                input.input__checkbox--border#career-spec-0(type="checkbox" name="career-spec-0")
+                                label.input__checkbox--border-label(for="career-spec-0") 
+                                    .input__checkbox-label-text Информационные технологии
+                                    .input__checkbox-label-value 44
+
+                            .input
+                                input.input__checkbox--border#career-spec-1(type="checkbox" name="career-spec-1")
+                                label.input__checkbox--border-label(for="career-spec-1") 
+                                    .input__checkbox-label-text Коммерция и развитие бизнеса
+                                    .input__checkbox-label-value 21
+
+                            .input
+                                input.input__checkbox--border#career-spec-2(type="checkbox" name="career-spec-2")
+                                label.input__checkbox--border-label(for="career-spec-2") 
+                                    .input__checkbox-label-text Маркетинг, PR, Дизайн
+                                    .input__checkbox-label-value 26
+
+                            .input
+                                input.input__checkbox--border#career-spec-3(type="checkbox" name="career-spec-3")
+                                label.input__checkbox--border-label(for="career-spec-3") 
+                                    .input__checkbox-label-text Финансы
+                                    .input__checkbox-label-value 4
+
+                            .input
+                                input.input__checkbox--border#career-spec-4(type="checkbox" name="career-spec-4")
+                                label.input__checkbox--border-label(for="career-spec-4") 
+                                    .input__checkbox-label-text Административный персонал
+                                    .input__checkbox-label-value 80
+
+                .main-aside-container
+                    .aside.aside-filter-block
+                        .filter
+                            .filter__head
+                                button.btn.btn--reset.btn--arrow-left.js-close-filter(aria-label="Close mobile filter")
+                                .filter__head-title Фильтры
+                                
+                            form.filter__form(action="/" mathod="/")
+                                .filter__form-body
+                                    .filter__form-item
+                                        .filter__form-item-title Город
+
+                                        .input
+                                            i.input__icon.input__icon--loc
+                                            input.input__elem(type="text" placeholder="Адрес, город")  
+
+                                    .filter__form-item.hide-lg-up
+                                        .filter__form-item-title Специализация
+
+                                        .input
+                                            i.input__icon.input__icon--search
+                                            input.input__elem(type="text" placeholder="Найти производителя")
+
+                                        .filter__form-item-inputs
+                                            .input
+                                                input.input__checkbox#career-spec-5(type="checkbox" name="career-spec-5")
+                                                label.input__checkbox-label(for="caree-spec-5") 
+                                                    .input__checkbox-label-text Информационные технологии
+                                                    .input__checkbox-label-value 20
+
+                                            .input
+                                                input.input__checkbox#career-spec-6(type="checkbox" name="career-spec-6")
+                                                label.input__checkbox-label(for="career-spec-6") 
+                                                    .input__checkbox-label-text Коммерция и развитие бизнеса
+                                                    .input__checkbox-label-value 54
+
+                                            .input
+                                                input.input__checkbox#career-spec-7(type="checkbox" name="career-spec-7")
+                                                label.input__checkbox-label(for="career-spec-7") 
+                                                    .input__checkbox-label-text Маркетинг, PR, Дизайн
+                                                    .input__checkbox-label-value 24
+
+                                            .input
+                                                input.input__checkbox#career-spec-8(type="checkbox" name="career-spec-8")
+                                                label.input__checkbox-label(for="career-spec-8") 
+                                                    .input__checkbox-label-text Финансы
+                                                    .input__checkbox-label-value 1
+
+                                            .input
+                                                input.input__checkbox#career-spec-9(type="checkbox" name="career-spec-9")
+                                                label.input__checkbox-label(for="career-spec-9") 
+                                                    .input__checkbox-label-text Моноблок
+                                                    .input__checkbox-label-value 21
+
+                                    .filter__form-item
+                                        .filter__form-item-title Направления
+
+                                        .form__row
+                                            .input
+                                                input.input__checkbox--bg#career-dir-0(type="checkbox" name="career-dir-0")
+                                                label.input__checkbox--bg-label(for="career-dir-0") Backend
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-1(type="checkbox" name="career-dir-1")
+                                                label.input__checkbox--bg-label(for="career-dir-1") Frontend
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-2(type="checkbox" name="career-dir-2")
+                                                label.input__checkbox--bg-label(for="career-dir-2") BI
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-3(type="checkbox" name="career-dir-3")
+                                                label.input__checkbox--bg-label(for="career-dir-3") QA
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-4(type="checkbox" name="career-dir-4")
+                                                label.input__checkbox--bg-label(for="career-dir-4") Machine Learning
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-5(type="checkbox" name="career-dir-5")
+                                                label.input__checkbox--bg-label(for="career-dir-5") Data Science
+
+                                            .input
+                                                input.input__checkbox--bg#career-dir-6(type="checkbox" name="career-dir-6")
+                                                label.input__checkbox--bg-label(for="career-dir-6") Game Dev
+
+                                    .filter__form-item
+                                        .filter__form-item-title Информационные технологии подкатегории
+
+                                        .input
+                                            i.input__icon.input__icon--search
+                                            input.input__elem(type="text" placeholder="Найти производителя")
+
+                                        .filter__form-item-inputs
+                                            .input
+                                                input.input__checkbox#career-subcategories-0(type="checkbox" name="career-subcategories-0")
+                                                label.input__checkbox-label(for="career-subcategories-0") 
+                                                    .input__checkbox-label-text Разработка ПО 
+                                                    .input__checkbox-label-value 20
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-1(type="checkbox" name="career-subcategories-1")
+                                                label.input__checkbox-label(for="career-subcategories-1") 
+                                                    .input__checkbox-label-text Тестирование / QA
+                                                    .input__checkbox-label-value 54
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-2(type="checkbox" name="career-subcategories-2")
+                                                label.input__checkbox-label(for="career-subcategories-2") 
+                                                    .input__checkbox-label-text Системный и бизнес-анализ
+                                                    .input__checkbox-label-value 24
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-3(type="checkbox" name="career-subcategories-3")
+                                                label.input__checkbox-label(for="career-subcategories-3") 
+                                                    .input__checkbox-label-text Системное администрирование / инженеры
+                                                    .input__checkbox-label-value 1
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-4(type="checkbox" name="career-subcategories-4")
+                                                label.input__checkbox-label(for="career-subcategories-4") 
+                                                    .input__checkbox-label-text Подкатегория технологии 5
+                                                    .input__checkbox-label-value 21
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-5(type="checkbox" name="career-subcategories-5")
+                                                label.input__checkbox-label(for="career-subcategories-5") 
+                                                    .input__checkbox-label-text Подкатегория технологии 6
+                                                    .input__checkbox-label-value 15
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-6(type="checkbox" name="career-subcategories-6")
+                                                label.input__checkbox-label(for="career-subcategories-6") 
+                                                    .input__checkbox-label-text Подкатегория технологии 7
+                                                    .input__checkbox-label-value 24
+
+                                            .input
+                                                input.input__checkbox#career-subcategories-7(type="checkbox" name="career-subcategories-7")
+                                                label.input__checkbox-label(for="career-subcategories-7") 
+                                                    .input__checkbox-label-text Подкатегория технологии 8
+                                                    .input__checkbox-label-value 6
+
+                                    .filter__form-item
+                                        .filter__form-item-title Опыт работы
+
+                                        .input
+                                            i.input__icon.input__icon--search
+                                            input.input__elem(type="text" placeholder="Найти производителя")
+
+                                        .filter__form-item-inputs
+                                            .input
+                                                input.input__checkbox#career-exp-0(type="checkbox" name="career-exp-0")
+                                                label.input__checkbox-label(for="career-exp-0") 
+                                                    .input__checkbox-label-text Без опыта
+                                                    .input__checkbox-label-value 20
+
+                                            .input
+                                                input.input__checkbox#career-exp-1(type="checkbox" name="career-exp-1")
+                                                label.input__checkbox-label(for="career-exp-1") 
+                                                    .input__checkbox-label-text От 1 до 3 лет
+                                                    .input__checkbox-label-value 54
+
+                                            .input
+                                                input.input__checkbox#career-exp-2(type="checkbox" name="career-exp-2")
+                                                label.input__checkbox-label(for="career-exp-3") 
+                                                    .input__checkbox-label-text От 3 до 6 лет
+                                                    .input__checkbox-label-value 24
+
+                                            .input
+                                                input.input__checkbox#career-exp-3(type="checkbox" name="career-exp-3")
+                                                label.input__checkbox-label(for="career-exp-3") 
+                                                    .input__checkbox-label-text Более 6 лет
+                                                    .input__checkbox-label-value 1
+
+                                .filter__form-footer
+                                    button.btn.btn--accent(type="submit" aria-label="Send form") Применить
+
+                    .main-container
+                        .career-jobs
+                            .jobs
+                                .jobs__list
+                                    .jobs__card
+                                        .jobs__card--inner
+                                            .jobs__card-head
+                                                .jobs__card-head-start
+                                                    .jobs__card-title--wrap
+                                                        .jobs__card-title Инженер-программист С++
+                                                        .jobs__card-wage.hide-lg-up От 150 000 ₽
+
+                                                    .jobs__card-tags 
+                                                        .jobs__card-tags-body.btns-spacer
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") Сетевое администрирование
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") SRE
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") DevOps
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") DevOps
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") DevOps
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") DevOps
+                                                            button.btn.btn--tiny.btn--tag-secondary.jobs__card-tags-add(aria-label="Add tags") +   
+
+                                                .briefly__row
+                                                    span.briefly.briefly--tiny 04.10.2021
+
+                                            .jobs__card-body
+                                                p.jobs__card-desc Информировать клиентов о просроченной задолженности, мотивировать внести минимальный платёж. Фиксировать информацию в банковской системе.
+
+                                                .jobs__card-panel
+                                                    .jobs__card-panel-start
+                                                        .jobs__card-location Москва
+
+                                                        ul
+                                                            li Опыт работы: от 1 года
+                                                            li Заработная плата: <strong> От 150 000 ₽</strong>
+
+                                                    .btn--block.hide-lg-down
+                                                        a.btn.btn--reset.btn--light.btn--arrow-right(href="career-vavansies-detail.html" title="Перейти")
+
+                                    .jobs__card
+                                        .jobs__card--inner
+                                            .jobs__card-head
+                                                .jobs__card-head-start
+                                                    .jobs__card-title--wrap
+                                                        .jobs__card-title Junior Программист С++
+                                                        .jobs__card-wage.hide-lg-up От 150 000 ₽
+
+                                                    .jobs__card-tags.btns-spacer
+                                                        .jobs__card-tags-body.btns-spacer
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") Сетевое администрирование
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") SRE
+                                                            a.btn.btn--tiny.btn--tag-secondary.jobs__card-tag(href="#") DevOps
+                                                            button.btn.btn--tiny.btn--tag-secondary.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                                .briefly__row
+                                                    span.briefly.briefly--tiny 04.10.2021
+
+                                            .jobs__card-body
+                                                p.jobs__card-desc Информировать клиентов о просроченной задолженности, мотивировать внести минимальный платёж. Фиксировать информацию в банковской системе.
+
+                                                .jobs__card-panel
+                                                    .jobs__card-panel-start
+                                                        .jobs__card-location Санкт-Петербург
+
+                                                        ul
+                                                            li Опыт работы: от 1 года
+                                                            li Заработная плата: <strong> От 150 000 ₽</strong>
+
+                                                    .btn--block.hide-lg-down
+                                                        a.btn.btn--reset.btn--light.btn--arrow-right(href="career-vavansies-detail.html" title="Перейти")
+
+        
+        
+
+
+                
+
+    
+

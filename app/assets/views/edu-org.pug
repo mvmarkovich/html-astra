@@ -1,0 +1,64 @@
+extends layouts/layout.pug
+
+block title
+    title Обучение - Образовательным организациям | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu.html") Обучение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Образовательным организациям
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title.h1 Образовательным <br> организациям
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/internship/intro.webp" width="457" height="398" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Обучение школьников по программам ГК «Астра»
+
+                .edu-cases
+                    .edu-cases__row.row
+                        <!-- START ELEMENT EDU CASES -->
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-auth.html")
+                                .edu-cases__col-img--wrap
+                                    <!-- картинка отсутствует -->
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Авторизованным учебным центрам
+                        <!-- END ELEMENT EDU CASES -->
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-university.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title ВУЗам и колледжам
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-school.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Школам

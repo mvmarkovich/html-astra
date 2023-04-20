@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#fff">
+    <meta name="msapplication-TileImage" content="../img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#fff">
+    <title>Вакансия | Astra Linux</title>
+    <link href="libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/slick/slick.css">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container container">
+          <div class="header__row">
+            <div class="header__start">
+              <button class="btn btn--reset btn--burger header__burger" aria-label="Show menu"></button><a class="header__logo" href="main.html"><img class="header__logo-img" src="img/icons/logo.svg" width="112" height="35" alt="Astra Linux"></a>
+            </div>
+            <nav class="header__nav">
+              <div class="header__nav-panel hide-lg-up"> 
+                <div class="header__nav-title">Меню</div>
+                <button class="btn btn--reset btn--cross header__btn-close-menu"></button>
+                <button class="btn btn--reset btn--arrow-top mobile-menu-back" aria-label="Mobile menu back"></button>
+              </div>
+              <ul class="header__nav-list">
+                <li class="header__nav-item"><a class="header__nav-link" href="#">О компании</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">О компании</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="/company">Компания</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="/company-2">Структура компании</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Наша команда</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Инвесторам</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Контакты</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Карьера</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Работа в компании</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Вакансии</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Стажировка</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Пресс-центр</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Новости</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">СМИ о нас</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Материалы</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Press Kit</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Поставщикам</a></li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Мероприятия</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Предстоящие мероприятия</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Прошедшие мероприятия</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Видеоматериалы</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">ПО и услуги</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">ПО и услуги</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Операционные системы</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Astra Linux SE</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Astra Linux CE</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item header__nav-child-item--column header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Прикладное ПО ГК «Астра»</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Брест</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">RuBackup</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">RuBackup</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">WorksPad</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">BillManager</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">ALD Pro</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">DCImanager</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">RuPost</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">VM Manager</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Астра Консалтинг</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Отраслевые решения</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Актуальные предложения</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Кейсы</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Экспортный потенциал</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Решения</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">Решения</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Отраслевые решения</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Кейсы</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Ready For Astra</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">ПО и услуги</div>
+                        <p class="header__nav-desc">Программа технологической кооперации с производителями программного обеспечения и оборудования</p><a class="btn btn--reset btn--arrow-right-after header__nav-btn-trans" href="#">Подробнее о программе</a>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Совместимое ПО</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Компании партнёры</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Совместимое оборудование</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#" targer="_blank">Wiki-библиотека</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Поддержка</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">Поддержка</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Тарифы</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Бюллетени безопасности</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Тестирование</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#" targer="_blank">Личный кабинет</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Разработчикам</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Обучение</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">Обучение</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Обучение</a></li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Авторизованное обучение</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Проверить сертификат</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Преподавателям</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Студентам</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Школьникам</a></li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Образовательным организациям</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Авторизованным учебным центрам</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Вузам и колледжам</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Школам</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Партнёрам</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">Партнёрам</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Стать партнёром</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Справочная информация</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Статусы</a></li>
+                          <li class="header__nav-child-item"><a class="header__nav-child-link" href="#">Дистрибьюторы</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="header__nav-item"><a class="header__nav-link" href="#">Информация</a>
+                  <div class="header__nav-child">
+                    <div class="container">
+                      <div class="header__nav-child-nav">
+                        <div class="header__nav-title">Информация</div>
+                        <ul class="header__nav-child-list">
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Справочная информация</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Материалы и документация к ПО</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Виртуальный тур</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Библиотека</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">WIKI</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Форум</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Учебно-методические публикации</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Документы</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Правовая информация</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Документы</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Справочные разделы</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Библиотека</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Учебно-методические и научные публикации</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Учебно-методические публикации</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                          <li class="header__nav-child-item header__nav-child-item--arrow"><a class="header__nav-child-link" href="#">Пресс-центр</a>
+                            <div class="header__nav-submenu">
+                              <ul class="header__nav-submenu-list">
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Новости</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">СМИ о нас</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Материалы</a></li>
+                                <li class="header__nav-submenu-item"><a class="header__nav-submenu-link" href="#">Press Kit</a></li>
+                              </ul>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="header__carousel">
+                <div class="container">
+                  <button class="btn btn--reset btn--cross header__nav-child-close" aria-label="Close desktop menu"></button>
+                  <div class="header__slider-wrap">
+                    <div class="header__slider">
+                      <div class="header__slider-item">
+                        <div class="header__slider-item--inner">
+                          <div class="header__slider-item--info">
+                            <div class="header__slider-item-title">Astra Linux на Тюменском Нефтегазовом Форуме 2021</div>
+                            <p class="header__slider-item-desc">Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…</p>
+                          </div><a class="btn btn--reset btn--arrow-right-after" href="#">Узнать больше</a>
+                        </div>
+                      </div>
+                      <div class="header__slider-item">
+                        <div class="header__slider-item--inner">
+                          <div class="header__slider-item--info">
+                            <div class="header__slider-item-title">Второй элемент слайдера</div>
+                            <p class="header__slider-item-desc">Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…</p>
+                          </div><a class="btn btn--reset btn--arrow-right-after" href="#">Узнать больше</a>
+                        </div>
+                      </div>
+                      <div class="header__slider-item">
+                        <div class="header__slider-item--inner">
+                          <div class="header__slider-item--info">
+                            <div class="header__slider-item-title">Третий элемент слайдера</div>
+                            <p class="header__slider-item-desc">Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…</p>
+                          </div><a class="btn btn--reset btn--arrow-right-after" href="#">Узнать больше</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="slider-dots-line" id="header__slider-dots"></div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <div class="header__panel">
+              <button class="btn btn--reset btn--search header__btn-search" aria-label="Open search"></button><a class="btn btn--accent" href="#">Где купить</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="search search--popup">
+        <div class="container">
+          <div class="search__head">
+            <div class="search__title">Поиск</div>
+            <button class="btn btn--reset btn--cross search__close" aria-label="Close search"></button>
+          </div>
+          <form class="search__form" action="/" method="/">
+            <input class="search__form-input" type="text" placeholder="Ввести" required>
+            <button class="btn btn--reset btn--search search__form-btn" aria-label="Send form"></button>
+          </form>
+          <div class="search__body">
+            <div class="search__aside">
+              <div class="search__aside-title">Ранее искали</div>
+              <ul class="search__aside-list">
+                <li class="search__aside-item"><a class="search__aside-link" href="#">Структура компании</a></li>
+                <li class="search__aside-item"><a class="search__aside-link" href="#">История компании</a></li>
+                <li class="search__aside-item"><a class="search__aside-link" href="#">Миссия</a></li>
+                <li class="search__aside-item"><a class="search__aside-link" href="#">Позиционирование</a></li>
+                <li class="search__aside-item"><a class="search__aside-link" href="#">Стратегия</a></li>
+              </ul>
+            </div>
+            <div class="search__result">
+              <div class="search__categories">
+                <ul class="search__categories-list">
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Компания</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Карьера</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Мероприятия</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Прикладное ПО ГК «Астра»</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Операционные системы</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Отраслевые решения</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Ready For Astra Linux</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Совместимое ПО</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Совместимое оборудование</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Поддержка</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Обучение</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Авторизованные учебные центры</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Astra-карьера</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Справочная информация</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Пресс-центр</a></li>
+                  <li class="search__categories-item"><a class="search__categories-link" href="#">Документы</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="page-container">
+        <div class="breadcrumbs">
+          <div class="container">
+            <ul class="breadcrumbs__list">
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="main.html">Главная</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="about-us.html">О компании</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="career.html">Карьера в компании</a></li>
+              <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="career-vacancies.html">Вакансии</a></li>
+              <li class="breadcrumbs__item is-current"><span class="breadcrumbs__link">Вакансия</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="main-block">
+          <div class="career-vacansies">
+            <div class="container">
+              <div class="career-vacansies__nav">
+                <div class="career-vacansies__nav-head">
+                  <h1>Вакансии <span class="search-result-value">0</span></h1>
+                  <form class="career-vacansies__nav-search" action="/" method="/">
+                    <input class="search__form-input" type="text" placeholder="Ввести" value="Програм" required>
+                    <button class="btn btn--reset btn--search search__form-btn" aria-label="Send form"></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <section class="career-error">
+            <div class="container">
+              <div class="career-error__body">
+                <h2 class="career-error__title">Упс! По введеным данным ничего не найдено…</h2>
+                <div class="career-error__desc">Вы уверены в правильности введённого текста? Если да, то к сожалению у нас нет предложений по данному запросу, но мы работаем над этим!</div><a class="link link--accent link--arrow-left" href="career-vacancies.html">Обратно к вакансиям</a>
+              </div>
+            </div>
+          </section>
+          <section class="section section-panel">
+            <div class="container">
+              <div class="section-panel__body">
+                <div class="section-panel__info">
+                  <h2 class="section-panel__title">Нет подходящей вакансии?</h2>
+                  <p class="section-panel__desc"><strong>Хочешь стать частью команды Astra, но не нашёл подходящей для себя вакансии?</strong> <br><br> Напиши о себе, в каком направлении хочешь развиваться, не забудь про ссылки на свои проекты, портфолио и аккаунты в социальных сетях, хотим узнать тебя поближе.</p>
+                  <div class="btn--block">
+                    <button class="btn btn--border-light btn--doc" aria-label="Open modal">Оставить резюме</button>
+                  </div>
+                </div>
+                <div class="section-panel__img--wrap"><img class="section-panel__img" src="img/content/section-panel/bg-3.svg" width="438" height="630" alt="Обратная связь карьеры"></div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="container footer__container">
+          <div class="footer__row">
+            <div class="footer__start"><a class="footer__logo"><img src="img/icons/logo-footer.svg" width="187" height="48" alt="Astra Linux"></a>
+              <div class="footer__copy">
+                <p>ООО «РусБИТех-Астра» <br> 2008–2022</p>
+              </div>
+            </div>
+            <div class="footer__panel">
+              <div class="footer__nav">
+                <ul>
+                  <li><a href="#">О компании</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="#">Мероприятия</a></li>
+                  <li><a href="#">Карьера</a></li>
+                  <li><a href="#">Партнерам</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                  <li><a href="#">Политика обработки файлов сookie</a></li>
+                  <li><a href="#">Пользовательское соглашение</a></li>
+                  <li><a href="#">Торговые марки</a></li>
+                  <li><a href="#">Карта сайта</a></li>
+                </ul>
+              </div>
+              <div class="footer__contacts"><a class="footer__link" href="#">Wiki-библиотека для разработчиков</a>
+                <div class="footer__contacts-body">
+                  <h5 class="footer__title">Контакты</h5>
+                  <ul class="footer__contacts-list">
+                    <li class="footer__contacts-item footer__contacts-item--phone"><a class="footer__contacts-link" href="tel:+7 495 369 48 16">+7 495 369 48 16</a></li>
+                    <li class="footer__contacts-item footer__contacts-item--email"><a class="footer__contacts-link" href="email:info@astralinux.ru">info@astralinux.ru</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__">
+              <div class="social footer__social"><a class="social__link social__link--tg" href="" title="Go to Telegram"> </a><a class="social__link social__link--vk" href="" title="Go to VK"> </a><a class="social__link social__link--ok" href="" title="Go to Ok"> </a><a class="social__link social__link--ya" href="" title="Go to Yandex Dzen"> </a><a class="social__link social__link--rutube" href="" title="Go to Rutube"> </a><a class="social__link social__link--habr" href="" title="Go to Habr"> </a></div><a class="btn btn--border-light" href="#">Сообщить об уязвимости</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--tiny" id="filter-city">
+        <div class="modal__item">
+          <div class="modal__item-header">
+            <h3 class="modal__item-title">Выберите город</h3>
+            <button class="btn btn--reset btn--cross modal__close" aria-label="Close modal" data-close-modal></button>
+          </div>
+          <div class="modal__item-body">
+            <div class="modal__filter">
+              <form class="modal__form" action="/" method="/">
+                <div class="input"><i class="input__icon input__icon--loc"></i>
+                  <input class="input__elem" type="text" placeholder="Адрес, город">
+                </div>
+              </form>
+              <div class="tabs">
+                <div class="tabs__header">
+                  <div class="tabs__nav tabs__nav--full">
+                    <ul class="tabs__nav-list">
+                      <li class="tabs__nav-item tabs__nav-item--active" data-active-tab="country-russia">
+                        <button class="tabs__nav-btn" aria-label="Switch tab">Россия</button>
+                      </li>
+                      <li class="tabs__nav-item" data-active-tab="country-other">
+                        <button class="tabs__nav-btn" aria-label="Switch tab">Страны СНГ</button>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="tabs__body">
+                  <div class="tabs__content tabs__content--open" data-tab="country-russia">                       
+                    <form class="modal__form" action="/" method="/">
+                      <div class="filter__form-item-inputs">
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-0" type="checkbox" name="career-country-russia-city-0">
+                          <label class="input__checkbox-label" for="career-country-russia-city-0">Москва</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-1" type="checkbox" name="career-country-russia-city-1">
+                          <label class="input__checkbox-label" for="career-country-russia-city-1">Санкт-Петербург</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-2" type="checkbox" name="career-country-russia-city-2">
+                          <label class="input__checkbox-label" for="career-country-russia-city-2">Абакан</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-3" type="checkbox" name="career-country-russia-city-3">
+                          <label class="input__checkbox-label" for="career-country-russia-city-3">Абдулино</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-4" type="checkbox" name="career-country-russia-city-4">
+                          <label class="input__checkbox-label" for="career-country-russia-city-4">Абинск</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-6" type="checkbox" name="career-country-russia-city-5">
+                          <label class="input__checkbox-label" for="career-country-russia-city-5">Агидель</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-russia-city-6" type="checkbox" name="career-country-russia-city-6">
+                          <label class="input__checkbox-label" for="career-country-russia-city-6">Город 7</label>
+                        </div>
+                      </div>
+                      <div class="modal__form-footer justify-content-end">
+                        <div class="btns-spacer">
+                          <button class="btn btn--tiny btn--border" aria-label="Reset form">Отмена</button>
+                          <button class="btn btn--tiny btn--accent" type="button" aria-label="Send form" disabled>Применить</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="tabs__content" data-tab="country-other">  
+                    <form class="modal__form" action="/" method="/">
+                      <div class="filter__form-item-inputs">
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-0" type="checkbox" name="career-country-other-city-0">
+                          <label class="input__checkbox-label" for="career-country-other-city-0">Город 1</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-1" type="checkbox" name="career-country-other-city-1">
+                          <label class="input__checkbox-label" for="career-country-other-city-1">Город 2</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-2" type="checkbox" name="career-country-other-city-2">
+                          <label class="input__checkbox-label" for="career-country-other-city-2">Город 3</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-3" type="checkbox" name="career-country-other-city-3">
+                          <label class="input__checkbox-label" for="career-country-other-city-3">Город 4</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-4" type="checkbox" name="career-country-other-city-4">
+                          <label class="input__checkbox-label" for="career-country-other-city-4">Город 5</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-6" type="checkbox" name="career-country-other-city-5">
+                          <label class="input__checkbox-label" for="career-country-other-city-5">Город 6</label>
+                        </div>
+                        <div class="input">
+                          <input class="input__checkbox" id="career-country-other-city-6" type="checkbox" name="career-country-other-city-6">
+                          <label class="input__checkbox-label" for="career-country-other-city-6">Город 7</label>
+                        </div>
+                      </div>
+                      <div class="modal__form-footer justify-content-end">
+                        <div class="btns-spacer">
+                          <button class="btn btn--tiny btn--border" aria-label="Reset form">Отмена</button>
+                          <button class="btn btn--tiny btn--accent" type="button" aria-label="Send form" disabled>Применить</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="feedback">
+        <div class="modal__item">
+          <div class="modal__item-header">
+            <h3 class="modal__item-title">Сообщить об уязвимости</h3>
+            <button class="btn btn--reset btn--cross modal__close" aria-label="Close modal" data-close-modal></button>
+          </div>
+          <div class="modal__item-body">
+            <form class="form feedback__form" action="/" method="/">
+              <div class="feedback__form-content">
+                <div class="form__desc">Выберите тему обращения:</div>
+                <div class="feedback__tags">
+                  <div class="feedback__tags-list">
+                    <div class="input">
+                      <input class="input__radio--bg" id="modal-feedback-theme-0" type="radio" name="modal-feedback-theme">
+                      <label class="input__radio--bg-label" for="modal-feedback-theme-0">Проблемы с работой сайта</label>
+                    </div>
+                    <div class="input">
+                      <input class="input__radio--bg" id="modal-feedback-theme-1" type="radio" name="modal-feedback-theme">
+                      <label class="input__radio--bg-label" for="modal-feedback-theme-1">Сообщить об уязвимости</label>
+                    </div>
+                    <div class="input">
+                      <input class="input__radio--bg" id="modal-feedback-theme-3" type="radio" name="modal-feedback-theme">
+                      <label class="input__radio--bg-label" for="modal-feedback-theme-3">Другой вопрос</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form__desc">Данные для связи:</div>
+                <div class="form__group">
+                  <div class="input">
+                    <input class="input__elem" type="text" placeholder="ФИО" name="modal-feedback-name">
+                  </div>
+                  <div class="input">
+                    <input class="input__elem" type="text" placeholder="Номер телефона" name="modal-feedback-phone">
+                  </div>
+                </div>
+                <div class="input">
+                  <textarea class="input__elem" name="modal-feedback-massage" cols="30" rows="5" placeholder="Ваш вопрос"> </textarea>
+                </div>
+              </div>
+              <div class="modal__form-footer justify-content-between">
+                <p class="form__agree">Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a></p>
+                <div class="btns-spacer">
+                  <button class="btn btn--tiny btn--border" aria-label="Reset form">Отмена</button>
+                  <button class="btn btn--tiny btn--accent" type="button" aria-label="Send form" disabled>Применить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--tiny" id="summary">
+        <div class="modal__item">
+          <div class="modal__item-header">
+            <h3 class="modal__item-title">Отправьте нам заявку</h3>
+            <button class="btn btn--reset btn--cross modal__close" aria-label="Close modal" data-close-modal></button>
+          </div>
+          <div class="modal__item-body">
+            <form class="form" action="/" method="/">
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="ФИО" name="modal-summary-name">
+              </div>
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="Телефон" name="modal-summary-phone">
+              </div>
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="Email" name="modal-summary-email">
+              </div>
+              <div class="input">
+                <textarea class="input__elem" name="modal-summary-massage" cols="30" rows="5" placeholder="Дополнительные сведения"></textarea>
+              </div>
+              <div class="input">
+                <input class="input__file" id="feedback-partners-file" type="file" name="feedback-partners-file">
+                <label class="input__file-label" for="feedback-partners-file"> <i class="icons icons--doc-gray"></i>
+                  <div class="input__file-label-title">Прикрепить документ</div><i class="icons icons--attach"></i>
+                </label>
+                <div class="input__warning">Максимум 1 файл размером до 5 МБ.</div>
+              </div>
+              <div class="input">
+                <input class="input__checkbox" id="modal-summary-agree" type="checkbox" name="modal-summary-agree">
+                <label class="input__checkbox-label" for="modal-summary-agree"> 
+                  <div class="input__checkbox-label-text">Я согласен/согласна на <a href="#">обработку персональных данных</a></div>
+                </label>
+              </div>
+              <div class="modal__form-footer justify-content-end">
+                <div class="btns-spacer">
+                  <button class="btn btn--tiny btn--border" aria-label="Reset form">Отмена</button>
+                  <button class="btn btn--tiny btn--accent" type="button" aria-label="Send form" disabled>Применить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal--tiny" id="provider">
+        <div class="modal__item">
+          <div class="modal__item-header">
+            <h3 class="modal__item-title">Стать поставщиком</h3>
+            <button class="btn btn--reset btn--cross modal__close" aria-label="Close modal" data-close-modal></button>
+          </div>
+          <div class="modal__item-body">
+            <form class="form" action="/" method="/">
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="ФИО" name="modal-provider-name">
+              </div>
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="Email" name="modal-provider-org">
+              </div>
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="Телефон" name="modal-provider-phone">
+              </div>
+              <div class="input">
+                <input class="input__elem" type="text" placeholder="Email" name="modal-provider-email">
+              </div>
+              <div class="input">
+                <textarea class="input__elem" name="modal-provider-massage" cols="30" rows="5" placeholder="Комментарий"></textarea>
+              </div>
+              <div class="modal__form-footer justify-content-end">
+                <div class="btns-spacer">
+                  <button class="btn btn--tiny btn--border" aria-label="Reset form">Отмена</button>
+                  <button class="btn btn--tiny btn--accent" type="button" aria-label="Send form" disabled>Применить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="libs/slick/slick.min.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

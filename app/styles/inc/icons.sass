@@ -1,0 +1,43 @@
+.icons
+    display: inline-flex
+    align-items: center
+
+    &:before
+        content: ''
+        size: 20px
+        min-width: 20px
+        background-position: center
+        background-size: contain
+        background-repeat: no-repeat
+
+    &--doc
+        &:before
+            background-image: svg-load("icons/doc.svg", stroke="#0079C1")
+
+        &-gray
+            &:before
+                background-image: svg-load("icons/doc.svg", stroke="#6A7E95") 
+
+    &--reload
+        &:before
+            background-image: resolve("icons/reload.svg")
+
+    &--attach
+        &:before
+            background-image: resolve("icons/attach.svg")
+
+    &--disc
+        &:before
+            background-image: resolve("icons/disc.svg")
+
+    &--computer
+        &:before
+            background-image: resolve("icons/computer.svg")
+
+    &--check
+        &:before
+            background-image: resolve("icons/check.svg")
+
+    &--cross
+        &:before
+            background-image: resolve("icons/cross.svg")

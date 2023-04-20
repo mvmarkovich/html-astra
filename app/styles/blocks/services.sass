@@ -1,0 +1,47 @@
+.services
+    &__row
+        margin: 0 -8px -16px @sm 0 -12px -24px @lg 0 -16px -32px
+
+    &__col
+        padding: 0 8px @sm 0 12px @lg 0 16px
+        margin-bottom: 16px @sm 24px @lg 32px
+
+        &--body
+            background: #F2F5F7
+            height: 100%
+            padding: 24px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.2 @sm 18px @lg 20px
+            margin: 0 0 16px
+
+        &-desc
+            color: #6A7E95
+            text: 400 14px 1.3
+            margin: 16px 0 0
+
+        ul:not([class])
+            padding: 0 0 0 16px
+            margin: 8px 0 0
+
+            li
+                color: #6A7E95
+                text: 400 14px 1.3
+                margin: 0 0 4px
+
+                p
+                    text: 400 12px 1.3
+                    margin: 0
+
+                &:last-child
+                    margin: 0
+
+        &-btns
+            margin: 32px 0 0
+
+            .btn
+                width: @sm-down 100%

@@ -1,0 +1,217 @@
+extends layouts/layout.pug
+
+block title
+    title Поддержка - Астра | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="support.html") Поддержка
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Астра Консалтинг
+
+    .main-block
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Астра Консалтинг
+                        p.intro__desc «Астра консалтинг» предоставляет полномасштабный спектр консалтинговых услуг в рамках проектов перевода ИТ-инфраструктур организаций, обеспечивает полноценное сопровождение заказчиков в процессе миграции и внедрения отечественного ПО.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/support/intro/plug_2.svg" width="484" height="389" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Наши услуги
+
+                .services
+                    .services__row.row
+                        <!-- START ELEM SERVICES -->
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Миграция и внедрение
+                                    
+                                    ul
+                                        li Помогаем заказчикам в планировании перехода на импортонезависимое ПО, создаем пилотные зоны для миграции программного и аппаратного обеспечения, в том числе рабочих мест, серверного оборудования, периферии
+                                        li Создаем дизайн инфраструктуры, консультируем по проектам перевода продуктивных сред на российские решения
+                                        li Внедряем ОС Astra Linux и системное ПО как из технологического стека ГК «Астра», так и других российских производителей
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+                        <!-- END ELEM SERVICES -->
+
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Аудит и проектирование ИТ-инфраструктуры
+                                    ul
+                                        li Анализ совместимости оборудования, ПО и информационных систем с продуктами, выбранными для импортозамещения
+                                        li Выработка рекомендаций по замене ПО, оборудования и информационных систем
+                                        li Проектирование ИТ-инфраструктуры с учетом требований регулятора в части безопасности хранения и обработки данных
+                                        li Разработка стратегии и «дорожной карты» импортозамещения, бюджетирование проекта по стадиям
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Вендорский надзор
+                                    .services__col-desc Услуги вендорского надзора направлены на обеспечение успешной реализации проекта внедрения и позволяют заручиться поддержкой производителя, способного предложить оптимальное решение, сократить время выполнения проекта, обучить персонал и обеспечить непрерывное сопровождение импортозамещенного программного обеспечения.
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Расширенная сервисная поддержка и сопровождение
+                                    .services__col-desc «Астра консалтинг» предлагает специальный комплекс услуг по сервисной поддержке и сопровождению информационных систем организаций. Он направлен на минимизацию аварийных ситуаций и инцидентов в ПО. Услуга подразумевает проактивную работу экспертов с заказчиком, а также консультации по обслуживанию ИТ-ландшафта, построенного на продуктах ГК «Астра» и других вендоров.
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Услуги по информационной безопасности
+                                    .services__col-desc Профильные специалисты «Астра Консалтинг» готовы обеспечить приведение инфраструктуры и информационных систем заказчика в соответствие с требованиями по информационной безопасности.
+                                    
+                                    ul
+                                        li Аудит ИБ
+                                        li Разработка организационно-распорядительной документации
+                                        li Подготовка к аттестации объектов информатизации
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+
+                        .services__col.col-12.col-sm-6.col-lg-4
+                            .services__col--body
+                                .services__col-info
+                                    .services__col-title Управление проектами
+                                    .services__col-desc «Астра Консалтинг» оказывает услуги комплексного управления проектами, подразумевающими тесную взаимосвязь методологии и практического опыта в отдельно взятой отрасли. Применение проектной методологии – залог успешной реализации внедрения. Цель – достичь максимальной степени удовлетворенности клиента. <br><br> В результате эксперты компании обеспечивают заказчику:
+                                    
+                                    ul
+                                        li необходимую функциональность;
+                                        li соответствие требованиям качества;
+                                        li соблюдение плана-графика.
+
+                                .services__col-btns
+                                    a.btn.btn--tiny.btn--border.btn--doc(href="#") Подробнее
+
+        section.section
+            .container
+                .row
+                    .col-lg-6
+                        .title__block
+                            h2 Наши преимущества
+
+                    .col-lg-6
+                        ul.list-counter
+                            li Уникальные наработки, выверенная методология внедрения продуктов ГК «Астра», а также контроль ее соблюдения партнером
+                            li Глубокая экспертиза по всем продуктам вендора и в реализации проектов создания импортонезависимой ИТ-инфраструктуры
+                            li Минимизация проектных рисков при выборе оптимальных архитектурных решений
+                            li Большая команда высококвалифицированных профильных специалистов
+                            li Обеспечение бесперебойной работы ИТ-систем заказчиков во время реализации проектов миграции и внедрения
+
+        section.section
+            .container
+                .title__block
+                    h2 Инструменты
+
+                .features
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/astra/item_1.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Astra AAIP. Автоматическая системаразвертывания для продуктов
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/astra/item_2.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Подбор индивидуального плана поставки услуги лицензий на продукты
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/astra/item_3.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Подбор индивидуального плана поставки услуги лицензий на продукты
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/astra/item_4.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Обучение заказчиков — сотрудников ИТ-блока и обычных пользователей
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/astra/item_5.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Проведение обучения и сертификации для системных интеграторов с последующей выдачей сертификата
+
+        section.section
+            .container
+                .os-hero.os-hero--dark
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h3 Вступить в программу
+                                    .os-hero__desc Сейчас, как никогда, важно совместными усилиями оперативно обеспечить бесперебойную работу ИТ-инфраструктур российских предприятий
+
+                                .os-hero__btns
+                                    a.btn.btn--border-light(href="#") Оставить заявку
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/support/hero/plug-astra.svg" width="414" height="312" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Кейсы внедрения
+
+                .support-cases
+                    .support-cases__row.row
+                        <!-- START ELEM SUPPORT CASES -->
+                        .support-cases__col.col-12.col-sm-6.col-lg-4
+                            .support-cases__col--body
+                                .support-cases__col-img--wrap
+                                    img.support-cases__col-img(src="img/content/support/cases/item_1.svg" width="240" height="240" alt="Название кейса")
+
+                                .support-cases-info
+                                    .support-cases__col-title Росатом
+                                    .support-cases__col-desc 30К Росэнергоатом перевод как административного управления, так и всех АЭС на Астра Линукс
+                        <!-- END ELEM SUPPORT CASES -->
+
+                        .support-cases__col.col-12.col-sm-6.col-lg-4
+                            .support-cases__col--body
+                                .support-cases__col-img--wrap
+                                    img.support-cases__col-img(src="img/content/support/cases/item_2.svg" width="240" height="228" alt="Название кейса")
+
+                                .support-cases-info
+                                    .support-cases__col-title Росгвардия
+                                    .support-cases__col-desc Создано ядро импортозамещения и отработаны механизмы масштабированного развёртывания

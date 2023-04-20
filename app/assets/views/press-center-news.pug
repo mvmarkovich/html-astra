@@ -1,0 +1,214 @@
+extends layouts/layout.pug
+
+block title
+    title Пресс центр Новости | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="press-center.html") Пресс центр
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Новости
+
+    .main-block
+        .container
+            .main-aside-container
+                .aside  
+                    .aside__title Пресс-Центр
+
+                    .aside__nav
+                        ul.aside__nav-list
+                            li.aside__nav-item.is-current
+                                a.aside__nav-link(href="press-center-news.html") Новости
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-news.html") СМИ о нас
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-news.html") Материалы
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="press-center-kit.html") Press kit
+
+                    .aside__card.aside__card--filter
+                        .aside__card-body
+                            .dropdown.dropdown--mobile
+                                button.btn.btn--reset.dropdown__btn(aria-label="Dropdown menu") По теме
+                            
+                                form.dropdown__menu(action="/" method="/")
+                                    .form__row
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-0(type="checkbox" name="press-center-theme-0")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-0") Обновления
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-1(type="checkbox" name="press-center-theme-1")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-1") Релизы
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-2(type="checkbox" name="press-center-theme-2")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-2") Программы
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-3(type="checkbox" name="press-center-theme-3")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-3") Новое ПО
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-4(type="checkbox" name="press-center-theme-4")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-4") Совместимость
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-5(type="checkbox" name="press-center-theme-5")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-5") События
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-theme-6(type="checkbox" name="press-center-theme-6")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-theme-6") Сертификация
+
+                            .dropdown.dropdown--mobile
+                                button.btn.btn--reset.dropdown__btn(aria-label="Dropdown menu") По типу
+
+                                form.dropdown__menu(action="/" method="/")
+                                    .form__row
+                                        .input
+                                            input.input__checkbox--bg#press-center-type-0(type="checkbox" name="press-center-type-0")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-type-0") Статья
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-type-1(type="checkbox" name="press-center-type-1")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-type-1") Видео
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-type-2(type="checkbox" name="press-center-type-2")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-type-2") Интервью
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-type-3(type="checkbox" name="press-center-type-3")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-type-3") Пресса
+
+                                        .input
+                                            input.input__checkbox--bg#press-center-type-4(type="checkbox" name="press-center-type-4")
+                                            label.input__checkbox--bg-label.bg--gray(for="press-center-type-4") ТВ-Программы
+
+                .main-container
+                    h1 Новости
+
+                    .news
+                        .news__list.row
+                            .news__item.news__item--sm.col-12.col-md-6.col-xl-4
+                                .news__item--body
+                                    a.news__item-img--wrap(href="#")
+                                        img.news__item-img(src="img/content/news/item_1.webp" width="296" height="128" alt="Название статьи")
+
+                                    .news__item-info
+                                        .news__item-text
+                                            a.news__item-title(href="#") Юрий Соснин, «Астра»
+                                            p.news__item-desc «С февраля мы испытываем на себе лавинообразный рост запросов на миграцию»
+
+                                        .news__item-short
+                                            .btns-spacer
+                                                a.btn.btn--tiny.btn--tag(href="#") Программы
+                                                a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                            .briefly__row
+                                                span.briefly.briefly--tiny.briefly--date 16.07.22
+
+                            .news__item.news__item--sm.col-12.col-md-6.col-xl-4
+                                .news__item--body
+                                    a.news__item-img--wrap(href="#")
+                                        img.news__item-img(src="img/content/news/item_1.webp" width="296" height="128" alt="Название статьи")
+
+                                    .news__item-info
+                                        .news__item-text
+                                            a.news__item-title(href="#") Юрий Соснин, «Астра»
+                                            p.news__item-desc «С февраля мы испытываем на себе лавинообразный рост запросов на миграцию»
+
+                                        .news__item-short
+                                            .btns-spacer
+                                                a.btn.btn--tiny.btn--tag(href="#") Программы
+                                                a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                            .briefly__row
+                                                span.briefly.briefly--tiny.briefly--date 16.07.22
+
+                            .news__item.news__item--sm.col-12.col-md-6.col-xl-4
+                                .news__item--body
+                                    a.news__item-img--wrap(href="#")
+                                        img.news__item-img(src="img/content/news/item_1.webp" width="296" height="128" alt="Название статьи")
+
+                                    .news__item-info
+                                        .news__item-text
+                                            a.news__item-title(href="#") Юрий Соснин, «Астра»
+                                            p.news__item-desc «С февраля мы испытываем на себе лавинообразный рост запросов на миграцию»
+
+                                        .news__item-short
+                                            .btns-spacer
+                                                a.btn.btn--tiny.btn--tag(href="#") Программы
+                                                a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                            .briefly__row
+                                                span.briefly.briefly--tiny.briefly--date 16.07.22
+
+block scripts
+    script(type="text/javascript").
+        function move(){
+            let viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            
+            if (viewport_width <= 992) {
+                for(let i = 0; i < document.querySelectorAll('.aside__nav-item').length; ++i) {
+                    document.querySelectorAll('.aside__nav-item')[0].before(document.querySelector('.aside__nav-item.is-current'));
+                }
+            
+                document.querySelector('.aside__nav-item.is-current').addEventListener("click", () => {
+                    let asideNavList = document.querySelector('.aside__nav-list');
+
+                    asideNavList.classList.toggle('is-show');
+                });
+            }
+        }
+
+        window.addEventListener('resize', move);
+        move();
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }
+
+    
+

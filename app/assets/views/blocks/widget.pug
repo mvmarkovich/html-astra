@@ -1,0 +1,389 @@
+.widget.container
+    .widget__container
+        .widget__aside
+            .widget__aside-head
+                .widget__aside-title Где купить
+
+                <!-- START Переключение партнеры / карта-->
+                .widget__layout
+                    button.btn.btn--reset.widget__layout-btn.is-active(aria-label="Widget view" data-view="widget-table") 
+                    button.btn.btn--reset.widget__layout-btn(aria-label="Widget view" data-view="widget-map") 
+                <!-- END Переключение партнеры / карта-->
+
+            form.widget__form(action="/" method="/")
+                .widget__form-item
+                    i.widget__form-icon.widget__form-icon--loc
+                    input.widget__form-input(type="text" name="widget-filter-location" placeholder="Адрес, город")
+
+                .widget__form-item
+                    i.widget__form-icon.widget__form-icon--search
+                    input.widget__form-input(type="text" name="widget-filter-search" placeholder="Искать по названию")
+
+                .widget__form-item
+                    select.widget__form-input(name="widget-filter-products")
+                        option(value="" disabled selected) По продукту
+                        option(value="0") Продукт 1
+                        option(value="1") Продукт 2
+                        option(value="2") Продукт 3
+
+                .widget__form-statuses
+                    .widget__form-statuses-list
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-all(type="checkbox" name="widget-status-all")
+                            label.widget__form-checkbox-label(for="widget-status-all")
+                                .widget__form-checkbox-title(data-status="all") Все
+
+                        <!-- START Пример статуса -->
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-platinum(type="checkbox" name="widget-status-platinum")
+                            label.widget__form-checkbox-label(for="widget-status-platinum")
+                                .widget__form-checkbox-title(data-status="platinum") Интегратор
+                                .widget__form-checkbox-value i
+                        <!-- END Пример статуса -->
+
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-pro(type="checkbox" name="widget-status-pro")
+                            label.widget__form-checkbox-label(for="widget-status-pro")
+                                .widget__form-checkbox-title(data-status="pro") Pro
+                                .widget__form-checkbox-value 12
+
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-gold(type="checkbox" name="widget-status-gold")
+                            label.widget__form-checkbox-label(for="widget-status-gold")
+                                .widget__form-checkbox-title(data-status="gold") Золотой
+                                .widget__form-checkbox-value 22
+
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-silver(type="checkbox" name="widget-status-silver")
+                            label.widget__form-checkbox-label(for="widget-status-silver")
+                                .widget__form-checkbox-title(data-status="silver") Серебряный
+                                .widget__form-checkbox-value 8
+
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-auth(type="checkbox" name="widget-status-auth")
+                            label.widget__form-checkbox-label(for="widget-status-auth")
+                                .widget__form-checkbox-title(data-status="auth") Авторизованный
+                                .widget__form-checkbox-value 17
+
+                        .widget__form-item
+                            input.widget__form-checkbox#widget-status-oem(type="checkbox" name="widget-status-oem")
+                            label.widget__form-checkbox-label(for="widget-status-oem")
+                                .widget__form-checkbox-title(data-status="oem") OEM
+                                .widget__form-checkbox-value 1
+
+        .widget__box
+            .widget__content(data-view="widget-table")
+                .widget__partners
+                    .widget__title 
+                        | Партнёры
+                        .widget__title-results 32
+
+                    .widget__partners-list
+                        <!-- START Пример партнера -->
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_1.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="platinum") ЗАО «ДИДЖИТАЛ ДИЗАЙН»
+                                    .widget__table-desc 199178, г. Санкт-Петербург, наб. реки Смоленки, д. 33
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+                        <!-- END Пример партнера -->
+
+                        .widget__partners-item.widget__table.widget__table--arrow
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_2.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="pro") ЗАО «КРОК инкорпорейтед»
+                                    .widget__table-desc 111033, г. Москва, ул. Волочаевская, д. 5 к.1
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                            .widget__table-child
+                                .widget__table-item
+                                    .widget__table-col
+                                        .widget__table-img--wrap
+                                            img.widget__table-img(src="img/content/widget/partners/item_1.webp" width="152" height="40" alt="Название партнера")
+
+                                    .widget__table-col
+                                        .widget__table-title(data-status="platinum") Филиал ЗАО «КРОК инкорпорейтед» в Нижнетагилске
+                                        .widget__table-desc 111033, г. Москва, ул. Волочаевская, д. 5 к.1
+
+                                    .widget__table-col
+                                        ul.widget__table-contacts
+                                            li.widget__table-contacts-phone
+                                                a(href="tel:+74952213947") +7 495 221-39-47
+
+                                            li.widget__table-contacts-email
+                                                a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                                .widget__table-item
+                                    .widget__table-col
+                                        .widget__table-img--wrap
+                                            img.widget__table-img(src="img/content/widget/partners/item_1.webp" width="152" height="40" alt="Название партнера")
+
+                                    .widget__table-col
+                                        .widget__table-title(data-status="platinum") Филиал ЗАО «КРОК инкорпорейтед» в Москве
+                                        .widget__table-desc 111033, г. Москва, ул. Волочаевская, д. 5 к.1
+
+                                    .widget__table-col
+                                        ul.widget__table-contacts
+                                            li.widget__table-contacts-phone
+                                                a(href="tel:+74952213947") +7 495 221-39-47
+
+                                            li.widget__table-contacts-email
+                                                a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                                .widget__table-item
+                                    .widget__table-col
+                                        .widget__table-img--wrap
+                                            img.widget__table-img(src="img/content/widget/partners/item_1.webp" width="152" height="40" alt="Название партнера")
+
+                                    .widget__table-col
+                                        .widget__table-title(data-status="platinum") Филиал ЗАО ЗАО «КРОК инкорпорейтед» в Тамбове
+                                        .widget__table-desc 111033, г. Москва, ул. Волочаевская, д. 5 к.1
+
+                                    .widget__table-col
+                                        ul.widget__table-contacts
+                                            li.widget__table-contacts-phone
+                                                a(href="tel:+74952213947") +7 495 221-39-47
+
+                                            li.widget__table-contacts-email
+                                                a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                                .widget__table-item
+                                    .widget__table-col
+                                        .widget__table-img--wrap
+                                            img.widget__table-img(src="img/content/widget/partners/item_1.webp" width="152" height="40" alt="Название партнера")
+
+                                    .widget__table-col
+                                        .widget__table-title(data-status="platinum") Филиал ЗАО «КРОК инкорпорейтед»
+                                        .widget__table-desc 111033, г. Москва, ул. Волочаевская, д. 5 к.1
+
+                                    .widget__table-col
+                                        ul.widget__table-contacts
+                                            li.widget__table-contacts-phone
+                                                a(href="tel:+74952213947") +7 495 221-39-47
+
+                                            li.widget__table-contacts-email
+                                                a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_3.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="gold") ООО «Организационно-технологические решения 2000»
+                                    .widget__table-desc 127474 Москва, Дмитровское шоссе, 60А
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_4.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="silver") Rubytech
+                                    .widget__table-desc ул. Годовикова д. 9 стр. 17, Москва
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_5.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") АО «Ай-Теко»
+                                    .widget__table-desc 117036, г. Москва, ул. Кедрова, д. 15
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_6.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") AT Consulting
+                                    .widget__table-desc 127015, г. Москва, ул. Большая Новодмитровская, д. 14, стр. 7, офис 523
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_7.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") Step Logic
+                                    .widget__table-desc 117036, г. Москва, ул. Кедрова, д. 15
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_3.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="oem") ООО «Организационно-технологические решения 2000»
+                                    .widget__table-desc 127474 Москва, Дмитровское шоссе, 60А
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_4.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="silver") Rubytech
+                                    .widget__table-desc ул. Годовикова д. 9 стр. 17, Москва
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_5.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") АО «Ай-Теко»
+                                    .widget__table-desc 117036, г. Москва, ул. Кедрова, д. 15
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_6.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") AT Consulting
+                                    .widget__table-desc 127015, г. Москва, ул. Большая Новодмитровская, д. 14, стр. 7, офис 523
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                        .widget__partners-item.widget__table
+                            .widget__table-item
+                                .widget__table-col
+                                    .widget__table-img--wrap
+                                        img.widget__table-img(src="img/content/widget/partners/item_7.webp" width="152" height="40" alt="Название партнера")
+
+                                .widget__table-col
+                                    .widget__table-title(data-status="auth") Step Logic
+                                    .widget__table-desc 117036, г. Москва, ул. Кедрова, д. 15
+
+                                .widget__table-col
+                                    ul.widget__table-contacts
+                                        li.widget__table-contacts-phone
+                                            a(href="tel:+74952213947") +7 495 221-39-47
+
+                                        li.widget__table-contacts-email
+                                            a(href="mailto:info@astralinux.ru") Info@astralinux.ru
+
+                .widget__map
+
+    <!-- START SCRIPT WIDGET -->
+        script(type="text/javascript").
+            document.querySelector('.widget__layout').addEventListener('click', function(e) {
+                const view = e.target.dataset.view;
+                
+                if (view && e.target.tagName === 'BUTTON') {
+                    document.querySelector('.widget__content').dataset.view = view;
+                }
+            });
+
+            let btnsView = document.querySelectorAll(".widget__layout-btn");
+
+            for (let btnView of btnsView) {
+                btnView.addEventListener('click', function () {
+                    btnsView.forEach(i => i.classList.remove('is-active'));
+                    this.classList.toggle('is-active');
+                });
+            };
+    <!-- END SCRIPT WIDGET -->

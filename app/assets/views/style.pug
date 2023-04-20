@@ -1,0 +1,81 @@
+extends layouts/layout.pug
+
+block title
+    title Style | Astra Linux
+
+block content
+    .style__container
+        section.style__elem
+            pre.style__code h1-h5
+            h1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?
+            h2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?
+            h3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?
+            h4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?
+            h5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt?
+
+        section.style__elem
+            pre.style__code p
+
+            p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis, fuga cum! Incidunt qui dolores, expedita necessitatibus, ipsam vel omnis dolorum, nostrum unde consequatur odio sed reiciendis ullam sint.
+
+        section.style__elem
+            pre.style__code
+                |.input<b>.input--error</b>
+                |    input.input__elem
+                |    .input__error
+
+            form(action="#" method="get")
+                .input.input--error
+                    input.input__elem(type="text" placeholder="Email" required value="user@gmail.com#")
+                    .input__error E-mail can’t contain symbols
+
+                .input
+                    input.input__elem(type="text" placeholder="Email" required)
+                    .input__error E-mail can’t contain symbols
+
+                .input
+                    input.input__elem(type="text" placeholder="Email" required value="user@gmail.com")
+                    .input__error E-mail can’t contain symbols
+
+                .input
+                    input.input__elem(type="text" placeholder="Disabled" disabled required)
+                    .input__error E-mail can’t contain symbols
+
+                input(type="text" placeholder="Input tag without a class")
+
+        section.style__elem
+            pre.style__code
+                | .btn
+                | .btn--light
+                | .btn--arrow-right
+                | .btn--arrow-down
+                | .btn--hash-tag
+                | .btn--disabled
+                | .btn--big
+
+            .btns-spacer
+                button.btn btn
+                a.btn(href="#!") link
+                button.btn.btn--light(href="#!") light
+                button.btn.btn--arrow-right arrow
+                button.btn.btn--arrow-down arrow
+                button.btn.btn--info info
+                button.btn.btn--pseudo Pseudo
+                button.btn.btn--pseudo.btn--info-before Pseudo
+                button.btn.btn--hash-tag #HashTag
+                button.btn(disabled) btn disabled
+                button.btn.btn--arrow-right(disabled) btn disabled
+                a.btn.btn--disabled(href="#!") link disabled
+                a.btn.btn--arrow-right.btn--disabled(href="#!") link disabled
+
+                button.btn.btn--accent-2 accent-2
+                button.btn.btn--accent-2.btn--lightning-white accent-2
+
+                button.btn.btn--accent accent
+                a.btn.btn--accent accent
+                a.btn.btn--accent.btn--info-white accent
+
+                button.btn.btn--accent(disabled) accent
+                a.btn.btn--accent.btn--disabled accent
+
+

@@ -1,0 +1,115 @@
+extends layouts/layout.pug
+
+block title
+    title ОР Финансы | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="industry.html") Отраслевые решения
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Финансы
+
+    .main-block
+        .page-preview(style="background-image:url(img/content/industry/preview/finansy.webp)")
+            .container
+                .page-preview__info
+                    h1 Финансы
+                    p 17 апреля 2019 года Центральный банк Российской Федерации выпустил Положение № 683-П.
+
+        section.section
+            .container
+                .row
+                    .col-12.col-lg-5
+                        .title__block
+                            h2 Согласно документу, кредитные организации
+
+                    .col-lg-7
+                        .text-chapter
+                            p.text-chapter__desc <strong>Согласно документу, кредитные организации для обработки конфиденциальных данных при приёме электронных сообщений</strong> через интернет должны использовать ПО, которое сертифицировано ФСТЭК России по требованиям безопасности информации, включая требования в части анализа уязвимостей и контроля отсутствия недекларированных возможностей.
+                            p.text-chapter__desc <strong>Также можно применять продукты, имеющие сертификаты соответствия минимум 4-ому уровню доверия</strong> к средствам технической защиты информации и обеспечения безопасности информационных технологий в системе сертификации СЗИ ФСТЭК России.
+                            p.text-chapter__desc <strong>В Методических рекомендациях банка России от 14 февраля 2019 г. № 4-МР указано,</strong> что для нейтрализации угроз безопасности при обработке, сборе и хранении биометрических персональных данных следует применять средства защиты информации, сертифицированные ФСТЭК России на соответствие требованиям безопасности информации минимум по 5 классу.
+
+        section.section
+            .container
+                .industry-lead
+                    .industry-lead__row
+                        .industry-lead__text
+                            .industry-lead__title.h3 Astra Linux в науке и сфере финансов
+                            .industry-lead__desc Защищённая операционная система Astra Linux Special Edition обеспечивает безопасность IT-структур и отвечает требованиям, установленными постановлением Правительства Российской Федерации от 01.11.2012 № 1119 и приказом ФСТЭК России от 18.02.2013 № 21, что позволяет:
+
+                            ul.list-counter.row
+                                li.col-12.col-lg-6 Реализовать решения для сбора и хранения биометрических персональных данных;
+                                li.col-12.col-lg-6 Выявлять инциденты и на них реагировать;
+                                li.col-12.col-lg-6 Обрабатывать конфиденциальную информацию;
+                                li.col-12.col-lg-6 Обеспечивать безопасность носителей информации с персональными данными;
+                                li.col-12.col-lg-6 Регистрировать события безопасности;
+                                li.col-12.col-lg-6 Настраивать ограничения программной среды в медицинских учреждениях;
+                                li.col-12 Обеспечивать контроль целостности данных и защиту информации в IT-системах, включая среды виртуализации, средства связи и т.д., согласно приказу ФСТЭК России от 21.09.2016 № 131.
+
+                        .industry-lead__img--wrap
+                            img.industry-lead__img(src="img/content/industry/lead/finansy.webp" width="405" height="362" alt="Название")
+
+        section.section.section-panel.section-panel--industry
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h2.section-panel__title Экосистема ГК "Астра"
+                        p.section-panel__desc Продукты Astra Linux успешно работают с широким спектром как отечественного и зарубежного ПО, так и периферии. <br> Количество совместных решений, работоспособность которых проверена практикой, постоянно растёт. IT-инфраструктуры учреждений с уже имеющимися у заказчика программно-аппаратными средствами легко переводятся на платформу Astra Linux. Все необходимые элементы уже совместимы с операционной системой:
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/industry/section-panel-svg.svg" width="340" height="500" alt="Название блока")
+
+        section.section
+            .container
+                .os-set
+                    .os-set__row
+                        .os-set__text
+                            .os-set__title.h3 Все необходимые элементы уже совместимы с операционной системой
+
+                        .os-set__content
+                            .os-set__list.row
+                                .os-set__item.col-12.col-sm-6.col-lg-7
+                                    .os-set__item--inner
+                                        .os-set__item-title Гос-информационные системы
+                                        .os-set__item-desc ГИИС «Электронный бюджет», ЕИАС Минфина России, СМЭВ, ЕПГУ и др.
+
+                                .os-set__item.col-12.col-sm-6.col-lg-5
+                                    .os-set__item--inner
+                                        .os-set__item-title Антивирусное ПО
+                                        .os-set__item-desc Dr.Web, ESET и Kaspersky
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title Офисные пакеты приложений
+                                        .os-set__item-desc «МойОфис», LibreOffice и «P7-Офис»
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title ПК «ГРАНД-Смета»
+                                        .os-set__item-desc Нужно добавить описание
+
+                                .os-set__item.col-12.col-sm-6.col-md-4
+                                    .os-set__item--inner
+                                        .os-set__item-title Средства защиты каналов связи
+                                        .os-set__item-desc ViPNet Client
+
+                                .os-set__item.col-12.col-sm-6.col-lg-7
+                                    .os-set__item--inner
+                                        .os-set__item-title Системы IP-телефонии и видеоконференции
+                                        .os-set__item-desc TrueConf, ИНКОМА, «Постмет-Р», GFI Software и многие другие продукты.
+
+                                .os-set__item.col-12.col-sm-6.col-lg-5
+                                    .os-set__item--inner
+                                        .os-set__item-title Бухгалтерское ПО
+                                        .os-set__item-desc ГНИВЦ
+
+
+
+

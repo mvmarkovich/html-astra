@@ -1,0 +1,81 @@
+.modal
+    position: fixed 0 0 0 0
+    background: $cover-color
+    justify-content: center
+    z-index: 9999
+    display: none
+    overflow: auto
+    opacity: 0
+    transition: .3s ease
+    padding: @md 20px
+
+    &--open
+        display: flex
+        align-items: center
+
+    &--fadeIn
+        opacity: 1
+
+        ^&__item
+            transform: translateY(0) scale(1)
+
+    &--tiny
+        ^&__item
+            max-width: 400px
+
+    &__item
+        transform: translateY(-10px) scale(.9)
+        transition: .3s ease
+        background: #fff
+        padding: 16px 24px
+
+    &__close
+        z-index: 3
+        position: absolute
+        top: -6px
+        right: -10px
+
+    &__item
+        position: relative
+        size: 100% auto
+        max-width: 100% @md 720px
+        margin: 48px auto auto @md auto
+
+        &-header
+            position: relative
+            margin: 0 0 24px
+            display: flex
+            justify-content: space-between
+
+        &-title
+            color: #071C27
+            text: 700 18px 1.5
+            margin: 0
+
+        &-body
+            .tabs__header
+                margin: 0 0 24px
+
+            .filter__form-item-inputs
+                max-height: @lg-down 220px
+                overflow: @lg-down auto
+                padding: @lg-down 0 8px 0 0
+
+    &__form
+        &-footer
+            padding: 12px 24px
+            box-shadow: 0px -1px 4px rgba(6, 50, 77, 0.15)
+            margin: 16px -24px -16px
+            display: @sm flex
+            align-items: @sm center
+
+            .btns-spacer
+                width: @sm-down 100%
+                flex-wrap: @sm-down nowrap
+
+            .btn
+                font-size: 12px
+                width: @sm-down 100%
+
+                &:last-child
+                    margin-right: 0

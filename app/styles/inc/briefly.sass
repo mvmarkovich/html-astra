@@ -1,0 +1,57 @@
+.briefly
+    display: inline-flex
+    text: #6A7E95 400 14px 1.3 @md 16px
+    margin: 0 16px 16px 0
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: * * -16px
+    
+    &--time,
+    &--date,
+    &--views,
+    &--loc
+        &:before
+            content: ''
+            size: 20px
+            min-width: 20px
+            margin: 0 8px 0 0
+            background-position: center
+            background-repeat: no-repeat
+            background-size: contain
+
+    &--time
+        &:before
+            background-image: resolve("icons/time.svg") 
+
+    &--date
+        &:before
+            background-image: resolve("icons/date.svg") 
+
+    &--views
+        &:before
+            background-image: resolve("icons/views.svg") 
+
+    &--loc
+        &:before
+            background-image: resolve("icons/location.svg") 
+
+    &--tiny
+        text: 12px @md 12px
+        margin: 0 8px 8px 0
+
+        &:before
+            size: 16px
+            min-width: 16px
+
+    &--bg
+        color: #071C27
+        text: 14px
+        align-items: center
+        background: #E9F6FD
+        min-height: 32px
+        padding: 0 16px
+
+    &:last-child
+        margin: * 0 * *

@@ -1,0 +1,218 @@
+extends layouts/layout.pug
+
+block title
+    title Обучение - Школьникам | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Программы обучения
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Учебные материалы
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Задать вопрос
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu.html") Обучение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Школьникам
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Школьникам
+                            p.intro__desc <strong>ГК Астра реализует совместно с российскими школьниками проект по организации среднего образования и дополнительного образования детей.</strong><br><br> Школьники изучают основы ОС Astra Linux, администрирование ОС Astra Linux, средства защиты информации в ОС Astra Linux.
+
+                        .intro__img--wrap
+                            img.intro__img(src="img/content/edu/intro/school.webp" width="560" height="512" alt="Название")
+
+        section.section
+            .container
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h3 Обучение
+                                    .os-hero__desc Обучение школьников использованию и администрированию продуктов Astra Linux способствует формированию опыта работы с отечественными программными продуктами. <br><br> Полученные знания по ОС Astra Linux помогут школьникам при подготовке к поступлению в профильные ВУЗы, быстрее адаптироваться в учебном процессе. Студенты смогут принять участие в проекте Астра-карьера, т.к. будут обладать конкуретным преимуществом, зная и используя продукты ГК Астра.   
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/os/hero/plug.svg" width="420" height="384" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Материалы
+
+                .materials
+                    .materials__list.materials__list--bg
+                        .materials__item.col-12
+                            a.materials__item--inner(href="#" download)
+                                .materials__item-img--wrap
+                                    img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                .materials__item-text
+                                    .materials__item-title Руководитсво по национальной операционной системе и совместимым офисным программам
+
+        section.section
+            .container
+                .title__block
+                    h2 Обучение школьников по программам ГК «Астра»
+
+                .edu-cases
+                    .edu-cases__row.row
+                        <!-- START ELEMENT EDU CASES -->
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-auth.html")
+                                .edu-cases__col-img--wrap
+                                    <!-- картинка отсутствует -->
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Авторизованным учебным центрам
+
+                        <!-- END ELEMENT EDU CASES -->
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-university.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title ВУЗам и колледжам
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org-school.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Школам
+
+        section.feedback.feedback--narrow.section-anchor#anchor-2
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Связаться с нами
+
+                        .feedback__form-content
+                            .form__desc Выберите тему обращения:
+
+                            .feedback__tags
+                                .feedback__tags-list
+                                    .input
+                                        input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                            .form__desc Данные для связи:
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                            .input
+                                textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                            p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Проверка на количество материалов
+        //
+
+        let listMaterials = document.querySelectorAll('.materials__list');
+
+        for (let i = 0; i < listMaterials.length; ++i) {
+            if (listMaterials[i].children.length > 6) {
+                let DOMmore = document.createElement('div');
+                DOMmore.className = 'btn--block materials__more';
+                DOMmore.innerHTML = '<button class=" btn btn--reset btn--more js-show-more" aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть">Развернуть</button>';
+                listMaterials[i].parentElement.append(DOMmore);
+
+                listMaterials[i].classList.add('hidden-content')
+            }
+        }
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

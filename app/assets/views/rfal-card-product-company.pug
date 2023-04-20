@@ -1,0 +1,274 @@
+extends layouts/layout.pug
+
+block title
+    title RFAL Страница оборудования | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal.html") Ready For Astra Linux 
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal-catalog.html") Совместимое оборудование
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal-catalog-program.html") Страница оборудования
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Страница компании
+
+    .main-block
+        .container
+            .main-aside-container
+                .main-container
+                    .card-product
+                        .card-product__row
+                            .card-product__media
+                                .card-product__img--wrap
+                                    img.card-product__img(src="img/content/card-product/item_2.webp" width="380" height="380" alt="Название компании")
+
+                            .card-product__info
+                                h1.card-product__title Simple-Scada
+
+                                .card-product__label
+                                    .icon.icon
+
+                                .card-product__desc Simple-Scada – современная, российская SCADA-система, обеспечивающая управление, обработку, архивирование и визуализацию технологических процессов. Главная цель проекта — простота и удобство использования для конечного пользователя. Связь с объектами автоматизации обеспечивается при помощи технологии OPC. Поддерживаются все версии OPC DA и OPC UA серверов. Web-доступ, система отчётов, отправка СМС / email / telegram сообщений, система шаблонов и т.д. Работа с СУБД MySQL, MS SQL Server, PostgreSQL.
+
+                                .card-product__table.card-product__table--blocks
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Адрес:
+
+                                        .card-product__table-col
+                                            .card-product__table-col-desc 352451, Краснодарский край, Успенский р-н, Успенское с, Проезжая ул, дом 46.
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Email:
+
+                                        .card-product__table-col
+                                            a.card-product__table-col-desc(href="mailto:support@simple-scada.com") support@simple-scada.com
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Сайт:
+
+                                        .card-product__table-col
+                                            a.card-product__table-col-desc(href="https://simple-scada.com/" target="_blank") https://simple-scada.com/
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Номер телефона:
+
+                                        .card-product__table-col
+                                            .card-product__table-col-desc +7 918 419-19-86
+
+                    section.catalog(data-view="catalog-tables")
+                        .title__block
+                            h3 Совместимое оборудование и комплектующие
+
+                        .catalog__head
+                            .catalog__head-desc Изображение и название оборудования
+                            .catalog__head-desc Версия ОС
+
+                        .catalog__list.hidden-content
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_1.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Altalink B8045
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                                        
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_2.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Принтер Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_3.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Моноблок Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0  
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0  
+
+                        .btn--block.catalog__load-more
+                            button.btn.btn--secondary.js-show-more(aria-label="Load more" data-text="Показать все оборудование компании" data-toggle-text="Скрыть") Показать все оборудование компании
+
+                    section.catalog(data-view="catalog-tables")
+                        .title__block
+                            h3 Совместимое программное обеспечение
+
+                        .catalog__head
+                            .catalog__head-desc Изображение и название программного обеспечения
+                            .catalog__head-desc Версия ОС
+
+                        .catalog__list.hidden-content
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_1.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Altalink B8045
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                                        
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_2.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Принтер Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_3.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Моноблок Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+
+                        .btn--block.catalog__load-more
+                            button.btn.btn--secondary.js-show-more(aria-label="Load more" data-text="Показать все оборудование компании" data-toggle-text="Скрыть") Показать все оборудование компании
+
+        
+        
+
+
+
+                
+
+    
+

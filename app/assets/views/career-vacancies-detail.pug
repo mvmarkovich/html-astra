@@ -1,0 +1,286 @@
+extends layouts/layout.pug
+
+block title
+    title Вакансия | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career.html") Карьера в компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career-vacancies.html") Вакансии
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Вакансия
+
+    .main-block
+        .job-post
+            .container
+                h1.job-post__title Инженер-программист С++
+
+                .btns-spacer.job-post__tags
+                    a.btn.btn--tiny.btn--tag-secondary(href="#") Backend
+                    a.btn.btn--tiny.btn--tag-secondary(href="#") Frontend
+                    a.btn.btn--tiny.btn--tag-secondary(href="#") Mobile
+                    a.btn.btn--tiny.btn--tag-secondary(href="#") Data Science
+
+                .main-aside-container
+                    .main-container
+                        .job-post__content
+                            .job-post__count#job-post-desc
+                                h2 Описание
+                                
+                                p Проектирование безопасной работы облачной системы. Интеграция встроенного в ОС собственного модуля безопасности в облачную систему. Документирование результатов разработки.
+            
+                                ul.job-post__data
+                                    li Заработная плата: <span>От 150 000 ₽</span>
+                                    li Опыт работы: <span>От 3 до 6 лет</span>
+
+                            .job-post__count#job-post-conditions
+                                h2 Условия
+
+                                ul.list-dots
+                                    li Удобное место работы рядом с домом или учёбой;
+                                    li Бесплатная стильная форма;
+                                    li Профессиональное обучение, наставничество и адаптация;
+                                    li Трудоустройство по ТК РФ, социальный пакет;
+                                    li Корпоративные скидки на продукцию;
+                                    li Ежемесячные премии и конкурсы: денежные и ценные призы;
+                                    li Премии по итогам года.
+
+                            .job-post__count#job-post-response
+                                h2 Обязанности
+
+                                ul.list-line
+                                    li Проектирование безопасной работы облачной системы
+                                    li Интеграция встроенного в ОС собственного модуля безопасности в облачную систему
+                                    li Готовить техническую документацию на разработку для разработчиков DWH;
+                                    li Контролировать реализацию задач (тестирование и первичная приёмка) на базе DWH;
+                                    li Анализировать интегрируемые данных и контроль качества данных;
+                                    li Описывать логическую и физическую модели данных;
+                                    li Консультировать пользователей по «правильной» работе с хранилищем.
+
+                            .job-post__count#job-post-request
+                                h2 Требования
+
+                                ul.list-line
+                                    li Опыт разработки на C, C++ не менее 3-х лет
+                                    li Опыт написания сценариев на языках Shell/Python
+                                    li Владение средствами разработки (autotools, git и др.)
+                                    li Знание и опыт разработки в ОС Linux.
+
+                            .career-features.career-features--job
+                                .career-features__body
+                                    .career-features__list.row
+                                        .career-features__item
+                                            .career-features__item--inner
+                                                .career-features__item-img--wrap
+                                                    img.career-features__item-img(src="img/content/career/career-features/item_6.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                                .career-features__item-info
+                                                    .career-features__item-title Уверенность в будущем
+                                                    p.career-features__item-desc Мы чтим ТК РФ: у нас стабильный и прозрачный «белый» доход и полноценный соцпакет.
+
+                                        .career-features__item
+                                            .career-features__item--inner
+                                                .career-features__item-img--wrap
+                                                    img.career-features__item-img(src="img/content/career/career-features/item_7.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                                .career-features__item-info
+                                                    .career-features__item-title Удаленка или офис? Вам решать.
+                                                    p.career-features__item-desc Можно работать где угодно: дома, в офисе или в гибридном режиме. Нам важны результаты, а не то, где вы находитесь
+
+                                        .career-features__item
+                                            .career-features__item--inner
+                                                .career-features__item-img--wrap
+                                                    img.career-features__item-img(src="img/content/career/career-features/item_8.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                                .career-features__item-info
+                                                    .career-features__item-title Добираться легко
+                                                    p.career-features__item-desc Офис в 2 минутах ходьбы от станции метро Нагатинская или 10 минут от МЦК Верхние Котлы
+
+                            .job-post__count#job-post-contacts
+                                h2 Контакты
+
+                                .job-post__contacts
+                                    ul.job-post__contacts-list
+                                        li
+                                            p Адрес
+                                            span Москва, ул. Пушкина 44, офис 301
+
+                                        li
+                                            p Телефон
+                                            a(href="tel:+7 (000) 000–000–00") +7 (000) 000–000–00 (доб. 71109)
+
+                                    #map.job-post__map
+
+                            #job-post-conditions.job-post__count
+                                p Мы группа компаний «Астра» – один из лидеров российской IT-индустрии, ведущий производитель программного обеспечения, в том числе защищенных операционных систем и платформ виртуализации. Разработка флагманского продукта, ОС семейства Astra Linux, ведется с 2008 года. На сегодня в штате компании более 300 высококвалифицированных разработчиков и специалистов технической поддержки.
+                                    br
+                                    br
+                                    | Наша миссия – обеспечить технологический суверенитет России и ее лидерство в мировой IT-индустрии путем создания базовых технологий, специального и пользовательского ПО. Стратегическая цель – к 2030 году стать национальным производителем программных продуктов №1
+                                
+                                p
+                                    strong Обязанности:
+
+                                ul
+                                    li
+                                        p Продвижение в партнерском канале продаж продуктов и услуг ГК Astra Linux;
+                                    
+                                    li
+                                        p  Создание, развитие и управление выделенным пулом партнеров и привлечение новых: переговоры, мотивация на результат, организация технических семинаров, разработка и согласование партнерских и маркетинговых программ, программ поощрений, контроль за маркетинговыми активностями статусных партнёров;
+                                    
+                                    li
+                                        p Постановка и контроль исполнения задач смежным подразделениям (тестирование ПО с аппартной частью, адаптация под смежное ПО и информационные системы, пилотирование готовых совместных с партнёрами решений в заказчиках);
+                                    
+                                    li
+                                        p Анализ общей финансовой составляющей проектов, оптимизация расходов с целью достижения регламентированного уровня рентабельности;
+                                    
+                                    li
+                                        p Совместное с партнёрами участие в переговорах с потенциальными заказчиками;
+                                    
+                                    li
+                                        p Совместное с партнёрами участие к конкурсах, подготовка ТЗ, обоснование бюджета, обоснование необходимости использование конкретных решений;
+                                    
+                                    li
+                                        p Проведение презентаций как для конкретных партнёров / заказчиков, так и на публичных мероприятиях (конференции, форумы, семинары, круглые столы и т.д.);
+                                    
+                                    li
+                                        p Разработка мотивационных моделей для партнеров;
+                                    
+                                    li
+                                        p Поддержка и контроль выполнения политики лицензирования, помощь в составлении коммерческого предложения, консультация по лицензированию, консультации по маркетинговым активностям, проведение вебинаров, проведение презентаций по лицензированию.
+                                
+                                p
+                                    strong Навыки:
+
+                                ul
+                                    li
+                                        p Опыт работы с IT и Телеком от 3 лет
+
+                                    li
+                                        p Знание рынка СНГ
+
+                                    li
+                                        p Опыт работы с крупнейшими российскими системными интеграторами
+
+                                    li
+                                        p Широкая эрудиция в области современных ИТ-технологий
+
+                                    li
+                                        p Умение читать спецификации ИТ-оборудования
+
+                                    li
+                                        p Умение находить общий язык с сотрудниками, бизнес-партнерами и клиентами на различных уровнях (от инженера до ген.директора).
+                                
+                                p
+                                    strong Кто нам нужен:
+
+                                ul
+                                    li
+                                        p Активные, целеустремленные, трудолюбивые, самоорганизованные люди
+                                    li
+                                        p Коммуникабельные, обладающие грамотной речью и настойчивостью переговорщики.
+                                        
+                                p
+                                    strong Мы предлагаем:
+
+                                ul
+                                    li
+                                        strong Уверенность в будущем. 
+                                        | Мы чтим ТК РФ: у нас стабильный и прозрачный "белый" доход.
+                                    li
+                                        strong Добираться легко. 
+                                        | Мы находимся в одной минуте от м. Нагатинская или 10 минутах от МЦК Верхние Котлы.
+                                    li
+                                        strong Забота о здоровье
+                                        | . Оформим полис ДМС со стоматологией
+
+                            section.feedback.feedback--loner
+                                .feedback__body
+                                    form.form.feedback__form(action="/" method="/")
+                                        .feedback__form-header
+                                            h3.feedback__title Откликнуться
+
+                                        .feedback__form-content
+                                            .form__group
+                                                .input
+                                                    input.input__elem(type="text" placeholder="Имя" name="feedback-response-name")
+
+                                                .input
+                                                    input.input__elem(type="text" placeholder="Email" name="feedback-response-email")
+
+                                            .form__group
+                                                .input
+                                                    input.input__elem(type="text" placeholder="Телефон" name="feedback-response-phone")
+
+                                                .input
+                                                    input.input__elem(type="text" placeholder="Город" name="feedback-response-city")
+
+                            
+                                            .input
+                                                input(type="hidden" id="MAX_FILE_SIZE" name="MAX_FILE_SIZE" value="300000")
+                                                input.input__filedrag(type="file" id="fileselect" name="feedback-response-file" multiple="multiple")
+
+                                                label.input__filedrag-label#filedrag(for="fileselect") Выберите файл или перетащите в поле <br> DОС, PDF до 5 Мбайт
+
+                                                .input__filedrag-messages#messages
+
+                                        .feedback__form-footer
+                                            button.btn.btn--accent(type="button" aria-label="Send form") Отправить запрос
+
+                                            .input
+                                                input.input__checkbox#feedback-response-agree(type="checkbox" name="feedback-response-agree" required)
+                                                label.input__checkbox-label.form__agree(for="feedback-response-agree") Даю согласие на обработку &nbsp<a href="#">персональных данных</a>
+
+                    .aside.aside--sticky.hide-lg-down
+                        .job-post__card
+                            .job-post__card-title Навигация по вакансии
+
+                            .job-post__contents
+                                ul.job-post__contents-list
+                                    li.job-post__contents-item.job-post__contents-item--active
+                                        a.job-post__contents-link(href="#job-post-desc") Описание
+
+                                    li.job-post__contents-item
+                                        a.job-post__contents-link(href="#job-post-conditions") Условия
+
+                                    li.job-post__contents-item
+                                        a.job-post__contents-link(href="#job-post-response") Обязанности
+
+                                    li.job-post__contents-item
+                                        a.job-post__contents-link(href="#job-post-request") Требования
+
+                                    li.job-post__contents-item
+                                        a.job-post__contents-link(href="#job-post-contacts") Контакты
+
+                        .job-post__card
+                            ul.job-post__data
+                                li Заработная плата: <span>От 150 000 ₽</span>
+
+                        .job-post__btn-feedback
+                            a.btn.btn--accent.btn--doc(href="#") Откликнуться
+
+
+
+
+                                    
+
+
+            
+            
+
+
+                
+
+    
+

@@ -1,0 +1,423 @@
+extends layouts/layout.pug
+
+block title
+    title О компании | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link О компании
+
+    .main-block
+        section.section
+            .container
+                .ecosystem__
+                    .ecosystem__body.row.justify-content-between
+                        .ecosystem__info.order-2.order-lg-1.col-12.col-lg-6
+                            h1.ecosystem__title О группе компаний "Астра"
+                            .ecosystem__desc ГК «Астра» формирует стек системного и прикладного ПО, а также сервисы, которые комплексно закроют потребности заказчиков при создании и проектировании инфраструктур. <br><br> В основе экосистемы — Astra Linux, защищённая, масштабируемая и оптимизированная для высоких нагрузок сертифицированная российская ОС. Также в портфеле вендора — средства виртуализации, управления доменом и резервного копирования, VDI, инфраструктурные платформы, корпоративная почта и мобильное рабочее место. <br><br> Одно из ключевых направлений работы — средства автоматизированного развёртывания для создания масштабируемых ИТ-систем и решения сложных архитектурных задач с привлечением минимума ресурсов. Программный стек ГК «Астра» быстро растёт за счёт собственной разработки и инвестиций в команды с наработками в сфере систем мониторинга ИТ-ландшафта, контейнеризации, инструментов для миграции, средств управления данными, пользователями и ресурсами. <br><br> Мы создаём надёжную среду для множества прикладных задач.
+
+                        .ecosystem__img--wrap.order-1.order-lg-2.col-12.col-lg-5
+                            img.ecosystem__img.m-auto(src="img/content/ecosystem/ecosystem-main.webp" width="466" height="631" alt="Экосистема продуктов ГК «Астра»")
+
+        section.section.section-bg-gray
+            .container
+                .text-dropdown
+                    .text-dropdown__row.row.hidden-content
+                        .text-dropdown__col.col-12.col-lg-6
+                            p.text-dropdown__desc Группа компаний «Астра» — один из лидеров российского рынка информационных технологий в области разработки программного обеспечения (ПО) и средств защиты информации (СЗИ). Основана в 2008 году. В команде сегодня трудится более 1000 высокопрофессиональных разработчиков и сотрудников техподдержки, а программные продукты ГК «Астра» используются в государственных и коммерческих организациях со штатом  от 5 до 50 000 человек, в госкорпорациях и концернах, на промышленных предприятиях и объектах критической информационной инфраструктуры.
+
+                        .text-dropdown__col.col-12.col-lg-6
+                            .text-dropdown__img--wrap
+                                img.text-dropdown__img(src="img/content/about/main/item_1.webp" width="614" height="316" alt="Название картинки")
+
+                        .text-dropdown__col.col-12.col-lg-6
+                            ul.list-dots-accent
+                                li Astra Linux — отказоустойчивая защищённая ОС, сертифицированная всеми регуляторами, рекомендована для работы с любыми конфиденциальными данными, включая гостайну «особой важности»;
+                                li «Средства виртуализации „Брест“ — программный комплекс для создания и управления виртуальными структурами любой сложности с применением средств защиты Astra Linux Special Edition;
+                                li Termidesk — комплексное решение для создания инфраструктур виртуальных рабочих мест (VDI) любого масштаба;
+                                li RuBackup — профессиональные средства резервного копирования;
+                                li WorksPad — программный комплекс для создания защищённых мобильных рабочих мест;
+
+                        .text-dropdown__col.col-12.col-lg-6
+                            ul.list-dots-accent
+                                li RuPost — клиент-серверный продукт для организации и администрирования корпоративной почты;
+                                li ALD Pro — программный комплекс для управления доменом;
+                                li DCImanager — платформа для управления физической мультивендорной ИТ-инфраструктурой;
+                                li VMmanager — платформа для построения и управления облачной виртуальной инфраструктурой;
+                                li BILLmanager — платформа для автоматизации выдачи сервисов;
+                                li Tantor — СУБД и полнофункциональная модульная платформа администрирования и мониторинга кластеров PostgreSQL с единым и удобным графическим интерфейсом.
+                                
+                        .text-dropdown__col.col-12.col-lg-6
+                            .text-dropdown__quote Все решения вендора включены в «Единый реестр российских программ для ЭВМ и баз данных» Минцифры.
+                            p.text-dropdown__desc ГК «Астра» работает над обеспечением совместимости своего софта с продуктами других ИТ-производителей и создала широчайшую на российском рынке экосистему, куда вошли более 5000 востребованных собственных и партнёрских программных и аппаратных решений. <br><br> ГК «Астра» активно участвует в реализации программы импортозамещения. На базе программного стека компании заказчики эффективно пересобирают инфраструктуры, обеспечивают независимость и безопасность всех критически важных сервисов. ОС Astra Linux и другие продукты вендора применяются на промышленных предприятиях и объектах КИИ, в госкорпорациях и концернах, в органах исполнительной власти, медицинских, образовательных и других государственных и частных организациях.
+
+                        .text-dropdown__col.col-12.col-lg-6
+                            .text-dropdown__img--wrap
+                                img.text-dropdown__img(src="img/content/about/main/item_2.webp" width="614" height="426" alt="Название картинки")
+                    
+                    .btn--block
+                        button.btn.btn--reset.btn--more.js-show-more(aria-label="Load more" data-text="Подробнее" data-toggle-text="Скрыть") Подробнее
+
+        section.hero.hero--bg.hero--reverse
+            .container
+                .hero__body
+                    .hero__img--wrap.col-md-6
+                        img.hero__img(src="img/content/hero/about-mission.webp" width="589" height="540" alt="Миссия")
+
+                    .hero__info.col-md-6
+                        h2.hero__title Миссия
+                        p.hero__desc Обеспечение технологического суверенитета России и её лидерства на мировом ИТ-рынке путём разработки базовых информационных технологий, общего и специального программного обеспечения и формирования на их основе масштабной экосистемы российского ПО.
+
+        section.hero
+            .container
+                .hero__body.align-items-center
+                    .hero__img--wrap.col-md-6
+                        img.hero__img(src="img/content/hero/about-strategy.webp" width="586" height="391" alt="Полезные материалы")
+
+                    .hero__info.col-md-5
+                        h2.hero__title Cтратегия
+                        p.hero__desc Стратегическая цель — 2030 году стать глобальным вендором системного и инфраструктурного ПО, который обеспечивает потребности ИТ-рынка в специализированных и общих решениях и формирует единые стандарты этого рынка в Российской Федерации
+
+        section.about-history
+            .container
+                .about-history__body
+                    
+
+        section.about-team
+            .container
+                .title__block
+                    h2 Наша команда
+
+                .about-team__body
+                    .about-team__list.row.hidden-content
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_1.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Илья Сивцев
+                                    .about-team__item-post Генеральный директор
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_2.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Юрий Соснин
+                                    .about-team__item-post Зам. генерального директора
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_3.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Антон Шмаков
+                                    .about-team__item-post Технический директор ГК «Астра»
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_4.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Антон Бугрецов
+                                    .about-team__item-post Коммерческий директор
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_1.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Илья Сивцев
+                                    .about-team__item-post Генеральный директор
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_2.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Юрий Соснин
+                                    .about-team__item-post Зам. генерального директора
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_3.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Антон Шмаков
+                                    .about-team__item-post Технический директор ГК «Астра»
+
+                        .about-team__item.col-6.col-md-4.col-lg-3
+                            .about-team__item--inner
+                                .about-team__item-img--wrap
+                                    img.about-team__item-img(src="img/content/team/item_4.webp" width="296" height="320" alt="Имя")
+
+                                .about-team__item-info
+                                    .about-team__item-name Антон Бугрецов
+                                    .about-team__item-post Коммерческий директор
+
+                    .btn--block.justify-content-center.about-team__more
+                        button.btn.btn--reset.btn--more-accent.js-show-more(aria-label="Load more" data-text="Вся команда" data-toggle-text="Скрыть") Вся команда
+
+        section.section
+            .container
+                .title__block
+                    h2 Наши клиенты
+
+                .partners.partners--carousel-mobile
+                    .partners__list
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_1.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title Банк «ВТБ»
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_2.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title Росатом
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_3.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title Газпром
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_4.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title Ростех
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_5.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title РЖД
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_6.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title ПАО «Газпром нефть»
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_7.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title «Промсвязьбанк»
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_8.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title «Росэнергоатом»
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_9.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title ПАО <br> «СберБанк России»
+
+                        .partners__item
+                            .partners__item--body
+                                .partners__item-img--wrap
+                                    img.partners__item-img(src="img/content/companies/item_11.webp" width="132" height="112" alt="Название компании")
+
+                                .partners__item-title «Объединённая судостроительная корпорация»
+
+        section.section.about-assets.section-bg-dark
+            .container
+                .title__block
+                    h2 Нематериальные активы
+                    p Интеллектуальная собственность компании охраняется в соответствии <br> с законодательством Российской Федерации. По состоянию на июль 2022 года <br> нематериальные активы включают:
+
+                .about-assets__body
+                    .about-assets__list.row
+                        .about-assets__item.col-12.col-sm-6.col-lg-4
+                            .about-assets__item--inner
+                                .about-assets__item-title 37
+                                .about-assets__item-desc Свидетельств о государственной регистрации программы для ЭВМ
+
+                        .about-assets__item.col-12.col-sm-6.col-lg-4
+                            .about-assets__item--inner
+                                .about-assets__item-title 7
+                                .about-assets__item-desc Товарных знаков
+
+                        .about-assets__item.col-12.col-sm-6.col-lg-4
+                            .about-assets__item--inner
+                                .about-assets__item-title 1
+                                .about-assets__item-desc Патент на изобретение
+
+        section.section
+            .container
+                .faq-links
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-md-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_1.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Охрана труда и аттестация рабочих мест
+
+                            .faq-links__item.col-12.col-md-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_2.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Инвесторам и акционерам
+
+                            .faq-links__item.col-12.col-md-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_3.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Документы компании
+
+                            .faq-links__item.col-12.col-md-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_4.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Партнёрам (Поставщикам)
+
+        section.section
+            .container
+                .contacts
+                    .contacts__body
+                        .contacts__main.row
+                            .contacts__main-info.col-12.col-lg-5
+                                h2.contacts__title Контакты
+                                .contacts__desc Вы можете связаться с нами удобным для вас способом:
+
+                                .contacts__data.contacts__data
+                                    a.contacts__data-phone.contacts__data-phone--huge(href="tel:+7 495 369-48-16") +7 495 369-48-16
+                                    
+                                    ul.contacts__data-address.list-reset.hidden-content
+                                        li 117105, Москва, Варшавское шоссе, д. 26;
+                                        li Второй адрес
+                                        li Третий адрес
+                                        li Четвертый адрес
+
+                                    .btn--block.contacts__more
+                                        button.btn.btn--reset.btn--more.js-show-more(aria-label="Load more" data-text="Показать региональные офисы" data-toggle-text="Скрыть") Показать региональные офисы
+
+                            .contacts__main-map.col-12.col-lg-7
+                                #contacts__map.contacts__map
+
+                        .contacts__cards.row
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:info@astralinux.ru")
+                                    .contacts__card-title ГОЛОВНОЙ ОФИС
+                                    .contacts__card-desc info@astralinux.ru
+
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:sales@astralinux.ru")
+                                    .contacts__card-title ОТДЕЛ ПРОДАЖ
+                                    .contacts__card-desc sales@astralinux.ru
+
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:education@astralinux.ru")
+                                    .contacts__card-title ДЕПАРТАМЕНТ ОБРАЗОВАНИЯ
+                                    .contacts__card-desc education@astralinux.ru
+
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:partner@astralinux.ru")
+                                    .contacts__card-title ПАРТНЁРCКИЙ ОТДЕЛ
+                                    .contacts__card-desc partner@astralinux.ru
+
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:support.astralinux.ru")
+                                    .contacts__card-title ТЕХНИЧЕСКАЯ ПОДДЕРЖКА <br> Единый портал поддержки Astra Linux
+                                    .contacts__card-desc support.astralinux.ru
+
+                            .contacts__card.contacts__card--email.col-12.col-sm-6.col-lg-4
+                                a.contacts__card--inner(href="mailto:readyfor@astralinux.ru")
+                                    .contacts__card-title Участие в программе <br> Redy For Astra Linux
+                                    .contacts__card-desc readyfor@astralinux.ru
+
+        section.feedback
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Связаться с нами
+
+                        .feedback__form-content
+                            .form__desc Выберите тему обращения:
+
+                            .feedback__tags
+                                .feedback__tags-list
+                                    .input
+                                        input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                            .form__desc Данные для связи:
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                            .input
+                                textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                            p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

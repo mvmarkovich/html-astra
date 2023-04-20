@@ -1,0 +1,69 @@
+extends layouts/layout.pug
+
+block title
+    title Вакансия | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career.html") Карьера в компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="career-vacancies.html") Вакансии
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Вакансия
+
+    .main-block
+        .career-vacansies
+            .container
+                .career-vacansies__nav
+                    .career-vacansies__nav-head
+                        h1 Вакансии <span class="search-result-value">0</span>
+
+                        form.career-vacansies__nav-search(action="/" method="/")
+                            input.search__form-input(type="text" placeholder="Ввести" value="Програм" required)
+                            button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+        section.career-error
+            .container
+                .career-error__body
+                    h2.career-error__title Упс! По введеным данным ничего не найдено…
+                    .career-error__desc Вы уверены в правильности введённого текста? Если да, то к сожалению у нас нет предложений по данному запросу, но мы работаем над этим!
+
+                    a.link.link--accent.link--arrow-left(href="career-vacancies.html") Обратно к вакансиям
+
+        section.section.section-panel
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h2.section-panel__title Нет подходящей вакансии?
+                        p.section-panel__desc <strong>Хочешь стать частью команды Astra, но не нашёл подходящей для себя вакансии?</strong> <br><br> Напиши о себе, в каком направлении хочешь развиваться, не забудь про ссылки на свои проекты, портфолио и аккаунты в социальных сетях, хотим узнать тебя поближе.
+
+                        .btn--block
+                            button.btn.btn--border-light.btn--doc(aria-label="Open modal") Оставить резюме
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/section-panel/bg-3.svg" width="438" height="630" alt="Обратная связь карьеры")
+
+
+
+                                    
+
+
+            
+            
+
+
+                
+
+    
+

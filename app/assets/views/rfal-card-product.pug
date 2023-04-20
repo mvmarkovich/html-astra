@@ -1,0 +1,406 @@
+extends layouts/layout.pug
+
+block title
+    title RFAL Страница оборудования | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal.html") Ready For Astra Linux 
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal-catalog.html") Совместимое оборудование
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link МФУ ALTALINK B8045
+
+    .main-block
+        .container
+            .main-aside-container
+                .main-container
+                    .card-product
+                        .card-product__row
+                            .card-product__media
+                                .card-product__img--wrap
+                                    img.card-product__img(src="img/content/card-product/item_1.webp" width="380" height="380" alt="Название продукта")
+
+                            .card-product__info
+                                h1.card-product__title МФУ ALTALINK B8045
+
+                                .card-product__table
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Совместимо с:
+
+                                        .card-product__table-col
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Уровень проверки:
+                                            
+                                        .card-product__table-col
+                                            .card-product__table-col-desc Сертифицировано
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Плоттер:
+                                            
+                                        .card-product__table-col
+                                            .card-product__table-col-desc Нет
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Подсистемы безопасности:
+                                            
+                                        .card-product__table-col
+                                            .card-product__table-col-desc Замкнутая программная среда (ЗПС) Мандатный контроль целостности (МКЦ)
+
+                                    .card-product__table-row
+                                        .card-product__table-col
+                                            .card-product__table-col-title Ссылка на дистрибутив ПО:
+                                            
+                                        .card-product__table-col
+                                            a.card-product__table-col-desc(href="#" target="_blank") nas01.astralinux.ru
+
+                                .card-product__companies
+                                    .card-product__companies-title Компания производитель:
+
+                                    .card-product__companies-list
+                                        .card-product__companies-img--wrap
+                                            img.card-product__companies-img(src="img/content/card-product/company_1.webp" width="108" height="27" alt="Производитель")
+
+                                        .card-product__companies-img--wrap
+                                            img.card-product__companies-img(src="img/content/card-product/company_2.webp" width="131" height="28" alt="Производитель")
+
+                    .section
+                        .row
+                            .col-12.col-lg-3
+                                .title__block
+                                    h4 Сертификаты и протоколы
+
+                            .col-12.col-lg-9
+                                .materials
+                                    .materials__list
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-title Сертификат 2.12 RDY-2508.pdf
+                                                a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-title Протокол 2.12 RDY-2508.odt
+                                                a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-title Сертификат RDY-2507.pdf
+                                                a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-title Протокол RDY-2507.odt
+                                                a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                    section.catalog(data-view="catalog-blocks")
+                        .title__block
+                            h4 Другое оборудование совместимое с этой версией
+
+                        .catalog__list.catalog--slider
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_1.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Altalink B8045
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                                        
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_2.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Принтер Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_3.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Моноблок Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_5.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Samsung
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_6.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Сервер
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 1.6.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_7.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_8.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Ноутбук Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                    section.catalog(data-view="catalog-blocks")
+                        .title__block
+                            h4 Возможно вы так же ищитие
+
+                        .catalog__list.catalog--slider
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_1.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Altalink B8045
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                                        
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_2.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Принтер Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_3.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Моноблок Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Рабочая станция HP
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_5.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Samsung
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_6.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Сервер
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 1.6.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_7.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title МФУ Canon
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                            .catalog__item
+                                a.catalog__item--inner(href="rfal-product-detail.html")
+                                    .catalog__item-preview
+                                        .catalog__item-img--wrap
+                                            img.catalog__item-img(src="img/content/rfal-catalog/item_8.webp" width="187" height="187" alt="Продукт")
+
+                                        .catalog__item-info
+                                            .catalog__item-title Ноутбук Acer
+                        
+                                    .catalog__item-versions
+                                        .catalog__item-versions-preview Версии
+
+                                        .catalog__item-versions-body
+                                            .catalog__item-versions-list
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+        
+        
+
+
+
+                
+
+    
+

@@ -1,0 +1,110 @@
+.hero
+    .container
+        padding: @md-down 0
+
+    &__body
+        display: flex
+        flex-direction: column @lg row
+        justify-content: space-between
+
+    &__img
+        position: @lg-down absolute 0 null null 0
+        width: 100%
+
+        &--wrap
+            position: relative
+            padding: 60% 0 0 @lg 0
+            order: @lg-down 1
+            width: @lg-down 100%
+            flex: @lg-down auto
+            max-width: @lg-down 100%
+            overflow: hidden
+
+    &__info
+        order: @lg-down 2
+        padding: @lg-down 24px 16px
+        width: @lg-down 100%
+        flex: @lg-down auto
+        max-width: @lg-down 100%
+
+        .btn--block
+            margin: 32px 0 0
+
+            .btn
+                width: @md-down 100%
+
+        * >
+            &:last-child
+                margin-bottom: 0
+
+    h2
+        margin: 0 0 16px @sm 0 0 24px @md 0 0 32px
+
+    h3
+        margin: 0 0 24px
+        text: @md-down 20px
+
+    .hero__desc
+        text: 400 14px 1.5 @md 16px
+
+    &__title
+        a
+            color: #fff
+
+    &--reverse
+        ^&__body
+            flex-direction: @lg row-reverse
+        
+        ^&__info
+            padding: @lg 64px 0
+
+    &--bg
+        color: #fff
+
+        ^&__img
+            height: 100%
+            object-fit: cover
+
+        ^&__info
+            background: #003A5C
+            padding: 32px 16px 48px @md 48px 36px 48px 24px @lg 80px 64px 80px 48px
+
+            display: @sm flex
+            flex-direction: @sm column
+            justify-content: @sm center
+
+            .btn--block
+                margin: 48px 0 0
+
+            .list-dots
+                li
+                    color: #fff
+                    padding-left: 16px 
+
+                    &:before
+                        background: #fff
+                        size: 4px
+                        min-width: 4px
+
+        ^&__title, ^&__desc
+            color: #fff
+
+        &.hero--reverse
+            ^^&__info
+                padding-left: @lg 80px
+
+    &--wide
+        ^&__body
+            margin: @xl 0 -80px
+            
+        ^&__info
+            padding: 32px 16px 48px @sm 48px 36px 48px 24px @lg 80px 96px 80px 40px
+
+    &--simple
+        ^&__info
+            max-width: 730px
+
+.rfal-hero
+    .btn
+        white-space: pre-wrap
+        padding: 4px *

@@ -1,0 +1,215 @@
+.search
+    padding: 0 16px
+
+    &--popup
+        position: fixed
+        top: 0 @md 65px
+        bottom: 0
+        left: 0
+        right: 0
+        background: #fff
+        z-index: 997
+        padding: 12px 24px 32px @md 40px 24px
+        overflow: auto
+        display: none
+        margin: 0
+
+    &--static
+        margin: 40px 0 @md 40px 0 64px @lg 80px 0 64px
+        
+        ^&__head
+            text-align: center
+
+        h1
+            margin: 0
+            width: 100%
+
+    .container
+        max-width: 1062px 
+        padding: 0
+
+    &__head
+        margin: 0 0 16px @md 0 0 32px
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+        h1
+            margin: 0
+
+    &__title
+        text: #040C11 700 24px 1.6 @md 20px
+        text-transform: @md uppercase
+
+    &__form
+        position: relative
+        display: flex
+        flex-wrap: nowrap
+        margin: 0 0 24px @sm 0 0 32px @md 0 0 40px
+
+        &-input
+            @extend .input__elem
+            padding: * 56px * *
+
+        &-btn
+            position: absolute
+            top: 0
+            right: 0
+
+    &__body
+        display: @md flex
+        align-items: @md flex-start
+        justify-content: @md space-between
+
+    &__aside
+        margin: 0 0 40px @md 0 32px 0 0 @lg 0 64px 0 0
+        width: 100% @md 210px
+        min-width: @md 210px
+
+        &-title
+            text: #040C11 700 12px 
+            margin: 0 0 16px
+
+        &-list
+            @extend .list-reset
+
+        &-item
+            margin: 0 0 16px
+
+            &:last-child
+                margin: 0
+
+        &-link
+            color: #6A7E95
+            text: 400 14px 1.5
+
+            span
+                color: #071C27
+
+            &:hover
+                span
+                    color: #0079C1
+
+    &__categories
+        &-list
+            @extend .list-reset
+            display: @md flex
+            flex-direction: @md column
+            flex-wrap: @md wrap
+            max-height: @md 380px @lg 320px
+            margin: @md 0 -16px -12px
+
+        &-item
+            margin: 0 0 12px
+            display: inline-flex
+            width: 100% @md 50%
+            padding: @md 0 16px
+
+            &:before
+                content: ''
+                size: 40px 1px
+                min-width: 40px
+                background: #82D0FF
+                display: inline-flex
+                margin: 10px 24px 0 0
+
+            &:last-child
+                margin: @md-down 0
+
+        &-link
+            text: #4A5A68 400 14px 1.5
+
+    &__result
+        max-width: @md 640px
+        width: 100%
+
+        &-cards
+            display: flex
+            flex-wrap: wrap
+            margin: @md 0 -16px -32px
+
+        &-card
+            margin: 0 0 16px @sm 0 0 24px @md 0 0 32px
+            padding: @md-down 0
+
+            a:not([class])
+                color: #6A7E95
+                text: 400 14px 1.5
+
+                b, strong
+                    color: #071C27
+                    font-weight: 400
+                    transition: .2s
+
+                &:hover
+                    color: #0079C1
+
+                    b, strong
+                        color: #0079C1
+
+            &--body
+                background: #F2F5F7
+                padding: 24px @md 24px 32px
+                display: block
+                height: 100%
+
+                &:hover
+                    ^^&-title
+                        color: #0079C1
+
+            &-img
+                @extend .img-cover
+
+                &--wrap
+                    @extend .img-cover-wrapper
+                    padding: 67.3% 0 0
+                    margin: 0 0 24px
+
+            &-title
+                text: #071C27 700 14px 1.5
+                margin: 0 0 4px
+
+            &-desc
+                text: #6A7E95 400 12px 
+                margin: 0
+
+            &:last-child
+                margin: @md-down 0
+
+    &__close
+        position: @md absolute
+        top: @md 24px
+        right: @md 24px
+
+.search-result-value
+    position: relative
+    color: #fff
+    text: 400 12px 1.3
+    padding: 5px 8px
+    display: inline
+    background: #0079C1
+    border-radius: 30px
+    top: -3px @md -20px
+
+.search-result-subgroup
+    padding: 56px 0 0 @md 64px 0 0 @lg 80px 0 0
+    border-top: 1px solid #D5DADD
+
+h3 
+    .search-result-value
+        top: -6px @md -12px
+
+.search-result-offer
+    .search__result-card
+        margin: 0 0 16px
+        flex: 0 0 100% @sm 0 0 50% @lg 0 0 33.3%
+        max-width: 100% @sm 50% @lg 33.3%
+
+.search-page
+    .search__form
+        max-width: 1062px
+        margin: * auto
+
+.search-popup
+    .search__result-card-img--wrap
+        padding: 58% 0 0

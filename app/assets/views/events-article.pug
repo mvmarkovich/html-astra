@@ -1,0 +1,141 @@
+extends layouts/layout.pug
+
+block title
+    title Предстоящие мероприятия | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="events.html") Мероприятия
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="events-future.html") Предстоящие мероприятия
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Мероприятие
+
+    .page-title
+        .container
+            h1 АСТРАКОНФ-2022: ИТ-ТРАНСФОРМАЦИЯ
+
+    .main-block
+        .article
+            .container
+                .article__panel
+                    .briefly__row
+                        span.briefly.briefly--date 22 августа 2022
+                        span.briefly.briefly--loc г. Москва, Ленинградский проспект, д. 36 стр. 33, Петровский Парк Конгресс Отель
+
+                .article__desc-anounce
+                    p ЕЖЕГОДНАЯ ПРАКТИЧЕСКАЯ КОНФЕРЕНЦИЯ
+                    p Практическая конференция для представителей госсектора и бизнеса, посвящённая цифровизации и импортозамещению в сфере ИТ. Призвана продемонстрировать уже проверенные, доказавшие свою эффективность решения и практические кейсы по миграции с зарубежных продуктов на отечественные, а также представить проекты, реализованные на базе отечественной операционной системы Astra Linux. 
+                    p ФОРМАТ — офлайн-МЕРОПРИЯТИЕ С ТРАНСЛЯЦИЕЙ В ПРЯМОМ ЭФИРЕ.
+
+                .article__content
+                    .article__preview
+                        .article__preview-slider
+                            .article__preview-item
+                                .article__preview-item--body
+                                    a.article__preview-item-img--wrap(href="#")
+                                        img.article__preview-item-img(src="img/content/event-article/preview.webp" width="1280" height="450" alt="Название ивента")
+                            
+                                        button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                                    p.article__preview-item-caption.live Трансляция — Секция 1. Практика импортозамещения
+
+                            .article__preview-item
+                                .article__preview-item--body
+                                    a.article__preview-item-img--wrap
+                                        img.article__preview-item-img(src="img/content/event-article/preview.webp" width="1280" height="450" alt="Название ивента")
+                            
+                                        button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                                    p.article__preview-item-caption.live Трансляция — Секция 2. Практика импортозамещения
+
+                            .article__preview-item
+                                a.article__preview-item--body
+                                    a.article__preview-item-img--wrap(href="#")
+                                        img.article__preview-item-img(src="img/content/event-article/preview.webp" width="1280" height="450" alt="Название ивента")
+                            
+                                        button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                                p.article__preview-item-caption.live Трансляция — Секция 3. Практика импортозамещения
+
+                            .article__preview-item
+                                .article__preview-item--body
+                                    a.article__preview-item-img--wrap(href="#")
+                                        img.article__preview-item-img(src="img/content/event-article/preview.webp" width="1280" height="450" alt="Название ивента")
+
+                                        button.btn.btn--reset.btn--play(aria-label="Play video")
+
+                                    p.article__preview-item-caption.live Трансляция — Секция 4. Практика импортозамещения
+
+                        .slider-dots-count
+
+        include blocks/event-article-program
+
+        include blocks/partners-slider
+
+
+
+block scripts
+    script(type='text/javascript').
+        document.querySelector('.program__menu-list').firstElementChild.classList.add('program__menu-btn--active');
+        document.querySelector('.program__content').firstElementChild.classList.add('program__section--active');
+
+        let listSpeakers = document.querySelectorAll('.program__timeline-speakers-list');
+
+        for (let i = 0; i < listSpeakers.length; ++i) {
+            console.log(listSpeakers[i].children.length);
+
+            if (listSpeakers[i].children.length > 3) {
+                let count = listSpeakers[i].children.length - 2;
+                let countDOM = document.createElement('span');
+
+                countDOM.className = 'program__timeline-speakers-other';
+                countDOM.innerHTML = '+' + count;
+                listSpeakers[i].parentElement.append(countDOM);
+            }
+        }
+
+        let tabTriggerBtns = document.querySelectorAll('[data-active-tab]');
+
+        tabTriggerBtns.forEach(function(tabTriggerBtn, index){
+            tabTriggerBtn.addEventListener('click', function(){
+                let currentTabData = document.querySelector('[data-tab="' + this.dataset.activeTab + '"]');
+
+                document.querySelector('.program__section--active').classList.remove('program__section--active');
+                document.querySelector('.program__menu-btn--active').classList.remove('program__menu-btn--active');
+
+                currentTabData.classList.add('program__section--active');
+                this.classList.add('program__menu-btn--active');
+            });
+        });
+
+        let timelineToggleBtn = document.getElementsByClassName('program__timeline-toggle-btn');
+
+        for (i = 0; i < timelineToggleBtn.length; i++) {
+            timelineToggleBtn[i].addEventListener('click', function() {
+                let sectionCol = this.parentElement;
+
+                this.classList.toggle('is-active');
+                sectionCol.classList.toggle('program__timeline--open');
+            });
+        }
+
+        
+
+
+        
+                        
+
+    
+

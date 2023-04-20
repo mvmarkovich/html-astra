@@ -1,0 +1,445 @@
+extends layouts/layout.pug
+
+block title
+    title Карьера в компании | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html")  О компании
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Карьера в компании
+
+    .page-title
+        .container
+            h1 Меняем ход IT
+            p Создаем экосистему базового программного обеспечения: от защищенной операционной системы и виртуализации до систем коммуникации. <br><br> Наши интересы и компетенции в сфере развития ИТ-индустрии постоянно растут. Стратегическая цель — к 2030 году стать национальным производителем программных продуктов № 1.
+
+            .btn--block
+                a.btn.btn--border.btn--person-after(href="#") Хочу в команду!
+
+    .main-block
+        section.career-features
+            .container
+                .title__block.mb-5
+                    h2 Почему именно мы?
+
+                .career-features__body
+                    .career-features__list.row
+                        .career-features__item
+                            .career-features__item--inner
+                                .career-features__item-img--wrap
+                                    img.career-features__item-img(src="img/content/career/career-features/item_1.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                .career-features__item-info
+                                    .career-features__item-title Заряженная команда
+                                    p.career-features__item-desc Нам нравится решать нетривиальные задачи, делиться опытом и драйвом. Мы растем, но всегда сохраняем ламповость маленькой компании.
+
+                        .career-features__item
+                            .career-features__item--inner
+                                .career-features__item-img--wrap
+                                    img.career-features__item-img(src="img/content/career/career-features/item_2.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                .career-features__item-info
+                                    .career-features__item-title Комфорт — наше все
+                                    p.career-features__item-desc Рабочее место – ваша территория свободы самовыражения и творчества. Кастомизируйте ноутбуки, приносите любимые вещи и делайте его уютнее для себя!
+
+                        .career-features__item
+                            .career-features__item--inner
+                                .career-features__item-img--wrap
+                                    img.career-features__item-img(src="img/content/career/career-features/item_3.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                .career-features__item-info
+                                    .career-features__item-title Все для работы
+                                    p.career-features__item-desc Жадничать и экономить на спичках — не наш метод. Всем, что нужно для работы, обеспечим, где бы ты ни был — в Москве или на Камчатке. Можешь быть уверен, что тебе дадут современную технику. Твой комфорт – залог продуктивной работы. Так что не подведи!
+
+                        .career-features__item
+                            .career-features__item--inner
+                                .career-features__item-img--wrap
+                                    img.career-features__item-img(src="img/content/career/career-features/item_4.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                .career-features__item-info
+                                    .career-features__item-title Развитие в приоритете
+                                    p.career-features__item-desc Мы стремимся развивать нашу компанию, продукты и прокачивать свои знания и опыт, поэтому используем возможности внешнего обучения и посещения конференций за счет компании.
+
+                        .career-features__item
+                            .career-features__item--inner
+                                .career-features__item-img--wrap
+                                    img.career-features__item-img(src="img/content/career/career-features/item_5.svg" width="36" height="36" alt="Тайтл преимущества")
+
+                                .career-features__item-info
+                                    .career-features__item-title График в твоем ритме
+                                    p.career-features__item-desc Мы здесь ради результата, а не процесса. У нас не принято стоять с секундомером на проходной, а вот пунктуальность на общих встречах мы ценим, так как бережно и с большим уважением относимся коллегам и их времени.
+
+                    .info-numbers
+                        .info-numbers__list.row
+                            .info-numbers__item.col-lg-4
+                                .info-numbers__item--inner
+                                    .info-numbers__item-value 1000+
+                                    .info-numbers__item-title сотрудников
+                                    p.info-numbers__item-desc в команде
+
+                            .info-numbers__item.col-lg-4
+                                .info-numbers__item--inner
+                                    .info-numbers__item-value 12000+
+                                    .info-numbers__item-title компаний
+                                    p.info-numbers__item-desc клиентов
+
+                            .info-numbers__item.col-lg-4
+                                .info-numbers__item--inner
+                                    .info-numbers__item-value 1,5 млн+
+                                    .info-numbers__item-title ИНСТАЛЯЦИЙ
+                                    p.info-numbers__item-desc флагманского продукта – ОС Astra Linux
+
+                            .info-numbers__item.col-lg-12
+                                .info-numbers__item--inner
+                                    .info-numbers__item-value 5 000
+                                    .info-numbers__item-title партнерских продуктов
+                                    p.info-numbers__item-desc в экосистеме совместимых продуктов
+
+        section.career-ecosystem
+            .container
+                .title__block.mb-5
+                    h2 Наши продукты
+
+                .career-ecosystem__body
+                    .career-ecosystem__slider
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+                        .career-ecosystem__item
+                            .career-ecosystem__item--inner
+                                .career-ecosystem__item-img--wrap
+                                    img.career-ecosystem__item-img(src="img/content/ecosystem/item_2.svg" width="100" height="40" alt="Название продукта")
+
+        section.career-gallery
+            .container
+                .title__block.mb-5
+                    h2 Астра — компания с большой мечтой
+                    p В «Астре» собрались люди, объединенные стремлением создавать по-настоящему важные для страны ИТ-решения. Здесь мы делимся опытом друг с другом, разрабатываем дорожные карты проектов, обсуждаем нетривиальные задачи. «Астра» - это не просто место работы, это часть нашей жизни и большой ИТ-истории, которую мы создаем вместе. Листай карусель, чтобы погрузиться в нашу атмосферу.
+
+                .career-gallery__body
+                    .career-gallery__list.row
+                        .career-gallery-img--wrap.col-12.col-sm-6.col-lg-4
+                            img.career-gallery-img(src="img/content/career/career-gallery/item_1.webp" width="405" height="270" alt="Название")
+
+                        .career-gallery-img--wrap.col-12.col-sm-6.col-lg-4
+                            img.career-gallery-img(src="img/content/career/career-gallery/item_2.webp" width="405" height="270" alt="Название")
+
+                        .career-gallery-img--wrap.col-12.col-sm-6.col-lg-4
+                            img.career-gallery-img(src="img/content/career/career-gallery/item_3.webp" width="405" height="270" alt="Название")
+
+        section.hero.hero--bg
+            .container
+                .hero__body
+                    .hero__info.col-md-8
+                        h3.hero__title Команды на любой вкус и стек: выбери свою!
+                        p.hero__desc У нас много продуктов и команд. Выбирай языки и технологии, которые тебе ближе. Мы подготовили навигационную страницу о наших направлениях разработки, чтобы можно было сориентироваться и понять, с какой командой хочется познакомиться и в дальнейшем совместно развиваться. <br><br> Читать о наших командах разработки <a href="#">https://itteam.astralinux.ru/</a>
+
+                    .hero__img--wrap.col-md-4
+                        img.hero__img(src="img/content/hero/career.webp" width="518" height="400" alt="Астра Консалтинг")
+
+        section.career-events.section-bg-gray
+            .container
+                .title__block
+                    h2 Наши мероприятия
+                    p Мы создаем полезные внутренние проекты и атмосферные события
+
+                .career-events__body
+                    .career-events__slider
+                        .career-events__item
+                            .career-events__item--inner
+                                a.career-events__item-img--wrap(href="#")
+                                    img.career-events__item-img(src="img/content/career/career-events/item_1.webp" width="405" height="186" alt="Название ивента")
+                                
+                                .career-events__item-info
+                                    a.career-events__item-title(href="#") WELCOME DAY
+                                    p.career-events__item-desc Приветственный тренинг для погружения новых коллег в наш корпоративный контекст
+
+                                    .btn--block.hide-sm-only
+                                        a.btn.btn--border(href="#") Посмотреть
+
+                        .career-events__item
+                            .career-events__item--inner
+                                a.career-events__item-img--wrap(href="#")
+                                    img.career-events__item-img(src="img/content/career/career-events/item_1.webp" width="405" height="186" alt="Название ивента")
+                                
+                                .career-events__item-info
+                                    a.career-events__item-title(href="#") TECHDAYS
+                                    p.career-events__item-desc Летняя и зимняя выездная конференция для всех технических команд ГК «Астра»
+
+                                    .btn--block.hide-sm-only
+                                        a.btn.btn--border(href="#") Посмотреть
+
+                        .career-events__item
+                            .career-events__item--inner
+                                a.career-events__item-img--wrap(href="#")
+                                    img.career-events__item-img(src="img/content/career/career-events/item_2.webp" width="405" height="186" alt="Название ивента")
+                                
+                                .career-events__item-info
+                                    a.career-events__item-title(href="#") ТЕХСРЕДЫ
+                                    p.career-events__item-desc Еженедельный митап для обмена опытом и мнениями по технохардкорным темам
+
+                                    .btn--block.hide-sm-only
+                                        a.btn.btn--border(href="#") Посмотреть
+
+                        .career-events__item
+                            .career-events__item--inner
+                                a.career-events__item-img--wrap(href="#")
+                                    img.career-events__item-img(src="img/content/career/career-events/item_3.webp" width="405" height="186" alt="Название ивента")
+                                
+                                .career-events__item-info
+                                    a.career-events__item-title(href="#") Мы умеем отдыхать
+                                    p.career-events__item-desc Q Мы умеем отдыхать
+
+                                    .btn--block.hide-sm-only
+                                        a.btn.btn--border(href="#") Посмотреть
+
+                        .career-events__item
+                            .career-events__item--inner
+                                a.career-events__item-img--wrap(href="#")
+                                    img.career-events__item-img(src="img/content/career/career-events/item_1.webp" width="405" height="186" alt="Название ивента")
+                                
+                                .career-events__item-info
+                                    a.career-events__item-title(href="#") TECHDAYS
+                                    p.career-events__item-desc Летняя и зимняя выездная конференция для всех технических команд ГК «Астра»
+
+                                    .btn--block.hide-sm-only
+                                        a.btn.btn--border(href="#") Посмотреть
+
+        section.career-jobs
+            .container
+                .title__block
+                    h2 Стань частью звёздной команды
+
+                .btns-scroll
+                    .btns-spacer
+                        a.btn.btn--tag(href="#") Информационные технологии
+                        a.btn.btn--tag(href="#") Коммерция и развитие бизнеса
+                        a.btn.btn--tag(href="#") Маркетинг, PR, Дизайн
+                        a.btn.btn--tag(href="#") Финансы
+                        a.btn.btn--tag(href="#") Административный персонал
+
+                .jobs
+                    .jobs__slider
+                        .jobs__card.jobs__card--column
+                            .jobs__card--inner
+                                .jobs__card-head
+                                    .jobs__card-tags
+                                        .jobs__card-tags-body.btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Сетевое администрирование
+                                            a.btn.btn--tiny.btn--tag(href="#") SRE
+                                            a.btn.btn--tiny.btn--tag(href="#") DevOps
+
+                                        button.btn.btn--tiny.btn--tag.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                    .jobs__card-title--wrap
+                                        .jobs__card-title Junior Программист С++
+                                        .jobs__card-wage От 40 000 ₽
+
+                                    p.jobs__card-desc Поддержка текущего проекта. Помощь в разработке.
+
+                                .jobs__card-panel
+                                    .jobs__card-panel-start
+                                        .jobs__card-location Санкт-Петербург
+
+                                        ul
+                                            li Опыт работы: от 1 года
+
+                        .jobs__card.jobs__card--column
+                            .jobs__card--inner
+                                .jobs__card-head
+                                    .jobs__card-tags
+                                        .jobs__card-tags-body.btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+
+                                        button.btn.btn--tiny.btn--tag.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                    .jobs__card-title--wrap
+                                        .jobs__card-title Инженер-программист С++
+                                        .jobs__card-wage От 140 000 ₽
+
+                                    p.jobs__card-desc Разработка и поддержка текущего проекта. Реализация новых фич в проекте.
+
+                                .jobs__card-panel
+                                    .jobs__card-panel-start
+                                        .jobs__card-location Москва
+
+                                        ul
+                                            li Опыт работы: от 3х лет
+
+                        .jobs__card.jobs__card--column
+                            .jobs__card--inner
+                                .jobs__card-head
+                                    .jobs__card-tags
+                                        .jobs__card-tags-body.btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+
+                                        button.btn.btn--tiny.btn--tag.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                    .jobs__card-title--wrap
+                                        .jobs__card-title Инженер-программист С++
+                                        .jobs__card-wage От 140 000 ₽
+
+                                    p.jobs__card-desc Разработка и поддержка текущего проекта. Реализация новых фич в проекте.
+
+                                .jobs__card-panel
+                                    .jobs__card-panel-start
+                                        .jobs__card-location Москва
+
+                                        ul
+                                            li Опыт работы: от 3х лет
+
+                        .jobs__card.jobs__card--column
+                            .jobs__card--inner
+                                .jobs__card-head
+                                    .jobs__card-tags
+                                        .jobs__card-tags-body.btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                        
+                                        button.btn.btn--tiny.btn--tag.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                    .jobs__card-title--wrap
+                                        .jobs__card-title Продавец-консультант
+                                        .jobs__card-wage От 35 000 ₽
+
+                                    p.jobs__card-desc Продажа и консультация клиентов в магазинах партнёров и дистрибьюторов электроники. Приём и отгрузка товара…
+
+                                .jobs__card-panel
+                                    .jobs__card-panel-start
+                                        .jobs__card-location Москва
+
+                                        ul
+                                            li Опыт работы: Без опыта
+
+                        .jobs__card.jobs__card--column
+                            .jobs__card--inner
+                                .jobs__card-head
+                                    .jobs__card-tags
+                                        .jobs__card-tags-body.btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                            a.btn.btn--tiny.btn--tag(href="#") Область
+                                        
+                                        button.btn.btn--tiny.btn--tag.jobs__card-tags-add(aria-label="Add tags") + 
+
+                                    .jobs__card-title--wrap
+                                        .jobs__card-title Уборщица
+                                        .jobs__card-wage От 65 000 ₽
+
+                                    p.jobs__card-desc Требуется специалист по клинингу офисных помещений
+
+                                .jobs__card-panel
+                                    .jobs__card-panel-start
+                                        .jobs__card-location Москва
+
+                                        ul
+                                            li Опыт работы: Без опыта
+
+                    .btn--block.jobs__all
+                        a.btn.btn--reset.btn--link.btn--arrow-right-after(href="#") Смотреть вакансии
+
+        section.section.section-panel
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h2.section-panel__title Нет подходящей вакансии?
+                        p.section-panel__desc <strong>Хочешь стать частью команды Astra, но не нашёл подходящей для себя вакансии?</strong> <br><br> Напиши о себе, в каком направлении хочешь развиваться, не забудь про ссылки на свои проекты, портфолио и аккаунты в социальных сетях, хотим узнать тебя поближе.
+
+                        .btn--block
+                            button.btn.btn--border-light.btn--doc(aria-label="Open modal") Оставить резюме
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/section-panel/bg-3.svg" width="438" height="630" alt="Обратная связь карьеры")
+
+        section.career--social
+            .container
+                .title__block.mb-4
+                    h2 Рассказываем о нашей жизни, команде, <br> новостях
+
+                .social.social--btns
+                    a.btn.btn--border.btn--path(href="#" title="Go to Telegram") Telegram
+                    a.btn.btn--border.btn--path(href="#" title="Go to VK") VK
+                    p.social__text Пишем статьи на глубокие <br> технические темы:
+                    a.btn.btn--border.btn--path(href="#" title="Go to Habr") Habr
+                
+                    
+                
+
+                
+                    
+                            
+
+
+        
+        
+
+
+                
+
+    
+

@@ -1,0 +1,26 @@
+extends layouts/layout.pug
+
+block title
+    title Modal | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Модальные окна
+
+    .page-title
+        .container
+            h1 Модальные окна
+
+    .main-block
+        section.container
+            .btns-spacer
+                button.btn.btn--accent(aria-label="Open modal" data-modal="filter-city") Выбор города
+                button.btn.btn--accent(aria-label="Open modal" data-modal="feedback") Сообщить об уязвимости
+                button.btn.btn--accent(aria-label="Open modal" data-modal="summary") Резюме
+                button.btn.btn--accent(aria-label="Open modal" data-modal="provider") Поставщик

@@ -1,0 +1,74 @@
+extends layouts/layout.pug
+
+block title
+    title ОС | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="software.html") Программное обеспечение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Операционные системы
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow#about
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Astra Linux Special Edition
+                        p.intro__desc Cертифицированная ОС со встроенными средствами защиты информации (СЗИ) для стабильной и безопасной работы ИТ-инфраструктур любого масштаба и обработки информации различной степени конфиденциальности. <br><br> Успешно прошла комплекс испытаний в системе сертификации СЗИ ФСТЭК России по первому, высочайшему, уровню доверия. Единственная в стране имеет набор сертификатов ФСТЭК России, ФСБ России и Министерства обороны России.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/os/intro/main.webp" width="486" height="431" alt="Название")
+
+        section.section
+            .container
+                .os-products
+                    .os-products__list.row
+                        .os-products__col.col-12.col-sm-6.col-lg-4
+                            a.os-products__col--body(href="os-server.html")
+                                .os-products__col-title Серверная Астра
+                                .os-products__col-desc ОС адаптированная для применения в серверной части IT - инфраструктуры и оптимизированная для высоких нагрузок.
+
+                        .os-products__col.col-12.col-sm-6.col-lg-4
+                            a.os-products__col--body(href="os-desktop.html")
+                                .os-products__col-title Десктопная Астра
+                                .os-products__col-desc Платформа для создания защищённых рабочих мест и решения широкого круга задач.
+
+                        .os-products__col.col-12.col-sm-6.col-lg-4
+                            a.os-products__col--body(href="os-mobile.html")
+                                .os-products__col-title Мобильная Астра
+                                .os-products__col-desc Адаптированная для смартфонов, планшетов и других устройств ОС, обеспечивающая безопасную мобильную работу сотрудников.
+
+        section.section
+            .container
+                .software-asset.software-asset--reverse
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-5
+                            img.software-asset__img(src="img/content/os/asset/wheel.webp" width="327" height="305" alt="Название")
+
+                        .software-asset__info.col-lg-6
+                            .software-asset__title Графический интерфейс «FLY»
+                            .software-asset__desc Интуитивно понятное и комфортное визуальное пространство с адаптивными настройками и удобными утилитами для администраторов и пользователей
+
+                            .btn--block.software-asset__btns
+                                a.btn.btn--border-light(href="#") Виртуальный тур по Astra Linux
+
+        section.section.hero.hero--reverse
+            .container
+                .hero__body.align-items-center
+                    .hero__img--wrap.col-md-4
+                        img.hero__img(src="img/content/os/hero/main.svg" width="404" height="392" alt="Название")
+
+                    .hero__info.col-md-7
+                        h2.hero__title Astra linux Common Edition
+                        p.hero__desc Astra Linux Common Edition — операционная система общего назначения. Создана на базе линукс-дистрибутива Debian, отличается низкими требованиями к оборудованию. Подходит для работы, учёбы и развлечений.
+
+                        .btn--block
+                            a.btn.btn--border.btn--arrow-right-after(href="/") Скачать

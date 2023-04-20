@@ -25,19 +25,28 @@ html(lang="ru" dir="ltr")
     block title
 
     block head
+      link(href="libs/bootstrap/bootstrap.min.css" rel="stylesheet")
+
+      link(rel="stylesheet" type="text/css" href="libs/slick/slick.css")
+
       link(href="styles/main.css" rel="stylesheet")
 
   body
     .wrapper
       include ../inc/header.pug
+      include ../inc/search.pug
       
       .page-container
-        #workarea
-          block content
+        block content
 
       include ../inc/footer.pug
 
+      include ../blocks/modals.pug
+
     block foot
       script(src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+      script(type="text/javascript" src="libs/slick/slick.min.js")
 
       script(src="scripts/main.js")
+
+    block scripts

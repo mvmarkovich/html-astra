@@ -1,0 +1,487 @@
+extends layouts/layout.pug
+
+block title
+    title ПО Брест | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") О Брест
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Преимущества
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Возможности
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Требования
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Документация
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Кейсы
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-6") Где купить
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="software.html") Программное обеспечение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Прикладное ПО
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static#about
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Программный комплекс средства виртуализации «Брест»
+                            p.intro__desc Программный комплекс «Средства виртуализации «Брест» (ПК СВ «Брест») — российская платформа со встроенными средствами защиты информации ОС Astra Linux Special Edition для создания и управления облачными виртуальными ИТ-инфраструктурами любой сложности. Позволяет развернуть частное или публичное облако, в том числе распределенное, и гибко управлять виртуальной инфраструктурой и ее компонентами, учетными записями пользователей и виртуальными машинами: создавать их из шаблонов, клонировать, удалять и т.д.
+
+                            .btn--block
+                                a.btn.btn--border(href="#") Попробовать
+
+                        .intro__img--wrap.intro__img--thumb
+                            img.intro__img(src="img/content/software/software-intro/brest.svg" width="395" height="256" alt="Название")
+
+        section.section
+            .container
+                .software-asset
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-3
+                            img.software-asset__img(src="img/content/software/software-asset/star.webp" width="327" height="305" alt="Название")
+
+                        .software-asset__info.col-lg-8
+                            .software-asset__title О ПК СВ «Брест»
+                            .software-asset__desc <strong>ПК СВ «Брест» предоставляет современный набор инструментов со своим собственным графическим интерфейсом для управления объектами виртуальной инфраструктуры любого масштаба и сложности: </strong> <br><br> • виртуальными машинами и виртуальными рабочими местами (VDI); <br> • физическими хостами, кластерами и ЦОДами (центрами обработки данных); <br> • сетями, хранилищами и т.д. <br> Созданные виртуальные машины могут работать как на Linux, так и на Windows. <br><br> ПК СВ «Брест» —это полностью российский программный продукт, который внесён в «Единый реестр российских программ для ЭВМ и баз данных» Минцифры под номером 3742.
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Преимущества
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/software/software-features/brest/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Функционален
+                                        .features__item-desc Позволяет создать кластеры из нескольких серверов с гиперконвергентными, конвергентными или внешними аппаратными хранилищами.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/software/software-features/brest/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Оптимизирован
+                                        .features__item-desc Обеспечивает гибкость ИТ-инфраструктуры за счет ее масштабирования. Балансирует нагрузку между кластерами, оптимизирует использование серверных ресурсов.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/software/software-features/brest/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Абсолютная безопасность
+                                        .features__item-desc Защищает виртуальные машины от несанкционированного доступа, запуска ПО и выполнения других операций.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/software/software-features/brest/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Интегрирован с другими продуктами Astra Linux
+                                        ul.list-dots
+                                            li Termidesk — мультиплатформенный продукт для создания инфраструктуры виртуальных рабочих мест (VDI) и организации безопасной удаленной работы сотрудников; 
+                                            li RuBackup — система резервного копирования.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/software/software-features/brest/item_5.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Непрерывность процессов
+                                        .features__item-desc В случае сбоя позволяет быстро переместить виртуальные машины между хостами или их диски между внешними хранилищами и оперативно восстановить работу.
+        
+        section.section.section-anchor#anchor-2
+            .container
+                .scope
+                    .scope__preview
+                        h2.scope__title Функциональные возможности
+                        p.scope__desc Функционал ПК СВ «Брест» позволяет управлять любыми структурами: от одного <br> сервера до распределённых кластеров и ЦОДов.
+
+                    .scope__content.hidden-content
+                        .scope__gap
+                            .scope__column
+                                h3 Централизованное управление
+                                
+                                ul
+                                    li Учётными записями пользователей и их группами
+                                    li Группами виртуальных машин (ВМ)
+                                    li Серверами (узлами) в кластерах
+                                    li ЦОДами и входящими в них кластерами
+                                    li Хранилищами
+                                    li Виртуальными сетями
+
+                            .scope__column
+                                h3 Создание защищённой среды виртуализации серверов и рабочих мест
+                                
+                                ul
+                                    li Эмуляция аппаратного обеспечения на основе модуля KVM с использованием возмож-ностей архитектуры х86–64 по виртуализации процессоров
+                                    li Виртуализация сетей, хранилищ и иных ресурсов
+                                    li Обеспечение отказоустойчивости управления
+                                    li Масштабирование кластеров виртуализации
+                                    li Идентификация, аутентификация и авторизация пользователей для предоставления несанкционированного доступа к функциям виртуализации и управления
+                                    li Мандатное и дискреционное управление доступом при межпроцессном и сетевом взаимодействии
+                                    li Автоматизация базовой установки и настройки
+
+                            .scope__column
+                                h3 Возможность создать и использовать до 10 000 ВМ:
+                                
+                                ul
+                                    li Поддержка в одной ВМ до 240 виртуальных процессоров и до 4000 Гб оперативной памяти
+                                    li Подключение к ВМ устройств из состава аппаратных средств хоста (сервера), включая USB 3.0
+                                    li Поддержка 32 и 64-битных гостевых ВМ с ОС Linux и Microsoft Windows
+                                    li Создание групп ВМ из шаблонов
+                                    li Клонирование ВМ
+                                    li Режим запуска ВМ только для чтения — без внесения изменений в образы их дисков
+                                    li Управление параметрами ВМ во время их работы
+                                    li Поддержка мультимониторного режима при удаленном доступе к ВМ
+
+                            .scope__column
+                                h3 Централизованный аудит и формирование отчётов:
+                                
+                                ul
+                                    li Мониторинг работоспособности и использования ресурсов виртуальной инфраструктуры, а также состояния физических узлов ЦОДа
+                                    li Поддержка работы с интерфейсом мониторинга и управления аппаратной платформой IPMI 2.0
+
+                            .scope__column
+                                h3 Возможность миграции ВМ:
+                                
+                                ul
+                                    li Автоматическая и ручная миграция работающих ВМ между узлами кластера виртуализации
+                                    li Создание кластеров высокой доступности (HA — High Availability)
+                                    li Автоматическое резервирование виртуальной инфраструктуры и распределение нагрузки на физические узлы (DRS)
+                                    li Режим обслуживания хоста
+
+                            .scope__column
+                                h3 Создание и использование:
+                                
+                                ul
+                                    li Распределенного хранилища CEPH
+                                    li Файловых систем NFS, CIFS и OCFS2
+                                    li CEPHFS-серверов (хостов) или хранилищ с доступом по протоколам iSCSI, FC и др.
+                                    li LVM-томов
+                                    li Нескольких сетей с разделением служебного и пользовательского трафика на разные информационные потоки и поддержкой VLAN
+
+                            .scope__column
+                                h3 Поддержка служб каталогов:
+                                
+                                ul
+                                    li FreeIPA
+                                    li ALD Pro
+                                    li MS Active Directory
+                                    li Механизма контекстуализации
+
+                            .scope__column
+                                h3 А также:
+                                
+                                ul
+                                    li Обновленный механизм выбора шаблона при создании ВМ
+                                    li Динамический русскоязычный web-интерфейс адаптируется к ширине монитора
+                                    li Статус подключения к консоли ВМ
+                                    li Поддержка UEFI
+                                    li Возможность наследования и сохранения всех опций ВМ
+                                    li Поддержка технологии NUMA
+
+                    .btn--block.scope__btns
+                        button.btn.btn--border.btn--more.js-show-more(aria-label="Load more" data-text="Показать все" data-toggle-text="Скрыть") Показать все
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Задачи, которые решает ПК СВ «Брест»
+
+                .section__gap
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Консолидация серверов <br> или ресурсов
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc В системе виртуализации можно одновременно разместить несколько серверных ресурсов: WEB, DHCP, почтовый сервер, службу каталогов, базы данных, ERP, ECM, CAD и ГИС с централизованным хранением, обработкой и доступом к данным.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Перевод ИТ-инфраструктуры организации на российское <br> ПО без остановки работы
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc Виртуальную среду можно использовать как площадку для размещения серверных ресурсов или виртуальных рабочих мест, которые частично или полностью работают под управлением зарубежных ОС, чтобы в дальнейшем перевести их на Astra Linux.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Разработка новых информационных систем и их тестирование
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc Платформа позволяет адаптировать имеющуюся ИТ-инфраструктуру под меняющиеся требования и формировать новую с нуля: создавать виртуальные серверы со средой и ресурсами для разработки, прототипировать информационные системы, документировать и тестировать программные продукты и сервисы.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Размещение нагрузки, чувствительной <br> к производительности <br> (performance-sensitive workloads)
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc В случае роста нагрузки на систему, платформа позволяет оптимизировать сервисы и при необходимости автоматически масштабировать систему.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Создание смешанных окружений <br> (hybrid enviroments)
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc Если локальных мощностей организации не хватает для выполнения задач, платформа позволяет объединять существующие физические серверы с виртуальными и облачными в одну систему.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Создание отказоустойчивых сервисов
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc При сбое на физическом узле, который обеспечивает доступность и работоспособность ВМ, платформа может перераспределить нагрузку на остальные узлы, что сведёт к минимуму время простоя сервисов.
+
+                    .section__gap-item.row
+                        .col-12.col-md-4
+                            .section__gap-item-title Предоставление it-услуг
+
+                        .col-12.col-md-6
+                            .section__gap-item-desc Механизмы и инфраструктура виртуализации позволяют создавать ряд коммерческих сервисов <br> • DaaS (Desktop as a Service) — рабочий стол как услуга <br> • SaaS (Software as a Service) — ПО как услуга <br> • DaaS (Data as a Service) — данные как услуга <br> • vDC (virtual Data Center) — виртуальный дата-центр и др.
+
+
+        section.section
+            .container
+                .software-asset.software-asset--offer
+                    .software-asset__row
+                        .software-asset__img--wrap
+                            img.software-asset__img(src="img/content/software/software-asset/wheel.webp" width="327" height="305" alt="Название")
+            
+                        .software-asset__info.col-lg-8
+                            .software-asset__title Попробовать ПК СВ «Брест»
+                            .software-asset__desc Для оценки функциональности и возможности использования операционной системой вам может быть предоставлен бесплатно на ограниченный (до 3 месяцев) период времени экземпляр операционной системы с документацией.
+
+                            .btn--block.software-asset__btns
+                                a.btn.btn--border-light(href="#") Подробнее
+
+        section.section.section-anchor#anchor-4
+            .container
+                .title__block.mb-3
+                    h2 Документация
+
+                .tabs
+                    .tabs__header
+                        .tabs__nav.tabs__nav--filter
+                            ul.tabs__nav-list
+                                li.tabs__nav-item(data-active-tab="software-doc-0")
+                                    button.tabs__nav-btn(aria-label="Switch tab") Документация <span>6</span>
+
+                                li.tabs__nav-item(data-active-tab="software-doc-1")
+                                    button.tabs__nav-btn(aria-label="Switch tab") Лицензии <span>3</span>
+
+                                li.tabs__nav-item(data-active-tab="software-doc-2")
+                                    button.tabs__nav-btn(aria-label="Switch tab") Другие материалы <span>1</span>
+
+                    .tabs__body
+                        .tabs__content(data-tab="software-doc-0")
+                            .materials
+                                .materials__list.materials__list--bg
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Руководство пользователя «Брест»
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Лицензионные соглашения
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Политика лицензирования
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Руководство пользователя «Брест»
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Лицензионные соглашения
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-text
+                                                .materials__item-title Политика лицензирования
+
+                        .tabs__content(data-tab="software-doc-1")
+                            .materials
+                                .materials__list.materials__list--bg
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-title Руководство пользователя «Брест»
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-title Лицензионные соглашения
+
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-title Политика лицензирования
+
+                        .tabs__content(data-tab="software-doc-2")
+                            .materials
+                                .materials__list.materials__list--bg
+                                    .materials__item
+                                        a.materials__item--inner(href="#" download)
+                                            .materials__item-img--wrap
+                                                img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                            .materials__item-title Руководство пользователя «Брест»
+
+        section.section.section-anchor#anchor-5
+            .container
+                .title__block
+                    h2 Кейсы внедрения
+
+                .software-cases
+                    .software-cases__list
+                        .software-cases__card
+                            .software-cases__card-body(style="background-image:url(img/content/software/software-cases/brest/item_1.webp)")
+                                .software-cases__card-info
+                                    .software-cases__card-title Хостинг-провайдеры
+                                    .software-cases__card-desc DCImanager автоматизирует выдачу выделенных серверов и повышает качество сервиса. Он автоматически выдаёт выделенные серверы с настроенным ПО. В личном кабинете пользователи могут самостоятельно выполнять большинство операций, в том числе перезагружать машины и контролировать нагрузку.
+
+                        .software-cases__card
+                            .software-cases__card-body(style="background-image:url(img/content/software/software-cases/brest/item_2.webp)")
+                                .software-cases__card-info
+                                    .software-cases__card-title Дата-центры
+                                    .software-cases__card-desc Управляйте серверной инфраструктурой дата-центров с DCImanager. Платформа автоматически формирует карту расположения оборудования в стойках. Можно отследить состояние подключений, тепловые показатели, статистику энергопотребления с PDU. При возникновении угрозы, например, при перегреве DCImanager отправит сообщение администратору.
+
+                        .software-cases__card
+                            .software-cases__card-body(style="background-image:url(img/content/software/software-cases/brest/item_3.webp)")
+                                .software-cases__card-info
+                                    .software-cases__card-title Государственные организации
+                                    .software-cases__card-desc DCImanager включён в реестр российского ПО Минцифры и подходит для импортозамещения в качестве платформы для управления оборудованием. Подробная документация и русскоязычная поддержка помогут решить любые вопросы.
+                    
+block scripts
+    script(type="text/javascript").
+        document.querySelector('.tabs__nav-list').firstElementChild.classList.add('tabs__nav-item--active');
+        document.querySelector('.tabs__body').firstElementChild.classList.add('tabs__content--open');
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

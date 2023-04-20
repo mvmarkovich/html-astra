@@ -1,0 +1,101 @@
+.slick-dots
+    @extend .list-reset
+    display: flex
+    align-items: center
+    
+.slider-dots-line
+    .slick-dots
+        height: 2px
+
+        li
+            size: 22px 2px
+            margin: 0 8px 0 0
+            transition: .8s
+
+            button
+                @extend .btn--reset
+                position: relative
+                display: block
+                size: 100% 2px
+                background: #D5DADD
+                color: transparent
+                transition: .8s
+                overflow: hidden
+
+                &:before
+                    content: ''
+                    display: inline-flex
+                    height: 2px
+                    background: #0079C1
+                    transition: 10s
+                    position: absolute
+                    top: 0
+                    left: 0
+
+            &.slick-active
+                width: 144px
+
+                button
+
+                    &:before
+                        animation: 8s slider-dots-active ease-out forwards
+
+            &:last-child
+                margin: 0
+
+.slider-dots-count
+    .slick-dots
+        li
+            size: 100% 40px @md 28px
+            min-width: @md 28px
+            margin: 0 4px 0 0
+
+            button
+                @extend .btn--reset
+                size: 100% 40px @md 28px
+                min-width: @md 28px
+                display: inline-flex
+                align-items: center
+                justify-content: center
+                text: #6A7E95 700 12px 1.5
+                border: none
+                outline: none
+                background: transparent 
+
+            &.slick-active
+                button
+                    background: #E9F6FD
+
+            &:last-child
+                margin: 0
+
+.slick-arrow
+    @extend .btn--reset
+    opacity: 1
+    text-indent: -9999px
+    color: transparent
+    size: 40px
+    min-width: 40px
+    box-shadow: 0px 2px 8px rgba(6, 50, 77, 0.15)
+    background-color: #fff
+    background-repeat: no-repeat
+    background-size: 20px
+    background-position: center
+    z-index: 641
+    transition: .2s
+
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    &.slick-disabled
+        opacity: 0
+
+.slick-prev
+    background-image: resolve("icons/arrow-left.svg")
+    left: 0
+
+.slick-next
+    background-image: resolve("icons/arrow-right.svg")
+    right: 0
+            

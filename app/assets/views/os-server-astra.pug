@@ -1,0 +1,566 @@
+extends layouts/layout.pug
+
+block title
+    title Серверная Астра | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Серверная Астра
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") О компонентах
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Особенности
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Astra Automation
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Уровни защиты
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Экосистема
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-6") Поддержка
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-7") Где купить
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="software.html") ПО и услуги
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Серверная Астра
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static.intro--light.intro--narrow
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Серверная Астра
+                            p.intro__desc ОС, адаптированная для применения в серверной части <br> ИТ-инфраструктуры и оптимизированная для высоких нагрузок
+
+                            .btn--block
+                                a.btn.btn--border(href="#") Где купить
+
+                        .intro__img--wrap
+                            img.intro__img(src="img/content/os/intro/server-astra.webp" width="457" height="398" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Почему ГК «Астра»
+
+                .features.features--short
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Защищённый стек виртуализации
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Безопасная среда исполнения контейнерных нагрузок
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Поддержка множества типов современных СУБД
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Централизованное управление конфигурациями
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_5.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Средства обеспечения отказоустойчивости и кластеризации
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_6.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Балансировка нагрузки
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_7.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Инструменты для разработки и использования прикладного ПО
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_8.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Встроенные средства регистрации событий
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_9.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Техническая поддержка серверных компонентов
+
+        section.section.section-anchor#anchor-1
+            .container
+                .software-asset.software-asset--reverse
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-5
+                            img.software-asset__img(src="img/content/os/asset/wheel.webp" width="473" height="465" alt="Название")
+
+                        .software-asset__info.col-lg-6
+                            .software-asset__title О компонентах
+                            .software-asset__desc Единый дистрибутив Astra Linux содержит полный набор компонентов, необходимых для инсталляции на серверы и управления. Чтобы ими воспользоваться, достаточно при установке ОС выбрать серверную модель в качестве основной.
+
+                            .btn--block.software-asset__btns
+                                a.btn.btn--border-light(href="#") Подробнее
+
+        section.section.section-anchor#anchor-2
+            .container
+                .title__block
+                    h2 Ключевые улучшения:
+                    p Для различных процессорных архитектур разработаны специальные варианты исполнения с защитой всех компонентов и программных ресурсов
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_10.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Способ лицензирования
+                                        .features__item-desc Необходима отдельная лицензия на каждый одно — или двухсокетный сервер и на каждую виртуальную машину. Если сервер четырехсокетный, потребуется 2 лицензии.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_11.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Серверные компоненты
+                                        .features__item-desc По умолчанию включены и настроены для работы под высокими нагрузками
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server-astra/item_12.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Поддержка
+                                        .features__item-desc Специальные условия технической поддержки
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Astra Automation
+                    p Платформа для автоматизированного создания и сопровождения ИТ-инфраструктуры на базе продуктов <br> ГК «Астра». Позволяет развернуть серверную ОС с набором необходимого софта ГК «Астра» из готовых <br> шаблонов максимально просто и быстро: буквально в несколько кликов и без глубоких знаний в области Linux.
+
+                .os-hero
+                    .os-hero__slider
+                        .os-hero__body
+                            .os-hero__preview
+                                .os-hero__info.col-12.col-md-7
+                                    .os-hero__text
+                                        .os-hero__subtitle Включает образы дисков и контейнеров с ОС Astra Linux, установленной в минимальной конфигурации и готовой к запуску в различных системах виртуализации и контейнеризации
+                                        
+                                        ul.list-dots
+                                            li Содержит рекомендуемые универсальные оптимизации конфигурации ОС
+                                            li Для всех поддерживаемых обновлений Astra Linux
+                                            li Доступны варианты с графическим интерфейсом и без него
+                                            li Поддерживаются и рекомендуются в качестве «золотых образов» или как отправная точка для их создания
+                                    
+                                .os-hero__img--wrap.col-12.col-md-5
+                                    img.os-hero__img(src="img/content/hero/intership.webp" width="583" height="444" alt="Название")
+
+                        .os-hero__body
+                            .os-hero__preview
+                                .os-hero__info.col-12.col-md-7
+                                    .os-hero__text
+                                        .os-hero__subtitle Слайд 2
+                                        
+                                        ul.list-dots
+                                            li Содержит рекомендуемые универсальные оптимизации конфигурации ОС
+                                            li Для всех поддерживаемых обновлений Astra Linux
+                                            li Доступны варианты с графическим интерфейсом и без него
+                                            li Поддерживаются и рекомендуются в качестве «золотых образов» или как отправная точка для их создания
+                                    
+                                .os-hero__img--wrap.col-12.col-md-5
+                                    img.os-hero__img(src="img/content/hero/intership.webp" width="583" height="444" alt="Название")
+
+                    .slider-dots-line
+
+        section.section.section-anchor#anchor-4
+            .container
+                .title__block
+                    h2 Уровни защищённости
+
+                .os-security
+                    .os-security__row.row
+                        .os-security__item.col-12.col-lg-6
+                            .os-security__item--body
+                                .os-security__item-head
+                                    .os-security__item-title Воронеж
+                                    .os-security__item-label Усиленный
+                                    .os-security__item-desc Рекомендован для обработки конфиденциальной информации в государственных информационных системах, в информационных системах персональных данных, в составе значимых объектов критической информационной инфраструктуры, в иных информационных (автоматизированных) системах, обрабатывающих информацию ограниченного доступа, не содержащую сведения, составляющие государственную тайну.
+
+                                .os-security__item-levels
+                                    .os-security__item-levels-title Уровни защиты
+
+                                    ul.list-icons-inside.os-security__item-list
+                                        li.item-checked Мандатный контроль целостности
+                                        li.item-checked Дискреционное управление доступом
+                                        li.item-checked Ролевое управление доступом
+                                        li.item-cross Мандатное управление доступом
+                                        li.item-checked Механизм защиты СУБД и средств виртуализации
+                                        li.item-checked Режим «киоск» — «белый» список разрешённых к запуску приложений
+                                        li.item-checked Корректная работа с электронной подписью — отсутствие влияния на функционирование СКЗИ подтверждено ФСБ России
+                                        li.item-checked Дополнительная изоляция компонентов виртуализации и контейнеров Docker (отдельный уровень целостности)
+                                        li.item-checked Динамический контроль целостности (замкнутая программная среда)
+                                        li.item-checked Регистрация событий безопасности
+                                        li.item-checked Контроль подключения съёмных машинных носителей информации
+                                        li.item-checked Класс защищённости ГИС: до 1 класс включительно
+                                        li.item-checked Класс защищённости ИСПДн: до 1 класс включительно
+                                        li.item-checked Класс защищённости ЗО КИИ: до 1 класс значимости ЗО КИИ включительно
+                                        li.item-checked Класс защищённости АСУ ТП: до 1 класс включительно
+                                        li.item-checked Классы АС по РД АС: 3Б, 2Б, 1Г, 1Д
+
+                        .os-security__item.col-12.col-lg-6
+                            .os-security__item--body
+                                .os-security__item-head
+                                    .os-security__item-title Смоленск
+                                    .os-security__item-label Максимальный
+                                    .os-security__item-desc Рекомендован для обработки информации любой категории доступа в государственных информационных системах: от сведений, составляющих государственную тайну до степени секретности «совершенно секретно» или «особой важности».
+
+                                .os-security__item-levels
+                                    .os-security__item-levels-title Уровни защиты
+
+                                    ul.list-check-accent.os-security__item-list
+                                        li.item-checked Мандатный контроль целостности
+                                        li.item-checked Дискреционное управление доступом
+                                        li.item-checked Ролевое управление доступом
+                                        li.item-checked Мандатное управление доступом
+                                        li.item-checked Механизм защиты СУБД и средств виртуализации
+                                        li.item-checked Режим «киоск» — «белый» список разрешённых к запуску приложений
+                                        li.item-checked Корректная работа с электронной подписью — отсутствие влияния на функционирование СКЗИ подтверждено ФСБ России
+                                        li.item-checked Дополнительная изоляция компонентов виртуализации и контейнеров Docker (отдельный уровень целостности)
+                                        li.item-checked Динамический контроль целостности (замкнутая программная среда)
+                                        li.item-checked Регистрация событий безопасности
+                                        li.item-checked Контроль подключения съёмных машинных носителей информации
+                                        li.item-checked Класс защищённости ГИС: до 1 класс включительно
+                                        li.item-checked Класс защищённости ИСПДн: до 1 класс включительно
+                                        li.item-checked Класс защищённости ЗО КИИ: до 1 класс значимости ЗО КИИ включительно
+                                        li.item-checked Класс защищённости АСУ ТП: до 1 класс включительно
+                                        li.item-checked Классы АС по РД АС: Все классы АС, включая 3А, 2А, 1В, 1Б, 1А
+
+                    .os-security__headline Astra Linux Special Edition вариант лицензирования «Орёл» представляет права использования несертифицированной версии операционной системы
+
+        section.software-cards.section-anchor#anchor-5
+            .container
+                .title__block
+                    h2 Экосистема совместимых решений
+                    p Стек продуктов ГК «АСТРА»
+
+                .software-cards__body
+                    .software-cards__list.row
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rubackup.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/dcimanager-blue.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title DCImanager
+                                    .software-cards__item-desc Система виртуализации Astra Linux
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rupost.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/vmmanager-blue.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title VMmanager
+                                    .software-cards__item-desc Система виртуализации Astra Linux
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-workspad.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/billmanager-blue.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title BILLmanager
+                                    .software-cards__item-desc Система виртуализации Astra Linux
+
+        section.section
+            .container
+                .power
+                    .title__block
+                        h2 Соответствует требованиям безопасности регуляторов <br> к ПО для импортозамещения
+
+                    .power__list.row
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/fstek-rossii.webp" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title ФСТЭК РОССИИ
+                                    .power__item-desc Профиль защиты операционных систем типа «А» первого класса защиты. <br> Первый уровень доверия.
+
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/mintsifry.svg" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title МИНЦИФРЫ РОССИИ
+                                    .power__item-desc В реестре отечественного ПО Минцифры под номером 369 от 08.04.2016 г.
+
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/minoborona.svg" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title МИНОБОРОНЫ РОССИИ
+                                    .power__item-desc Профиль защиты операционных систем типа «А» первого класса защиты. <br><br> 1 уровень контроля отсутствия недекларированных возможностей (по РД НДВ) <br> Соответствие реальных и декларируемых возможностей.
+            
+        section.section.section-anchor#anchor-6
+            .container
+                .title__block
+                    h2 Пакеты услуг технической поддержки
+
+                .tarrifs
+                    .tarrifs__row.row
+                        .tarrifs__col.col-12.col-md-6
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «СТАНДАРТНЫЙ»
+                                    .tarrifs__col-desc Обработка обращений через web-портал и по телефону в рабочее время (по Москве)
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    ul.list-icons-inside
+                                        li.item-checked Обновления и доступы
+                                        li.item-checked Консультации
+                                        li.item-checked Решение вопросов
+                                        li.item-cross Сборка и подключение
+                                        li.item-checked Время реакции на запрос: Стандартное
+
+                        .tarrifs__col.col-12.col-md-6
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «ПРИВИЛЕГИРОВАННЫЙ»
+                                    .tarrifs__col-desc Расширенный комплекс услуг технической поддержки и обслуживание в режиме 24/7
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    ul.list-icons-inside
+                                        li.item-checked Обновления и доступы
+                                        li.item-checked Консультации
+                                        li.item-checked Решение вопросов
+                                        li.item-checked Сборка и подключение
+                                        li.item-checked Время реакции на запрос: Минимальное
+
+                    .tarrifs__headline По завершении срока действия оплаченного сертификата для пакетов поддержки «Стандартный» и «Привилегированный» пользователь автоматически переводится на «Начальный» уровень обслуживания, который предоставляет доступ к обновлениям безопасности и открытым ресурсам «Справочного центра».
+
+        section.section
+            .container
+                .software-asset.software-asset--os
+                    .software-asset__row
+                        .software-asset__img--wrap.col-lg-4
+                            img.software-asset__img(src="img/content/os/hero/graf.webp" width="588" height="556" alt="Название")
+            
+                        .software-asset__info.col-lg-7
+                            .software-asset__title ГРАФИЧЕСКИЙ ИНТЕРФЕЙС «FLY»
+                            .software-asset__desc Описание всех графических утилит и программ рабочего стола Fly, а также полное описание его режимов работы и предоставляемых возможностей приведено в электронной справке.
+
+                            .btn--block.software-asset__btns
+                                a.btn.btn--border-light(href="#") Виртуальный тур по Astra Linux
+
+        section.section.section-bg-gray
+            .container
+                .os-faq
+                    .os-faq__row.row
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_1.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Стать партнёром
+                                        .os-faq__col-desc Партнёр имеет право получать информацию о скидках, специальных акциях, получать консультации и дополнительную поддержку после авторизации и присвоения компании статуса официального партнёра.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_2.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Поддержка
+                                        .os-faq__col-desc В лицензию на ОС по умолчанию входит «Стандартный» пакет услуг поддержки. При этом мы готовы предложить вам намного больше — пакет «Привилегированный»: персонализированный сервис 24х7, ускоренное решение вопросов и расширенный спектр услуг.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+                                        a.link.link-accent.link--phone-before(href="tel:+74953694816") +7 495 369-48-16
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_3.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Лицензионное соглашение
+                                        .os-faq__col-desc Условия лицензирования продукта соответствуют требованиям действующего законодательства РФ  и международных правовых актов. <br> Правообладатель продукта — ООО «РусБИТех — Астра»
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_4.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Обучение
+                                        .os-faq__col-desc Авторизованное обучение применению продуктов ГК «Астра» проводится более чем в 60 учебных центрах в Москве и регионах. Для подготовки квалифицированных специалистов компания тесно взаимодействует с множеством образовательных учреждений, в числе которых ведущие вузы страны, колледжи, школы и т.д.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+block scripts
+    script(type="text/javascript").
+        let listComposition = document.querySelectorAll('.os-compos__item-list');
+
+        for (let i = 0; i < listComposition.length; ++i) {
+            if (listComposition[i].clientHeight > 300) {
+                listComposition[i].classList.add('is-higher')
+            }
+        }
+
+        //
+        // Accordion
+        //
+
+        let items = document.querySelectorAll(".accordion button");
+        
+        function toggleAccordion() {
+            let itemToggle = this.getAttribute('aria-expanded');
+            
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.parentElement.classList.add('is-show');
+            } else {
+                this.setAttribute('aria-expanded', 'false');
+                this.parentElement.classList.remove('is-show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+       function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

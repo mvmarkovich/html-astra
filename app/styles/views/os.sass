@@ -1,0 +1,663 @@
+.os-intro
+    margin: @xl 0 0 140px
+    
+.os-products
+    margin: @lg 0 0 120px
+
+    &__list
+        margin: 0 -8px -16px @sm 0 -12px -24px @lg 0 -16px -32px
+
+    &__col
+        padding: 0 8px @sm 0 12px @lg 0 16px
+        margin-bottom: 16px @sm 24px @lg 32px
+
+        &--body
+            height: 100%
+            padding: 24px
+            background: #F5FCFF
+            border: 1px solid #82D0FF
+            display: block
+
+        &-title
+            color: #071C27
+            text: 700 14px 1.5
+            display: inline-flex
+            justify-content: space-between
+            width: 100%
+
+            &:after
+                content: ''
+                size: 20px
+                min-width: 20px
+                background: resolve("icons/link-accent.svg") no-repeat center / contain
+                display: inline-flex
+                margin-left: 12px
+
+        &-desc
+            color: #4A5A68
+            text: 400 14px 1.5
+            margin: 16px 0 0
+
+.os-tech
+    margin: 40px 0 0 @lg 56px 0 0
+
+    &__list
+        display: flex
+        flex-wrap: @md wrap
+        margin: 0 -4px @md 0 -8px -16px
+
+    &__item
+        padding: 0 4px @md 0 8px
+        margin: @md 0 0 16px
+        width: @md-down 100%
+
+        &--body
+            border: 1px solid #D5DADD
+            padding: 12px 10px @md 12px 16px
+            height: 100%
+            min-width: @md 160px
+
+        &-head
+            display: flex
+            align-items: flex-end
+            flex-wrap: nowrap
+            margin: 0 0 8px
+
+        &-icon
+            size: 24px @sm 30px
+            margin: 0 8px 0 0
+
+        &-title
+            text: 700 12px 1.5 @sm 14px
+            white-space: nowrap
+            overflow: hidden
+            text-overflow: ellipsis
+
+        &-desc
+            color: #4A5A68
+            text: 400 10px 1.5 @sm 14px
+
+.os-offer
+    &__list
+        margin: 0 -8px -16px @sm 0 -12px -24px @lg 0 -16px -32px
+
+    &__col
+        padding: 0 8px @sm 0 12px @lg 0 16px 
+        margin-bottom: 16px @sm 24px @lg 32px
+
+        &--body
+            height: 100%
+            padding: 24px
+            background: #F2F5F7
+
+        &-label
+            color: #4A5A68
+            text: 400 12px 1.3
+            text-transform: uppercase
+            border: 1px solid #0079C1
+            min-height: 28px
+            padding: 0 8px
+            display: inline-flex
+            align-items: center
+            margin: 0 0 24px
+
+            &--red
+                border-color: #E8112D
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5 @sm 18px @lg 20px
+            margin: 0 8px 0 0
+            
+            &--wrap
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                margin: 0 0 8px
+
+        &-headline
+            color: rgba(7, 28, 39, .4)
+            text: 400 16px 1.5 @sm 18px @lg 20px
+
+        &-desc
+            color: #071C27
+            text: 400 14px 1.5 @sm 16px
+            margin: 6px 0
+            -webkit-line-clamp: 3
+            display: -webkit-box
+            -webkit-box-orient: vertical
+            overflow: hidden
+            max-height: 62px @sm 72px
+
+        &-btns
+            margin: 32px 0 0
+
+.os-compos
+    .slider-dots-line
+        margin: 32px 0 0
+
+    &__slider
+        margin: @lg 0 -8px
+
+        .slick-list, .slick-track
+            display: @lg flex
+
+        .slick-prev
+            left: @lg -12px
+
+        .slick-next
+            right: @lg -12px
+
+    &__item
+        padding: @lg 0 8px
+
+        &--body
+            min-width: @lg 702px
+            border: 1.5px solid #E8ECEF
+            border-radius: 16px
+            overflow: hidden
+            padding: 24px @sm 32px @lg 40px 32px
+            height: 100%
+
+            > *
+                &:last-child
+                    margin-bottom: 0
+        
+        &-title
+            color: #071C27
+            text: 700 14px 1.5 @md 16px
+            text-transform: uppercase
+            margin: 0 0 8px
+
+        &-desc
+            color: #6A7E95
+            text: 400 12px 1.5 @md 14px
+            margin: 8px 0 24px
+
+        &-list
+            margin: 16px 0
+
+            li
+                text: 12px @md 14px
+
+            &.is-higher
+                column-count: @lg 2
+                column-gap: @lg 32px
+                column-fill: @lg auto
+                max-height: @lg 380px @xl 302px
+                width: @xl 1062px
+
+                li
+                    -webkit-column-break-inside: @lg avoid
+                    -moz-column-break-inside: @lg avoid
+                    column-break-inside: @lg avoid
+
+.os-security
+    &__row
+        margin-bottom: -16px @sm -24px @lg -32px
+
+    &__item
+        margin-bottom: 16px @sm 24px @lg 32px
+
+        &--body
+            height: 100%
+            box-shadow: 0px 2px 8px rgba(6, 50, 77, 0.15)
+            padding: 32px 24px @sm 40px 32px @lg 40px
+
+        &-head
+            margin: 0 0 32px
+
+        &-title
+            color: #003A5C
+            text: 700 20px 1.5 @sm 22px @lg 24px
+            text-transform: uppercase
+            margin: 0 0 4px
+
+        &-label
+            color: #AFB8BF
+            text: 700 12px 1.3
+            text-transform: uppercase
+            margin: 4px 0 12px
+
+        &-desc
+            color: #4A5A68
+            text: 400 12px 1.6 @md 14px
+            margin: 12px 0
+
+        &-levels
+            &-title
+                color: #AFB8BF
+                text: 700 12px 1.3
+                text-transform: uppercase
+                margin: 0 0 16px
+
+        .list-check-accent
+            li
+                text: 14px
+
+    &__headline
+        color: #6A7E95
+        text: 400 12px 1.5
+        text-align: center
+        margin: 24px auto 0
+        max-width: 770px
+
+.os-hero
+    position: relative
+    margin: @md-down * -16px
+
+    &__slider
+        .slick-arrow
+            top: @md-down auto
+            transform: @md-down none
+            bottom: @md-down 40px
+
+        .slick-prev
+            left: 24px @md -20px
+
+        .slick-next
+            right: 24px @md -20px
+
+        ^&__info
+            padding: @xl 64px *
+
+        ^&__preview
+            padding-bottom: @md-down 72px
+
+    .slider-dots-line
+        position: absolute
+        top: @md 16px @xl 52px
+        bottom: @md-down 16px
+        left: 24px @md 32px @xl 64px
+
+        .slick-dots li.slick-active
+            width: 84px
+
+    &__preview
+        background: #F2F5F6
+        display: flex
+        flex-direction: column @md row
+        padding: @md 32px @xl 0
+
+    &__info
+        position: relative
+        order: 2 @md 1
+        display: @md flex
+        flex-direction: @md column
+        align-items: @md flex-start
+        justify-content: @md center
+        padding: 40px 24px @md 0 32px 0 0 @xl 32px 32px 32px 64px
+
+    &__label
+        color: #6A7E95
+        text: 700 16px 1.5
+        text-transform: uppercase
+        margin: 0 0 16px
+
+    &__title
+        text: 700 20px 1.5
+        margin: 0 0 24px
+
+    &__subtitle
+        color: #4A5A68
+        text: 700 16px 1.5
+        margin: 0 0 24px
+
+    &__desc
+        text: 400 16px 1.5
+        margin: 0 0 24px
+
+    .list-dots
+        li    
+            color: #6A7E95
+            text: 14px
+            margin: 0 0 8px
+            padding: 0 0 0 16px
+
+            &:before
+                size: 4px
+                min-width: 4px
+                background: #6A7E95
+
+    &__btns
+        margin: 8px 0 0
+        order: @md-down 3
+
+        .btn
+            width: @sm-down 100%
+
+    &__img
+        position: @md-down absolute
+        top: @md-down 50%
+        left: @md-down 50%
+        transform: @md-down translate(-50%, -50%)
+
+        &--wrap
+            position: relative
+            order: 1 @md 2
+            padding: 64% 0 0 @md 0
+            overflow: hidden
+
+    &__hidden
+        padding: 0 24px 40px @sm 32px @lg 64px
+        background: #F2F5F7
+        display: none
+
+        &.hidden-content--show
+            display: block
+
+        .accordion
+            display: flex
+            flex-wrap: wrap
+            margin: @lg 0 -16px -16px
+
+        .accordion__item
+            width: 100% @lg 50%
+            padding: @lg 0 16px
+
+            &.is-show
+                padding: @lg 0 16px
+
+            &:last-child
+                margin: @lg-down 0
+
+        ul
+            padding: 0 @lg 0 0 0 32px
+
+            li
+                margin: 0 0 4px
+                text: 16px
+
+                &:before
+                    size: 6px
+                    min-width: 6px
+                    top: 9px
+
+        .scope__gap
+            ul
+                padding: @lg-down 0 0 0 16px
+
+                li
+                    color: #071C27
+                    text: 400 14px 1.5 @md 16px
+
+        h3
+            color: #071C27
+            text: 700 16px 1.5
+            margin: 0 0 8px
+
+    &--reverse
+        ^&__preview
+            flex-direction: @md row-reverse
+
+        ^&__info
+            padding: @md 0 0 0 32px @xl 52px 32px 52px 64px
+
+    &--bg
+        background: #F2F5F7
+
+    &--wide
+        margin: @xl 0 -80px
+
+    &--dark
+        color: #fff
+
+        ^&__preview
+            background: #003A5C
+
+        ^&__title
+            color: #fff
+
+        ^&__desc
+            color: #D5DADD
+
+        .btn
+            border-color: #fff
+            color: #fff
+
+    &--doc
+        ^&__preview
+            margin: @xl 0 -80px
+
+            padding: @xl-down 0
+
+        ^&__info
+            width: @xl 100%
+            max-width: @xl 640px
+            margin: 0 auto
+            justify-content: center
+            padding: @md 0 0 0 90px @xl 52px 32px 52px 64px
+
+        ^&__title
+            text-transform: uppercase
+            margin: 0 0 8px
+
+        ^&__desc
+            color: #6A7E95
+            text: 400 12px 1.5
+            margin: 0
+
+        ^&__btns
+            margin: 24px 0 0
+
+        ^&__text
+            position: relative
+            
+        ^&__icon
+            size: 64px @xl 72px
+            max-width: 64px @xl 72px
+            position: @md absolute
+            top: @md 0
+            left: @md -80px @xl -86px
+            margin: 0 0 32px @md 0
+
+
+.os-faq
+    &__row
+        margin: 0 -8px -16px 0 -12px -24px @lg 0 -16px -32px
+
+    &__col
+        margin-bottom: 16px @sm 24px @lg 32px
+        padding: 0 8px @sm 0 12px @lg 0 16px    
+
+        &--body
+            background: #fff
+            border: 1px solid #E8ECEF
+            padding: 24px 24px 32px @sm 32px
+            height: 100%
+
+            display: @sm flex
+            align-items: @sm flex-start
+
+        &-info
+            display: @sm flex
+            flex-direction: @sm column
+            justify-content: @sm space-between
+            height: @sm 100%
+
+        &-img
+            &--wrap
+                size: 56px @sm 64px @lg 72px
+                min-width: 56px @sm 64px @lg 72px
+                margin: 0 0 16px @sm 0 16px 0 0
+
+        &-title
+            color: #071C27
+            text: 700 20px 1.5
+            text-transform: uppercase
+            margin: 0 0 8px @sm 0 0 16px
+
+        &-desc
+            color: #4A5A68
+            text: 400 14px 1.5
+            margin: 8px 0 0 @sm 16px 0 0
+
+        &-nav
+            display: flex
+            flex-wrap: wrap
+            flex-direction: column @sm row
+            align-items: center
+            margin: 24px 0 -16px @sm 12px 0 0
+
+            .link
+                color: #00588D
+                order: @sm-down 1
+                width: @sm-down 100%
+
+                &:hover
+                    color: #0079C1
+
+            .btn
+                order: @sm-down 2
+                width: @sm-down 100%
+
+            > *
+                margin: 0 0 16px @sm 12px 24px 0 0
+
+                &:last-child
+                    margin-right: @sm 0
+
+        &--sec
+            ^&--body
+                display: block
+                padding: 24px
+
+            ^&-nav
+                justify-content: @lg space-between
+
+            ^&-img
+                &--wrap
+                    margin: 0 0 16px
+
+            ^&-info
+                height: calc(100% - 88px)
+
+            .btn
+                min-height: 32px
+                font-size: 12px
+
+            .link--phone-before
+                color: #4A5A68
+                font-size: 14px
+
+                &:before
+                    background-image: resolve("icons/phone-gray.svg")
+                    background-size: 16px
+
+                &:hover
+                    &:before
+                        background-image: resolve("icons/phone-accent.svg")
+
+.os-support
+    background: #F2F5F7
+    padding: 40px 0 @md 56px 0 @xl 80px 0 0
+
+    .title__block
+        text-align: @md center
+        text-transform: uppercase
+
+    &__body
+        max-width: 840px
+        margin: 0 auto
+
+    &__img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+
+        &--wrap
+            position: relative
+            padding: 57.5% 0 0
+            overflow: hidden
+
+.os-acosystem
+    .title__block
+        margin-bottom: 40px @lg 64px
+        max-width: 730px
+
+        h2
+            text-transform: uppercase
+
+        p
+            color: #071C27
+
+    &__row
+        margin-bottom: -40px
+
+    &__col
+        margin-bottom: 40px
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5
+            margin: 0 0 12px 
+
+        &-desc
+            color: #4A5A68
+            text: 400 12px 1.3
+            margin: 12px 0 0
+            max-width: 405px
+
+        &-btns
+            margin: 24px 0 0
+
+            .btn
+                width: @sm-down 100%
+
+.os-set
+    background: #F2F5F7
+    padding: 32px
+    margin: @md-down 0 -16px
+
+    &__row
+        display: @lg flex
+        align-items: @lg flex-start
+        margin: @lg 0 -16px
+
+    &__text
+        width: @lg 36%
+        padding: @lg 0 16px
+        margin: 0 0 32px @lg 0
+
+    &__content
+        width: @lg 64%
+        padding: @lg 0 16px
+
+    &__list
+        display: flex
+        flex-wrap: wrap 
+        margin: 0 -8px -16px @sm 0 -12px -24px @xl 0 -16px -24px
+
+    &__item
+        padding: 0 8px @sm 0 12px @xl 0 16px 
+        margin-bottom: 16px @sm 24px
+
+        &--inner
+            background: #fff
+            box-shadow: 13px 6px 24px rgba(210, 210, 210, 0.25)
+            padding: 24px @lg 16px @xl 24px
+            height: 100%
+
+        &-title, &-desc
+            text: 14px 1.5
+
+        &-title
+            color: #071C27
+            font-weight: 700
+
+        &-desc
+            color: #6A7E95
+            font-weight: 400
+            
+.os-hero--rfal
+    background: #F2F5F6
+
+    .os-hero__info
+        padding: @lg 52px 0 @xl 80px 0
+
+    .os-hero__img--wrap
+        margin-top: @xl -16px
+
+    .os-hero__img
+        margin-left: auto

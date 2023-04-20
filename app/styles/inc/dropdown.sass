@@ -1,0 +1,68 @@
+.dropdown
+    position: relative
+
+    &__btn
+        color: #4A5A68
+        font-size: 12px
+        width: @sm-down 100%
+        
+        &:after
+            content: ''
+            background: resolve("icons/chevron-down.svg") no-repeat center / contain
+            size: 14px
+            min-width: 14px
+            margin: 0 0 0 8px
+            transition: .2s
+
+    &__menu
+        position: absolute
+        top: 32px
+        right: 0
+        margin: 8px 0 0
+        background: #fff
+        z-index: 61
+        border: 1px solid #D5DADD
+        padding: 16px 24px
+        width: 100% @lg 220px
+        transition: .2s
+        opacity: 0
+        visibility: hidden
+
+        .form__send
+            font-size: 12px
+
+    &--open
+        ^&__btn
+            &:after
+                transform: rotate(180deg)
+
+        ^&__menu
+            opacity: 1
+            visibility: visible
+
+    &--mobile
+        ^&__btn
+            color: #003A5C @lg #071C27
+            text: @lg 700 16px 1.6
+            margin: @lg 0 0 12px
+
+            &:not(:disabled):not(.disabled)
+                cursor: @lg default
+
+            &:after
+                display: @lg none
+
+        ^&__menu
+            opacity: @lg 1
+            visibility: @lg visible
+            width: auto
+            padding: 0
+            border: none
+            position: static
+            background: transparent
+
+        &.dropdown--open
+            font-weight: @lg-down 700
+
+            ^^&__btn
+                font-weight: @lg-down 700

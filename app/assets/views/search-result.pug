@@ -1,0 +1,228 @@
+extends layouts/layout-search-result.pug
+
+block title
+    title Результаты поиска | Astra Linux
+
+block content
+    .main-block
+        .search-page
+            .search.search--static
+                .container
+                    .search__head
+                        h1 Результаты поиска <span class="search-result-value">32</span>
+
+                    form.search__form
+                        input.search__form-input(type="text" placeholder="Ввести" required)
+                        button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+            section.search-result.search-result-offer
+                .container
+                    .search__result-cards
+                        .search__result-card.col-md-4
+                            a(href='/about/company/investors/index.php?sphrase_id=123') Инвесторам и акционерам
+
+                        .search__result-card.col-md-4
+                            a(href='/solutions/astra-consulting/index.php?sphrase_id=123')
+                                b Астра
+                                |  Консалтинг
+                        .search__result-card.col-md-4
+                            a(href='/training/teachers-astra-academy/index.php?sphrase_id=123')
+                                | Преподавателям (
+                                b Астра
+                                |  Академия)
+                        .search__result-card.col-md-4
+                            a(href='/software-services/os/index.php?sphrase_id=123') Astra Linux Special Edition
+    
+                        .search__result-card.col-md-4
+                            a(href='/about/company/index.php?sphrase_id=123')
+                                | О группе компаний "
+                                b Астра
+                                | "
+
+                        .search__result-card.col-md-4
+                            a(href='/software-services/application-software-astra-group/index.php?sphrase_id=123')
+                                | Прикладное ПО ГК 
+                                b Астра
+
+                        .search__result-card.col-md-4
+                            a(href='/about/career/vacancies/response.php?sphrase_id=123') Отклик на вакансию
+
+                        .search__result-card.col-md-4
+                            a(href='/software-services/astra-consulting/index.php?sphrase_id=123')
+                                b Астра
+                                |  Консалтинг
+
+                        .search__result-card.col-md-4
+                            a(href='/about/index.php?sphrase_id=123')
+                                | О группе компаний "
+                                b Астра
+                                | "
+
+        section.search-result
+            .container
+                .title__block.mb-4
+                    h3 Операционные системы <span class="search-result-value">4</span>
+
+                .search__result-cards
+                    .search__result-card.col-md-3
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-3
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-3
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-3
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+        section.search-result
+            .container
+                .title__block.mb-4
+                    h3 Структура ГК «Астра» <span class="search-result-value">3</span>
+
+                .search__result-cards
+                    .search__result-card.col-md-4
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-4
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-4
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+        section.search-result.search-result-subgroup
+            .container
+                .title__block.text-md-center.mb-4
+                    h2 Мероприятия
+
+                .news
+                    .news__list.row
+                        .news__item.col-12.col-md-6
+                            .news__item--body
+                                a.news__item-img--wrap(href="article.html")
+                                    img.news__item-img(src="img/content/news/item_1.webp" width="624" height="160" alt="Название статьи")
+
+                                .news__item-info
+                                    .news__item-text
+                                        a.news__item-title(href="article.html") АСТРАКОНФ-2022: ИТ-ТРАНСФОРМАЦИЯ
+                                        p.news__item-desc СберКорус и группа компаний «Астра» подписали договор о долгосрочном стратегическом партнёрстве.
+
+                                    .news__item-short
+                                        .btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Программы
+                                            a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                        .briefly__row
+                                            span.briefly.briefly--tiny.briefly--date 16.07.22
+
+                        .news__item.col-12.col-md-6
+                            .news__item--body
+                                a.news__item-img--wrap(href="article.html")
+                                    img.news__item-img(src="img/content/news/item_1.webp" width="624" height="160" alt="Название статьи")
+
+                                .news__item-info
+                                    .news__item-text
+                                        a.news__item-title(href="article.html") Юрий Соснин, «Астра»
+                                        p.news__item-desc «С февраля мы испытываем на себе лавинообразный рост запросов на миграцию»
+
+                                    .news__item-short
+                                        .btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Программы
+                                            a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                        .briefly__row
+                                            span.briefly.briefly--tiny.briefly--date 16.07.22
+
+                        .news__item.col-12.col-md-6
+                            .news__item--body
+                                a.news__item-img--wrap(href="article.html")
+                                    img.news__item-img(src="img/content/news/item_1.webp" width="624" height="160" alt="Название статьи")
+
+                                .news__item-info
+                                    .news__item-text
+                                        a.news__item-title(href="article.html") АСТРАКОНФ-2022: ИТ-ТРАНСФОРМАЦИЯ
+                                        p.news__item-desc СберКорус и группа компаний «Астра» подписали договор о долгосрочном стратегическом партнёрстве.
+
+                                    .news__item-short
+                                        .btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Программы
+                                            a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                        .briefly__row
+                                            span.briefly.briefly--tiny.briefly--date 16.07.22
+
+                        .news__item.col-12.col-md-6
+                            .news__item--body
+                                a.news__item-img--wrap(href="article.html")
+                                    img.news__item-img(src="img/content/news/item_1.webp" width="624" height="160" alt="Название статьи")
+
+                                .news__item-info
+                                    .news__item-text
+                                        a.news__item-title(href="article.html") Юрий Соснин, «Астра»
+                                        p.news__item-desc «С февраля мы испытываем на себе лавинообразный рост запросов на миграцию»
+
+                                    .news__item-short
+                                        .btns-spacer
+                                            a.btn.btn--tiny.btn--tag(href="#") Программы
+                                            a.btn.btn--tiny.btn--tag(href="#") Обновления
+
+                                        .briefly__row
+                                            span.briefly.briefly--tiny.briefly--date 16.07.22
+
+
+
+
+        
+
+        
+
+                
+                
+
+                
+
+    
+

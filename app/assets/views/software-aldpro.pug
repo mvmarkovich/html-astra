@@ -1,0 +1,179 @@
+extends layouts/layout.pug
+
+block title
+    title ПО Ald Pro | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") О Брест
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Преимущества
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Возможности
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Требования
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Документация
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Кейсы
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-6") Где купить
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="software.html") Программное обеспечение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Прикладное ПО
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Программный комплекс средства виртуализации «Брест»
+                            p.intro__desc Программный комплекс «Средства виртуализации «Брест» (ПК СВ «Брест») — российская платформа со встроенными средствами защиты информации ОС Astra Linux Special Edition для создания и управления облачными виртуальными ИТ-инфраструктурами любой сложности. Позволяет развернуть частное или публичное облако, в том числе распределенное, и гибко управлять виртуальной инфраструктурой и ее компонентами, учетными записями пользователей и виртуальными машинами: создавать их из шаблонов, клонировать, удалять и т.д.
+
+                            .btn--block
+                                a.btn.btn--border(href="#") Попробовать
+
+                        .intro__img--wrap.intro__img--thumb
+                            img.intro__img(src="img/content/software/software-intro/brest.svg" width="395" height="256" alt="Название")
+
+        section.section
+            .container
+                .title__block
+                    h2 Для кого
+
+                .software-choise
+                    .software-choise__list.row
+                        .software-choise__item.col-12.col-sm-6.col-lg-4
+                            .software-choise__item--inner
+                                .software-choise__item-img--wrap
+                                    img.software-choise__item-img(src="img/content/software/software-choise/aldpro/item_1.svg" width="355" height="237" alt="Название")
+
+                                .software-choise__item-info
+                                    .software-choise__item-title Малый и средний бизнес
+
+                        .software-choise__item.col-12.col-sm-6.col-lg-4
+                            .software-choise__item--inner
+                                .software-choise__item-img--wrap
+                                    img.software-choise__item-img(src="img/content/software/software-choise/aldpro/item_2.svg" width="355" height="237" alt="Название")
+
+                                .software-choise__item-info
+                                    .software-choise__item-title Крупный бизнес
+
+                        .software-choise__item.col-12.col-sm-6.col-lg-4
+                            .software-choise__item--inner
+                                .software-choise__item-img--wrap
+                                    img.software-choise__item-img(src="img/content/software/software-choise/aldpro/item_3.svg" width="355" height="237" alt="Название")
+
+                                .software-choise__item-info
+                                    .software-choise__item-title Государственные структуры
+
+        section.section
+            .container
+                .scope
+                    .scope__preview
+                        h2.scope__title Функциональные возможности
+                        p.scope__desc Функционал ПК СВ «Брест» позволяет управлять любыми структурами: от одного <br> сервера до распределённых кластеров и ЦОДов.
+
+                        ul.scope__list
+                            li Настройка параметров домена и репликации
+                            li Настройка доверительных отношений с доменом MS Active Directory*
+                            li Управление объектами домена: компьютерами, пользователям и группами
+                            li Автоматизированная установка ОС и ПО по сети на компьютеры в домене
+                            li Управление и настройка системных сервисов и служб
+                            li Журналирование событий и просмотр системных логов
+                            li Управление иерархией организационной структуры
+                            li Миграция данных из домена MS Active Directory
+                            li Создание и назначение групповых политик на компьютеры и пользователей
+                            li Удаленный доступ к рабочим столам пользователей домена
+                            li Мониторинг состояния домена и серверов
+                            li Взаимодействие с другими продуктами ГК «Астра»
+
+                        span.scope__caption * - на период миграции в системе предусмотрена возможность настройки двусторонних доверительных отношений и синхронизация данных с MS Active Directory
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

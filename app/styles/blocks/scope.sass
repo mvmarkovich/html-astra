@@ -1,0 +1,91 @@
+.scope
+    padding: 40px 24px @lg 40px 32px
+    background: #F2F5F7
+    margin: @md-down 0 -16px
+
+    &__btns
+        margin: 32px 0 0 @md 24px 0 0
+
+        .btn--more
+            width: @sm-down 100%
+            border-color: @sm-down #0079C1
+
+    &__title
+        text: 20px
+        margin: 0 0 24px
+
+    &__subtitle
+        color: #071C27
+        text: 700 16px 1.5
+        margin: 0 0 8px
+
+    &__desc
+        text: 400 14px 1.5 @md 16px
+        margin: 24px 0
+
+    &__list
+        padding: 0 0 0 16px
+        margin: 24px 0
+
+        li
+            margin: 0 0 8px
+            color: #071C27
+            text: 400 14px 1.5 @md 16px
+
+            p
+                color: #071C27
+                text: 400 14px 1.5 @md 16px
+                margin: 0
+
+            &:last-child
+                margin: 0
+
+    &__caption
+        margin: 24px 0
+        color: #6A7E95
+        text: 400 14px 1.5
+
+    &__preview
+        max-width: 765px
+
+        > *
+            &:last-child
+                margin: 0
+
+    &__content
+        margin: 32px 0 0 @sm 48px 0 0 @lg 64px 0 0
+        
+        &.hidden-content
+            display: none
+
+        &.hidden-content--show
+            display: block
+
+        ul
+            padding: @lg-down 0 0 0 16px
+
+            li
+                color: #071C27
+                text: 400 14px 1.5 @md 16px
+
+        h3
+            color: #071C27
+            text: 700 16px 1.5
+            margin: 0 0 8px
+
+    &__gap
+        columns: @md 2
+        margin: @md -16px
+
+    &__column
+        page-break-inside: @md avoid
+        break-inside: @md avoid
+        padding: @md 16px
+        margin: 0 0 16px @md 0
+
+        > *
+            &:last-child
+                margin: 0
+
+        &:last-child
+            margin: 0

@@ -1,0 +1,358 @@
+.catalog
+    &__nav
+        display: none @lg flex
+        align-items: center
+        justify-content: space-between
+        margin: 0 0 24px
+
+    &__sort
+        display: none @lg flex
+        flex-wrap: @lg wrap
+
+        .dropdown
+            margin: @lg 0 16px 0 0
+
+    &__load-more
+        margin: 8px 0 0
+
+        .btn
+            width: @sm-down 100%
+
+        .is-active
+            margin: 16px 0 0
+
+    &__layout
+        display: none @lg flex
+        margin: 0 0 0 64px
+
+        &-btn
+            size: 20px
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain 
+            margin: 0 8px 0 0
+
+            &--tables
+                background-image: resolve("icons/view-tables.svg")
+
+                &.is-active
+                    background-image: resolve("icons/view-tables-active.svg")
+
+            &--blocks
+                background-image: resolve("icons/view-blocks.svg")
+
+                &.is-active
+                    background-image: resolve("icons/view-blocks-active.svg")
+
+            &:last-child
+                margin: 0
+
+    &__head
+        display: none @md flex @lg none
+        align-items: center
+        justify-content: space-between
+        margin: 24px 0
+
+        &-desc
+            color: #AFB8BF
+            text: 400 14px 1.5
+            margin: 0
+
+    &__search
+        position: relative
+        width: 100%
+
+    &__list
+        display: block @lg flex
+        flex-wrap: @lg wrap
+        margin: @lg * -16px
+
+        &.hidden-content
+            ^^&__item
+                display: none
+
+                &:nth-child(-n + 4)
+                    display: block
+
+        &.hidden-content--show
+            ^^&__item
+                display: block
+
+    &__item
+        padding: 24px 0 @lg 0 16px
+        width: 100% @lg 33.3%
+        margin: @lg 0 0 32px
+        border-bottom: @lg-down 1px solid #D5DADD
+
+        &--inner
+            position: relative
+            color: #071C27
+            display: block @md flex @lg block
+            align-items: center
+            justify-content: space-between
+            transition: .2s
+
+            &:hover
+                ^^&-title
+                    color: #0079C1 
+
+        &-preview
+            display: @lg-down flex
+            align-items: @lg-down center
+            margin: 0 0 16px @md 0 32px 0 0 @lg 0
+
+        &-img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            max-width: 60px @lg 140px @xl 187px
+
+            &--wrap
+                position: relative
+                padding: 0 @lg 100% 0 0
+                background: #fff
+                border: 1px solid #E8ECEF
+                margin: 0 32px 0 0 @lg 0 0 16px
+                display: block
+                size: @lg-down 78px
+                min-width: @lg-down 78px
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5
+            min-height: @lg 48px
+            display: block
+
+        &-labels
+            position: @lg absolute
+            top: @lg 8px
+            left: @lg 8px
+            display: flex
+            flex-wrap: wrap
+            align-items: center
+            justify-content: @md flex-end @lg flex-start
+            max-width: @md 320px @lg 100%
+            margin: 0 -6px -8px
+
+            &-col
+                margin: 0 6px 8px 6px
+                display: inline-flex
+                align-items: center
+                background: #F2F5F7
+                padding: 4px 12px @lg 8px 12px
+                min-height: @lg 40px
+                min-width: @lg 40px
+                
+                &-icon
+                    size: 16px @lg 20px
+                    min-width: 16px @lg 20px
+
+                &-title
+                    color: #6A7E95
+                    text: 400 14px 1.5
+                    margin-left: 8px
+                    display: @lg none
+
+        &-versions
+            position: @lg absolute
+            top: @lg 0
+            left: @lg 0
+            z-index: @lg 2
+            max-width: @md 320px @lg 100%
+
+            &-preview
+                color: @lg #4A5A68
+                text: @lg 400 14px 1.5
+                background: @lg #F2F5F7
+                padding: @lg 0 16px
+                min-height: @lg 36px
+                display: none @lg inline-flex
+                align-items: @lg center
+
+                &:after
+                    content: ''
+                    size: @lg 20px
+                    min-width: @lg 20px
+                    margin: @lg 0 0 0 4px
+                    background: @lg resolve("icons/tooltip.svg") no-repeat center / contain
+                    display: none @lg inline-flex
+
+            &-body
+                position: @lg absolute
+                top: @lg 36px
+                padding: @lg 8px
+                border: @lg 1px solid #D5DADD
+                z-index: @lg 2
+                background: #fff
+                width: @lg 220px
+                opacity: @lg 0
+                visibility: @lg hidden
+                transition: @lg 0s
+
+            &-list
+                display: flex
+                flex-wrap: wrap
+                justify-content: @md flex-end @lg flex-start
+                margin: 0 -4px -8px
+
+                .btn
+                    color: #6A7E95
+                    margin: 0 4px 8px
+                    padding: 4px 12px
+                    align-items: flex-start
+                    text-align: left
+                    white-space: pre-wrap
+                    min-height: 30px
+                    line-height: 1.4
+
+                    &:before
+                        size: 16px
+                        min-width: 16px
+                        margin-top: 2px
+
+                    &:not(:disabled):not(.disabled)
+                        cursor: default
+
+            &:hover
+                ^&-body
+                    opacity: @lg 1
+                    visibility: @lg visible
+
+        &:first-child
+            padding-top: @lg-down 0 
+
+        &:last-child
+            padding-bottom: @lg-down 0
+            border: @lg-down none
+
+    &[data-view="catalog-tables"]
+        ^&__head
+            display: @md flex
+
+        ^&__list
+            display: block
+            margin: 0
+
+        ^&__item
+            width: 100%
+            padding: 24px 0
+            border-top: 1px solid #D5DADD
+            margin: 0
+
+            &:first-child
+                padding-top: 0 
+                border: none
+
+            &--inner
+                display: @md flex
+                align-items: @md center
+                justify-content: @md space-between
+
+            &-preview
+                display: flex
+                align-items: center
+                margin: 0 0 16px @md 0 32px 0 0
+
+            &-img
+                max-width: 60px
+
+                &--wrap
+                    size: 78px
+                    min-width: 78px
+                    margin: 0 32px 0 0
+                    padding: 0
+
+            &-title
+                min-height: 1px
+
+            &-labels
+                position: static
+                max-width: @md 320px @xl 390px
+                justify-content: @md flex-end
+
+                &-col
+                    padding: 4px 12px
+                    min-height: 30px
+
+                    &-icon
+                        size: 16px
+
+                    &-title
+                        display: block
+
+            &-versions
+                position: static
+                max-width: @md 320px @xl 490px
+
+                &-preview
+                    display: none
+
+                &-body
+                    position: static
+                    width: auto
+                    opacity: 1
+                    visibility: visible
+                    padding: 0
+                    border: none
+
+                &-list
+                    justify-content: @md flex-end
+
+            &:last-child
+                padding-bottom: 0 
+
+    &--full
+        margin: 12px 0 0 @lg 20px 0 0
+
+        ^&__item
+            width: @lg 25%
+
+    &--slider
+        ^&__item
+            width: @lg 330px
+            margin: @lg 0
+
+        .slick-arrow
+            top: @lg calc(50% - 32px)
+
+        .slick-next
+            right: @lg -20px
+
+        .slick-prev
+            left: @lg -20px
+
+    &--materials
+        &[data-view="catalog-tables"]
+            .materials__list
+                margin: @lg 0
+
+            .materials__item
+                width: @lg 100%
+                border-bottom: @lg 1px solid #D5DADD
+                padding: @lg 24px 0
+                margin: @lg 0
+
+                &:last-child
+                    border: @lg none
+
+            .materials__item--inner
+                flex-direction: @lg row
+                align-items: @lg center
+
+            .materials__item-top
+                display: @lg flex
+                align-items: @lg center
+
+            .materials__item-media
+                max-width: @lg 60px
+                max-height: @lg 60px
+
+            .materials__item-media--wrap
+                size: @lg 78px
+                min-width: @lg 78px
+                margin: @lg 0 32px 0 0
+                padding: @lg 0
+
+            .materials__item-btns
+                margin: @lg 0 0 0 32px

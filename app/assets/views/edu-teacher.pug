@@ -1,0 +1,199 @@
+extends layouts/layout.pug
+
+block title
+    title Обучение - Преподавателям | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Авторизованные преподователи
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Преподавателям вузов и колледжей
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Портал обучения
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Задать вопрос
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu.html") Обучение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Преподавателям
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Астра Академия
+                            p.intro__desc Астра Академия проводит на регулярной основе обучение для преподавателей Авторизованных Учебных Центров  (ведущие ВУЗЫ России, техникумы, колледжи) и партнёров ГК Астра.
+
+                        .intro__img--wrap
+                            img.intro__img(src="img/content/edu/intro/plug-auth.svg" width="560" height="512" alt="Название")
+
+        section.section
+            .container
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h3 О академии
+                                    .os-hero__desc <strong>Обучение в Астра Академии проводят преподаватели ГК Астра.</strong> <br> Это специалисты высокого уровня в своих областях, авторы многих статей и книг, спикеры отраслевых конференций, постоянно повышающие свой профессиональный опыт.  
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/edu/os-hero/plug-teacher-1.svg" width="420" height="310" alt="Название")
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Материалы
+
+                .materials
+                    .materials__list.materials__list--bg
+                        .materials__item.col-12
+                            a.materials__item--inner(href="#" download)
+                                .materials__item-img--wrap
+                                    img.materials__item-img(src="img/icons/material-doc.svg" width="56" height="56" alt="Документ")
+
+                                .materials__item-text
+                                    .materials__item-title Сотрудниками департамента образования группы компаний разработана линейка курсов, методические материалы для подготовки IT-специалистов по операционной системе Astra Linux.
+
+        section.section.section-anchor#anchor-2
+            .container
+                .os-hero.os-hero--reverse
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h2 Портал обучения
+                                    .os-hero__desc ГК Астра активно развивает современные дистанционные технологии, имеет собственный портал обучения. Доступ к материалам: 24/7 из любой точки мира при наличии Интернет. Образовательный портал позволяет проводить обучение в онлайн формата по базовому, расширенному и сетевому администрированию ОС Astra Linux 
+
+                                .btn--block.os-hero__btns
+                                    a.btn.btn--border.btn--target-sec-after(href="#") Подробнее
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/edu/os-hero/plug-teacher-2.svg" width="470" height="510" alt="Название")
+
+        section.feedback.feedback--narrow.section-anchor#anchor-3
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Связаться с нами
+
+                        .feedback__form-content
+                            .form__desc Выберите тему обращения:
+
+                            .feedback__tags
+                                .feedback__tags-list
+                                    .input
+                                        input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                            .form__desc Данные для связи:
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                            .input
+                                textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                            p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Проверка на количество материалов
+        //
+
+        let listMaterials = document.querySelectorAll('.materials__list');
+
+        for (let i = 0; i < listMaterials.length; ++i) {
+            if (listMaterials[i].children.length > 6) {
+                let DOMmore = document.createElement('div');
+                DOMmore.className = 'btn--block materials__more';
+                DOMmore.innerHTML = '<button class=" btn btn--reset btn--more js-show-more" aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть">Развернуть</button>';
+                listMaterials[i].parentElement.append(DOMmore);
+
+                listMaterials[i].classList.add('hidden-content')
+            }
+        }
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

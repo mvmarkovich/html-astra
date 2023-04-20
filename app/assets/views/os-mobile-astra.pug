@@ -1,0 +1,342 @@
+extends layouts/layout.pug
+
+block title
+    title Мобильная Астра | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Мобильная Астра
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Преимущества
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Планшеты
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Где купить
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="os.html") Операционные системы
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Мобильная Астра
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static.intro--light.intro--narrow
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            h1.intro__title Мобильная Астра
+                            p.intro__desc Мобильная версия Astra Linux — адаптированная для смартфонов, планшетов и других мобильных устройств операционная система, обеспечивающая реализацию сценариев мобильного использования в защищённой корпоративной ИT-инфраструктуре, а также функционирование требуемых мобильных технологий, аппаратных и программных компонентов
+
+                            .btn--block
+                                a.btn.btn--border(href="#") Где купить
+
+                        .intro__img--wrap
+                            img.intro__img(src="img/content/os/intro/mobile-astra.webp" width="486" height="431" alt="Название")
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Ключевые улучшения:
+                    p Для различных процессорных архитектур разработаны специальные варианты исполнения с защитой всех компонентов и программных ресурсов
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_1.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Адаптивность
+                                        .features__item-desc Специальный интерфейс адаптирован под сенсорные экраны и малые диагонали мобильных устройств и малые диагонали
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_2.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Централизованность
+                                        .features__item-desc Парк устройств с мобильной «Астрой» можно централизованно администрировать при помощи ALD Pro
+
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_3.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Удобство
+                                        .features__item-desc Позволяет работать как за обычным офисным компьютером, подключив мышь, клавиатуру и монитор
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_4.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Средства защиты информации
+                                        .features__item-desc Содержит встроенный комплекс СЗИ от НСД. Совместима с антивирусными средствами и средствами криптографической защиты информации.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_5.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Гибкость
+                                        .features__item-desc Даёт возможность через эмулятор запускать приложения для Android, расширяя этим экосистему ПО до глобальной
+
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_6.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Поддержка широкого спектра устройств
+                                        .features__item-desc Поддерживает сенсорные экраны, камеры, микрофоны, NFC, модули сотовой связи 3G и 4G, а также GPS, ГЛОНАСС и др.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_7.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Безопасность
+                                        .features__item-desc Встроенные средства защиты информации и поддержка сторонних СКЗИ по умолчанию обеспечивают высокий уровень информационной безопасности
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_8.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Оптимизация
+                                        .features__item-desc Увеличивает время автономной работы мобильных устройств благодаря экономному энергопотреблению
+
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/mobile-astra/item_9.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Совместимость
+                                        .features__item-desc Работает с большинством планшетов из реестра Минпромторга России
+
+        section.section.section-anchor#anchor-2
+            .container
+                .title__block
+                    h2 Планшеты
+
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-7
+                                .os-hero__text
+                                    .os-hero__subtitle Мобильная Астра — это не отдельная операционная система, а тот же дистрибутив Astra Linux Special Edition, при установке которого выбран мобильный режим применения.
+                                    .os-hero__desc Уже сейчас мобильная версия Astra Linux работает на различных устройствах от российских производителей оборудования, защищённых на аппаратном уровне.
+                                
+                            .os-hero__img--wrap.col-12.col-md-5
+                                img.os-hero__img(src="img/content/hero/intership.webp" width="583" height="444" alt="Название")
+
+        section.section
+            .container
+                .block-bg-blue
+                    .title__block
+                        h2.h3 Все преимущества ОС Astra Linux на планшете
+
+                    .features.features--light
+                        .features__body
+                            .features__list.row
+                                .features__item.col-12.col-md-6.col-lg-4
+                                    .features__item--inner
+                                        .features__item-img--wrap
+                                            img.features__item-img(src="img/content/os/features/mobile-astra/item_10.svg" width="64" height="64" alt="Название")
+
+                                        .features__item-info
+                                            .features__item-title Большой репозиторий
+                                            .features__item-desc 20 000+ пакетов
+
+                                .features__item.col-12.col-md-6.col-lg-4
+                                    .features__item--inner
+                                        .features__item-img--wrap
+                                            img.features__item-img(src="img/content/os/features/mobile-astra/item_11.svg" width="64" height="64" alt="Название")
+
+                                        .features__item-info
+                                            .features__item-title Конфидециальность
+                                            .features__item-desc Обработка любой конфидециальной информации
+
+                                .features__item.col-12.col-md-6.col-lg-4
+                                    .features__item--inner
+                                        .features__item-img--wrap
+                                            img.features__item-img(src="img/content/os/features/mobile-astra/item_12.svg" width="64" height="64" alt="Название")
+
+                                        .features__item-info
+                                            .features__item-title Экосистема продуктов
+                                            .features__item-desc 300+ совместимых программных продуктов
+
+        section.section.section-bg-gray
+            .container
+                .os-faq
+                    .os-faq__row.row
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_1.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Стать партнёром
+                                        .os-faq__col-desc Партнёр имеет право получать информацию о скидках, специальных акциях, получать консультации и дополнительную поддержку после авторизации и присвоения компании статуса официального партнёра.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_2.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Поддержка
+                                        .os-faq__col-desc В лицензию на ОС по умолчанию входит «Стандартный» пакет услуг поддержки. При этом мы готовы предложить вам намного больше — пакет «Привилегированный»: персонализированный сервис 24х7, ускоренное решение вопросов и расширенный спектр услуг.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+                                        a.link.link-accent.link--phone-before(href="tel:+74953694816") +7 495 369-48-16
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_3.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Лицензионное соглашение
+                                        .os-faq__col-desc Условия лицензирования продукта соответствуют требованиям действующего законодательства РФ  и международных правовых актов. <br> Правообладатель продукта — ООО «РусБИТех — Астра»
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_4.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Обучение
+                                        .os-faq__col-desc Авторизованное обучение применению продуктов ГК «Астра» проводится более чем в 60 учебных центрах в Москве и регионах. Для подготовки квалифицированных специалистов компания тесно взаимодействует с множеством образовательных учреждений, в числе которых ведущие вузы страны, колледжи, школы и т.д.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+
+
+block scripts
+    script(type="text/javascript").
+        let listComposition = document.querySelectorAll('.os-compos__item-list');
+
+        for (let i = 0; i < listComposition.length; ++i) {
+            if (listComposition[i].clientHeight > 300) {
+                listComposition[i].classList.add('is-higher')
+            }
+        }
+
+        //
+        // Accordion
+        //
+
+        let items = document.querySelectorAll(".accordion button");
+        
+        function toggleAccordion() {
+            let itemToggle = this.getAttribute('aria-expanded');
+            
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.parentElement.classList.add('is-show');
+            } else {
+                this.setAttribute('aria-expanded', 'false');
+                this.parentElement.classList.remove('is-show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+       function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

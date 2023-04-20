@@ -1,0 +1,228 @@
+.aside
+    margin: 24px 0 40px @sm 0 0 40px @lg 
+
+    &__title
+        color: #071C27 @lg #4A5A68
+        text: 700 20px 1.5
+        margin: 0 0 24px
+
+    &__nav
+        margin: @lg 0 0 24px
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+            height: @lg-down 40px
+            overflow: @lg-down hidden 
+
+            &.is-show
+                height: @lg-down auto
+
+                ^^&-item
+                    opacity: @lg-down 1
+                    transform: @lg-down translateY(0)
+
+                .aside__nav-link:after
+                    transform: @lg-down rotate(180deg)
+
+        &-item
+            margin: 0 0 8px
+            transform: @lg-down translateY(-10px)
+            transition: .2s
+            opacity: @lg-down 0
+
+            &.is-current
+                transform: @lg-down none
+                opacity: @lg-down 1
+
+                ^^&-link
+                    position: relative
+                    pointer-events: none
+                    color: #0079C1
+                    background: #E9F6FD
+                    display: @lg-down block
+                    white-space: @lg-down nowrap
+                    padding: @lg-down 8px 52px 8px 24px
+                    overflow: @lg-down hidden
+                    text-overflow: @lg-down ellipsis
+
+                    &:after
+                        content: ''
+                        background: resolve("icons/chevron-down-bold.svg") no-repeat center / contain
+                        size: 20px
+                        min-width: 20px
+                        display: inline-flex @lg none
+                        transition: .2s
+                        position: absolute 10px 24px null null 
+
+            &:last-child
+                margin: 0
+
+        &-link
+            color: #4A5A68
+            text: 700 14px 1.5
+            padding: 0 24px @lg 8px 24px
+            min-height: 40px
+            display: inline-flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+
+            &:hover
+                background: #F2F5F6
+
+    &__card
+        margin: 0 0 24px
+        
+        &-title
+            color: #071C27
+            text: 700 16px 1.6
+            margin: 0 0 12px
+
+        &--filter
+            margin: @lg-down 24px 0 0
+
+            .dropdown
+                margin: 0 0 8px @lg 0 0 24px
+
+                &:last-child
+                    margin: 0
+
+            .dropdown__btn
+                min-height: @lg-down 40px
+                color: @lg-down #4A5A68
+                background: @lg-down #F2F5F6 
+                padding: @lg-down 0 24px
+                justify-content: @lg-down space-between
+                width: @lg-down 100%
+                font-size: @lg-down 14px
+                font-weight: @lg-down 700
+
+                &:after
+                    background-image: @lg-down resolve("icons/chevron-down-bold.svg")
+                    size: @lg-down 20px
+                    min-width: @lg-down 20px
+
+            .dropdown__menu
+                right: auto
+                left: 0
+                width: 100% @lg auto
+                height: @lg-down 0
+                transition: @lg-down .2s
+                overflow: hidden
+                transform: translateY(-10px)
+
+            .dropdown--open
+                margin: @lg-down 0 0 16px
+
+                .dropdown__btn
+                    color: @lg-down #0079C1
+                    background: @lg-down #E9F6FD
+                    margin: @lg-down 0 0 8px
+
+                .dropdown__menu
+                    height: @lg-down auto
+                    transform: @lg-down translateY(0)
+                
+    &__feedback
+        background: #F2F5F7
+        padding: 32px
+        margin: 0 0 24px
+
+        &-title
+            color: #071C27
+            text: 700 20px 1.5
+            margin: 0 0 16px
+
+        &-desc
+            color: #6A7E95
+            text: 400 14px 1.3
+            margin: 16px 0
+
+        &-btn
+            margin: 24px 0 0
+            width: 100%
+
+    &__btns
+        margin: 24px 0 0 @lg 0 0 24px
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0 -4px -16px @sm 0 -8px -16px @lg 0
+
+            display: flex @lg block
+            flex-wrap: wrap
+
+        &-item
+            margin: 0 0 16px
+            width: 100% @xs 50% @lg 100%
+            padding: 0 4px @sm 0 8px @lg 0 
+
+            &:last-child
+                margin: @lg 0
+
+        &-link
+            color: #071C27
+            text: 700 12px 1.3
+            display: inline-flex
+            align-items: center
+            justify-content: space-between
+            min-height: 48px
+            padding: 0 16px @xl 0 24px
+            box-shadow: 0px 2px 8px rgba(6, 50, 77, 0.15)
+            width: 100%
+
+            &:after
+                content: ''
+                size: 20px
+                min-width: 20px
+                display: inline-flex
+                margin-left: 8px
+                background: resolve("icons/arrow-right-accent.svg") no-repeat center / contain 
+
+    &__faq-side
+        margin: 24px 0 0 @lg 0 0 24px
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+
+        &-item
+            margin: 0 0 16px
+
+            &:last-child
+                margin: 0
+
+        &-link
+            background: #F2F5F6
+            padding: 16px @xl 16px 24px 
+
+            display: flex
+            align-items: center
+            justify-content: space-between
+
+        &-title
+            color: #071C27
+            text: 700 12px 1.3
+            margin: 0 16px 0 0
+
+        .btn--target-after
+            border: @xs-down none
+            background: @xs-down transparent
+            color: @xs-down transparent
+            padding: @xs-down 0
+            width: @xs-down 20px
+            min-height: @xs-down 20px
+            text-indent: @xs-down -9999px
+
+            &:after
+                margin: @xs-down 0
+
+    & > *
+        &:last-child
+            margin-bottom: 0 
+
+        

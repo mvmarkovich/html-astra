@@ -1,0 +1,149 @@
+.promo-banner
+    position: relative
+    margin: @md-down 0 -16px
+    padding: @md-down 0 0 48px
+
+    &__slider
+        .slick-arrow
+            top: @md-down auto
+            transform: @md-down none
+            bottom: @md-down -48px
+
+        .slick-prev
+            left: 16px @md -20px
+
+        .slick-next
+            right: 16px @md -20px
+
+    .slider-dots-line
+        position: absolute
+        bottom: 64px @md 32px
+        left: 16px @md 32px @lg 64px
+
+    &__item
+        &--body
+            color: #fff
+            position: relative
+            display: flex
+            flex-direction: column
+            justify-content: flex-end
+
+            &::before
+                content: ''
+                background: linear-gradient(0deg, rgba(0, 58, 92, 0.5), rgba(0, 58, 92, 0.5))
+                position: absolute 0 
+                transition: .4s ease-out
+                opacity: 0
+                z-index: 1
+
+            &:after
+                content: ''
+                size: 100%
+                position: absolute 0 0 null null
+                background: linear-gradient(201.32deg, rgba(0, 0, 0, 0) 43.43%, #003A5C 100.49%)
+
+            &:hover
+                ^^&-img
+                    transform: scale(1.05)
+
+                &::before
+                    opacity: 1
+
+        &-img
+            @extend .img-cover
+            transition: .4s ease-out
+            size: 100%
+            object-fit: cover
+
+            &--wrap
+                @extend .img-cover-wrapper
+                padding: 41.5% 0 0
+                min-height: 250px
+
+        &-info
+            position: absolute
+            left: 16px @md 32px @lg 64px
+            bottom: 32px @md 64px
+            right: 16px @md 32px @lg 64px
+            max-width: @lg 740px
+            z-index: 2
+
+        &-title
+            color: #fff
+            text: 700 16px 1.5 @sm 20px @lg 24px
+            margin: 0 0 8px
+
+        &-desc
+            position: relative
+            color: #fff
+            text: 400 14px 1.5 @md 16px
+            -webkit-line-clamp: 3 @lg 8
+            display: -webkit-box
+            -webkit-box-orient: vertical
+            overflow: hidden
+            max-height: 62px @md 100%
+
+.promo-list
+    &__row
+        margin: 0 -8px -16px @sm 0 -12px -24px @lg 0 -16px -32px
+
+    &__item
+        margin-bottom: 16px @sm 24px @lg 32px
+        padding: 0 8px @sm 0 12px @lg 0 24px
+
+        &--body
+            position: relative
+            height: 100%
+            min-height: 180px
+            padding: 24px
+            display: block
+
+            &::before
+                content: ''
+                background: linear-gradient(0deg, rgba(0, 58, 92, 0.5), rgba(0, 58, 92, 0.5))
+                position: absolute 0 
+                transition: .4s ease-out
+                opacity: 0
+                z-index: 1
+
+            &::after
+                content: ''
+                size: 100%
+                position: absolute 0 0 null null
+                background: linear-gradient(19.99deg, #003A5C 4.81%, rgba(0, 58, 92, 0) 47.33%)
+
+            &:hover
+                ^^&-img
+                    transform: scale(1.05)
+
+                &::before
+                    opacity: 1
+
+        &-img
+            position: absolute 0 0 null null
+            size: 100%
+            object-fit: cover
+            transition: .4s ease-out
+
+            &--wrap
+                position: absolute
+                top: 0
+                left: 0
+                overflow: hidden
+                size: 100%
+
+        &-info
+            position: relative
+            z-index: 10
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: flex-start
+            height: 100%
+
+        &-date
+            margin-bottom: 24px
+
+        &-title
+            color: #fff
+            text: 700 16px 1.5

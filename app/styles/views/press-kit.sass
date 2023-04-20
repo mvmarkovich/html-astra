@@ -1,0 +1,47 @@
+.main-container .section:first-of-type
+    margin-top: 0 
+
+.main-container .section:last-of-type
+    margin-bottom: 40px
+    
+.section__filter
+    margin: 0 0 32px
+
+    &-head
+        display: @lg flex
+        align-items: @lg flex-start
+        justify-content: @lg space-between
+
+        &-row
+            display: @lg flex
+            align-items: @lg center
+
+            .dropdown
+                .btn
+                    justify-content: @lg-down space-between
+                    min-height: @lg-down 40px
+
+            > *
+                margin: 0 0 16px @lg 0 16px 0 0
+
+                &:last-child
+                    margin: 0
+
+            .tabs__nav--filter
+                margin: 0
+
+        .title__block
+            margin: @lg 0 32px 0 0
+
+        h2
+            margin: @lg 0
+
+    &-search
+        position: relative
+        width: 100% @lg 300px
+
+    &-body
+        margin: 32px 0 0
+
+    &-form
+        max-width: 620px

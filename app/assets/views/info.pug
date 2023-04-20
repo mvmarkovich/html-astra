@@ -1,0 +1,125 @@
+extends layouts/layout.pug
+
+block title
+    title Информация | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Информация
+
+    .main-block 
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Информация
+                        p.intro__desc Здесь собраны статьи, учебники, справочная информация по ОС Astra Linux и остальным продуктам ГК «Астра» и другие полезные материалы: сертификаты, лицензии и российские шрифты. Все, что есть в этом разделе, включая учебные пособия, бесплатно и общедоступно.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/info/intro.webp" width="633" height="429" alt="Название")
+
+        section.section
+            .container
+                .faq-links.faq-links--big
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="info-law.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-links/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Правовая информация
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="info-docs.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-links/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Документы
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="info-reference.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-links/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Справочные разделы
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="info-library.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-links/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Библиотека
+
+                            .faq-links__item.col-12.col-md-6.col-lg-8
+                                a.faq-links__item--inner(href="info-manuals.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-links/item_5.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Учебно-методические и научные публикации
+
+        section.section
+            .container
+                .title__block
+                    h2 Сторонние ресурсы
+
+                .faq-links.faq-links--side
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                .faq-links__item--inner
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-side/item_1.svg" width="88" height="88" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Виртуальный тур
+                                        a.btn.btn--tiny.btn--border.btn--target-after(href="#" target="_blank") Перейти
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                .faq-links__item--inner
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-side/item_2.svg" width="88" height="88" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Форум
+                                        a.btn.btn--tiny.btn--border.btn--target-after(href="#" target="_blank") Перейти
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                .faq-links__item--inner
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/info/faq-side/item_3.svg" width="88" height="88" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title WIKI-библиотека
+                                        a.btn.btn--tiny.btn--border.btn--target-after(href="#" target="_blank") Перейти
+
+
+                
+
+            
+        
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

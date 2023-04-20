@@ -1,8 +1,385 @@
 .header
-    
+    position: sticky @lg relative
+    top: 0
+    background: #fff
+    border-bottom: 1px solid #E8ECEF
+    z-index: 999
 
+    &__row
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: @lg wrap @xl nowrap
+        height: @xl 64px
+        padding: 12px 0 @lg 12px 0 0 @xl 0
 
+    &__start
+        display: flex
+        align-items: center
+        order: 1
 
+    &__logo
+        display: block
+        size: 112px 30px
+        min-width: 112px
+
+    &__btn-close-menu
+        display: @lg none
+        z-index: 1001
+        position: absolute
+        right: -10px
+        top: -5px
+
+    &__nav
+        order: 3 @xl 2
+        width: @lg 100% @xl auto
+        margin: @lg 24px 0 0 @xl 0
+        display: none @lg block
+        position: @lg-down fixed 0 0 null 0
+        overflow-y: @lg-down auto
+        height: @lg-down 100vh
+        background: @lg-down #fff
+        z-index: @lg-down 999
+        padding: @lg-down 24px 24px 0
+
+        &-panel
+            position: relative
+            display: flex
+            justify-content: space-between
+            align-items: center
+            max-width: 736px
+            margin: 0 auto 32px
+
+            ^&-title
+                margin: 0 24px 0 0
+                padding: 0
+
+        &-title
+            text: #071C27 700 20px 1.6
+            text-transform: uppercase
+            margin: 0 auto 32px @lg 0 0 24px
+            max-width: @lg-down 736px
+            padding: @lg-down 0 0 0 40px
+
+        &-desc
+            text: #071C27 20px
+            margin: 28px 0 20px
+            display: @lg-down none
+
+        &-btn-trans
+            color: #6A7E95
+            margin: 0 0 32px
+            display: @lg-down none
+
+            &:after
+                background-image: svg-load("icons/arrow-right.svg", stroke="#6A7E95")
+                margin: 0 0 0 16px
+
+        &.opened-child-menu
+            ^&-panel
+                margin: @lg-down 0
+
+                ^^&-title
+                    display: @lg-down none
+
+            ^&-link
+                display: @lg-down none
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0 auto @lg 0
+
+            display: @lg flex
+            align-items: @lg center
+            justify-content: @lg space-between @xl flex-start
+            max-width: @lg-down 736px
+
+        &-item
+            &.is-hover
+                ^^&-child
+                    visibility: @lg visible
+                    opacity: @lg 1
+
+                    &-nav
+                        visibility: @lg visible
+                        opacity: @lg 1
+                        transition: @lg .4s
+
+            &:last-child
+                margin: 0
+
+                ^^&-link
+                    border: @lg-down none
+
+        &-link
+            pointer-events: @lg-down none
+            position: relative
+            text: #4A5A68 400 14px 1.4
+            text-decoration: none
+            display: inline-flex
+            align-items: center
+            justify-content: @lg-down space-between
+            min-height: 52px @lg 28px
+            padding: @lg 0 16px 12px @xl 0 16px
+            height: @xl 64px
+            border-bottom: @lg-down 1px solid #E7E7E7
+            width: @lg-down 100%
+            text-align: @lg center
+
+            &.is-selected
+                color: #0079C1
+
+            &:after
+                content: ''
+                display: @lg none
+                background: resolve("icons/chevron-right.svg")
+                display: inline-flex
+                size: 20px
+                min-width: 20px
+
+        &-child
+            background: #fff
+            position: @lg absolute
+            top: 0 @lg 108px @xl 65px
+            left: 0
+            z-index: 999
+            width: 100%
+            height: @lg calc(100vh - 108px) @xl 462px
+            overflow: @lg auto
+            opacity: @lg 0
+            visibility: @lg hidden
+            display: @lg-down none
+
+            &.show
+                display: @lg-down block
+
+            &-close
+                position: absolute
+                top: 30px
+                right: 46px
+                display: @lg-down none
+                z-index: 1200
+
+            &-nav
+                width: 100% @lg 50%
+                padding: @lg 40px 56px 40px 16px @xl 48px 64px 48px 0
+
+                transition: @lg 0s
+                visibility: @lg hidden
+                opacity: @lg 0
+
+            &-list
+                list-style: none
+                padding: 0
+                margin: @lg 0 -16px -16px
+
+                display: @lg flex
+                flex-wrap: @lg wrap
+
+            &-item
+                padding: @lg 0 16px
+                margin: 0 -24px @lg 0 0 16px
+                width: @lg 33.3%
+
+                &-selected
+                    color: #0079C1
+
+                &--column
+                    width: @lg 66.6% @xl 33.3%
+
+                    ^^^&-submenu-list
+                        display: @lg flex
+                        flex-wrap: @lg wrap
+                        margin: @lg 0 -8px
+
+                    ^^^&-submenu-item
+                        width: @lg 50%
+                        padding: @lg 0 8px
+
+                &.is-active
+                    padding: @lg-down 0 24px
+                    border-bottom: @lg-down 1px solid #E7E7E7
+
+                    ^^&-link
+                        padding: 0
+
+                        & ~ .header__nav-submenu 
+                            display: @lg-down block
+
+                        &:after
+                            transform: @lg-down rotate(-90deg)
+
+                &:last-child
+                    
+                    ^^&-link
+                        border: @lg-down none
+
+            &-link
+                position: relative
+                text: #010101 700 16px 1.7 @lg 12px
+                display: inline-flex @lg block
+                align-items: center
+                justify-content: space-between
+                min-height: @lg-down 60px
+                width: @lg-down 100%
+                border-bottom: @lg-down 1px solid #E7E7E7
+                padding: @lg-down 0 24px
+
+                &:after
+                    content: ''
+                    display: @lg none
+                    background: resolve("icons/chevron-right.svg")
+                    display: inline-flex
+                    size: 20px
+                    min-width: 20px
+
+            .container
+                position: relative
+                display: flex
+                height: 100%
+                padding: @xl-down 0
+
+        &-submenu
+            margin: @lg 12px 0 0
+            display: @lg-down none
+
+            &-list
+                list-style: none
+                padding: 0
+                margin: 0
+
+            &-item
+                margin: @lg 0 0 16px
+
+                &-selected
+                    color: #0079C1
+                    text-decoration: none
+
+                &:last-child
+                    margin: 0
+
+                    ^^&-link
+                        border: @lg-down none
+
+            &-link
+                position: relative
+                text: #071C27 400 14px 1.5 @lg #6A7E95
+                display: @lg-down inline-flex
+                align-items: @lg-down center
+                justify-content: @lg-down space-between
+                min-height: @lg-down 52px
+                width: @lg-down 100%
+                border-bottom: @lg-down 1px solid #E7E7E7
+
+                &:after
+                    content: ''
+                    display: @lg none
+                    background: resolve("icons/chevron-right.svg")
+                    display: inline-flex
+                    size: 20px
+                    min-width: 20px
+
+    &__panel
+        display: flex
+        align-items: center
+        order: 2 @xl 3
+
+        > *
+            margin: 0 0 0 16px
+
+            &:first-child
+                margin: 0
+
+    &__burger
+        display: @lg none
+        margin: 0 12px 0 0
+
+    &__carousel
+        position: @lg absolute
+        top: @lg 108px @xl 64px
+        height: @lg calc(100vh - 108px) @xl 462px
+        left: @lg 0
+        width: @lg 100%
+        margin: @lg-down 16px -24px 0
+        visibility: @lg hidden
+        opacity: @lg 0
+        overflow: hidden
+        transition: @lg 0s
+        box-shadow: @lg 0px 6px 18px rgba(6, 50, 77, 0.15)
+
+        &.is-active
+            transition: @lg 0s
+            visibility: @lg visible
+            opacity: @lg 1
+
+        .container
+            position: @lg relative
+            height: @lg 100%
+            padding: @lg-down 0
+
+    &__slider
+        position: @lg relative
+        height: @lg 100%
+        z-index: 1100
+
+        &-wrap
+            position: relative
+            margin: 0 0 0 auto
+            width: @lg 50%
+            height: @lg 100%
+
+            .slider-dots-line
+                position: absolute
+                top: 36px @lg 40px
+                left: 24px @lg 40px
+                z-index: 1150
+        
+        &-item
+            height: @lg calc(100vh - 108px) @xl 464px
+            background: #F2F5F7
+
+            &--inner
+                display: flex
+                flex-direction: column
+                justify-content: flex-end
+                align-items: flex-start
+                padding: 80px 24px 24px @lg 48px
+                height: @lg 100%
+                width: 100%
+
+            &-title
+                color: #071C27
+                text: 700 18px 1.6
+                margin: 0 0 16px @lg 0 0 4px
+
+            &-desc
+                color: #6A7E95
+                text: 400 16px 1.5
+                margin: 0
+                min-height: @lg 78px
+
+            .btn--arrow-right-after
+                color: #6A7E95
+                margin: 32px 0 0
+
+                &:after
+                    background-image: svg-load("icons/arrow-right.svg", stroke="#6A7E95")
+                    margin: 0 0 0 16px
+
+.mobile-menu-back 
+    display: none
+    position: absolute
+    top: -5px
+    left: -10px
+    z-index: 1001
+
+    &.show
+        display: inline-flex
+
+.header--mobile-menu
+    .header__nav
+        display: @lg-down block
 
 
 

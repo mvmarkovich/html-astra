@@ -1,0 +1,86 @@
+.eco-catalog
+    &__row
+        position: relative
+        display: @lg flex
+        flex-wrap: @lg nowrap
+        justify-content: @lg space-between
+        margin: @lg 0 -16px
+
+    &__content
+        width: 100% @lg 55%
+        padding: @lg 0 16px
+
+    &__list
+        display: flex
+        flex-wrap: wrap
+        margin: 0 -12px -12px @sm 0 -16px -16px
+
+    &__col
+        width: 50% @sm 33.3% @lg 50% @xl 33.3%
+        padding: 0 6px @sm 0 8px
+        margin: 0 0 12px @sm 0 0 16px
+
+        &--body
+            background: #fff
+            border: 1px solid #F2F5F6
+            height: 100%
+            padding: 16px @sm 24px
+            min-height: 128px @sm 164px
+            display: block
+            transition: .4s
+            box-shadow: none
+
+            &:hover
+                box-shadow: 0px 2px 8px rgba(6, 50, 77, 0.15)
+
+                ^^&-bar--wrap
+                    opacity: 1
+                    visibility: visible
+
+        &-img
+            position: absolute 50% null null 50%
+            transform: translate(-50%, -50%)
+            padding: 4px 8px
+            max-width: 100%
+            max-height: 40px @sm 48px
+            height: 100%
+
+            &--wrap
+                position: relative
+                overflow: hidden
+                height: 40px @sm 48px
+                margin: 0 0 8px @sm 0 0 12px
+
+        &-bar
+            max-width: 466px
+            width: 100%
+            margin: 0 auto
+
+            &--wrap
+                position: absolute
+                top: 0
+                right: 0
+                padding: 0 16px
+                width: 45%
+                opacity: 0
+                z-index: 10
+                transition: .4s ease
+                visibility: hidden
+                display: @lg-down none
+
+        &-desc
+            color: #6A7E95
+            text: 400 12px 1.5
+
+    &__img
+        max-width: 466px
+        width: 100%
+        margin: 0 auto
+
+        &--wrap
+            padding: 0 16px
+            width: 45%
+            position: absolute
+            top: 0
+            right: 0
+            display: @lg-down none

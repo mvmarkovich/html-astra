@@ -1,6 +1,402 @@
 header.header
     .header__container.container
-        
+        .header__row
+            .header__start
+                button.btn.btn--reset.btn--burger.header__burger(aria-label="Show menu")
+
+                a.header__logo(href="main.html")
+                    img.header__logo-img(src="img/icons/logo.svg" width="112" height="35" alt="Astra Linux")
+
+            nav.header__nav
+                .header__nav-panel.hide-lg-up 
+                    .header__nav-title Меню
+                    button.btn.btn--reset.btn--cross.header__btn-close-menu
+                    button.btn.btn--reset.btn--arrow-top.mobile-menu-back(aria-label="Mobile menu back")
+
+                ul.header__nav-list
+                    li.header__nav-item
+                        a.header__nav-link(href="#") О компании
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title О компании
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="/company") Компания
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="/company-2") Структура компании
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Наша команда
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Инвесторам
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Контакты
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Карьера
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Работа в компании
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Вакансии
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Стажировка
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Пресс-центр
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Новости
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") СМИ о нас
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Материалы
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Press Kit
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Поставщикам
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Мероприятия
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Предстоящие мероприятия
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Прошедшие мероприятия
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Видеоматериалы
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") ПО и услуги
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title ПО и услуги
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Операционные системы
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Astra Linux SE
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Astra Linux CE
+
+                                        li.header__nav-child-item.header__nav-child-item--column.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Прикладное ПО ГК «Астра»
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Брест
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") RuBackup
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") RuBackup
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") WorksPad
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") BillManager
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") ALD Pro
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") DCImanager
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") RuPost
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") VM Manager
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Астра Консалтинг
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Отраслевые решения
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Актуальные предложения
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Кейсы
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Экспортный потенциал
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Решения
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title Решения
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Отраслевые решения
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Кейсы
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Ready For Astra
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title ПО и услуги
+
+                                    p.header__nav-desc Программа технологической кооперации с производителями программного обеспечения и оборудования
+
+                                    a.btn.btn--reset.btn--arrow-right-after.header__nav-btn-trans(href="#") Подробнее о программе
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Совместимое ПО
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Компании партнёры
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Совместимое оборудование
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#" targer="_blank") Wiki-библиотека
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Поддержка
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title Поддержка
+
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Тарифы
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Бюллетени безопасности
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Тестирование
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#" targer="_blank") Личный кабинет
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Разработчикам
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Обучение
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title Обучение
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Обучение
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Авторизованное обучение
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Проверить сертификат
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Преподавателям
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Студентам
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Школьникам
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Образовательным организациям
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Авторизованным учебным центрам
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Вузам и колледжам
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Школам
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Партнёрам
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title Партнёрам
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Стать партнёром
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Справочная информация
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Статусы
+
+                                        li.header__nav-child-item
+                                            a.header__nav-child-link(href="#") Дистрибьюторы
+
+                    li.header__nav-item
+                        a.header__nav-link(href="#") Информация
+
+                        .header__nav-child
+                            .container
+                                .header__nav-child-nav
+                                    .header__nav-title Информация
+                                    
+                                    ul.header__nav-child-list
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Справочная информация
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Материалы и документация к ПО
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Виртуальный тур
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Библиотека
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") WIKI
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Форум
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Учебно-методические публикации
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Документы
+
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Правовая информация
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Документы
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Справочные разделы
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Библиотека
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Учебно-методические и научные публикации
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Учебно-методические публикации
+
+                                        li.header__nav-child-item.header__nav-child-item--arrow
+                                            a.header__nav-child-link(href="#") Пресс-центр
+                                            
+                                            .header__nav-submenu
+                                                ul.header__nav-submenu-list
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Новости
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") СМИ о нас
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Материалы
+
+                                                    li.header__nav-submenu-item
+                                                        a.header__nav-submenu-link(href="#") Press Kit
+
+                .header__carousel
+                    .container
+                        button.btn.btn--reset.btn--cross.header__nav-child-close(aria-label="Close desktop menu")
+                        
+                        .header__slider-wrap
+                            .header__slider
+                                .header__slider-item
+                                    .header__slider-item--inner
+                                        .header__slider-item--info
+                                            .header__slider-item-title Astra Linux на Тюменском Нефтегазовом Форуме 2021
+                                            p.header__slider-item-desc Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…
+                                        
+                                        a.btn.btn--reset.btn--arrow-right-after(href="#") Узнать больше
+
+                                .header__slider-item
+                                    .header__slider-item--inner
+                                        .header__slider-item--info
+                                            .header__slider-item-title Второй элемент слайдера
+                                            p.header__slider-item-desc Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…
+                                        
+                                        a.btn.btn--reset.btn--arrow-right-after(href="#") Узнать больше
+
+                                .header__slider-item
+                                    .header__slider-item--inner
+                                        .header__slider-item--info
+                                            .header__slider-item-title Третий элемент слайдера
+                                            p.header__slider-item-desc Astra Linux присутствует на Тюменском Нефтегазовом Форуме, где в выставочной зоне представила стенд…
+                                        
+                                        a.btn.btn--reset.btn--arrow-right-after(href="#") Узнать больше
+
+                            .slider-dots-line#header__slider-dots
+
+
+            .header__panel
+                button.btn.btn--reset.btn--search.header__btn-search(aria-label="Open search")
+                a.btn.btn--accent(href="#") Где купить
+
+
+
+                    
+
+                        
 
 
 

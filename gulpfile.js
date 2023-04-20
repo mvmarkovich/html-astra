@@ -19,7 +19,8 @@
     gulpWatchPug = require('gulp-watch-pug'),
     cssbeautify = require('gulp-cssbeautify'),
     stripCssComments = require('gulp-strip-css-comments'),
-    cssDeclarationSorter = require('css-declaration-sorter');
+    cssDeclarationSorter = require('css-declaration-sorter'),
+    webp = require('gulp-webp');
 
   //write html by pug
   gulp.task('views', function buildHTML() {
@@ -58,7 +59,6 @@
     require('postcss-inline-svg')({
       path: 'app/assets/img/'
     }),
-    require('autoprefixer'),
     require('postcss-unique-selectors'),
     require('css-mqpacker')({
       sort: true
@@ -87,7 +87,7 @@
         extname: '.css'
       }))
       //.pipe(sourcemaps.write('/'))
-      .pipe(uglifycss())
+      //.pipe(uglifycss())
       .pipe(gulp.dest('dest/styles/'))
     );
   });
@@ -103,6 +103,7 @@
       .src('app/assets/**', {
         since: gulp.lastRun('assets')
       })
+      .pipe(webp())
       .pipe(cached('app/assets'))
       .pipe(gulp.dest('dest'));
   });

@@ -1,0 +1,129 @@
+extends layouts/layout.pug
+
+block title
+    title Стать технологическим партнёром | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="rfal.html") Ready For Astra Linux
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Стать технологическим партнёром
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Стать технологическим партнёром
+                        p.intro__desc В рамках технологического партнёрства мы реализуем программу поддержки производителей оборудования и программного обеспечения «READY FOR ASTRALINUX©» <br><br d> Целью программы является создание преимущественного положения на отечественном IT-рынке производителей программного и аппаратно-программного обеспечения за счёт информирования потребителей о совместимости с ведущей защищённой отечественной операционной системой в Российской Федерации.
+
+                        .btn--block.hide-lg-up
+                            a.btn.btn--border(href="#") Стать технологическим партнёром
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/rfal/intro.webp" width="457" height="398" alt="Название")
+
+        section.section.hero.hero--bg.hide-lg-down
+            .container
+                .hero__body
+                    .hero__info.col-12
+                        h3.hero__title Для сотрудничества пишите на адрес <br> электронной почты <a href="mailto:readyfor@astralinux.ru">readyfor@astralinux.ru</a>
+
+                        .btn--block
+                            a.btn.btn--border-light.btn--doc(href="/") Положение по работе с технологическими партнёрами
+
+        section.section
+            .container
+                .title__block
+                    h2 Серфицирование на совместимость
+                    p После проведения работ по адаптации изделий Партнёр направляет в адрес Вендора официальное письмо-заявку на проведение сертификационных работ. <br> <br> Вендор проводит испытания программного обеспечения или оборудования Партнёра на совместимость с ОС «Astra Linux Special Edition» и в случае положительных испытаний подписывается протокол совместимости и Партнёру выдаётся сертификат совместимости изделия. <br><br> Производителям ПО для прохождения сертификации на совместимость с ОС «Astra Linux Special Edition» необходимо использовать комплект цифровых ключей для подписи файлов ПО формата «ELF»   
+
+                .features.features--docs
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Запрос на получение
+                                        .features__item-desc Для получения комплекта ключей для подписания программного обеспечения требуется направить запрос от вашей организации в ООО «РусБИТех-Астра».
+                                        a.link.link--accent.link--doc-before(href="#" download) Образец запроса
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Ускорения генерации
+                                        .features__item-desc Для ускорения генерации ключей копию запроса рекомендуется направить на адрес электронной почты
+                                        a.link.link--accent.link--doc-before(href="#" download) Образец запроса
+
+                            .features__item.col-12.col-sm-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Получение ключей
+                                        .features__item-desc Для получения ключей лицу, указанному в запросе, потребуется предъявить паспорт, иному лицу потребуется доверенность вашей организации и паспорт
+
+        section.section.section-rfal-hero
+            .container
+                .rfal-hero
+                    .rfal-hero__info
+                        .rfal-hero__title.h4 Поддержка новых версий
+                        .rfal-hero__desc <strong>В случае выхода новых версий ОС СН «Astra Linux Special Edition» Вендор на основании соглашения о сотрудничестве передаёт Партнёру экземпляр операционной системы в формате постаки ВОХ.</strong> <br><br> Партнёр сам решает вопрос целесообразности прохождения сертификации своих изделий на новой версии операционной системы. <br><br> В случае выхода новых версий программных или аппаратно-программных средств Партнёр самостоятельно решает вопрос о целесообразности прохождения сертификации своих изделий с текущей версией ОС «Astra Linux Special Edition».
+
+                    .rfal-hero__img--wrap
+                        img.rfal-hero__img(src="img/content/rfal/os-hero.webp" width="493" height="274" alt="Поддержка новых версий")
+
+        section.feedback
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Стать технологическим партнером
+
+                        .feedback__form-content
+                            .form__desc Для присоединения к партнерской программе скачайте и подпишите Заявку (акцепт) оферты о заключении соглашения о сотрудничестве, отправьте нам форму
+
+                            a.btn.btn--reset.btn--download-after(href="#" download) Оферта о заключении соглашения
+
+                            .form__desc Поля для заполнения
+
+                            .input 
+                                input.input__elem(type="text" placeholder="ФИО" name="feedback-partners-name")
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="+7 (ххх) хххх хх хх" name="feedback-partners-phone")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="+7 (ххх) хххх хх хх" name="feedback-partners-email")
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="Компания" name="feedback-partners-company")
+
+                                .input
+                                    select.input__elem(name="feedback-partners-products" required)
+                                        option(value="" disabled selected) Выпускаемая продукция
+                                        option(value="0") Продукция 1
+                                        option(value="1") Продукция 2
+                                        option(value="2") Продукция 3
+
+                            .input
+                                textarea.input__elem(name="feedback-partners-massage", cols="30", rows="5" placeholder="Комментарий") 
+
+                            .input
+                                input.input__file#feedback-partners-file(type="file" name="feedback-partners-file")
+                                label.input__file-label(for="feedback-partners-file") 
+                                    i.icons.icons--doc-gray
+                                    .input__file-label-title Прикрепить документ
+                                    i.icons.icons--attach
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--email-after(type="button" aria-label="Send form") Отправить
+
+                            p.form__agree Заявка направиться по адресу <br> <a href="mailto:readyfor@astralinux.ru">readyfor@astralinux.ru</a>

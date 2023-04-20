@@ -1,0 +1,321 @@
+.list 
+    @extend .list-reset
+
+    li
+        position: relative
+        color: #6A7E95
+        text: 400 14px 1.5 @md 16px
+        margin: 0 0 12px
+
+        a
+            color: #0079C1
+
+            &:hover
+                color: #071C27
+
+        p
+            margin: 0
+
+        &:last-child
+            margin: 0
+    
+.list-dots, .list-dots-default, .list-dots-accent
+    @extend .list-reset
+
+    li
+        position: relative
+        color: #6A7E95
+        text: 400 14px 1.5 @md 16px
+        margin: 0 0 20px
+        padding: 0 0 0 36px
+
+        &:before
+            content: ''
+            size: 8px
+            min-width: 8px
+            display: inline-flex
+            position: absolute
+            top: 9px
+            left: 0
+            background: #003A5C
+            border-radius: 50%
+
+        p
+            margin: 0
+
+        &:last-child
+            margin: 0
+
+.list-dots-accent
+    li
+        color: #4A5A68
+        
+        &:before
+            background: #0079C1
+
+.list-dots-default
+    li
+        color: #6A7E95
+        text: 14px
+        padding-left: 16px 
+        margin-bottom: 12px
+
+        &:before
+            background: #6A7E95
+            size: 6px
+            min-width: 6px
+            top: 8px
+
+.list-line, .list-line-accent
+    @extend .list-reset
+
+    li
+        position: relative
+        color: #6A7E95
+        text: 400 14px 1.5 @md 16px
+        margin: 0 0 20px
+        padding: 0 0 0 64px
+
+        &:before
+            content: ''
+            size: 40px 1px
+            min-width: 40px
+            display: inline-flex
+            position: absolute
+            top: 12px
+            left: 0
+            background: #071C27
+
+        p
+            margin: 0
+
+        &:last-child
+            margin: 0
+
+.list-line-accent
+    li
+        &:before
+            background: #0079C1
+
+.list-check, .list-check-accent
+    @extend .list-reset
+
+    li
+        position: relative
+        color: #6A7E95
+        text: 400 14px 1.5 @md 16px
+        margin: 0 0 20px
+        padding: 0 0 0 36px
+
+        &:before
+            content: ''
+            size: 20px
+            min-width: 20px
+            background: resolve("icons/list-check.svg") no-repeat center / contain
+            display: inline-flex
+            position: absolute
+            top: 0
+            left: 0
+
+        p
+            margin: 0
+
+        &:last-child
+            margin: 0
+
+.list-check-accent
+    li
+        &:before
+            background-image: resolve('icons/list-check-accent.svg')
+
+.list-icons-inside
+    list-style: none
+    padding: 0
+    margin: 0
+
+    li
+        position: relative
+        color: #6A7E95
+        text: 400 14px 1.5
+        padding-left: 36px 
+        margin: 0 0 12px
+
+        p
+            color: #6A7E95
+            text: 400 14px 1.5
+            margin: 0
+
+        &:before
+            content: ''
+            size: 20px
+            position: absolute
+            top: 0
+            left: 0
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center
+
+        &.item-checked
+            &:before
+                background-image: resolve("icons/list-check-accent.svg")
+
+        &.item-cross
+            &:before
+                background-image: resolve("icons/list-cross-accent.svg")
+
+
+        &:last-child
+            margin: 0
+
+.list-counter
+    list-style: none
+    padding: 0
+    margin: * * 0
+    counter-reset: section
+
+    li
+        position: relative
+        color: #071C27
+        text: 400 14px 1.5 @md 16px
+        margin-bottom: 16px
+        display: inline-flex
+        align-items: flex-start
+
+        &:before
+            counter-increment: section
+            content: counter(section) "."
+            position: relative
+            color: #071C27
+            text: 700 14px 1.5 @md 16px
+            margin-right: 8px
+
+.list-border-check
+    @extend .list-reset
+
+    li
+        position: relative
+        margin: 0 0 12px
+        padding: 24px @sm 12px 24px
+        color: #071C27
+        text: 400 14px 1.5 @md 16px
+        border: 1px solid #E8ECEF
+        display: block @sm inline-flex
+        align-items: @sm center
+        width: 100%
+        min-height: @sm 72px
+
+        &:before
+            content: ''
+            display: block @sm inline-flex
+            background: resolve("icons/list-check-green.svg") no-repeat center / contain
+            size: 24px
+            min-width: 24px
+            margin: 0 0 12px @sm 0 24px 0 0
+
+        &:last-child
+            margin: 0
+
+.list-default
+    padding: 0 0 0 16px
+    margin: 0
+
+    li
+        list-style-type: disc
+        color: #071C27
+        text: 400 14px 1.5 @md 16px
+        margin: 0 0 16px
+
+.list-paragraph
+    @extend .list-reset
+
+    span
+        position: relative
+        color: #071C27
+        text: 700 14px 1.5 @md 16px
+        display: inline-block
+        margin: 0 8px 0 0
+
+    p
+        color: #071C27
+        text: 400 14px 1.5 @md 16px
+        margin: 0
+
+    ul:not([class])
+        padding: 0 0 0 16px
+        margin: 16px 0 0
+
+        li
+            list-style-type: disc
+            color: #071C27
+            text: 400 14px 1.5 @md 16px
+            padding: 0
+            margin: 0
+
+            p
+                text: 400 14px 1.5 @md 16px
+                margin: 0 
+
+    &:after
+        clear: both
+        content: ""
+        display: table 
+
+.-list-gap-
+    columns: @md 2
+    margin: @md * -16px 
+
+    li
+        page-break-inside: avoid
+        break-inside: avoid
+        margin: 0 0 24px @md * 16px 24px
+
+        &:last-child
+            margin: @md-down 0
+
+.-list-item-flex-
+    li
+        display: flex
+
+.-list-count-huge-
+    li
+        span
+            font-size: 14px @md 18px @lg 20px
+            top: @md -4px
+
+        &:before
+            font-size: 14px @md 18px @lg 20px
+            top: @md -4px
+
+.-list-line-
+    > li
+        position: relative
+        padding-top: 16px
+        margin-bottom: 40px
+
+        &:after
+            content: ''
+            size: 96px 2px
+            background: #E8ECEF
+            position: absolute 0 null null 0
+
+.-list-gap-line-
+    position: relative
+    padding-top: 16px
+
+    &:before, &:after
+        content: ''
+        size: 96px 2px
+        background: #E8ECEF
+        position: absolute
+        top: 0
+
+    &:before
+        left: 0 @md 16px
+
+    &:after
+        left: @md calc(50% + 16px)
+        display: @md-down none
+
+
+
+

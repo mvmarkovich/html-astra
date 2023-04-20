@@ -1,0 +1,95 @@
+extends layouts/layout.pug
+
+block title
+    title Поддержка - Бюллетени безопасности | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="support.html") Поддержка
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Бюллетени безопасности
+
+    .main-block
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Бюллетени безопасности
+                        p.intro__desc <strong>Лицензиатам, использующим ОС «Astra Linux Special Edition», сертифицированную по требованиям безопасности информации ФСТЭК России (сертификат № 2557)</strong>, необходимо применить опубликованные в бюллетенях безопасности методики и обновления программного обеспечения для нейтрализации угроз уязвимостей в информационных системах.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/support/intro/plug_2.svg" width="484" height="389" alt="Название")
+
+        section.section
+            .container
+                .row
+                    .col-12.col-lg-3
+                        .title__block
+                            h2 Документы
+
+                    .col-12.col-lg-9
+                        .materials
+                            .materials__list.hidden-content
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.7
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.6
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.5
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.7
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.6
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                                .materials__item
+                                    .materials__item--inner
+                                        .materials__item-info
+                                            .materials__item-ver v 1.5
+                                            .materials__item-title Astra Linux Special Edition
+
+                                        .materials__item-btns
+                                            a.btn.btn--small.btn--border.btn--download-after(href="#" download) PDF
+
+                            .btn--block.justify-content-end.materials__more
+                                button.btn.btn--reset.btn--more.js-show-more(aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть") Развернуть

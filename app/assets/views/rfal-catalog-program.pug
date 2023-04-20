@@ -1,0 +1,182 @@
+extends layouts/layout.pug
+
+block title
+    title RFAL Технологические партнеры | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal.html") Ready For Astra Linux 
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Технологические партнеры
+
+    .main-block
+        .career-vacansies
+            .container
+                .career-vacansies__nav
+                    .career-vacansies__nav-head
+                        h1 Технологические партнеры <span class="search-result-value">1142</span>
+
+                        form.career-vacansies__nav-search.hide-lg-up(action="/" method="/")
+                            input.search__form-input(type="text" placeholder="Найти оборудование" required)
+                            button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                    form.career-vacansies__nav-form(action="/" method="/")
+                        .form__row
+                            .input
+                                input.input__checkbox--border#rfal-tag-0(type="checkbox" name="rfal-tag-0")
+                                label.input__checkbox--border-label(for="rfal-tag-0")
+                                    .icons.icons--disc
+                                    .input__checkbox-label-text ПО
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-1(type="checkbox" name="rfal-tag-1")
+                                label.input__checkbox--border-label(for="rfal-tag-1") 
+                                    .icons.icons--computer
+                                    .input__checkbox-label-text Оборудование
+
+                .main-aside-container
+                    .main-container
+                        .catalog.catalog--full(data-view="catalog-blocks")
+                            .catalog__nav
+                                form.hide-lg-down.catalog__search(action="/" method="")
+                                    input.search__form-input(type="text" placeholder="Найти компанию" required)
+                                    button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                                .catalog__layout
+                                    button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--tables(aria-label="Layout view" data-view="catalog-tables")
+                                    button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--blocks.is-active(aria-label="Layout view" data-view="catalog-blocks")
+
+                            .catalog__list
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_9.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title МФУ Altalink B8045
+
+                                        .catalog__item-labels
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/disc-accent.svg" width="20" height="20" alt="ПО")          
+                                                .catalog__item-labels-col-title Програмное обеспечение
+                                       
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_10.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Принтер Canon
+
+                                        .catalog__item-labels
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/computer-accent.svg" width="20" height="20" alt="Оборудование")
+                                                .catalog__item-labels-col-title Оборудование
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_11.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Моноблок Acer
+
+                                        .catalog__item-labels
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/disc-accent.svg" width="20" height="20" alt="ПО")          
+                                                .catalog__item-labels-col-title Програмное обеспечение
+
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/computer-accent.svg" width="20" height="20" alt="Оборудование")
+                                                .catalog__item-labels-col-title Оборудование
+                        
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_12.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Рабочая станция HP
+                            
+                                        .catalog__item-labels
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/disc-accent.svg" width="20" height="20" alt="ПО")          
+                                                .catalog__item-labels-col-title Програмное обеспечение
+
+                                            .catalog__item-labels-col
+                                                img.catalog__item-labels-col-icon(src="img/icons/computer-accent.svg" width="20" height="20" alt="Оборудование")
+                                                .catalog__item-labels-col-title Оборудование
+
+                                        
+block scripts
+    script(type="text/javascript").
+        document.querySelector('.catalog__layout').addEventListener('click', function(e) {
+            const view = e.target.dataset.view;
+            
+            if (view && e.target.tagName === 'BUTTON') {
+                document.querySelector('.catalog').dataset.view = view;
+            }
+        });
+
+        let btnsView = document.querySelectorAll(".catalog__layout-btn");
+
+        for (let btnView of btnsView) {
+            btnView.addEventListener('click', function () {
+                btnsView.forEach(i => i.classList.remove('is-active'));
+                this.classList.toggle('is-active');
+            });
+        };
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }
+
+        
+
+
+
+                
+
+    
+

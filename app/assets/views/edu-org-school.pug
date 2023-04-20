@@ -1,0 +1,239 @@
+extends layouts/layout.pug
+
+block title
+    title Образовательным организациям - Авторизованным учебным центрам | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Школам
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Привилегии
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Как стать партнёром
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Пакеты лицензирования
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Список школ
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu-org.html") Образовательным организациям
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Вузам и колледжам
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static.intro--light.intro--narrow
+                .container
+                    .intro__wrap   
+                        .intro__info.col-lg-7
+                            h1.intro__title Вузам и колледжам
+                            p.intro__desc Проекты Астра-университет и Астра-колледж направлены на подготовку IT специалистов по программным продуктам ГК Астра в организациях высшего и профессионального образования. Данные проекты реализуются через университеты, академии, институты, техникумы и колледжи. Образовательные организации являющиеся участниками проектов Астра-университет и Астра-колледж получают от ГК Астра информационно-техническую и методическую поддержку организации учебного процесса, а педагоги и слушатели могут участвовать в программах поддержки для преподавателей и студентов. Обучение студентов программным продуктам ГК Астра может осуществляться как в рамках основного образовательного процесса, так и в рамках дополнительных образовательных программ. <br><br> Программные продукты изучаются студентами в одной или нескольких дисциплинах. Количество и название дисциплин зависит от профиля образовательной организации и направлений подготовки студентов.
+
+                            ul.list-dots
+                                li Базовая линейка дисциплин:
+                                li информационные технологии;
+                                li операционные системы;
+                                li компьютерные сети;
+                                li безопасность операционных систем и др.
+
+                        .intro__img--wrap.col-lg-4
+                            img.intro__img(src="img/content/edu/intro/org-auth.webp" width="407" height="436" alt="Название")
+
+        section.section.section-anchor#anchor-1
+            .container
+                .software-asset.software-asset--reverse
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-4
+                            img.software-asset__img(src="img/content/edu/asset/edu-auth.webp" width="300" height="416" alt="Название")
+
+                        .software-asset__info.col-lg-8
+                            .software-asset__title Что получают участники проектов Астра-школа от ГК «Астра»
+                            .list-dots
+                                li Методическое обеспечение образовательного процесса.
+                                li Обучение для учителей профильных предметов.
+                                li Оснащение компьютерных классов программными продуктами.
+
+        section.section.section-anchor#anchor-2
+            .container
+                .title__block
+                    h2 Как стать партнёром ГК «Астра»
+
+                .features.features--tiny
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_1.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Первое и важное условие для включения в проект Астра-школа является заинтересованность и желание школы в обучении школьников продуктам ГК Астра.
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_2.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc От организации назначается ответственный за взаимодействие с ГК «Астра».
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_3.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Образовательная организация определяет внутри себя курс внеурочной деятельности или программу дополнительного образования, в рамках которых будут изучаться программные продукты ГК Астра.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_4.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc В ГК Астра предоставляется информация о школе, названиях курсов внеурочной деятельности или программ дополнительного образования, профильных учителях и количестве школьников, планируемых к обучению по продуктам ГК «Астра“ (информацию предоставляет ответственный).
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_5.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Формируется дорожная карта по обучению учителей и включению в учебный процесс курсов по изучению программных продуктов ГК «Астра».
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_6.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Образовательная организация гарантийным письмом подтверждает актуализацию учебных планов и программ дисциплин, в рамках которых будет организовано обучение программным продуктам ГК «Астра».
+
+                            .features__item.col-12
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-university/item-tiny_7.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc  Между образовательной организацией заключаются соглашение о сотрудничестве, о конфиденциальности, лицензионный договор на передачу лицензий на программные продукты и при необходимости другие соглашения и договоры.
+
+                    <!-- Подпись под особенностями -->
+                    .features__headline После этого организация получает статус участника проекта Астра-школа и имеет право на получение бесплатных лицензий в рамках пакета лицензирования «Специальный».
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Пакеты лицензирования для школ
+
+                .accordion.accordion--bg.row
+                    <!-- START ELEM ACCORDION -->
+                    .accordion__item.col-12.col-lg-6
+                        button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Пакет «Специальный»
+                        .accordion__item-content
+                            p Условия пакета лицензирования «Специальный» распространяются на образовательные организации, которые в основную или дополнительную образовательную программу, включают дисциплины или курсы по обучению обучающихся работе с операционной системой специального назначения «Astra Linux Special Edition», Программным комплексом «Средства виртуализации „Брест“, Программным комплексом „ALD Pro“, Диспетчером подключений виртуальных рабочих мест Термидеск, Системой резервного копирования „RuBackup“ (далее — Продукты).
+                            p Для данных категорий образовательных организаций предполагается безвозмездная передача права на Продукты. Безвозмездное предоставление лицензий осуществляется только с целью организации специализированных учебных классов, на базе которых организуется процесс обучения работе с Продуктами.
+                            p Количество передаваемых лицензий ограничивается количеством компьютеров в классе и количеством обучающихся, проходящих обучение по данной программе.
+                            p Продукты предоставляются путём заключения лицензионного договора с передачей права их использования на ограниченном количестве ЭВМ.
+                            p Для получения лицензий на Продукты образовательной организации (конечному пользователю) необходимо:
+                            
+                            ul
+                                li предоставить копию лицензии Министерства науки и высшего образования Российской Федерации, Министерства просвещения Российской Федерации на осуществление образовательной деятельности;
+                                li предоставить основную или дополнительную образовательную программу и программы курсов или дисциплин, утверждённые в установленном образовательной организацией порядке, в рамках которой будет осуществляться обучение Продуктам;
+                                li подписать соглашение о конфиденциальности;
+                                li заключить лицензионный договор.
+
+                            p Образовательные организации, получившие право лицензирования операционной системы в рамках пакета „Специальный“, могут пользоваться условиями пакета „Универсальный“ в случаях:
+                            
+                            ul
+                                li использования Продуктов в учебном процессе по дисциплинам и курсам, не предназначенным для изучения Продуктов;
+                                li организации учебного процесса и административной деятельности.
+                    <!-- END ELEM ACCORDION -->
+
+                    .accordion__item.col-12.col-lg-6
+                        button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Пакет «Универсальный»
+                        .accordion__item-content
+                            p Условия пакета лицензирования «Универсальный» распространяются на образовательные организации, являющимися конечными пользователями и которые используют Продукты в учебном процессе, а также для его организации и административной деятельности.
+                            p Условия настоящего пакета также распространяются на библиотеки.
+                            p В рамках пакета «Университет» предоставляется специальная скидка на покупку лицензий следующие Продукты: <br>— 50% от РРЦ на операционную систему специального назначения «Astra Linux Special Edition»; <br>— 50% от РРЦ на Программный комплекс «Средства виртуализации „Брест“;<br>— 50% от РРЦ на Диспетчер подключений виртуальных рабочих мест Термидеск. Скидка на отдельные позиции может составлять 70%;<br>— 50% от РРЦ на Программный комплекс „ALD Pro“;<br>— 50% от РРЦ на Систему резервного копирования „RuBackup“;
+                            p Кроме того, для образовательных организаций высшего образования, профессионального образования, дополнительного и дополнительного профессионального образования действует 50%-скидка на приобретение сертификатов технической поддержки уровня „Стандарт“ или „Привилегированный“.
+                            p В прайс-листе программные продукты и сертификаты, входящие в пакет „Универсальный“, имеют в артикулах буквенное обозначение ED.
+                            p Образовательная организация (конечный пользователь) должна предоставить копию лицензии Министерства науки и высшего образования Российской Федерации на осуществление образовательной деятельности.
+                            p Библиотека (конечный пользователь) должна предоставлять Устав организации.
+                            p Оформление и приобретение прав на использование Продуктов по пакету лицензирования „Универсальный“ осуществляется через компании партнёров, выбранных образовательной организацией.
+
+                    .accordion__item.col-12
+                        button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Пакет «Школьный»
+                        .accordion__item-content
+                            p Условия пакета лицензирования «Школьный» распространяются на общеобразовательные организации и дошкольные образовательные организации, которые используют операционную систему специального назначения «Astra Linux Special Edition» в учебном процессе, а также для его организации и административной деятельности.
+                            p Для образовательных организаций в рамках пакета «Школьный» предоставляется специальная цена на покупку бессрочных лицензий операционной системы специального назначения «Astra Linux Special Edition» уровень защищённости «Базовый» («Орёл») для рабочей станции в электронном формате. Рекомендованная розничная цена составляет 488 рублей за лицензию.
+                            p Дополнительно для общеобразовательных организаций и дошкольных образовательных организаций действует скидка на приобретение сертификатов технической поддержки уровня «Стандарт».
+                            p В прайс-листе лицензии и сертификаты имеют в артикулах буквенное обозначение SC.
+                            p В случае, если у образовательной организации появится необходимость в покупке лицензий и сертификатов, не входящих в пакет «Школьный», то на образовательную организацию распространяются условия пакета «Универсальный».
+                            p Для получения лицензий в рамках пакета «Школьный» образовательная организация должна предоставить копию лицензии Министерства просвещения Российской Федерации на осуществление образовательной деятельности.
+                            p Оформление и приобретение прав на использование операционной системы специального назначения «Astra Linux Special Edition» по пакету «Школьный» осуществляется через компании партнёров, выбранных образовательной организацией.
+
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

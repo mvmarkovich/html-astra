@@ -1,0 +1,107 @@
+.section-panel
+    color: #fff
+
+    &__title
+        color: #fff
+        margin: 0 0 16px
+
+    &__desc
+        color: #fff
+        margin: 16px 0
+
+    h2
+        margin: 0 0 24px
+
+    &__body
+        position: relative
+        background: #003A5C
+        padding: 40px 16px @sm 56px 36px @lg 80px 64px
+        margin: @md-down 0 -16px
+        overflow: hidden
+
+        .btn--block
+            margin: 40px 0 0
+
+            .btn
+                width: @lg-down 100%
+
+    &__info
+        position: relative
+        z-index: 1
+        width: @lg 60% @xl 50%
+        margin: 0 @lg 0
+
+    &__img
+        width: 100%
+
+        &--wrap
+            position: absolute
+            bottom: 0
+            right: 0
+            max-width: @lg 480px @xl 100%
+            opacity: @lg-down .3
+
+    &__footer
+        margin-top: 48px @md 64px @lg 80px
+        display: @md flex
+        justify-content: @md space-between
+        align-items: @md flex-start
+
+        .btn
+            width: @md-down 100%
+
+        &-desc
+            text: #4A5A68 12px 1.5 @sm 14px
+            margin: 0 0 32px @md 0 32px 0 0
+            max-width: @md 860px
+
+    &--illustration
+        ^&__img
+            height: 100%
+
+            &--wrap
+                top: @lg 0
+
+    &--industry
+        ^&__body
+            padding: @lg 64px
+
+        ^&__img
+            position: absolute
+            top: 50%
+            left: 0
+            transform: translateY(-50%)
+
+            &--wrap
+                width: 100% @lg 45%
+                top: 0
+                right: @lg -64px
+                bottom: 0
+
+    &--kit
+        ^&__body
+            padding: @xl 64px
+
+        ^&__info
+            width: 82%
+
+.section
+    &__gap
+        &-item
+            margin-bottom: 32px
+            justify-content: space-between
+
+            &-title
+                color: #071C27
+                text: 700 16px 1.5
+                margin: 0 0 16px @md 0
+
+            &-desc
+                color: #071C27
+                text: 400 14px 1.5 @md 16px
+
+            &:last-child
+                margin-bottom: 0
+
+    
+    

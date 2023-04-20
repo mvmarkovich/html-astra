@@ -1,0 +1,596 @@
+.career-container
+    display: @lg flex
+    align-items: @lg flex-start
+
+.career-main-block
+    width: 100%
+
+.career-vacansies
+    &__nav
+        margin: 24px 0 @sm 0 0 32px
+
+        h1
+            margin: 0 0 16px @lg 0
+        
+        &-head
+            margin: 0 0 24px
+            display: @lg flex
+            justify-content: @lg space-between
+            align-items: @lg center
+
+        &-form
+            margin-top: @lg-down -12px
+             
+            &.hidden-content
+                max-height: 40px
+                overflow: hidden
+
+            &.hidden-content--show
+                max-height: 100%
+
+        &-more
+            justify-content: flex-start
+            margin: 16px 0 0
+            display: @lg-down none
+
+        &-search
+            position: relative
+            max-width: @lg 360px @xl 510px
+            width: 100%
+            margin: @lg 0 0 0 64px
+
+.career-features
+    &:first-child
+        margin: 64px * *
+
+    &__list
+        margin: 0 @sm 0 -8px -24px @lg 0 -16px -32px
+
+    &__item
+        padding: @sm 0 8px @lg 0 16px
+        margin: 0 0 16px @sm 0 0 24px @lg 0 0 32px
+        width: 100% @sm 50% @lg 33.3%
+
+        &--inner
+            background: #003A5C
+            color: #fff
+            padding: 24px
+            height: 100%
+
+        &-img
+            &--wrap
+                size: 48px
+                min-width: 48px
+                margin: 0 0 12px
+                display: flex
+                align-items: center
+                justify-content: center
+
+        &-title
+            color: #fff 
+            text: 700 16px 1.5 @sm 18px
+            margin: 0 0 12px
+
+        &-desc
+            color: #D5DADD
+            text: 400 14px 1.4
+            margin: 12px 0 0
+
+        &:nth-child(4), &:nth-child(5)
+            width: @lg 50%
+
+        &:last-child
+            margin: @sm-down 0
+
+    .info-numbers
+        margin: 56px 0 0 @md 64px 0 0 @lg 80px 0 0
+
+    &--job
+        margin: 24px 0 @sm 28px 0 @lg 40px 0
+
+        ^&__list
+            margin: @sm 0 -8px -24px
+
+        ^&__item
+            padding: @sm 0 8px
+            margin: 0 0 24px
+
+.career-ecosystem
+    overflow: hidden
+
+    &__slider
+        margin: 0 -8px
+
+        .slick-list, .slick-track
+            display: flex
+
+        .slick-list
+            overflow: visible
+
+    &__body
+        margin: 48px 0 0
+
+    &__item
+        padding: 0 8px
+        
+        &--inner
+            border: 1px solid #D5DADD
+            width: 240px
+
+        &-img
+            &--wrap
+                height: 148px
+                display: flex
+                align-items: center
+                justify-content: center
+
+.career-gallery
+    margin: 96px 0
+
+    &__body
+        margin: 0 0 -32px
+
+    &-img
+        &--wrap
+            margin: 0 0 32px
+
+.career-events
+    padding: 40px 0 @md 56px 0 @lg 80px 0 
+    margin: 56px 0 @md 64px 0 @lg 96px 0
+
+    &__body
+        margin: 32px 0 0 @sm 40px 0 0
+
+    &__slider
+        margin: 0 -8px
+
+        .slick-list, .slick-track
+            display: flex
+
+        .slick-list
+            overflow: visible
+
+    &__item
+        padding: 0 8px
+
+        &--inner
+            background: #fff
+            width: 320px @sm 360px @lg 405px
+            height: 100%
+
+        &-img
+            @extend .img-cover 
+
+            &--wrap
+                @extend .img-cover-wrapper
+                height: 186px
+                display: block
+
+        &-info
+            position: relative
+            background: #fff
+            padding: 40px 32px 120px @sm 40px 32px
+            height: calc(100% - 186px)
+
+        &-title
+            color: #071C27
+            text: 700 18px 1.5
+            margin: 0 0 4px
+
+        &-desc
+            color: #003A5C
+            margin: 4px 0 0
+
+        .btn--block
+            position: absolute
+            left: 32px
+            right: 32px
+            bottom: 40px
+
+            .btn
+                width: 100%
+
+.jobs
+    &__all
+        margin: 32px 0 0
+
+        .btn
+            font-size: @sm-down 14px
+
+    &__slider
+        position: relative
+        margin: 40px 0 0 @sm 48px -16px 0
+
+        ^&__card
+            margin: 0
+            padding: @sm-down 0
+
+            &--inner
+                width: 100% @sm 405px
+                max-width: 405px
+                margin: 0 auto
+                height: 100%
+
+        .slick-list, .slick-track
+            display: flex
+
+        .slick-list
+            overflow: @sm visible
+
+    &__card
+        margin: 0 0 24px
+
+        &--inner
+            border: 1.5px solid #E8ECEF
+            padding: 16px @sm 20px @lg 40px
+
+        .btn--tag, .btn--tag-secondary
+            padding: 0 12px
+
+        &-head
+            display: flex
+            justify-content: @lg space-between
+            flex-direction: column @lg row
+            margin: 0 0 24px
+
+            &-start
+                display: flex
+                flex-wrap: @lg wrap
+                flex-direction: column @lg row
+                align-items: @lg center
+                margin: @lg -8px 0 0
+
+            .briefly
+                margin: 0
+                padding: 6px 0 0
+                display: @lg-down none
+
+        &-tags
+            margin: 0 0 16px @lg 8px 16px 0 0
+            order: 1 @lg 2
+            overflow: hidden
+            height: @lg-down 32px
+
+            &-body
+                flex-wrap: nowrap @lg wrap
+                overflow: auto @lg visible
+                padding: @lg-down 0 0 40px
+                
+            &--abbr
+                ^^&-tag
+                    display: none
+
+                    &:nth-child(-n + 3)
+                        display: inline-flex
+
+                ^&-add
+                    display: inline-flex
+
+            &--show
+                ^^&-tag
+                    display: inline-flex
+
+                ^&-add
+                    display: none
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5 @sm 18px @lg 20px
+            text-transform: @sm uppercase
+            margin: 0 0 4px @lg 0 24px 0 0
+
+
+            &--wrap
+                order: 2 @lg 1
+
+        &-desc
+            color: #6A7E95
+            text: 14px
+            max-width: 780px
+            margin: 0
+
+        &-location
+            color: #071C27
+            text: 400 14px 1.5
+            white-space: nowrap
+            display: inline-flex
+            align-items: center
+            margin: 0 32px 16px 0
+
+            &:after
+                content: ''
+                background: resolve("icons/location.svg") no-repeat center / contain
+                size: 20px
+                min-width: 20px
+                margin: 0 0 0 4px
+                display: inline-flex
+
+        &-wage
+            color: #0079C1
+            text: 700 16px 1.5 @sm 18px
+
+        &-panel
+            margin: 24px 0 0 @lg 10px 0 0
+            display: flex
+            align-items: flex-end
+            justify-content: space-between
+
+            &-start
+                display: flex
+                flex-wrap: wrap
+                align-items: center
+                margin: 0 0 -16px 0 @lg 0 32px -16px 0
+
+            ul
+                @extend .list-reset
+                display: flex
+                flex-wrap: wrap
+
+                li
+                    color: #AFB8BF
+                    text: 400 14px 1.5
+                    margin: 0 0 16px @lg 0 32px 16px 0
+
+                    strong
+                        color: #0079C1
+
+                    &:last-child
+                        margin: * 0 * *
+                        display: @lg-down none
+
+        &--column
+            padding: 0 16px
+
+            ^&--inner
+                padding: 16px @sm 20px @lg 32px
+                border-width: 1px
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+
+            ^&-head
+                display: block
+                margin: 0
+
+            ^&-title
+                margin: 16px 0 0
+
+            ^&-desc
+                text: 16px
+                margin: 24px 0 0
+
+            ^&-location
+                text: 16px
+
+            ^&-panel
+                padding: 24px 0 0
+                margin: 24px 0 0
+
+                &-start
+                    flex-wrap: wrap
+
+                ul
+                    li
+                        color: #071C27
+                        text: 16px
+
+                        &:last-child
+                            display: @lg-down block
+
+        &:last-child
+            margin: 0
+
+.career-feedback
+    color: #fff
+    margin: 56px 0 @md 64px 0 @lg 96px 0
+
+    h2
+        color: #fff
+        margin: 0 0 32px
+
+    p
+        margin: 32px 0
+
+    .btn--block
+        margin: 8px 0 0
+
+        .btn
+            width: @md-down 100%
+
+    &__body
+        position: relative
+        background: #003A5C
+        padding: 40px 16px @sm 56px 36px @lg 80px 64px
+        overflow: hidden
+        margin: 0 -16px @md 0 @xl 0 -64px
+
+    &__info
+        position: relative
+        z-index: 1
+        width: @lg 50%
+
+    &__img
+        &--wrap
+            position: @lg absolute
+            top: @lg 80px
+            right: @lg 64px
+            margin: 48px auto -50% @lg 0
+            max-width: 360px @lg 100%
+
+.job-post
+    &__title
+        text: 20px @md 32px
+        margin: 0 0 12px @sm 0 0 24px @md 0 0 40px
+
+    &__tags
+        margin: 12px 0 24px @sm 28px 0 @lg 40px 0
+
+    &__count
+        border: 1px solid #E8ECEF
+        padding: 24px 16px @sm 28px @lg 40px
+        width: 100%
+        margin: 24px 0
+
+        &:first-child
+            margin-top: 0
+
+        h2
+            text: #071C27 16px @sm 18px @lg 20px
+            margin: 0 0 24px
+
+        p
+            text: #4A5A68 14px 
+            margin: 24px 0
+
+            strong
+                text: #071C27 16px @sm 18px @lg 20px
+                margin: 0 0 24px
+                display: inline
+
+
+        ul:not([class])
+            @extend .list-dots
+
+            p
+                color: #6A7E95
+                text: 400 14px 1.5 @md 16px
+
+            strong
+                display: inline
+                color: #071C27
+                text: 700 14px 1.5 @md 16px
+
+        > *
+            &:first-child
+                margin-top: 0 
+
+            &:last-child
+                margin-bottom: 0
+
+    &__data
+        @extend .list-reset
+
+        margin: -16px 0 24px
+        display: flex
+        flex-wrap: wrap @lg nowrap
+
+        li
+            text: #4A5A68 14px 1.5 @md 16px
+            width: @lg 256px
+            margin: 16px 32px 0 0
+
+            &:before
+                display: none
+
+            span
+                display: block
+                color: #0079C1
+                margin: 0
+
+    &__contacts
+        &-list
+            @extend .list-reset
+
+            li
+                margin: 0 0 24px
+
+                p, span, a
+                    text: 400 14px 1.5 @md 16px
+
+                p
+                    color: #AFB8BF
+                    margin: 0 0 8px
+
+                span
+                    color: #071C27
+
+                &:last-child
+                    margin: 0
+
+    &__map
+        margin: 24px 0 0
+        size: 100% 240px
+
+    &__card
+        border: 1px solid #E8ECEF
+        padding: 24px
+        margin: 0 0 16px
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5
+            margin: 0 0 24px
+
+        ^&__data
+            margin: 0 0 -16px
+            display: block
+
+            li
+                margin: 0 0 16px
+                width: auto
+
+                span
+                    font-weight: 700
+
+    &__btn-feedback
+        margin: 24px 0 0
+
+    &__contents
+        &-list
+            @extend .list-reset
+
+        &-item
+            margin: 0 0 8px
+
+            &:last-child
+                margin: 0
+
+        &-link
+            position: relative
+            color: #AFB8BF
+            text: 400 16px 1.5
+            display: inline-flex
+            padding: 0 0 0 36px
+
+            &:hover
+                color: #AFB8BF
+
+            &:before
+                content: ''
+                size: 12px
+                min-width: 12px
+                border: 2px solid transparent
+                background: #6A7E95
+                position: absolute
+                top: 6px
+                left: 0
+                border-radius: 50%
+
+            &--active
+                color: #071C27
+
+                &:hover
+                    color: #071C27
+
+                &:before
+                    background: #fff
+                    border-color: #003A5C
+
+.career-error
+    margin: @lg 120px 0
+
+    &__body
+        text-align: center
+        max-width: 520px
+        margin: 0 auto
+
+    &__title
+        margin: 0 016px @md 0 0 24px
+
+    &__desc
+        text: #071C27 14px 1.6 @md 16px
+        margin: 16px 0 @md 24px 0
+                
+            
+
+        

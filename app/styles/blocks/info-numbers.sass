@@ -1,0 +1,86 @@
+.info-numbers
+    padding: 30px 0
+    
+    &__list
+        margin: 0 @lg 0 -32px -64px
+
+    &__item
+        padding: 12px 0 @lg 0 32px
+        margin: 0 0 56px @lg 0 0 64px 
+        text-align: center
+
+        &-value
+            color: #003A5C
+            text: 400 40px 1.3 @sm 54px @lg 44px @xl 54px
+            letter-spacing: 0.02em
+            margin: 0 0 32px
+
+        &-title
+            color: #071C27
+            text: 700 42px 1.3 @sm 50px @lg 40px @xl 50px
+            letter-spacing: 0.02em
+            text-transform: uppercase
+            white-space: @lg nowrap
+            user-select: none
+            opacity: .1
+            position: absolute
+            top: auto @lg 20px @xl 24px
+            bottom: 40px @lg auto
+            left: 50%
+            transform: translateX(-50%) 
+
+        &-desc
+            color: #071C27
+            text: 400 16px 1.5
+            text-transform: lowercase
+            margin: 0
+            height: 21px @lg auto
+
+        &:last-child
+            margin: @lg-down 0
+
+    &--tiny
+        ^&__item
+            &-value
+                color: #00588D
+                text: 700 40px
+                margin: 0 0 12px
+
+            &-title
+                color: rgba(0, 88, 141, 1)
+                text: 32px
+                text-transform: lowercase
+                top: 24px
+
+            &-desc 
+                color: #AFB8BF
+                text: 16px
+                max-width: @lg 250px
+                margin: 0 auto
+                height: auto
+
+    &--edu
+        max-width: 1000px
+        margin: 0 auto
+
+        ^&__list
+            margin: * -16px -32px
+
+        ^&__item
+            padding: 0 16px
+            margin-bottom: 32px
+            width: @md 33.3%
+
+            &-value
+                font-weight: 700
+                margin-bottom: 16px
+
+            &-title
+                text-transform: lowercase
+                text: 32px @sm 40px
+                top: 24px @sm 32px @lg 20px @xl 32px
+                bottom: auto
+
+            &-desc
+                color: #AFB8BF
+                text-transform: none

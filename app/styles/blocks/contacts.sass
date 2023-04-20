@@ -1,0 +1,126 @@
+.contacts
+    padding: 24px 0 0
+    margin: -24px 0 0
+
+    &__title
+        margin: 0 0 12px
+
+    &__subtitle
+        margin: 24px 0 16px
+        color: #071C27
+        text: 700 16px 1.5
+
+    &__desc
+        color: #4A5A68
+        text: 400 14px 1.5 @md 16px
+
+    &__data
+        margin: 24px 0 0
+
+        &-phone
+            color: #4A5A68
+            text: 700 14px 1.5
+            display: inline-flex
+            align-items: center
+
+            &:before
+                content: ''
+                size: 28px
+                min-width: 28px
+                margin: 0 16px 0 0
+                background: #F2F5F6
+                border-radius: 8px
+                background-image: svg-load("icons/phone.svg", stroke="#F2F5F6", fill="#0079C1")
+                background-repeat: no-repeat
+                background-size: 16px 
+                background-position: center
+                display: inline-flex
+
+            &--huge
+                color: #071C27
+                text: 400 24px 1.2 @md 32px
+                margin: 8px 0 0 @md 28px 0 0
+
+                &:before
+                    size: 48px
+                    min-width: 48px
+                    background-size: 24px
+
+        &-address
+            margin: 16px 0 0
+
+            &.hidden-content
+                li
+                    display: none
+
+                    &:first-child
+                        display: block
+
+            &.hidden-content--show
+                li
+                    display: block
+            
+            li
+                color: #071C27
+                text: 400 16px 1.5
+                margin: 0 0 8px
+
+                &:last-child
+                    margin: 0 
+
+    &__more
+        .btn
+            margin: 12px 0 0
+
+            &.is-active
+                margin: 20px 0 0
+
+    &__cards
+        margin: 32px * * @sm 32px * -24px
+
+    &__card
+        margin: 0 0 16px @sm 0 0 24px
+
+        &--inner
+            border: 1px solid #D5DADD
+            padding: 16px @sm 24px
+            height: 100%
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+        &--email
+            ^&-desc
+                &:before
+                    content: ''
+                    size: 18px
+                    min-width: 18px
+                    background-position: center
+                    background-repeat: no-repeat
+                    background-size: contain
+                    background-image: resolve("icons/email-bold.svg")
+                    position: absolute
+                    top: 2px
+                    left: 0
+
+        &-title
+            color: #071C27
+            text: 700 14px 1.5
+            margin: 0 0 16px
+
+        &-desc
+            position: relative
+            color: #0079C1
+            text: 400 14px 1.5 
+            display: block
+            text-overflow: ellipsis
+            overflow: hidden
+            padding-left: 24px
+
+        &:last-child
+            margin: @sm-down 0
+
+    &__map
+        height: 480px
+
+        

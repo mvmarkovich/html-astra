@@ -1,0 +1,133 @@
+extends layouts/layout.pug
+
+block title
+    title Акционные предложения | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Актуальные предложения
+
+    .page-title
+        .container
+            h1 Актуальные предложения
+
+    .main-block
+        section.section
+            .container
+                .promo-banner
+                    .promo-banner__slider
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение
+                                    .promo-banner__item-desc Сначала мы разработали безопасную, быструю и надёжную российскую операционную систему на базе Linux. Затем вместе с партнёрами мы создали экосистему приложений: для работы, учёбы и развлечений. Теперь мы собираемся сделать Astra Linux операционной системой № 1 в России. Будущее — за нами!
+
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение 2
+                                    .promo-banner__item-desc Описание 2
+
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение 3
+                                    .promo-banner__item-desc Описание 3
+
+                    .slider-dots-line
+
+        section.section
+            .container
+                .section__filter
+                    .section__filter-head
+                        .title__block 
+                            h2 Архив
+
+                        .section__filter-head-row
+                            .dropdown
+                                button.btn.btn--reset.dropdown__btn(aria-label="Dropdown menu") Выберите продукт
+                                
+                                form.dropdown__menu(action="/" method="/")
+                                    .input 
+                                        input.input__checkbox#catalog-sort-special-0(type="checkbox" name="catalog-sort-special-0")
+                                        label.input__checkbox-label(for="catalog-sort-special-0") Вариант 1
+
+                                    .input 
+                                        input.input__checkbox#catalog-sort-special-1(type="checkbox" name="catalog-sort-special-1")
+                                        label.input__checkbox-label(for="catalog-sort-special-1") Вариант 2
+
+                                    button.btn.btn--tiny.btn--full.btn--border.form__send(type="submit" aria-label="Send form") Показать выбраное
+
+                            form.section__filter-search(action="/" method="/")
+                                input.search__form-input(type="text" placeholder="Введите название продукта" required)
+                                button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                .promo-list
+                    .promo-list__row.row
+                        - var n = 1;
+                        - var i = 1;
+                        - var text = 'Название акции ';
+                        while n < 7
+                            .promo-list__item.col-12.col-md-6
+                                a.promo-list__item--body(href="promo-article.html")
+                                    .promo-list__item-img--wrap
+                                        img.promo-list__item-img(src="img/content/promo/list/item_"+ i++ + ".webp" width="624" height="180" alt="Название акции")
+
+                                    .promo-list__item-info
+                                        .briefly.briefly--bg.promo-list__item-date 16.07.22
+                                        .promo-list__item-title= text + n++
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Dropdown
+        //
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }

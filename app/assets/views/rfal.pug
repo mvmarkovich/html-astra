@@ -1,0 +1,74 @@
+extends layouts/layout.pug
+
+block title
+    title RFAL | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Ready For Astra Linux
+
+    .main-block
+        .intro.intro--static.intro--light
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Ready For Astra
+                        .intro__subtitle Программа поддержки производителей оборудования  и программного обеспечения READY FOR ASTRA 
+                        p.intro__desc Целью программы является создание преимущественного положения на отечественном IT-рынке производителей программного и аппаратно-программного обеспечения за счёт информирования потребителей о совместимости с ведущей защищённой отечественной операционной системой в Российской Федерации.
+
+                        .btn--block
+                            a.btn.btn--border(href="#") Стать технологическим партнёром
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/intro/rfal.webp" width="507" height="467" alt="Название")
+
+        section.section
+            .container
+                .faq-links.faq-links--big
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-lg-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_5.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Совместимое ПО
+                                        .faq-links__item-desc Экосистема Astra Linux призвана закрывать все инфраструктурные ИТ-потребности заказчиков
+
+                            .faq-links__item.col-12.col-lg-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_6.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Совместимое оборудование
+                                        .faq-links__item-desc Экосистема Astra Linux — одна из самых широких на российском рынке. С ней совместимы более 3 200 единиц оборудования…
+
+                            .faq-links__item.col-12.col-lg-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_7.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Технологические партнёры
+                                        .faq-links__item-desc Среди наших технологических партнёров — более 700 компаний из России и из-за рубежа.
+
+                            .faq-links__item.col-12.col-lg-6
+                                a.faq-links__item--inner(href="#")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/faq-links/item_8.svg" width="36" height="36" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Wiki-библиотека
+                                        .faq-links__item-desc Ресурс для разработчиков
+
+
+    
+

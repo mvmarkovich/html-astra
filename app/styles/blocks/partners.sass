@@ -1,0 +1,60 @@
+.partners
+    overflow: hidden
+
+    &__slider
+        ^&__item
+            width: 130px @sm 160px @lg 200px
+
+        .slick-list
+            overflow: visible
+            margin: 0 -8px
+
+    &__list
+        display: flex
+        flex-wrap: wrap 
+        margin-bottom: -32px @lg -48px
+
+    &__item
+        padding: 0 8px
+        width: 25% @md 20% @lg 16.6%
+        margin-bottom: 0 @sm 24px @md 32px @lg 48px
+
+        &--body
+            width: 100%
+            text-align: center
+
+        &-img
+
+            &--wrap
+                border: 1px solid #D5DADD
+                padding: 16px 20px @sm 20px @lg 24px 32px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0 0 12px @sm 0 0 16px
+                width: 100%
+                height: 110px @sm 120px @lg 160px
+
+        &-title
+            text: #4A5A68 400 10px 1.3 @sm 14px @lg 16px
+
+    &--carousel-mobile
+        ^&__list
+            margin: @sm-down 0
+
+        .slick-list
+            margin: @sm-down 0 -8px
+            padding: @sm-down 0 0 8px
+            display: @sm-down flex
+
+        .slick-track
+            display: @sm-down flex
+
+        ^&__item
+            width: @sm-down auto
+            flex: @sm-down 0
+            padding: @sm-down 0 8px
+            margin: @sm-down 0
+
+            &--body
+                width: @sm-down 132px

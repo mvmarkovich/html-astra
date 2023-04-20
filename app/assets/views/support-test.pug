@@ -1,0 +1,214 @@
+extends layouts/layout.pug
+
+block title
+    title Поддержка - Тестирование | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="support.html") Поддержка
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Тестирование
+
+    .main-block
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Тестирование
+                        p.intro__desc Для оценки функциональности и возможности использования операционной системой вам может быть предоставлен бесплатно на ограниченный (до 3 месяцев) период времени экземпляр операционной системы с документацией.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/support/intro/plug_2.svg" width="484" height="389" alt="Название")
+
+        section.section
+            .container
+                .row
+                    .col-12.col-lg-5
+                        .title__block
+                            h2 Сертифицированная <br> версия ос
+
+                    .col-lg-7
+                        .text-chapter
+                            p.text-chapter__desc Передаваемый экземпляр операционной системы изготавливается в соответствии с техническими условиями, проверяется ОТК и упаковывается в объёме приемо-сдаточных испытаний, предусмотренных техническими условиями. Экземпляру присваивается соответствующий учётный (заводской) номер, но формуляр потребителю не выдаётся.
+                            p.text-chapter__desc При положительном решении о применении операционной системы формат коробки ВОХ может не возвращаться, а с потребителем заключается соответствующий лицензионный договор с последующей передачей ему формуляра с отметками ОТК и военного представительства (при необходимости) на предоставленный ранее для тестирования экземпляр (экземпляры) операционной системы.
+                            p.text-chapter__desc В лицензионном договоре, при необходимости, определяется дополнительное количество ЭВМ, на которых пользователь может устанавливать и эксплуатировать операционную систему, а также стоимость лицензионного вознаграждения.
+
+        section.section.section-p-y-axis
+            .container
+                .row
+                    .col-12.col-lg-6
+                        .h4.text-uppercase Разрабатываемая версия ОС
+                        .text Это версия операционной системы, которая после проведения тестирования передаётся в испытательную лабораторию для проведения контрольных процедур проверки соответствия требованиям безопасности информации и подтверждения действия сертификата соотв етствия. <br><br> В процессе тестирования вы сможете:
+
+                    .col-12.col-lg-6
+                        ul.list-counter.row
+                            li.col-12.col-lg-6 Оценить функциональные возможности
+                            li.col-12.col-lg-6 Протестировать аппаратную совместимость новой версии операционной системы
+                            li.col-12 Протестировать программную совместимость операционной системой с другим программным обеспечением
+                            li.col-12.col-lg-6 Провести разработку или доработку производимых изделий для полнофункциональной их работы в новой версии операционной системы
+                            li.col-12.col-lg-6 Внести пожелания по включению в состав дистрибутива необходимых драйверов и библиотек
+
+        section.feedback.feedback--test
+            .container
+                .feedback__body
+                    form#form-steps.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Cтать Партнером и получить ID легко
+
+                            .feedback__form-steps
+                                ul.feedback__form-steps-list
+                                    li.feedback__form-steps-item Шаг 1
+                                    li.feedback__form-steps-item Шаг 2
+                                    li.feedback__form-steps-item Шаг 3
+
+                                span.btn.btn--reset.btn--back-before#feedback__btn-prev(onclick="nextPrev(-1)") Назад
+
+                        .feedback__form-content
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Заявка оформляется официальным письмом
+
+                                        .input
+                                            input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                        .form__group
+                                            .input
+                                                input.input__elem(type="text" placeholder="Наименование компании" name="feedback-company")
+
+                                            .input
+                                                input.input__elem(type="text" placeholder="Почта для связи" name="feedback-email")
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-1.webp" width="573" height="514" alt="Шаг 1")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Бланк официального письма-заявки на предоставление операционной системы «Astra Linux Special Edition»
+
+                                        .input
+                                            .feedback__docs
+                                                .feedback__docs-title Бланки:
+                                                .feedback__docs-list
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+
+                                            input.input__file#feedback-attach-file(type="file" name="feedback-attach-file")
+                                            label.input__file-label.input__file-label--border(for="feedback-attach-file") 
+                                                i.icons.icons--doc-gray
+                                                .input__file-label-title Прикрепить бланк
+                                                i.icons.icons--attach
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-2.webp" width="573" height="514" alt="Шаг 2")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__success
+                                            img.form__success-icon(src="img/icons/form-success.svg" width="72" height="72" alt="Success!")
+                                            .form__success-title Вы успешно отправили данные
+                                            p.form__success-desc После получения заявки сотрудники ООО «РусБИТех-Астра» свяжутся с контактным лицом и запросят данные, необходимые для подготовки акта приема передачи операционной системы в демонстрационно - ознакомительных целях, а также договорятся о сроках и способах передачи экземпляра программ
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-3.webp" width="573" height="514" alt="Шаг 3")
+
+                        .feedback__form-footer#form-steps-footer
+                            button.btn.btn--accent.btn--arrow-right-after#feedback__btn-next(type="button" onclick="nextPrev(1)" aria-label="Next tab") Далее
+
+                            p.form__agree#form-steps-headline Вопросы по Партнёрской программе: <br> на <a href="mailto:partner@astralinux.ru">partner@astralinux.ru</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Form tabs
+        //
+
+        var currentTab = 0;
+        showTab(currentTab);
+
+        function showTab(n) {
+            var x = document.getElementsByClassName("feedback__form-tab");
+            x[n].style.display = "block";
+
+            if (n == 0) {
+                document.getElementById("feedback__btn-prev").style.display = "none";
+            } else {
+                document.getElementById("feedback__btn-prev").style.display = "inline-flex";
+            }
+
+            if (n == (x.length - 2)) {
+                document.getElementById("form-steps-footer").style.display = "flex";
+                document.getElementById("feedback__btn-next").innerHTML = "Отправить запрос";
+
+                document.getElementById("feedback__btn-next").classList.replace('btn--arrow-right-after', 'btn--email-after');
+
+                document.getElementById("form-steps-headline").style.display = "block";
+                
+            } else if (n == (x.length - 1)) {
+                document.getElementById("form-steps-footer").style.display = "none";
+
+            } else {
+                document.getElementById("form-steps-footer").style.display = "flex";
+                document.getElementById("feedback__btn-next").classList.replace('btn--email-after', 'btn--arrow-right-after');
+                document.getElementById("feedback__btn-next").innerHTML = "Далее";
+            }
+
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            var x = document.getElementsByClassName("feedback__form-tab");
+            if (n == 1 && !validateForm()) return false;
+            x[currentTab].style.display = "none";
+            currentTab = currentTab + n;
+
+            if (currentTab >= x.length) {
+                //document.getElementById("form-steps").submit();
+                
+                return false;
+            }
+
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("feedback__form-tab");
+            y = x[currentTab].getElementsByTagName("input");
+
+            for (i = 0; i < y.length; i++) {
+                if (y[i].value == "") {
+
+                y[i].className += " invalid";
+
+                valid = false;
+                }
+            }
+
+            if (valid) {
+                document.getElementsByClassName("feedback__form-steps-item")[currentTab].className += " is-finish";
+            }
+
+            return valid;
+        }
+
+        function fixStepIndicator(n) {
+            var i, x = document.getElementsByClassName("feedback__form-steps-item");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" is-active", "");
+            }
+
+            x[n].className += " is-active";
+        }
+
+        

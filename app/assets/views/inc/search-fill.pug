@@ -1,0 +1,48 @@
+.search.search--popup
+    .container
+        .search__head
+            .search__title Поиск
+
+            button.btn.btn--reset.btn--cross.search__close(aria-label="Close search")
+
+        form.search__form(action="/" method="/")
+            input.search__form-input(type="text" placeholder="Ввести" value="астра" required)
+            button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+        .search__body
+            .search__aside
+                ul.search__aside-list
+                    li.search__aside-item
+                        a.search__aside-link(href="#") Прикладное ПО ГК <span>«Астра»</span>
+
+                    li.search__aside-item
+                        a.search__aside-link(href="#") О компании <span>Astra</span> Linux
+
+                    li.search__aside-item
+                        a.search__aside-link(href="#") <span>Astra</span>-карьера
+
+                    li.search__aside-item
+                        a.search__aside-link(href="#") <span>Astra</span> Linux SE/CE
+
+                    li.search__aside-item
+                        a.search__aside-link(href="#") <span>Astra</span> Linux на Тюменском Нефтегазовом Форуме
+
+            .search__result
+                .search__result-cards
+                    .search__result-card.col-md-6
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности
+
+                    .search__result-card.col-md-6
+                        a.search__result-card--body(href="#")
+                            .search__result-card-img--wrap
+                                img.search__result-card-img(src="img/content/search/item_1.webp" width="232" height="138" alt="Название")
+
+                            .search__result-card-info
+                                .search__result-card-title Ready For Astra Linux
+                                p.search__result-card-desc Краткое описание особенности

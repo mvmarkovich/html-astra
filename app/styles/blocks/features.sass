@@ -1,0 +1,181 @@
+.features
+    &__list
+        margin-bottom: @sm -24px
+
+    &__item
+        margin: 0 0 16px @sm 0 0 24px
+
+        &--inner
+            padding: 16px 16px 20px @sm 24px @lg 32px
+            border: 1px solid #E8ECEF
+            height: 100%
+
+        &-img
+            &--wrap
+                size: 48px @sm 64px
+                min-width: 48px @sm 64px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0 0 12px @sm 0 0 16px
+
+        &-title, &-desc
+            text: 14px 1.5
+
+        &-title
+            color: #071C27
+            font-weight: 700
+
+        &-desc
+            color: #6A7E95
+            font-weight: 400
+            margin: 8px 0 0
+
+            a:not([class])
+                word-break: break-all
+                text-decoration: underline
+
+                &:hover
+                    color: #00588D
+                    text-decoration: none
+
+        .list-dots
+            margin: 8px 0 0
+            
+            li
+                text: 14px
+                padding: 0 0 0 12px
+                margin: 0 0 4px
+
+                p
+                    text: 14px
+
+                &:before
+                    background: #6A7E95
+                    size: 4px
+                    min-width: 4px
+                    top: 9px
+
+                &:last-child
+                    margin: 0
+
+        &:last-child
+            margin: @sm-down 0
+
+    &__headline
+        max-width: 820px
+        margin: 32px auto 0
+        color: #6A7E95
+        text: 400 14px 1.5
+        text-align: center
+
+    &--short
+        ^&__item
+            &--inner
+                padding: 32px 24px
+                display: flex
+                align-items: center
+
+            &-img
+                &--wrap
+                    margin: 0 12px 0 0
+                    size: 48px
+                    min-width: 48px
+
+            &-title
+                color: rgba(74, 90, 104, .8)
+                text: 400 14px 
+                margin: 0
+
+    &--tiny
+        ^&__item
+            &--inner
+                display: @sm flex
+                align-items: @sm center
+
+            &-img
+                &--wrap
+                    margin: @sm 0 12px 0 0
+                    size: 40px
+                    min-width: 40px
+
+            &-desc
+                color: rgba(74, 90, 104, .8)
+                text: 400 14px 
+                margin: 0
+
+    &--light
+        ^&__item
+            &--inner
+                border: none
+
+            &-title
+                color: #fff
+
+            &-desc
+                color: #F5F6F7
+
+    &--hero
+        margin: 32px 0 0
+
+        ^&__item
+            &--inner
+                padding: 16px @sm 24px
+                min-height: @md 162px
+                display: flex
+                align-items: center
+
+            &-title
+                margin: 0
+
+            &-desc
+                margin: 8px 0 0
+
+    &--steps
+        ^&__list
+            counter-reset: features-steps
+
+        ^&__item
+            &-info
+                &:before
+                    counter-increment: features-steps
+                    content: 'Этап ' counter(features-steps)
+                    display: block
+                    margin: 0 0 4px
+                    color: #0079C1 
+                    text: 700 12px 1.5
+                    text-transform: uppercase
+
+    &--row
+        ^&__item
+            &--inner
+                padding: @sm 24px
+                display: @sm flex
+                align-items: @sm flex-start
+
+            &-img
+                &--wrap
+                    margin: @sm 0 12px 0 0
+                    size: 40px
+                    min-width: 40px
+
+            &-desc
+                color: #666
+                text: 400 14px 
+                margin: 0
+
+    &--docs
+        ^&__item
+            &--inner
+                padding: 24px
+
+            &-title
+                color: #071C27
+
+            &-desc
+                color: #6A7E95
+                text: 12px
+
+            .link
+                text: 14px
+                margin: 16px 0 0

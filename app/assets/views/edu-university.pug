@@ -1,0 +1,401 @@
+extends layouts/layout.pug
+
+block title
+    title Обучение - Студентам | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Астра-Карьера
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Дисциплины
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Работа
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Миссия
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Проект в цифрах
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Преимущества
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-6") Задать вопрос
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu.html") Обучение
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Студентам
+
+    .main-block
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Студентам
+                        p.intro__desc ГК Астра активно сотрудничает с Вузами, колледжами и техникумами России, на базе которых идёт подготовка кадров для работы с операционной системой, в числе партнёров компании — уже +300 образовательных организаций.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/edu/intro/university.webp" width="560" height="512" alt="Название")
+
+        section.section
+            .container
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h3 Проект Астра карьера
+                                    .os-hero__desc <strong>Если ты студент МИФИ, МГУ, МГТУ им. Н.Э. Баумана, МирЭА и других технических ВУЗов,</strong> у тебя есть шанс начать карьеру в крупной стабильной отечественной компании с интересными задачами и кейсами. Мы заинтересованы в обучении высококвалифицированных кадров в IT-индустрии.
+
+                                .btn--block.os-hero__btns
+                                    button.btn.btn--border.btn--more.js-open-more(aria-label="Load more" data-text="Показать все" data-toggle-text="Скрыть") Показать все
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/os/hero/plug.svg" width="420" height="328" alt="Название")
+
+                        .os-hero__hidden.hidden-content
+                            .scope__gap
+                                .scope__column
+                                    h3 ПОЧЕМУ МЫ?
+                                    
+                                    ul
+                                        li Работа с востребованными на российском и глобальном IT- рынке продуктами.
+                                        li Опытные наставники.
+                                        li Знакомство с внутренними циклами создания и сопровождения IT-решений от А до Я.
+                                        li Навыки применения знаний на реальном продукте в суперпрофессиональной команде, которая осуществит всю необходимую поддержку на начальном этапе.
+                                        li Навыки по специальности в реальных рабочих кейсах и возможность последующего трудоустройства.
+
+                                .scope__column
+                                    h3 Стажироваться можно по четырём основным направлениям:
+                                    
+                                    ul
+                                        li Сопровождение операционных систем Astra Linux;
+                                        li Тестирование ОС и других продуктов компании;
+                                        li Информационная безопасность (в т.ч. инструментальные средства обеспечения доверия к ПО);
+                                        li Интернет-маркетинг.
+
+                                .scope__column
+                                    h3 Примеры тем Стажировки
+                                    
+                                    ul
+                                        li Знакомство с Linux-системами
+                                        li Изучение документации по продуктам
+                                        li Знакомство с гипервизором
+                                        li Создание тестовых стендов
+                                        li Установка и настройка ОС Astra Linux
+                                        li Знакомство с текстовыми редакторами
+                                        li Настройка сервера печати CUPS, почтового сервиса,
+                                        li СУБД PostgreSQL, web-сервера Apache2
+                                        li Дискреционное управление доступом
+                                        li Централизованное управление пользователями и устройствами
+                                        li Мандатное управление доступом и мандатный контроль целостности
+                                        li Настройка механизмов организации замкнутой программной среды
+                                        li Настройка сетевого взаимодействия
+                                        li Тестирование ОС и других продуктов компании
+                                        li Применения инструментальных средств обеспечения доверия к ПО
+                                        li Рекламные кампании в социальных сетях
+                                        li Написание и производство контента для сайта
+
+                                .scope__column
+                                    h3 Централизованный аудит и формирование отчётов:
+                                    
+                                    ul
+                                        li Отправьте резюме с темой письма «Стажировка» с указанием направления на почту myalovega@astralinux.ru;
+                                        li Пройдите очное собеседование;
+                                        li Предоставьте необходимые документы о направлении на стажировку из своего ВУЗа.
+
+        section.section
+            .container
+                .title__block
+                    h2 Обучение студентов в рамках дисциплин
+
+                .features.features--tiny
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEMENT FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item-tiny_1.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Информационные технологии
+                            <!-- END ELEMENT FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item-tiny_2.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Операционные системы
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item-tiny_3.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Безопасность операционных систем
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item-tiny_4.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Компьютерные сети
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item-tiny_5.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Архитектура ЭВМ
+
+        section.section.section-p-y-axis
+            .container
+                .row
+                    .col-12.col-lg-5
+                        .title__block
+                            h2 Работа для начинающих специалистов
+
+                    .col-lg-7
+                        .text-chapter
+                            p.text-chapter__desc «Астра-карьера» — это новый формат трудоустройства молодых специалистов в ИТ-компании — к партнёрам ГК Astra Linux не через рекомендации и сватовство, а через подтверждённые компетенции.
+                            p.text-chapter__desc Проект создан для помощи в трудоустройстве молодых сертифицированных по продуктам Astra Linux студентов и выпускников ИТ-специальностей.
+
+        section.section
+            .container
+                .os-hero.os-hero--dark
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h2 Миссия и цель проекта
+                                    .os-hero__desc Мы видим свою миссию в развитии кадрового потенциала страны в сфере ИТ и в формировании положительного и доверительного отношения молодых специалистов к работе в профильных российских компаниях. <br><br> Цель проекта — трудоустройство молодых специалистов, имеющих подтверждённые знания продуктов Astra Linux в лучшие ИТ-компании России.
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/edu/hero/university.webp" width="446" height="342" alt="Название")
+
+                .features.features--hero
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEMENT FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Повышения профессиональных знаний и навыков для полноценной работы и стабильной карьеры в ИТ-сфере.
+                            <!-- END ELEMENT FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Быстрого и успешного старта тех, кто в начале своей карьеры.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Для работодателей, желающих формировать молодую команду амбициозных и талантливых сотрудников.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Удобного и оперативного подбора сотрудников на ключевые позиции малого и среднего звена.
+
+        section.section
+            .container
+                .title__block
+                    h2 Проект в цифрах
+
+                .info-numbers.info-numbers--edu
+                    .info-numbers__list.row
+                        .info-numbers__item.col-lg-4
+                            .info-numbers__item--inner
+                                .info-numbers__item-value 300
+                                .info-numbers__item-title более
+                                p.info-numbers__item-desc ОБРАЗОВАТЕЛЬНЫХ УЧРЕЖДЕНИЙ
+
+                        .info-numbers__item.col-lg-4
+                            .info-numbers__item--inner
+                                .info-numbers__item-value 4000
+                                .info-numbers__item-title более
+                                p.info-numbers__item-desc Клиентов ГК «Астра»
+
+                        .info-numbers__item.col-lg-4
+                            .info-numbers__item--inner
+                                .info-numbers__item-value 100
+                                .info-numbers__item-title более
+                                p.info-numbers__item-desc Клиентов ГК «Астра»
+
+        section.section
+            .container
+                .title__block
+                    h2 Преимущества проекта
+
+                .features
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Проект не ограничен
+                                        .features__item-desc Проект не ограничен географией присутствия — специалисты со знанием продуктов Astra Linux востребованы по всей России.
+                            <!-- END ELEM FEATURES -->
+                            
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Все участники проекта верифицированы
+                                        .features__item-desc Все участники проекта верифицированы департаментом образования ГК «Астра» — это повышает доверие на первых этапах взаимодействия.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Бесплатно
+                                        .features__item-desc Бесплатное участие для всех сторон процесса.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/university/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Добровольно
+                                        .features__item-desc Добровольное и ни к чему не обязывающее партнёрство.
+
+        section.feedback.feedback--narrow.section-anchor#anchor-6
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Связаться с нами
+
+                        .feedback__form-content
+                            .form__desc Выберите тему обращения:
+
+                            .feedback__tags
+                                .feedback__tags-list
+                                    .input
+                                        input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                            .form__desc Данные для связи:
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                            .input
+                                textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                            p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Проверка на количество материалов
+        //
+
+        let listMaterials = document.querySelectorAll('.materials__list');
+
+        for (let i = 0; i < listMaterials.length; ++i) {
+            if (listMaterials[i].children.length > 6) {
+                let DOMmore = document.createElement('div');
+                DOMmore.className = 'btn--block materials__more';
+                DOMmore.innerHTML = '<button class=" btn btn--reset btn--more js-show-more" aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть">Развернуть</button>';
+                listMaterials[i].parentElement.append(DOMmore);
+
+                listMaterials[i].classList.add('hidden-content')
+            }
+        }
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

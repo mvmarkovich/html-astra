@@ -1,15 +1,76 @@
 a
-  text: #CC3B03
-  text-decoration: none
-  transition: .3s
-
-  &:hover
-    color: #EC6626
-
-p
-  a
-    text: #CC3B03
     text-decoration: none
+    transition: .2s
 
     &:hover
-      color: #EC6626
+        color: #0079C1
+        text-decoration: none
+
+.link
+    transition: .2s
+    text-decoration: none
+    display: inline-flex
+    align-items: center
+    color: #6A7E95
+
+    &:hover
+        color: #0079C1
+
+    &--accent
+        color: #0079C1
+
+        &:hover
+            color: #00588D
+
+    &--arrow-left,
+    &--phone-before,
+    &--doc-before
+        &:before
+            content: ''
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            size: 20px
+            min-width: 20px
+            margin-right: 4px
+            transition: .2s
+
+    &--target,
+    &--target-sec
+        &:after
+            content: ''
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            size: 20px
+            min-width: 20px
+            margin-left: 8px
+            transition: .2s
+
+    &--target
+        &:after
+            background-image: resolve("icons/target-accent.svg")
+
+        &:hover
+            &:after
+                background-image: svg-load("icons/target-accent.svg", stroke="#00588D")
+
+    &--target-sec
+        &:after
+            background-image: resolve("icons/target-sec.svg")
+
+    &--arrow-left
+        &:before
+            background-image: resolve("icons/arrow-left-accent.svg")
+
+        &:hover
+            &:before
+                background-image: resolve("icons/arrow-left.svg")
+
+    &--phone-before
+        &:before
+            background-image: resolve("icons/phone-accent.svg")
+
+    &--doc-before
+        &:before
+            background-image: resolve("icons/doc-gray.svg")

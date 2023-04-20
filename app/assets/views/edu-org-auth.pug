@@ -1,0 +1,239 @@
+extends layouts/layout.pug
+
+block title
+    title Образовательным организациям - Авторизованным учебным центрам | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Получение статуса
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Критерии отбора
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="career.html") Работа
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Учебные центры
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="edu-org.html") Образовательным организациям
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Авторизованным учебным центрам
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info.col-lg-7
+                        h1.intro__title Авторизованным учебным центрам
+                        p.intro__desc Авторизованные учебные центры формируются на базе образовательных организаций, работающих по лицензии в сфере дополнительного профессионального образования:
+
+                        ul.list-dots
+                            li центров дополнительного профессионального образования;
+                            li университетов;
+                            li колледжей.
+
+                    .intro__img--wrap.col-lg-4
+                        img.intro__img(src="img/content/edu/intro/org-auth.webp" width="407" height="436" alt="Название")
+
+        section.section.section-anchor#anchor-0
+            .container
+                .software-asset.software-asset--reverse
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-4
+                            img.software-asset__img(src="img/content/edu/asset/edu-auth.webp" width="300" height="416" alt="Название")
+
+                        .software-asset__info.col-lg-8
+                            .software-asset__title Как получить статус авторизованного учебного центра
+                            .software-asset__desc Чтобы получить статус авторизованного учебного центра, организации необходимо прислать на адрес education@astralinux.ru письмо с темой «Заявка на авторизацию УЦ», приложив к нему пакет документов, куда входят:
+
+        section.section
+            .container
+                .title__block
+                    h2 Процесс получения авторизации
+
+                .features.features--steps
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Подача заявки
+                                        .features__item-desc Образовательная организация подаёт в Департамент образования (<a href="mailto:education@astralinux.ru">email education@astralinux.ru</a>) письменную заявку на авторизацию и предоставляет подробную информацию о преподавателях (включая резюме на каждого преподавателя), которых предполагается авторизовать для получения статуса авторизованного учебного центра. В теме письма необходимо указать Заявка на авторизацию УЦ.
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Рассмотрение заявки
+                                        .features__item-desc Департамент образования в лице руководителя отдела по работе с учебными центрами рассматривает заявку на авторизацию и резюме преподавателей. Заявка рассматривается <strong>в течение 14 дней</strong> с момента подачи заявки. Руководитель отдела по работе с учебными центрами проводит консультацию по итогам рассмотрения заявки (обсуждение вопросов по телефону, эл.почте) для уточнения условий по авторизации учебного центра и для формирования решения по статусу заявки.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Решение о начале процедуры по авторизации
+                                        .features__item-desc Департамент образования по результатам рассмотрения заявки образовательной организации, резюме преподавателей и итогов обсуждения условий по авторизации принимает решение о начале процедуры авторизации образовательной организации.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Заключение соглашения о конфидециальности и лицензионного договора
+                                        .features__item-desc Заключение с образовательной организацией Соглашения о конфиденциальности. Заключение с образовательной организацией лицензионного договора на авторизацию.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Авторизация преподавателей
+                                        .features__item-desc Для получения статуса авторизации требуется авторизовать двух преподавателей по базовой линейке курсов ГК Астра. Данная комплексная программа включает в себя обучение по 5-ти курсам: AL–1701, AL–1702, AL–1703, AL–1704 и AL–1705, подробные программы курсов представлены по адресу: <a href="https://education.astralinux.ru/welcome.php" target="_blank">https://education.astralinux.ru/welcome.php</a>
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-info
+                                        .features__item-title Итоговое решение об авторизации
+                                        .features__item-desc Департамент образования принимает итоговое решение о присвоении образовательной организации статуса авторизованного учебного центра, с образовательной организацией заключается Подписывается лицензионный договор со стороны вендора и выдаётся сертификат авторизованного учебного центра, подтверждающий право проведение авторизованных курсов от вендора.
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Критерии отбора образовательных организаций <br> для получения статуса авторизованного учбеного центра
+                    p Для получения статуса авторизованного учебного центра, образовательная организация <br> должна удовлетворять следующим критериям:
+
+                .features.features--row
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-row_1.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Образовательная организация должна иметь лицензию на образовательную деятельность по программам ДПО (дополнительного профессионального образования).
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-row_2.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Образовательная организация должна иметь компьютерный класс с операционной системой Astra Linux (минимальное количество компьютеров - 8 шт.), дистрибутив предоставляется образовательной организации после подписания Лицензионного договора.
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-row_3.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc В образовательной организации должно быть минимум два авторизованных преподавателя по всей линейке курсов по операционной системе.
+
+        section.section
+            .container
+                .title__block
+                    h2 Необходимый пакет документов для <br> получения авторизации
+
+                .features.features--tiny
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-tiny_1.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Скан-копия лицензии на образовательную деятельность по программам ДПО
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-tiny_2.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Анкета образовательной организации и информация для сайта
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-tiny_3.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Лицензионный договор на авторизацию
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-tiny_4.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Резюме преподавателей
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/edu/features/org-auth/item-tiny_5.svg" width="40" height="40" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-desc Соглашение о конфидециальности
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

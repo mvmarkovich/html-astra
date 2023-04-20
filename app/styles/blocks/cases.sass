@@ -1,0 +1,41 @@
+.cases
+    &__list
+        margin-bottom: -24px
+
+    &__col
+        margin: 0 0 24px
+
+        &--body
+            box-shadow: 0px 2px 8px rgba(6, 50, 77, 0.15)
+            height: 100%
+
+        &-img
+            @extend .img-cover
+            height: 100%
+            object-fit: cover
+
+            &--wrap
+                @extend .img-cover-wrapper
+                height: 180px @md 210px @xl 268px
+                display: block
+
+        &-info
+            padding: 16px 16px 24px @md 16px 24px 24px
+            height: @md calc(100% - 210px) @xl calc(100% - 268px)
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+
+        &-title
+            color: #071C27
+            text: 700 16px 1.5 @md 18px
+            display: inline-block
+            margin: 0 0 8px
+
+        &-desc
+            color: #6A7E95
+            text: 400 14px 1.5 @md 16px
+
+        &-soft
+            text: 700 14px 1.5 @md 16px
+            margin: 24px 0 0

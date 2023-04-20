@@ -1,0 +1,113 @@
+.filter-mobile-btns
+    position: fixed
+    bottom: 0
+    left: 0
+    right: 0
+    background: #fff
+    padding: 10px
+    z-index: 10
+    display: flex @lg none
+    align-items: center
+
+    .btn
+        width: 100%
+        margin: 0 10px 0 0
+
+        &:last-child
+            margin: 0
+
+.filter
+    max-width: @lg-down 736px
+    margin: @lg-down 0 auto
+
+    &__head
+        display: flex @lg none
+        align-items: flex-start
+        margin: 0 0 12px
+        padding: 24px 0 12px
+        position: sticky 0 null null null
+        background: #fff
+        z-index: 10
+
+        &-title
+            color: #071C27
+            text: 700 20px 1.1
+            margin: 0
+
+    &__form
+        &-item
+            margin: 0 0 32px @lg 0 0 48px
+
+            &-title
+                color: #4A5A68
+                text: 700 16px 1.5
+                margin: 0 0 16px
+
+            &-inputs
+                max-height: @lg 220px
+                overflow: @lg auto
+                padding: @lg 0 8px 0 0
+
+                &::-webkit-scrollbar
+                    width: 6px
+
+                &::-webkit-scrollbar-track
+                    background: #F2F5F7
+                    border-radius: 9px
+
+                &::-webkit-scrollbar-thumb
+                    background: #D5DADD
+                    border-radius: 9px
+
+                .input__checkbox-label
+                    width: 100%
+
+            &--edition-blue, &--edition-red
+                ^&-title
+                    &:before
+                        content: ''
+                        position: relative
+                        top: 4px
+                        size: 20px
+                        min-width: 20px
+                        margin: 0px 8px 0 0
+                        background-repeat: no-repeat
+                        background-size: contain
+                        background-position: center
+                        display: inline-flex
+
+            &--edition-blue
+                ^&-title
+                    &:before
+                        background-image: resolve("icons/star-blue.svg")
+
+            &--edition-red
+                ^&-title
+                    &:before
+                        background-image: resolve("icons/star-red.svg")
+
+            &:last-child
+                margin: 0
+
+        &-footer
+            position: @lg-down fixed
+            bottom: @lg-down 0
+            left: @lg-down 0
+            right: @lg-down 0
+            padding: @lg-down 10px
+            background: @lg-down #fff
+            z-index: @lg-down 24
+            max-width: @lg-down 768px
+            margin: 0 auto @lg 32px 0 0
+
+            .btn
+                width: 100%
+    
+.js-close-filter
+    margin: 0px 12px 0 0
+
+    &:before
+        background-image: svg-load("icons/arrow-left.svg", stroke="#6A7E95")
+        size: 20px
+        min-width: 20px
+

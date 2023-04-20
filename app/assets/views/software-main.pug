@@ -1,0 +1,337 @@
+extends layouts/layout.pug
+
+block title
+    title ПО и услуги | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link ПО и услуги
+
+    .main-block
+        .intro--slider
+            .intro
+                .container
+                    .intro__wrap
+                        .intro__slider
+                            .intro__slider-item
+                                .intro__slider-item--body.row
+                                    .intro__info.order-2.order-lg-1.col-12.col-lg-7
+                                        h2.intro__title Программное обеспечение и услуги
+                                        p.intro__desc ГК «Астра» объединяет российских разработчиков программного обеспечения. Мы занимаемся импортозамещением и хотим, чтобы в нашей стране широко применялись и были популярны именно российские программные продукты. Наша стратегическая цель — стать к 2030 году лидирующим производителем ПО в России.
+                                        
+                                    .intro__img--wrap.order-1.order-lg-2.col-12.col-lg-5
+                                        img.intro__img(src="img/content/software/software-intro/main.webp" width="471" height="374" alt="Название")
+
+
+                            .intro__slider-item
+                                .intro__slider-item--body.row
+                                    .intro__info.order-2.order-lg-1.col-12.col-lg-7
+                                        h2.intro__title Программное обеспечение и услуги
+                                        p.intro__desc ГК «Астра» объединяет российских разработчиков программного обеспечения. Мы занимаемся импортозамещением и хотим, чтобы в нашей стране широко применялись и были популярны именно российские программные продукты. Наша стратегическая цель — стать к 2030 году лидирующим производителем ПО в России.
+
+                                    .intro__img--wrap.order-1.order-lg-2.col-12.col-lg-5
+                                        img.intro__img(src="img/content/software/software-intro/main.webp" width="471" height="374" alt="Название")
+
+                        .slider-dots-line#intro__slider-dots
+
+        section.section
+            .container
+                .promo-banner
+                    .promo-banner__slider
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение
+                                    .promo-banner__item-desc Сначала мы разработали безопасную, быструю и надёжную российскую операционную систему на базе Linux. Затем вместе с партнёрами мы создали экосистему приложений: для работы, учёбы и развлечений. Теперь мы собираемся сделать Astra Linux операционной системой № 1 в России. Будущее — за нами!
+
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение 2
+                                    .promo-banner__item-desc Описание 2
+
+                        .promo-banner__item
+                            a.promo-banner__item--body(href="promo-article.html")
+                                .promo-banner__item-img--wrap
+                                    img.promo-banner__item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                                .promo-banner__item-info
+                                    .promo-banner__item-title Акционное предложение 3
+                                    .promo-banner__item-desc Описание 3
+
+                    .slider-dots-line
+
+        section.section
+            .container
+                .title__block
+                    h2 Наши операционные системы
+
+                .os-offer
+                    .os-offer__list.row
+                        .os-offer__col.col-12.col-md-6
+                            .os-offer__col--body
+                                .os-offer__col-label Для юридических лиц
+
+                                .os-offer__col-title--wrap
+                                    .os-offer__col-title Astra Linux
+                                    .os-offer__col-headline Special Edition
+
+                                .os-offer__col-desc Сертифицированная ОС со встроенными запатентованными средствами защиты информации (СЗИ) для стабильных и безопасных ИТ-инфраструктур различного масштаба и бесперебойной обработки любой информации, в том числе конфиденциальной и содержащей гостайну. Широкие возможности Astra Linux Special Edition позволяют комфортно работать с данными и приложениями, обеспечивать высокий уровень безопасности ИТ-компонентов и ресурсов организации. Графический интерфейс Fly собственной разработки делает навигацию удобной даже при невысокой производительности компьютера. Astra Linux Special Edition успешно прошла комплекс испытаний в системе сертификации СЗИ ФСТЭК России по первому, высочайшему, уровню доверия. ОС единственная в стране имеет набор сертификатов ФСТЭК России, ФСБ России и Министерства обороны России.
+
+                                .os-offer__col-btns
+                                    a.btn.btn--border(href="os-server.html") Узнать больше
+
+                        .os-offer__col.col-12.col-md-6
+                            .os-offer__col--body
+                                .os-offer__col-label.os-offer__col-label--red Для физических лиц
+
+                                .os-offer__col-title--wrap
+                                    .os-offer__col-title Astra Linux
+                                    .os-offer__col-headline Common Edition
+
+                                .os-offer__col-desc Операционная система общего назначения. Создана на базе линукс-дистрибутива Debian, отличается низкими требованиями к оборудованию. Подходит для работы, учёбы и развлечений.
+
+                                .os-offer__col-btns
+                                    a.btn.btn--border(href="os-server.html") Узнать больше
+
+        section.section
+            .container
+                .os-hero.os-hero--dark
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title.h4.text-uppercase Экспортный потенциал
+                                    .os-hero__desc Российская операционная система Astra Linux и другие решения ГК «Астра» в странах СНГ.
+
+                                    .os-hero__btns
+                                        a.btn.btn--border(href="#") Подробнее
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/software/software-hero/item_1.webp" width="473" height="315" alt="Название")
+
+        section.software-cards
+            .container
+                .title__block
+                    h2 Программный стек ГК «Астра» 
+
+                .software-cards__body
+                    .software-cards__list.row
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-astra.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/astra.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Astra Linux
+                                    .software-cards__item-desc Операционная система Astra Linux
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-brest.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/brest.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Брест
+                                    .software-cards__item-desc Программный комплекс «Средства виртуализации «Брест»
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-termidesk.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/termidesk.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Termidesk
+                                    .software-cards__item-desc Виртуализация рабочих мест и приложений на различных платформах виртуализации
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rubackup.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rubackup.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RuBackup
+                                    .software-cards__item-desc Автоматизированное резервное копирование и восстановление данных
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rupost.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rupost.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RUPost
+                                    .software-cards__item-desc Система управления корпоративной почтой
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-workspad.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/workspad.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title WorksPad 
+                                    .software-cards__item-desc Организация защищённой мобильной работы сотрудников на смартфонах и планшетах
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-aldpro.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/aldpro.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title ALD Pro
+                                    .software-cards__item-desc Автоматизация и централизованное управление компьютерами и учетными записями пользователями, иерархией подразделений и групповыми политиками
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-dcimamager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/dcimanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title DCImanager
+                                    .software-cards__item-desc Платформа управления мультивендорным оборудованием в ЦОД, а также физическими и виртуальными сетями
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-vmmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/vmmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title VMmanager
+                                    .software-cards__item-desc Платформа управления серверной виртуальной инфраструктурой
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-billmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/billmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title BILLmanager
+                                    .software-cards__item-desc Автоматизация предоставления сервисов
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-tantor.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/tantor.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Tantor
+                                    .software-cards__item-desc СУБД и платформа управления кластерами PostgreSQL
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-astra-auto.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/astra-auto.webp" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Astra Automotion
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+        section.section.section-panel.section-panel--illustration
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h3.section-panel__title Астра Консалтинг
+                        p.section-panel__desc Предоставляет полномасштабный спектр консалтинговых услуг в рамках проектов перевода ИТ-инфраструктур организаций, обеспечивает полноценное сопровождение заказчиков в процессе миграции и внедрения отечественного ПО.
+
+                        .btn--block
+                            a.btn.btn--border-light(href="#") Узнать больше
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/software/software-hero/item_2.svg" width="336" height="244" alt="Название блока")
+
+        section.section
+            .container
+                .title__block
+                    h2 Отраслевые решения ГК Астра
+                    p Познакомьтесь с отраслевым внедрением наших продуктов
+
+                .faq-links.faq-links--big
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-smi.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title СМИ
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-gos_sector.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Государственный сектор
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-energetika.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Энергетика
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-nauka.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Наука и образование
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-finansy.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_5.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Финансы
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-zdravookhraneniye.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_6.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Здравоохранение
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-transport.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_7.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Транспорт
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-promyshlennost.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_8.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Промышленность и торговля
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4
+                                a.faq-links__item--inner(href="industry-zhilishche.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/industry/faq-links/item_9.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title ЖКХ
+
+        
+
+            
+        

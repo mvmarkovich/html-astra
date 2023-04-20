@@ -1,0 +1,285 @@
+extends layouts/layout.pug
+
+block title
+    title Trash | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Карьера в компании
+
+    .page-title
+        .container
+            h1 Trash page
+
+    .main-block
+        section.feedback
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Связаться с нами
+
+                        .feedback__form-content
+                            .form__desc Выберите тему обращения:
+
+                            .feedback__tags
+                                .feedback__tags-list
+                                    .input
+                                        input.input__radio--bg#feedback-theme-0(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-0") Проблемы с работой сайта
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-1(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-1") Сообщить об уязвимости
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-2(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-2") Сотрудничество
+
+                                    .input
+                                        input.input__radio--bg#feedback-theme-3(type="radio" name="feedback-theme")
+                                        label.input__radio--bg-label(for="feedback-theme-3") Другой вопрос
+
+                            .form__desc Данные для связи:
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="Номер телефона" name="feedback-phone")
+
+                            .input
+                                textarea.input__elem(name="feedback-massage", cols="30", rows="5" placeholder="Ваш вопрос") 
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--arrow-right-after(type="button" aria-label="Send form") Далее
+
+                            p.form__agree Нажимая на кнопку, вы даете согласие <br> на <a href="#">обработку персональных данных</a>
+
+        section.feedback.feedback--test
+            .container
+                .feedback__body
+                    form#form-steps.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Cтать Партнером и получить ID легко
+
+                            .feedback__form-steps
+                                ul.feedback__form-steps-list
+                                    li.feedback__form-steps-item Шаг 1
+                                    li.feedback__form-steps-item Шаг 2
+                                    li.feedback__form-steps-item Шаг 3
+
+                                span.btn.btn--reset.btn--back-before#feedback__btn-prev(onclick="nextPrev(-1)") Назад
+
+                        .feedback__form-content
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Заявка оформляется официальным письмом
+
+                                        .input
+                                            input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                        .form__group
+                                            .input
+                                                input.input__elem(type="text" placeholder="Наименование компании" name="feedback-company")
+
+                                            .input
+                                                input.input__elem(type="text" placeholder="Почта для связи" name="feedback-email")
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-1.webp" width="573" height="514" alt="Шаг 1")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Бланк официального письма-заявки на предоставление операционной системы «Astra Linux Special Edition»
+
+                                        .input
+                                            .feedback__docs
+                                                .feedback__docs-title Бланки:
+                                                .feedback__docs-list
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+
+                                            input.input__file#feedback-attach-file(type="file" name="feedback-attach-file")
+                                            label.input__file-label.input__file-label--border(for="feedback-attach-file") 
+                                                i.icons.icons--doc-gray
+                                                .input__file-label-title Прикрепить бланк
+                                                i.icons.icons--attach
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-2.webp" width="573" height="514" alt="Шаг 2")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__success
+                                            img.form__success-icon(src="img/icons/form-success.svg" width="72" height="72" alt="Success!")
+                                            .form__success-title Вы успешно отправили данные
+                                            p.form__success-desc После получения заявки сотрудники ООО «РусБИТех-Астра» свяжутся с контактным лицом и запросят данные, необходимые для подготовки акта приема передачи операционной системы в демонстрационно - ознакомительных целях, а также договорятся о сроках и способах передачи экземпляра программ
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-3.webp" width="573" height="514" alt="Шаг 3")
+
+                        .feedback__form-footer#form-steps-footer
+                            button.btn.btn--accent.btn--arrow-right-after#feedback__btn-next(type="button" onclick="nextPrev(1)" aria-label="Next tab") Далее
+
+                            p.form__agree#form-steps-headline Вопросы по Партнёрской программе: <br> на <a href="mailto:partner@astralinux.ru">partner@astralinux.ru</a>
+
+        section.feedback
+            .container
+                .feedback__body
+                    form.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Стать технологическим партнером
+
+                        .feedback__form-content
+                            .form__desc Для присоединения к партнерской программе скачайте и подпишите Заявку (акцепт) оферты о заключении соглашения о сотрудничестве, отправьте нам форму
+
+                            a.btn.btn--reset.btn--download-after(href="#" download) Оферта о заключении соглашения
+
+                            .form__desc Поля для заполнения
+
+                            .input 
+                                input.input__elem(type="text" placeholder="ФИО" name="feedback-partners-name")
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="+7 (ххх) хххх хх хх" name="feedback-partners-phone")
+
+                                .input
+                                    input.input__elem(type="text" placeholder="+7 (ххх) хххх хх хх" name="feedback-partners-email")
+
+                            .form__group
+                                .input
+                                    input.input__elem(type="text" placeholder="Компания" name="feedback-partners-company")
+
+                                .input
+                                    select.input__elem(name="feedback-partners-products" required)
+                                        option(value="" disabled selected) Выпускаемая продукция
+                                        option(value="0") Продукция 1
+                                        option(value="1") Продукция 2
+                                        option(value="2") Продукция 3
+
+                            .input
+                                textarea.input__elem(name="feedback-partners-massage", cols="30", rows="5" placeholder="Комментарий") 
+
+                            .input
+                                input.input__file#feedback-partners-file(type="file" name="feedback-partners-file")
+                                label.input__file-label(for="feedback-partners-file") 
+                                    i.icons.icons--doc-gray
+                                    .input__file-label-title Прикрепить документ
+                                    i.icons.icons--attach
+
+                        .feedback__form-footer
+                            button.btn.btn--accent.btn--email-after(type="button" aria-label="Send form") Отправить
+
+                            p.form__agree Заявка направиться по адресу <br> <a href="mailto:readyfor@astralinux.ru">readyfor@astralinux.ru</a>
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Form tabs
+        //
+
+        var currentTab = 0;
+        showTab(currentTab);
+
+        function showTab(n) {
+            var x = document.getElementsByClassName("feedback__form-tab");
+            x[n].style.display = "block";
+
+            if (n == 0) {
+                document.getElementById("feedback__btn-prev").style.display = "none";
+            } else {
+                document.getElementById("feedback__btn-prev").style.display = "inline-flex";
+            }
+
+            if (n == (x.length - 2)) {
+                document.getElementById("form-steps-footer").style.display = "flex";
+                document.getElementById("feedback__btn-next").innerHTML = "Отправить запрос";
+
+                document.getElementById("feedback__btn-next").classList.replace('btn--arrow-right-after', 'btn--email-after');
+
+                document.getElementById("form-steps-headline").style.display = "block";
+                
+            } else if (n == (x.length - 1)) {
+                document.getElementById("form-steps-footer").style.display = "none";
+
+            } else {
+                document.getElementById("form-steps-footer").style.display = "flex";
+                document.getElementById("feedback__btn-next").classList.replace('btn--email-after', 'btn--arrow-right-after');
+                document.getElementById("feedback__btn-next").innerHTML = "Далее";
+            }
+
+            fixStepIndicator(n)
+        }
+
+        function nextPrev(n) {
+            var x = document.getElementsByClassName("feedback__form-tab");
+            if (n == 1 && !validateForm()) return false;
+            x[currentTab].style.display = "none";
+            currentTab = currentTab + n;
+
+            if (currentTab >= x.length) {
+                //document.getElementById("form-steps").submit();
+                
+                return false;
+            }
+
+            showTab(currentTab);
+        }
+
+        function validateForm() {
+            var x, y, i, valid = true;
+            x = document.getElementsByClassName("feedback__form-tab");
+            y = x[currentTab].getElementsByTagName("input");
+
+            for (i = 0; i < y.length; i++) {
+                if (y[i].value == "") {
+
+                y[i].className += " invalid";
+
+                valid = false;
+                }
+            }
+
+            if (valid) {
+                document.getElementsByClassName("feedback__form-steps-item")[currentTab].className += " is-finish";
+            }
+
+            return valid;
+        }
+
+        function fixStepIndicator(n) {
+            var i, x = document.getElementsByClassName("feedback__form-steps-item");
+            for (i = 0; i < x.length; i++) {
+                x[i].className = x[i].className.replace(" is-active", "");
+            }
+
+            x[n].className += " is-active";
+        }
+
+
+                            
+    
+
+        
+
+        
+
+
+
+

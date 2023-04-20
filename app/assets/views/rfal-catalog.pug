@@ -1,0 +1,469 @@
+extends layouts/layout.pug
+
+block title
+    title RFAL Совместное оборудование | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    span.breadcrumbs__link(href="rfal.html") Ready For Astra Linux 
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Совместимое оборудование
+
+    .main-block
+        .career-vacansies
+            .container
+                .filter-mobile-btns
+                    button.btn.btn--border.js-reset-filter(aria="Reset form") Сбросить
+                    button.btn.btn--accent.js-open-filter(aria-label="Open mobile filter") Фильтр
+
+                .career-vacansies__nav
+                    .career-vacansies__nav-head
+                        h1 Совместимое оборудование <span class="search-result-value">1142</span>
+
+                        form.career-vacansies__nav-search(action="/" method="/")
+                            input.search__form-input(type="text" placeholder="Найти оборудование" required)
+                            button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                    form.hide-lg-down.career-vacansies__nav-form.hidden-content(action="/" method="/")
+                        .form__row
+                            .input
+                                input.input__checkbox--border#rfal-tag-0(type="checkbox" name="rfal-tag-0")
+                                label.input__checkbox--border-label(for="rfal-tag-0") 
+                                    .input__checkbox-label-text МФУ
+                                    .input__checkbox-label-value 316
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-1(type="checkbox" name="rfal-tag-1")
+                                label.input__checkbox--border-label(for="rfal-tag-1") 
+                                    .input__checkbox-label-text Рабочая станция
+                                    .input__checkbox-label-value 286
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-2(type="checkbox" name="rfal-tag-2")
+                                label.input__checkbox--border-label(for="rfal-tag-2") 
+                                    .input__checkbox-label-text Сервер
+                                    .input__checkbox-label-value 152
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-3(type="checkbox" name="rfal-tag-3")
+                                label.input__checkbox--border-label(for="rfal-tag-3") 
+                                    .input__checkbox-label-text Принтер
+                                    .input__checkbox-label-value 111
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-4(type="checkbox" name="rfal-tag-4")
+                                label.input__checkbox--border-label(for="rfal-tag-4") 
+                                    .input__checkbox-label-text Ноутбук
+                                    .input__checkbox-label-value 80
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-5(type="checkbox" name="rfal-tag-5")
+                                label.input__checkbox--border-label(for="rfal-tag-5") 
+                                    .input__checkbox-label-text Моноблок
+                                    .input__checkbox-label-value 32
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-6(type="checkbox" name="rfal-tag-6")
+                                label.input__checkbox--border-label(for="rfal-tag-6") 
+                                    .input__checkbox-label-text Планшетный компьютер
+                                    .input__checkbox-label-value 24
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-7(type="checkbox" name="rfal-tag-7")
+                                label.input__checkbox--border-label(for="rfal-tag-7") 
+                                    .input__checkbox-label-text Тег 8
+                                    .input__checkbox-label-value 64
+
+                            .input
+                                input.input__checkbox--border#rfal-tag-8(type="checkbox" name="rfal-tag-8")
+                                label.input__checkbox--border-label(for="rfal-tag-8") 
+                                    .input__checkbox-label-text Тег 9
+                                    .input__checkbox-label-value 90
+
+                    .btn--block.career-vacansies__nav-more
+                        button.btn.btn--reset.btn--more.js-show-more(aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть") Развернуть
+
+                .main-aside-container
+                    .aside.aside-filter-block
+                        .filter
+                            .filter__head
+                                button.btn.btn--reset.btn--arrow-left.js-close-filter(aria-label="Close mobile filter")
+                                .filter__head-title Совместимое оборудование
+                                
+                            form.filter__form(action="/" mathod="/")
+                                .filter__form-body
+                                    .filter__form-item.filter__form-item--edition-blue.hide-lg-up
+                                        .filter__form-item-title.filter__form-item-title Astra Linux Special Edition
+
+                                        .filter__form-item-inputs
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-2(type="checkbox" name="catalog-sort-special-2")
+                                                label.input__checkbox-label(for="catalog-sort-special-2") Вариант 1
+
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-3(type="checkbox" name="catalog-sort-special-3")
+                                                label.input__checkbox-label(for="catalog-sort-special-3") Вариант 2
+
+                                    .filter__form-item.filter__form-item--edition-red.hide-lg-up
+                                        .filter__form-item-title Astra Linux Common Edition
+
+                                        .filter__form-item-inputs
+                                            .input 
+                                                input.input__checkbox#catalog-sort-common-2(type="checkbox" name="catalog-sort-common-2") 
+                                                label.input__checkbox-label(for="catalog-sort-common-2") Все
+
+                                            .input 
+                                                input.input__checkbox#catalog-sort-common-3(type="checkbox" name="catalog-sort-common-3")
+                                                label.input__checkbox-label(for="catalog-sort-common-3") 2.12.22
+
+                                    .filter__form-item.hide-lg-up
+                                        .filter__form-item-title Список устройств
+
+                                        .input
+                                            i.input__icon.input__icon--search
+                                            input.input__elem(type="text" placeholder="Найти оборудование")
+
+                                        .filter__form-item-inputs
+                                            .input
+                                                input.input__checkbox#rfal-tag-9(type="checkbox" name="rfal-tag-9")
+                                                label.input__checkbox-label(for="rfal-tag-9") 
+                                                    .input__checkbox-label-text МФУ
+                                                    .input__checkbox-label-value 316
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-10(type="checkbox" name="rfal-tag-10")
+                                                label.input__checkbox-label(for="rfal-tag-10") 
+                                                    .input__checkbox-label-text Рабочая станция
+                                                    .input__checkbox-label-value 286
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-11(type="checkbox" name="rfal-tag-11")
+                                                label.input__checkbox-label(for="rfal-tag-11") 
+                                                    .input__checkbox-label-text Сервер
+                                                    .input__checkbox-label-value 152
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-12(type="checkbox" name="rfal-tag-12")
+                                                label.input__checkbox-label(for="rfal-tag-12") 
+                                                    .input__checkbox-label-text Принтер
+                                                    .input__checkbox-label-value 111
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-13(type="checkbox" name="rfal-tag-13")
+                                                label.input__checkbox-label(for="rfal-tag-13") 
+                                                    .input__checkbox-label-text Ноутбук
+                                                    .input__checkbox-label-value 80
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-14(type="checkbox" name="rfal-tag-14")
+                                                label.input__checkbox-label(for="rfal-tag-14") 
+                                                    .input__checkbox-label-text Моноблок
+                                                    .input__checkbox-label-value 32
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-15(type="checkbox" name="rfal-tag-15")
+                                                label.input__checkbox-label(for="rfal-tag-15") 
+                                                    .input__checkbox-label-text Планшетный компьютер
+                                                    .input__checkbox-label-value 24
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-16(type="checkbox" name="rfal-tag-16")
+                                                label.input__checkbox-label(for="rfal-tag-16") 
+                                                    .input__checkbox-label-text Тег 8
+                                                    .input__checkbox-label-value 64
+
+                                            .input
+                                                input.input__checkbox#rfal-tag-17(type="checkbox" name="rfal-tag-17")
+                                                label.input__checkbox-label(for="rfal-tag-17") 
+                                                    .input__checkbox-label-text Тег 9
+                                                    .input__checkbox-label-value 90
+
+                                    .filter__form-item
+                                        .filter__form-item-title Производитель
+
+                                        .input
+                                            i.input__icon.input__icon--search
+                                            input.input__elem(type="text" placeholder="Найти производителя")
+
+                                        .filter__form-item-inputs
+                                            .input
+                                                input.input__checkbox#rfal-producer-0(type="checkbox" name="rfal-producer-0")
+                                                label.input__checkbox-label(for="rfal-producer-0") 
+                                                    .input__checkbox-label-text 3Logic Group
+
+                                            .input
+                                                input.input__checkbox#rfal-producer-1(type="checkbox" name="rfal-producer-1")
+                                                label.input__checkbox-label(for="rfal-producer-1") 
+                                                    .input__checkbox-label-text 5С Групп
+
+                                            .input
+                                                input.input__checkbox#rfal-producer-2(type="checkbox" name="rfal-producer-2")
+                                                label.input__checkbox-label(for="rfal-producer-3") 
+                                                    .input__checkbox-label-text Acer
+
+                                            .input
+                                                input.input__checkbox#rfal-producer-3(type="checkbox" name="rfal-producer-3")
+                                                label.input__checkbox-label(for="rfal-producer-3") 
+                                                    .input__checkbox-label-text Advantech
+
+                                            .input
+                                                input.input__checkbox#rfal-producer-4(type="checkbox" name="rfal-producer-4")
+                                                label.input__checkbox-label(for="rfal-producer-4") 
+                                                    .input__checkbox-label-text AdvantiX 
+
+                                            .input
+                                                input.input__checkbox#rfal-producer-5(type="checkbox" name="rfal-producer-5")
+                                                label.input__checkbox-label(for="rfal-producer-5") 
+                                                    .input__checkbox-label-text Производитель
+
+                                .filter__form-footer
+                                    button.btn.btn--accent(type="submit" aria-label="Send form") Применить
+
+                    .main-container
+                        .catalog(data-view="catalog-blocks")
+                            .catalog__nav
+                                .catalog__sort
+                                    .dropdown
+                                        button.btn.btn--tiny.btn--border-secondary.btn--star-blue-before.dropdown__btn(aria-label="Dropdown menu") Astra Linux Special Edition
+                                    
+                                        form.dropdown__menu(action="/" method="/")
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-0(type="checkbox" name="catalog-sort-special-0")
+                                                label.input__checkbox-label(for="catalog-sort-special-0") Вариант 1
+
+                                            .input 
+                                                input.input__checkbox#catalog-sort-special-1(type="checkbox" name="catalog-sort-special-1")
+                                                label.input__checkbox-label(for="catalog-sort-special-1") Вариант 2
+
+                                            button.btn.btn--tiny.btn--full.btn--border.form__send(type="submit" aria-label="Send form") Показать выбраное
+
+                                    .dropdown
+                                        button.btn.btn--tiny.btn--border-secondary.btn--star-red-before.dropdown__btn(aria-label="Dropdown menu") Astra Linux Common Edition
+
+                                        form.dropdown__menu(action="/" method="/")
+                                            .input 
+                                                input.input__checkbox#catalog-sort-common-0(type="checkbox" name="catalog-sort-common-0") 
+                                                label.input__checkbox-label(for="catalog-sort-common-0") Все
+
+                                            .input 
+                                                input.input__checkbox#catalog-sort-common-1(type="checkbox" name="catalog-sort-common-1")
+                                                label.input__checkbox-label(for="catalog-sort-common-1") 2.12.22
+
+                                            button.btn.btn--tiny.btn--border.form__send(type="submit" aria-label="Send form") Показать выбраное
+                                    
+                                .catalog__layout
+                                    button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--tables(aria-label="Layout view" data-view="catalog-tables")
+                                    button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--blocks.is-active(aria-label="Layout view" data-view="catalog-blocks")
+
+                            .catalog__head
+                                .catalog__head-desc Изображение и название программного обеспечения
+                                .catalog__head-desc Версия ОС
+
+                            .catalog__list
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_1.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title МФУ Altalink B8045
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                                            
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_2.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Принтер Canon
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_3.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Моноблок Acer
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_4.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Рабочая станция HP
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_5.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title МФУ Samsung
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_6.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Сервер
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 1.6.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before 4.7.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_7.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title МФУ Canon
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+
+                                .catalog__item
+                                    a.catalog__item--inner(href="rfal-card-product.html")
+                                        .catalog__item-preview
+                                            .catalog__item-img--wrap
+                                                img.catalog__item-img(src="img/content/rfal-catalog/item_8.webp" width="187" height="187" alt="Продукт")
+
+                                            .catalog__item-info
+                                                .catalog__item-title Ноутбук Acer
+                            
+                                        .catalog__item-versions
+                                            .catalog__item-versions-preview Версии
+
+                                            .catalog__item-versions-body
+                                                .catalog__item-versions-list
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-blue-before Astra Linux Special Edition 1.5.0
+                                                    .btn.btn--tiny.btn--tag-secondary.btn--star-red-before Astra Linux Common Edition 2.12.43
+                    
+                                        
+block scripts
+    script(type="text/javascript").
+        document.querySelector('.catalog__layout').addEventListener('click', function(e) {
+            const view = e.target.dataset.view;
+            
+            if (view && e.target.tagName === 'BUTTON') {
+                document.querySelector('.catalog').dataset.view = view;
+            }
+        });
+
+        let btnsView = document.querySelectorAll(".catalog__layout-btn");
+
+        for (let btnView of btnsView) {
+            btnView.addEventListener('click', function () {
+                btnsView.forEach(i => i.classList.remove('is-active'));
+                this.classList.toggle('is-active');
+            });
+        };
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }
+
+        
+
+
+
+                
+
+    
+

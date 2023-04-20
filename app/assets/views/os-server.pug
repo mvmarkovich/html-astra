@@ -1,0 +1,789 @@
+extends layouts/layout.pug
+
+block title
+    title ОС Сервер | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") SPECIAL EDITION
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Преимущества
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Возможности
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Состав
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Уровни защиты
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Устройства
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-6") Экосистема
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-7") Где купить
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="os.html") Операционные системы
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Astra Linux SE
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static.intro--light#about
+                .container
+                    .intro__wrap   
+                        .intro__info
+                            .intro__label Для юридических лиц
+                            h1.intro__title ASTRA LINUX SPECIAL EDITION
+                            .intro__headline Операционная система коммерческого пользования
+                            p.intro__desc ASTRA LINUX SPECIAL EDITION — не имеющая аналогов сертифицированная ОС со встроенными средствами защиты информации (СЗИ) для стабильных и безопасных ИТ-инфраструктур любого масштаба и бесперебойной работы с данными любой степени конфиденциальности
+
+                            .btn--block
+                                a.btn.btn--border(href="#") Где купить
+
+                            .os-tech
+                                .os-tech__list
+                                    .os-tech__item
+                                        .os-tech__item--body
+                                            .os-tech__item-head
+                                                img.os-tech__item-icon(src="img/content/os/processor.svg" width="30" height="30" alt="Название")
+                                                .os-tech__item-title x86–64
+
+                                            .os-tech__item-desc Исполнение 1.7
+
+                                    .os-tech__item 
+                                        .os-tech__item--body
+                                            .os-tech__item-head
+                                                img.os-tech__item-icon(src="img/content/os/processor.svg" width="30" height="30" alt="Название")
+                                                .os-tech__item-title ARM
+
+                                            .os-tech__item-desc Исполнение 4.7
+
+                                    .os-tech__item
+                                        .os-tech__item--body
+                                            .os-tech__item-head
+                                                img.os-tech__item-icon(src="img/content/os/processor.svg" width="30" height="30" alt="Название")
+                                                .os-tech__item-title Эльбрус
+
+                                            .os-tech__item-desc Исполнение 8.1
+
+                        .intro__img--wrap
+                            img.intro__img(src="img/content/os/intro/plug-server.svg" width="650" height="522" alt="Название")
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Ключевые улучшения:
+                    p Для различных процессорных архитектур разработаны специальные варианты исполнения с защитой всех компонентов и программных ресурсов
+
+                .features
+                    .features__body
+                        .features__list.row
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title В обновлённом интерфейсе
+                                        .features__item-desc В обновлённом интерфейсе — гибкая настройка уровней защиты под конкретные требования в части безопасности
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Подсистема аудита (протоколирования)
+                                        .features__item-desc Обновлённая и расширенная подсистема аудита (протоколирования)
+
+                            .features__item.col-12.col-md-6.col-lg-4
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Основан на системе
+                                        .features__item-desc Основана на новой пакетной базе Debian 10
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title 3 уровня защищённости ОС
+                                        .features__item-desc 3 уровня защищённости ОС с удобным переходом с «Базового» и «Усиленного» режимов обеспечения безопасности на «Максимальный» — в ваших руках мощный функционал для достижения желаемой степени защиты данных в ИТ-инфраструктуре организации
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/os/features/server/item_5.svg" width="48" height="48" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Контейнерная виртуализация
+                                        .features__item-desc Полная поддержка контейнерной виртуализации с возможностью дополнительной изоляции и защиты контейнеров
+
+        section.hero.hero--bg.hero--reverse.section-anchor#anchor-2
+            .container
+                .hero__body
+                    .hero__img--wrap.col-md-5
+                        img.hero__img(src="img/content/os/hero/plug.svg" width="544" height="512" alt="Название")
+
+                    .hero__info.col-md-7
+                        h2.hero__title Возможности использования
+                        p.hero__desc СВОБОДА РАБОТЫ С МУЛЬТИМЕДИЙНЫМИ ДАННЫМИ И ОФИСНЫМ ПО ДЛЯ ЭФФЕКТИВНЫХ КОММУНИКАЦИЙ ГОССЕКТОРА И КОРПОРАТИВНЫХ ИНФРАСТРУКТУР
+
+                        ul.list-dots
+                            li ГИС и торговых площадок
+                            li Компонентов КИИ
+                            li Платформ для работы с персональными данными
+                            li Комплексов обработки любых конфиденциальных сведений Защищённых комплексов виртуализации
+                            li Систем для работы с гостайной, в том числе с грифом «особой важности»  (СВТ классов «3А», «2А» и «1А»)
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Состав операционной системы
+
+                .os-compos
+                    .os-compos__slider
+                        .os-compos__item
+                            .os-compos__item--body
+                                .os-compos__item-title ФУНКЦИОНАЛЬНЫЕ ВОЗМОЖНОСТИ
+
+                                ul.list-dots-default.os-compos__item-list
+                                    li Современная база и компоненты ОС — актуальное ядро Linux и обновлённая пакетная база
+                                    li Расширенный репозиторий — более 20 000 пакетов для применения в среде Astra Linux при любом режиме защищённости
+                                    li Безопасная и комфортная работа с ГИС и МИС за счёт подтверждённой совместимости
+                                    li Управление виртуализацией в интуитивном графическом интерфейсе с поддержкой командной строки
+                                    li Удобное визуальное пространство с адаптивными настройками и новыми утилитам Fly для администраторов и пользователей
+                                    li Поддержка последних поколений производительных аппаратных платформ
+
+                        .os-compos__item
+                            .os-compos__item--body
+                                .os-compos__item-title УНИКАЛЬНЫЕ ИНСТРУМЕНТЫ ЗАЩИТЫ ИНФОРМАЦИИ
+                                .os-compos__item-desc — ГАРАНТИЯ СООТВЕТСТВИЯ ТРЕБОВАНИЯМ РЕГУЛЯТОРОВ
+
+                                ul.list-dots-default.os-compos__item-list
+                                    li Встроенная система безопасности PARSEC
+                                    li Мандатное управление доступом
+                                    li Изоляция модулей
+                                    li Очистка оперативной и внешней памяти и гарантированное удаление файлов
+                                    li Маркировка документов
+                                    li Регистрация событий
+                                    li Защита информации в графической подсистеме
+                                    li Ограничение действий пользователя (режим «киоск»)
+                                    li Безопасность адресного пространства процессов
+                                    li Контроль замкнутости программной среды и целостности
+                                    li Средства организации единого пространства пользователей
+                                    li Защищённая среда виртуализации
+                                    li Защищённая реляционная СУБД Posgre SQL
+                                    li Защищённые комплексы программ электронной почты  и гипертекстовой обработки данных
+
+                        .os-compos__item
+                            .os-compos__item--body
+                                .os-compos__item-title Третий слайд
+
+                                .os-compos__item-desc Обычный текст
+
+                                ul.list-dots-default.os-compos__item-list
+                                    li Список третьего слайда
+
+                    .slider-dots-line
+
+        section.section.section-anchor#anchor-4
+            .container
+                .title__block
+                    h2 Уровни защищённости
+                    h3.h4 ASTRA LINUX SPECIAL EDITION 1.7
+                    p Впервые в российской практике в одном релизе ASTRA LINUX SPECIAL EDITION <br> реализованы три уровня защиты, включая безопасную среду <br> виртуализации — на выбор заказчика и с учётом данных о модели <br> нарушителей и актуальных для организации угроз.
+
+                .os-security
+                    .os-security__row.row
+                        .os-security__item.col-12.col-lg-6
+                            .os-security__item--body
+                                .os-security__item-head
+                                    .os-security__item-title Воронеж
+                                    .os-security__item-label Усиленный
+                                    .os-security__item-desc Рекомендован для обработки конфиденциальной информации в государственных информационных системах, в информационных системах персональных данных, в составе значимых объектов критической информационной инфраструктуры, в иных информационных (автоматизированных) системах, обрабатывающих информацию ограниченного доступа, не содержащую сведения, составляющие государственную тайну.
+
+                                .os-security__item-levels
+                                    .os-security__item-levels-title Уровни защиты
+
+                                    ul.list-icons-inside.os-security__item-list
+                                        li.item-checked Мандатный контроль целостности
+                                        li.item-checked Мандатное управление доступом
+                                        li.item-checked Механизм защиты СУБД и средств виртуализации
+                                        li.item-checked Режим «киоск» — «белый» список разрешённых к запуску приложений
+                                        li.item-checked Корректная работа с электронной подписью — отсутствие влияния на функционирование СКЗИ подтверждено ФСБ России
+                                        li.item-checked Дополнительная изоляция компонентов виртуализации и контейнеров Docker (отдельный уровень целостности)
+                                        li.item-checked Динамический контроль целостности <br> (замкнутая программная среда)
+                                        li.item-checked Регистрация событий безопасности
+                                        li.item-checked Контроль подключения съёмных машинных носителей информации
+                                        li.item-checked Класс защищённости ГИС: до 1 класс включительно
+                                        li.item-checked Класс защищённости ИСПДн: до 1 класс включительно
+
+                        .os-security__item.col-12.col-lg-6
+                            .os-security__item--body
+                                .os-security__item-head
+                                    .os-security__item-title Смоленск
+                                    .os-security__item-label Максимальный
+                                    .os-security__item-desc Рекомендован для обработки информации любой категории доступа в государственных информационных системах: от сведений, составляющих государственную тайну до степени секретности «совершенно секретно» или «особой важности».
+
+                                .os-security__item-levels
+                                    .os-security__item-levels-title Уровни защиты
+
+                                    ul.list-check-accent.os-security__item-list
+                                        li.item-checked Мандатный контроль целостности
+                                        li.item-checked Мандатное управление доступом
+                                        li.item-checked Механизм защиты СУБД и средств виртуализации
+                                        li.item-checked Режим «киоск» — «белый» список разрешённых к запуску приложений
+                                        li.item-checked Корректная работа с электронной подписью — отсутствие влияния на функционирование СКЗИ подтверждено ФСБ России
+                                        li.item-checked Дополнительная изоляция компонентов виртуализации и контейнеров Docker (отдельный уровень целостности)
+                                        li.item-checked Динамический контроль целостности <br> (замкнутая программная среда)
+                                        li.item-checked Регистрация событий безопасности
+                                        li.item-checked Контроль подключения съёмных машинных носителей информации
+                                        li.item-checked Класс защищённости ГИС: до 1 класс включительно
+                                        li.item-checked Любая информация ограниченного доступа, в т.ч. государственная тайна «особой важности»
+
+        section.section.section-bg-blue.section-anchor#anchor-5
+            .container
+                .software-asset.software-asset--wide
+                    .software-asset__row.d-lg-flex
+                        .software-asset__img--wrap.col-lg-5
+                            img.software-asset__img(src="img/content/os/hero/support.webp" width="546" height="485" alt="Название")
+
+                        .software-asset__info.col-lg-6
+                            .software-asset__title ПОДДЕРЖИВАЕМЫЕ ТИПЫ УСТРОЙСТВ И ПРОЦЕССОРНЫЕ АРХИТЕКТУРЫ
+                            .software-asset__desc Широкие возможности ASTRA LINUX SPECIAL EDITION позволяют комфортно работать с данными и приложениями и обеспечивать высочайший уровень безопасности всех ИТ-компонентов и ресурсов организации, а удобный графический интерфейс Fly делает удобной навигацию по сервисам даже при невысокой производительности компьютера.
+
+                            .devices.software-asset__devices
+                                .devices__list
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/server.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Сервер
+
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/laptop.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Ноутбук
+
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/monoblock.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Моноблок
+
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/comp.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Рабочая станция
+
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/thin-client.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Тонкий клиент
+
+                                    .devices__item
+                                        .devices__item--body
+                                            .devices__item-img--wrap
+                                                img.devices__img(src="img/content/devices/tablet.svg" width="32" height="32" alt="Название")
+
+                                            .devices__item-title Планшет
+
+        section.section
+            .container
+                .os-hero
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-8
+                                .os-hero__text
+                                    .os-hero__title ASTRA MOBILE
+                                    .os-hero__desc Astra Mobile - новый мобильный режим Astra Linux Special Edition, оптимизированый для работы на планшетах. Благодаря новому стеку удалось значительно увеличить энергоэффективность ОС и скорость её работы.
+
+                                .btn--block.os-hero__btns
+                                    button.btn.btn--border.btn--more.js-open-more(aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть") Развернуть
+
+                            .os-hero__img--wrap.col-12.col-md-4
+                                img.os-hero__img(src="img/content/os/hero/plug.svg" width="420" height="328" alt="Название")
+
+                        .os-hero__hidden.hidden-content
+                            .accordion.accordion--tiny
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Преимущества
+                                    .accordion__item-content
+                                        ul.list-dots-default
+                                            li Архитектурная безопасность из «коробки»
+                                            li Сертифицирована ФСТЭК России по классу защиты А1
+                                            li Централизованное управление мобильными устройствами с помощью ALD Pro
+                                            li Эмулятор запуска apk-приложений
+                                            li Кастомизация под мобильные устройства заказчика
+                                            li СКЗИ не требуют повторных тематических исследований
+                                            li Возможность подключения периферийного оборудования (мышь, клавиатура, монитор)
+                                            li Работа со всеми планшетами из реестра Минпромторга России
+                                            li Поддержка драйверов мобильного оборудования (сенсорного экрана, фото — и видеокамер, устройств ввода/вывода аудио, стандартов взаимодействия Wi-Fi, bluetooth, NFC, сотовой связи 3G, 4G, позиционирования GPS/ГЛОНАСС и др.)
+                                        
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Функциональные возможности
+                                    .accordion__item-content
+                                        ul.list-dots-default
+                                            li Актуальное ядро
+                                            li Специальный мобильный интерфейс
+                                            li Сниженное энергопотребление для долгой работы
+                                            li Интегрированные отечественные СЗИ, сертифицированные ФСТЭК России
+                                            li Работа с большинством корпоративных приложений
+                                            li Запуск немодифицированных приложений для Android в изолированном окружении
+                                            li Использование мобильного устройства в качестве полноценного ПК при подключении к периферийному оборудованию
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Удобство для сторонних разработчиков
+                                    .accordion__item-content  
+                                        ul.list-dots-default
+                                            li Открытый код
+                                            li Открытый API
+                                            li Наличие компетенций в команде разработчиков
+                                            li ГК «Астра»
+
+                                .accordion__item
+                                    button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Все преимущества ОС Astra Linux на планшете
+                                    .accordion__item-content
+                                        ul.list-dots-default
+                                            li Репозиторий > 20 000 пакетов
+                                            li Экосистема > 300 совместимых программных продуктов
+                                            li Обработка информации любого уровня конфиденциальности: от персональных данных до информации под грифом «особой важности»
+
+        section.software-cards.section-anchor#anchor-6
+            .container
+                .title__block
+                    h2 ЭКОСИСТЕМА СОВМЕСТИМЫХ РЕШЕНИЙ
+                    p СТЕК ПРОДУКТОВ ГК «АСТРА»
+
+                .software-cards__body
+                    .software-cards__list.row
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rubackup.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rubackup.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RuBackup
+                                    .software-cards__item-desc Автоматизированное резервное копирование и восстановление данных
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rupost.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rupost.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RUPost
+                                    .software-cards__item-desc Система управления корпоративной почтой
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-workspad.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/workspad.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title WorksPad 
+                                    .software-cards__item-desc Организации защищённой мобильной работы
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-aldpro.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/aldpro.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title ALD Pro
+                                    .software-cards__item-desc Программный комплекс для автоматизации и централизованного управления
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-dcimamager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/dcimanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title DCImanager
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-vmmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/vmmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title VMmanager
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+        section.section
+            .container
+                .power
+                    .title__block
+                        h2 Соответствует требованиям безопасности регуляторов <br> к ПО для импортозамещения
+
+                    .power__list.row
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/fstek-rossii.webp" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title ФСТЭК РОССИИ
+                                    .power__item-desc Профиль защиты операционных систем типа «А» первого класса защиты. <br> Первый уровень доверия.
+
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/mintsifry.svg" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title МИНЦИФРЫ РОССИИ
+                                    .power__item-desc В реестре отечественного ПО Минцифры под номером 369 от 08.04.2016 г.
+
+                        .power__item.col-12.col-lg-4
+                            .power__item--body
+                                .power__item-img--wrap
+                                    img.power__item-img(src="img/content/power/minoborona.svg" width="96" height="96" alt="Название")
+
+                                .power__item-info
+                                    .power__item-title МИНОБОРОНЫ РОССИИ
+                                    .power__item-desc Профиль защиты операционных систем типа «А» первого класса защиты. <br><br> 1 уровень контроля отсутствия недекларированных возможностей (по РД НДВ) <br> Соответствие реальных и декларируемых возможностей.
+            
+        section.section
+            .container
+                .title__block
+                    h2 Пакеты услуг технической поддержки
+
+                .tarrifs
+                    .tarrifs__row.row
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «СТАНДАРТНЫЙ»
+                                    .tarrifs__col-desc Обработка обращений через web-портал и по телефону в рабочее время (по Москве)
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="true") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок  (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «СТАНДАРТНЫЙ»
+                                    .tarrifs__col-desc Обработка обращений через web-портал и по телефону в рабочее время (по Москве)
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+                                                    li.item-checked Доступ к новым версиям и обновлениям Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Консультации 
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Консультации по установке и настройке Продукта
+                                                    li.item-checked Каналы приёма запросов Web-портал, телефон
+                                                    li.item-checked Вопросы по установке и настройке Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Решение вопросов
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Анализ совместимости оборудования с Продуктом по предоставленной спецификации
+                                                    li.item-checked Решение вопросов, связанных с совместимостью оборудования, при наличии технической возможности
+                                                    li.item-checked Моделирование проблемных ситуаций на тестовом стенде СТП при наличии технической возможности
+                                                    li.item-checked Время приёма и обработки Запросов Рабочие дни с 09:00 до 18:00 (мск)
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Время реакция на запрос
+                                            .accordion__item-content
+                                                ul.list
+                                                    li Экстренный — 4 часа
+                                                    li Высокий — 8 часов
+                                                    li Средний — 2 рабочих дня
+                                                    li Низкий — 4 рабочих дня
+                                        
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «ПРИВИЛЕГИРОВАННЫЙ»
+                                    .tarrifs__col-desc Расширенный комплекс услуг технической поддержки и обслуживание в режиме 24/7
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+                                                    li.item-checked Доступ к новым версиям и обновлениям Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Консультации 
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Консультации по установке и настройке Продукта
+                                                    li.item-checked Каналы приёма запросов Web-портал, телефон
+                                                    li.item-checked Вопросы по установке и настройке Продукта
+                                                    li.item-checked Консультации по функционированию Продукта в гетерогенных сетях
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Решение вопросов
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Анализ совместимости оборудования с Продуктом по предоставленной спецификации
+                                                    li.item-checked Решение вопросов, связанных с совместимостью оборудования, при наличии технической возможности
+                                                    li.item-checked Моделирование проблемных ситуаций на тестовом стенде СТП при наличии технической возможности
+                                                    li.item-checked Время приёма и обработки Запросов Рабочие дни с 09:00 до 18:00 (мск) <br> Круглосуточно для «экстренного»  и «высокого» уровней критичности
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Сборка и подключение
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Удалённое подключение к системе Пользователя для решения Запроса
+                                                    li.item-checked Сборка драйверов для оборудования (возможность сборки драйвера рассматирвается СТП)
+                                                    li.item-checked Консультации по установке программного обеспечения технологических партнёров
+                                                    li.item-checked <strong>Выделенный менеджер</strong>
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Время реакция на запрос
+                                            .accordion__item-content
+                                                ul.list
+                                                    li Экстренный — 4 часа
+                                                    li Высокий — 8 часов
+                                                    li Средний — 2 рабочих дня
+                                                    li Низкий — 4 рабочих дня
+
+                    .tarrifs__headline По завершении срока действия оплаченного сертификата для пакетов поддержки «Стандартный» и «Привилегированный» пользователь автоматически переводится на «Начальный» уровень обслуживания, который предоставляет доступ к обновлениям безопасности и открытым ресурсам «Справочного центра».
+
+        section.section.section-bg-gray
+            .container
+                .os-faq
+                    .os-faq__row.row
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_1.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Стать партнёром
+                                        .os-faq__col-desc Партнёр имеет право получать информацию о скидках, специальных акциях, получать консультации и дополнительную поддержку после авторизации и присвоения компании статуса официального партнёра.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_2.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Поддержка
+                                        .os-faq__col-desc В лицензию на ОС по умолчанию входит «Стандартный» пакет услуг поддержки. При этом мы готовы предложить вам намного больше — пакет «Привилегированный»: персонализированный сервис 24х7, ускоренное решение вопросов и расширенный спектр услуг.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+                                        a.link.link-accent.link--phone-before(href="tel:+74953694816") +7 495 369-48-16
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_3.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Лицензионное соглашение
+                                        .os-faq__col-desc Условия лицензирования продукта соответствуют требованиям действующего законодательства РФ  и международных правовых актов. <br> Правообладатель продукта — ООО «РусБИТех — Астра»
+
+                        .os-faq__col.col-lg-6
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/os/faq/item_4.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Обучение
+                                        .os-faq__col-desc Авторизованное обучение применению продуктов ГК «Астра» проводится более чем в 60 учебных центрах в Москве и регионах. Для подготовки квалифицированных специалистов компания тесно взаимодействует с множеством образовательных учреждений, в числе которых ведущие вузы страны, колледжи, школы и т.д.
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border-accent.btn--arrow-right-after(href="#") Подробнее
+
+        section.section
+            .container
+                .software-asset.software-asset--os
+                    .software-asset__row
+                        .software-asset__img--wrap.col-lg-4
+                            img.software-asset__img(src="img/content/os/hero/graf.webp" width="588" height="556" alt="Название")
+            
+                        .software-asset__info.col-lg-7
+                            .software-asset__title ГРАФИЧЕСКИЙ ИНТЕРФЕЙС «FLY»
+                            .software-asset__desc Описание всех графических утилит и программ рабочего стола Fly, а также полное описание его режимов работы и предоставляемых возможностей приведено в электронной справке.
+
+                            .btn--block.software-asset__btns
+                                a.btn.btn--border-light(href="#") Виртуальный тур по Astra Linux
+
+        section.section
+            .container
+                .os-hero.os-hero--reverse
+                    .os-hero__body
+                        .os-hero__preview
+                            .os-hero__info.col-12.col-md-6
+                                .os-hero__text
+                                    .os-hero__label Предыдущая версия
+                                    .os-hero__title ASTRA LINUX SPECIAL EDITION ОПЕРАЦИОННАЯ СИСТЕМА СПЕЦИАЛЬНОГО НАЗНАЧЕНИЯ
+                                    .os-hero__desc Обеспечивает защиту конфиденциальной информации и государственной тайны до уровня «особой важности»
+
+                                .btn--block.os-hero__btns
+                                    a.btn.btn--border(href="#") Узнать больше
+
+                            .os-hero__img--wrap.col-12.col-md-6
+                                img.os-hero__img(src="img/content/os/hero/plug_2.svg" width="616" height="403" alt="Название")
+
+
+block scripts
+    script(type="text/javascript").
+        let listComposition = document.querySelectorAll('.os-compos__item-list');
+
+        for (let i = 0; i < listComposition.length; ++i) {
+            if (listComposition[i].clientHeight > 300) {
+                listComposition[i].classList.add('is-higher')
+            }
+        }
+
+        //
+        // Accordion
+        //
+
+        let items = document.querySelectorAll(".accordion button");
+        
+        function toggleAccordion() {
+            let itemToggle = this.getAttribute('aria-expanded');
+            
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.parentElement.classList.add('is-show');
+            } else {
+                this.setAttribute('aria-expanded', 'false');
+                this.parentElement.classList.remove('is-show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
+
+                            
+
+                
+
+
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

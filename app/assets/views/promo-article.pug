@@ -1,0 +1,89 @@
+extends layouts/layout.pug
+
+block title
+    title Акционные предложения | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="promo.html") Актуальные предложения
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Акция
+
+    .main-block
+        .article.article--promo
+            .container
+                .article__preview
+                    .article__preview-item
+                        .article__preview-item--body
+                            .article__preview-item-img--wrap
+                                img.article__preview-item-img(src="img/content/promo/banner.webp" width="1280" height="530" alt="Название акции")
+
+                .article__panel
+                    .article__panel-tags
+                        .btns-spacer
+                            a.btn.btn--tiny.btn--tag(href="#termidesk") Termidesk
+
+                        .briefly__row
+                            span.briefly.briefly--time Действует до 21.08.2022
+
+                h1.article__title Astra Linux поможет госсектору решить кадровый вопрос
+
+                .article__desc-anounce
+                    p <strong>По условиям акции, приобретая у партнёров вендора лицензии продуктов Astra Linux</strong>, заказчик получает сертификат на обучение сотрудников в одном из авторизованных учебных центров Astra Linux. Сроки действия акции — с 1 сентября 2019 года по 31 декабря 2019 года. На момент запуска акцию поддержали авторизованные учебные центры в 35 городах России.
+                
+                .article__content
+                    .article__content-txt
+                        p В рамках стратегии формирования образовательной экосистемы ГК Astra Linux запустила акцию, ориентированную на решение кадрового вопроса в области импортозамещения IT. Группа компаний Astra Linux, ведущий разработчик российского рынка операционных систем, объявляет о запуске акции федерального масштаба «Подготовка кадров от Astra Linux»
+
+                        .article__content--row
+                            .row
+                                .col-12.col-lg-6
+                                    .article__chapters
+                                        p Цель акции — способствовать решению кадровой проблемы при реализации программы импортозамещения на местах. Отсутствие квалифицированных специалистов и компетенций для работы с отечественными программными продуктами у сотрудников госучреждений сегодня является, по мнению всех участников процесса, основным барьером и сдерживающим фактором при переходе на импортонезависимое ПО.
+
+                                .col-12.col-lg-6
+                                    .article__chapters
+                                        p «Прежде всего наша акция направлена на повышение кадрового потенциала в сфере информационных технологий. В учебных центрах мы планируем параллельно формировать несколько потоковых групп для пользователей и системных администраторов, что позволит в совокупности выпускать на рынок от 500 до 1000 специалистов ежемесячно», - говорит директор по образованию ГК Astra Linux Федор Кирдяшов.
+                        
+                        .article__chapters
+                            p «Для нас важен комплексный подход, при котором партнёры и заказчики не только обеспечиваются качественными интегрированными решениями и технической поддержкой, но и могут рассчитывать на обучение персонала. Сотрудники, ежедневно существующие в данной информационной системе, для эффективной работы должны обладать определёнными компетенциями, которых в силу объективных причин зачастую не имеют. ГК Astra Linux в своей продуктовой и маркетинговой политике опирается на запросы рынка, а недостаток специалистов по отечественным продуктам, как показала практика, – серьёзная проблема в условиях имопртозамещения», — говорит директор по маркетингу ГК Astra Linux Александр Гутин.
+
+                    section.software-cards
+                        .title__block
+                            h2 Ознакомтесь с продуктами/услугами
+
+                        .software-cards__body
+                            .software-cards__list.row
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-brest.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/brest.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title Брест
+                                            .software-cards__item-desc Система виртуализации Astra Linux
+
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-termidesk.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/termidesk.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title Termidesk
+                                            .software-cards__item-desc Виртуализация рабочих мест
+
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-rupost.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/rupost.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title RUPost
+                                            .software-cards__item-desc Система управления корпоративной почтой

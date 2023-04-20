@@ -1,0 +1,187 @@
+extends layouts/layout.pug
+
+block title
+    title Кейсы | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Кейсы
+
+    .page-title
+        .container
+            h1 Кейсы
+
+    .main-block
+        section.section
+            .container
+                .cases
+                    .cases__list.row
+                        .cases__col.col-12.col-md-6
+                            .cases__col--body
+                                a.cases__col-img--wrap(href="cases-article.html")
+                                    img.cases__col-img(src="img/content/cases/list/item_1.webp" width="624" height="268" alt="Название")
+
+                                .cases__col-info
+                                    .cases__col-text
+                                        a.cases__col-title(href="cases-article.html") Astra Linux в силовых ведомствах
+                                        .cases__col-desc Федеральная служба войск национальной гвардии Российской Федерации (Росгвардия)
+
+                                    a.link.link--accent.link--target.cases__col-soft(href="#" target="_blank") Astra Linux
+
+                        .cases__col.col-12.col-md-6
+                            .cases__col--body
+                                a.cases__col-img--wrap(href="cases-article.html")
+                                    img.cases__col-img(src="img/content/cases/list/item_2.webp" width="624" height="268" alt="Название")
+
+                                .cases__col-info
+                                    .cases__col-text
+                                        a.cases__col-title(href="cases-article.html") Astra Linux в промышленности и энергетике
+                                        .cases__col-desc Astra Linux в промышленности и энергетике
+
+                                    a.link.link--accent.link--target.cases__col-soft(href="#" target="_blank") Брест
+
+                        .cases__col.col-12.col-md-6
+                            .cases__col--body
+                                a.cases__col-img--wrap(href="cases-article.html")
+                                    img.cases__col-img(src="img/content/cases/list/item_3.webp" width="624" height="268" alt="Название")
+
+                                .cases__col-info
+                                    .cases__col-text
+                                        a.cases__col-title(href="cases-article.html") Astra Linux в государственных структурах и социальных службах
+                                        .cases__col-desc Муниципальное казённое учреждение «Многофункциональный центр предоставления государственных и муниципальных услуг в городе Ставрополе»
+
+                                    a.link.link--accent.link--target.cases__col-soft(href="#" target="_blank") Termidesk
+
+                        .cases__col.col-12.col-md-6
+                            .cases__col--body
+                                a.cases__col-img--wrap(href="cases-article.html")
+                                    img.cases__col-img(src="img/content/cases/list/item_4.webp" width="624" height="268" alt="Название")
+
+                                .cases__col-info
+                                    .cases__col-text
+                                        a.cases__col-title(href="cases-article.html") Astra Linux в здравоохранении
+                                        .cases__col-desc ОС Astra Linux Special Edition — безопасность медицинских  ИТ-систем
+
+                                    a.link.link--accent.link--target.cases__col-soft(href="#" target="_blank") Брест
+
+                        .cases__col.col-12
+                            .cases__col--body
+                                a.cases__col-img--wrap(href="cases-article.html")
+                                    img.cases__col-img(src="img/content/cases/list/item_5.webp" width="624" height="268" alt="Название")
+
+                                .cases__col-info
+                                    .cases__col-text
+                                        a.cases__col-title(href="cases-article.html") Astra Linux в системе образования
+                                        .cases__col-desc Региональное министерство образования, науки и молодёжи
+
+                                    a.link.link--accent.link--target.cases__col-soft(href="#" target="_blank") Astra Linux
+
+        section.software-cards
+            .container
+                .title__block
+                    h2 Програмное обеспечение
+
+                .software-cards__body
+                    .software-cards__list.row
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-brest.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/brest.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Брест
+                                    .software-cards__item-desc Система виртуализации Astra Linux
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-termidesk.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/termidesk.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Termidesk
+                                    .software-cards__item-desc Виртуализация рабочих мест
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rupost.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rupost.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RUPost
+                                    .software-cards__item-desc Система управления корпоративной почтой
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-rubackup.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/rubackup.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title RuBackup
+                                    .software-cards__item-desc Автоматизированное резервное копирование и восстановление данных
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-aldpro.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/aldpro.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title ALD Pro
+                                    .software-cards__item-desc Программный комплекс для автоматизации и централизованного управления
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-workspad.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/workspad.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title WorksPad 
+                                    .software-cards__item-desc Организации защищённой мобильной работы
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-billmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/billmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title BILLmanager
+                                    .software-cards__item-desc Программный комплекс для автоматизации и централизованного управления
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-dcimamager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/dcimanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title DCImanager
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-vmmanager.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/vmmanager.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title VMmanager
+                                    .software-cards__item-desc Платформа управления виртуализацией
+
+                        .software-cards__item.col-12.col-sm-6.col-lg-4
+                            a.software-cards__item--inner(href="software-tantor.html")
+                                .software-cards__item-img--wrap
+                                    img.software-cards__item-img(src="img/content/software/tantor.svg" width="280" height="75" alt="Название ПО")
+
+                                .software-cards__item-info
+                                    .software-cards__item-title Tantor
+                                    .software-cards__item-desc Управление мультивендорным оборудованием в ЦОД
+
+
+
+                
+
+    
+

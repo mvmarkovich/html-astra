@@ -1,12 +1,69 @@
 .container
-  max-width: 1280px
+  max-width: $container-sm-px
   margin: * auto
-  padding: 0 20px @lg 0 32px
+  padding: 0 16px @md 0 20px
+
+@media $md
+  .container
+    max-width: $container-md-px
+
+@media $lg
+  .container
+    max-width: $container-lg-px
+
+@media $xl
+  .container
+    max-width: $container-xl-px
 
 .wrapper
   min-height: @lg 100vh
   display: flex
   flex-direction: column
 
+  &.wrap-transform
+    transform: translate(0, 0)
+
 .page-container
   flex: 1 1 auto
+
+.main-aside-container
+  display: flex
+  flex-wrap: wrap @lg nowrap
+  margin: @lg 0 -16px
+
+.aside
+  width: 100% @lg 292px @xl 332px
+  min-width: @lg 292px @xl 332px
+  padding: @lg 0 16px
+
+.aside-filter-block
+  display: none @lg block
+  background: @lg-down #fff
+  overflow: @lg-down auto
+  padding: @lg-down 64px 10px 70px
+  z-index: @lg-down 641
+  position: @lg-down fixed
+  top: @lg-down 0
+  margin: @lg-down 0
+  bottom: 0
+  left: 0
+  right: 0
+
+  &.is-show
+    display: block
+
+.main-container
+  padding: @lg 0 16px
+  width: 100%
+  overflow: @md hidden
+
+  .container
+    padding: 0
+    max-width: 100%
+
+.main-block .container .main-aside-container .main-container
+  overflow: visible
+
+.aside--sticky
+  position: sticky
+  top: 16px

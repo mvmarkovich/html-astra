@@ -1,0 +1,159 @@
+extends layouts/layout.pug
+
+block title
+    title Обучение | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-auth.html") Авторизованное обучение
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-university.html") Студентам
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-school.html") Школьникам
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-teacher.html") Преподавателям
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-org.html") Образовательным организациям
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="edu-partners.html") Организации-партнёры
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Обучение
+
+    .main-block
+        .intro.intro--static#about
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Обучение
+                        p.intro__desc <strong>Обучение от ГК «Астра» - решения ряда задач.</strong> Среди наших проектов: Обучение по применению операционных систем семейства Astra Linux проводится в авторизованных учебных центрах <br> Программа для организаций, среднего высшего и профессионального образования Астра-карьера. Единая платформа, созданная Департаментом образования ГК Astra Linux, где встречаются предложение и спрос на востребованных начинающих специалистов.
+
+        section.section
+            .container
+                .edu-cases
+                    .edu-cases__row.row
+                        <!-- START ELEMENT EDU CASES -->
+                        .edu-cases__col.col-12.col-md-6
+                            a.edu-cases__col--body(href="edu-auth.html")
+                                .edu-cases__col-img--wrap
+                                    <!-- картинка отсутствует -->
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_1.webp" width="624" height="430" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Авторизованное обучение
+                                        .edu-cases__col-desc Обучение по применению операционных систем семейства Astra Linux проводится в авторизованных учебных центрах
+
+                                    .btn.btn--reset.edu-cases__col-btn
+                        <!-- END ELEMENT EDU CASES -->
+
+                        .edu-cases__col.col-12.col-md-6
+                            a.edu-cases__col--body(href="edu-teacher.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_2.webp" width="624" height="430" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Преподавателям
+                                        .edu-cases__col-desc Программа для организаций высшего и профессионального образования
+
+                                    .btn.btn--reset.edu-cases__col-btn
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-university.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_3.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Студентам
+                                        .edu-cases__col-desc Данный раздел сожержит информацию о программе поддержки студентов и какие возможности студент получает, обучаясь программным продуктам Astra
+
+                                    .btn.btn--reset.edu-cases__col-btn
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-school.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_4.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Школьникам
+                                        .edu-cases__col-desc В данном разделе представлены: <br> Программы обучения; <br>Учебные материалы;
+
+                                    .btn.btn--reset.edu-cases__col-btn
+
+                        .edu-cases__col.col-12.col-md-6.col-xl-4
+                            a.edu-cases__col--body(href="edu-org.html")
+                                .edu-cases__col-img--wrap
+                                    img.edu-cases__col-img(src="img/content/edu/cases/item_5.webp" width="405" height="431" alt="Название")
+
+                                .edu-cases__col-info
+                                    .edu-cases__col-text
+                                        .edu-cases__col-title Образовательным организациям
+                                        .edu-cases__col-desc В данном разделе представлены: <br> Программы обучения; <br>Учебные материалы;
+
+                                    .btn.btn--reset.edu-cases__col-btn
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }

@@ -1,0 +1,189 @@
+.feedback
+    background: #E9F6FD
+    padding: 40px 0 @md 56px 0 @lg 64px 0
+    overflow: hidden
+
+    &--loner
+        background: transparent
+        margin: 24px -16px @sm 28px -16px @md 28px 0 @lg 40px 0
+        padding: 0 @md 0 @lg 0
+
+        ^&__body
+            background: #E9F6FD
+            padding: 24px 16px @sm 28px @md 28px @lg 40px
+
+        ^&__form-content
+            max-width: 100%
+
+        ^&__form-footer
+            margin: 32px 0 0
+
+    &--narrow
+        background: transparent
+        padding: 0 @md 0 @lg 0
+        margin: @md-down * -16px 
+
+        ^&__body
+            background: #E9F6FD
+            padding: 24px 16px @sm 28px @md 28px @lg 64px
+
+        ^&__form-footer
+            margin: 32px 0 0
+
+    &__body
+        position: relative
+
+    &__title
+        margin: 0
+        text: 24px
+
+    &__tags
+        overflow: hidden
+        height: 36px 
+
+        &-list
+            display: flex
+            flex-wrap: nowrap
+            white-space: nowrap
+            overflow: auto 
+            padding: 0 0 120px
+
+        .input
+            margin: 0 8px 8px 0
+
+    &__form
+        &-steps
+            display: flex
+            justify-content: space-between
+            max-width: @lg 592px
+            margin: 16px 0 @sm 24px 0 @lg 32px 0
+
+            &-list
+                list-style: none
+                padding: 0
+                margin: 0
+
+                display: flex
+                flex-wrap: nowrap
+
+            &-item
+                position: relative
+                color: transparent
+                text: 400 14px 1.5
+                margin: 0 8px 0 0
+                white-space: nowrap
+                width: 22px
+                padding: 0 0 10px
+
+                &:before, &:after
+                    position: absolute
+                    bottom: 0
+                    left: 0
+
+                &:before
+                    content: ''
+                    size: 100% 2px
+                    background: #CCECFF
+
+                &:after
+                    content: ''
+                    size: 30px 2px
+                    background: #00588D
+                    display: none
+
+                &.is-active
+                    color: #0079C1
+                    width: 84px
+
+                    &:after
+                        display: block
+
+        &-content
+            max-width: @lg 770px
+
+        &-header
+            margin: 0 0 32px
+
+        &-footer
+            display: flex
+            align-items: @sm center
+            flex-direction: column @sm row
+            margin: 48px 0 0 @sm 32px 0 0
+
+            .btn
+                order: @sm-down 2
+                width: 100% @sm auto
+
+            .form__agree
+                margin: 0 0 8px @sm 0 0 0 16px
+
+            .input
+                margin: 0 0 16px @sm 0 0 0 32px
+
+                .form__agree
+                    margin: 0
+
+        &-tab
+            display: none
+
+            &--inner
+                display: flex @lg block
+                align-items: center
+                flex-direction: column @lg row
+
+                ^^&-inputs
+                    width: 100% @lg 47%
+                    order: 2 @lg 1
+
+    &__img
+        position: absolute @sm static @lg absolute
+        left: 50% @lg 0
+        top: 50%
+        transform: translate(-50%, -50%) @sm none @lg translateY(-50%)
+        max-width: @sm 200px @lg 100%
+
+        &--wrap
+            width: 100% @lg 44%
+            position: relative @lg absolute
+            top: @lg -64px
+            bottom: @lg -64px
+            right: @lg 0
+            overflow: hidden
+            order: 1 @lg 2
+            padding: 80% 0 0 @sm 0
+
+    #form-steps-headline
+        display: none
+
+    .btn--back-before
+        font-size: 14px
+
+        &:before
+            size: 18px
+
+    &__docs
+        display: flex
+        align-items: center
+        margin: 0 0 16px
+
+        &-title
+            color: #6A7E95
+            text: 400 14px 1.5
+            margin: 0 8px 0 0
+
+        &-list
+            display: flex
+            align-items: center
+
+        &-item
+            margin: 0 4px 0 0
+            size: 20px
+            min-width: 20px
+            background: svg-load("icons/doc.svg", stroke="#0079C1") no-repeat center / contain
+
+            &:last-child
+                margin: 0
+
+    &--test
+        ^&__form-content
+            max-width: 100%

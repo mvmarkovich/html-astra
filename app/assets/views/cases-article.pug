@@ -1,0 +1,180 @@
+extends layouts/layout.pug
+
+block title
+    title Кейсы | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="cases.html") Кейсы
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Astra Linux в силовых ведомствах
+
+    .page-title
+        .container
+            h1 Astra Linux в силовых ведомствах
+
+    .main-block
+        .article
+            .container
+                .article__desc-anounce
+                    p Федеральная служба войск национальной гвардии Российской Федерации (Росгвардия) <br> Миграция более 60 000 АРМ (автоматизированных рабочих мест) на ОС Astra Linux Special Edition
+
+                .article__panel
+                    .article__panel-tags
+                        .btns-spacer
+                            a.btn.btn--tiny.btn--tag(href="#") Продукт
+                            a.btn.btn--tiny.btn--tag(href="#") #RG.RU
+
+                        .briefly__row
+                            span.briefly.briefly--date 2018 — н.в.
+
+                .article__content
+                    .article__preview
+                        .article__preview-item
+                            .article__preview-item--body
+                                .article__preview-item-img--wrap
+                                    img.article__preview-item-img(src="img/content/cases/article/preview.webp" width="1280" height="450" alt="Название")
+
+                    section.section.container-shadow
+                        .article__hero
+                            .article__hero-title.h4 Защита данных
+                            .article__hero-desc Защищает целостность данных и ИТ-систем, сред виртуализации, может использоваться совместно с решениями для защиты средств связи, обеспечивает исполнение требований приказов Минздрава России от 24.12.2018 № 911, ФСТЭК России от 18.02.2013 № 21, ФСТЭК России от 21.09.2016 № 131
+                        
+                    section.section.container-shadow
+                        .software-cards
+                            .software-road__body
+                                .software-road__list
+                                    .software-road__item
+                                        .software-road__item-wrap
+                                            .software-road__item-media
+                                                .software-road__item-img--wrap
+                                                    img.software-road__item-img(src="img/content/software/astra.svg" width="345" height="107" alt="Название ПО")
+
+                                            .software-road__item-info
+                                                .software-road__item-title.h4 Операционная система Astra Linux
+
+                                                ul.list-dots-default
+                                                    li Отвечает требованиям импортозамещения
+                                                    li Не имеет экспортных ограничений
+                                                    li Соответствует предписаниям «Доктрины энергетической безопасности Российской Федерации» (указ Президента от 13.05.2019 № 216)
+                                                    li Обеспечивает ИТ-безопасность согласно требованиям регуляторов и законодательства
+
+                                                ul.list
+                                                    li
+                                                        a(href="#") Федеральный закон от 21 июля 2011 г. № 256-ФЗ
+
+                                                    li
+                                                        a(href="#") Федеральный закон от 3 декабря 2011 г. № 382-ФЗ
+
+                                                    li
+                                                        a(href="#") Приказ Министерства энергетики РФ от 6 ноября 2018 г. № 1015
+
+                    section.section
+                        .title__block
+                            h3 Задачи
+
+                        ul.list-dots-accent
+                            li Организовать централизованное управление ИТ-системой федерального масштаба;
+                            li Обеспечить отказоустойчивость всей инфраструктуры;
+                            li Провести аттестацию сегмента сети на Linux по требованиям защиты информации;
+                            li Сохранить корректные права доступа пользователей;
+                            li Решить вопрос совместимости с большим унаследованным парком разнообразного периферийного оборудования;
+                            li Обеспечить корректное функционирование документооборота для всех пользователей ИС вне зависимости от используемой ОС;
+                            li Решить вопрос с унаследованным ПО, разработанным под Windows, и картографическими программами;
+                            li Обучить сотрудников взаимодействию с новым ПО.
+
+                    section.section
+                        .title__block
+                            h3.h3 Наши решения
+
+                        ul.list-border-check
+                            li Создана инфраструктура на базе Astra Linux с интеграцией с сетью на Windows (репликация доменов)
+                            li Обеспечены отказоустойчивость всей системы и корректная работа ПО;
+                            li Выстроена и отработана технология централизованного управления большой инфраструктурой на основе технологий FreeIPA и Puppet;
+                            li Решён вопрос аттестации сегмента сети по требованиям защиты информации;
+                            li За счёт архитектуры системы реализована возможность назначать корректные права доступа к внутренним ресурсам (мандатное разграничение доступа в Astra Linux);
+                            li Обеспечены совместимость аппаратного оборудования с ОС Astra Linux и тиражирование типовых решений;
+                            li Реализована поддержка ЭП в ГИС (геоинформационная система «Гармония», ФГИИС «Официальный сайт Росреестра», ФГИИС «Координация информатизации», ГИС «Электронный бюджет», «Управление расходами», ГИС «ЕСИА», ГИС «ЕПГУ», ЕИС в сфере закупок и т.д.);
+                            li Обеспечено функционирование документооборота на базе ОС Astra Linux с корректной двусторонней конвертацией документов за счёт разработанных шаблонов, а также внедрения российских шрифтов, метрически идентичных западным (PT Astra Sans и PT Astra Serif);
+                            li Создана отказоустойчивая серверная инфраструктура;
+                            li Проведено многоэтапное плановое обучение программистов, администраторов и пользователей работе с ОС Astra Linux – в общей сложности обучено более 70% сотрудников Росгвардии.
+                            
+                    section.section
+                        .row
+                            .col-12.col-lg-5
+                                .title__block
+                                    .h3 Программный комплекс «Средства виртуализации Брест» <br><br>(ПК СВ «Брест»)
+
+                            .col-12.col-lg-7
+                                .text-chapter
+                                    ul.list-line-accent
+                                        li Централизованное управление кластером виртуализации
+                                        li Создание защищённой среды виртуализации рабочих столов (VDI) и серверов архитектуры x86–64
+                                        li Виртуализация сетей, хранилищ и т.п.
+                                        li Обеспечение отказоустойчивости и масштабирование кластеров виртуализации
+                                        li Миграция работающих виртуальных машин между узлами кластера виртуализации
+                                        li Групповое создание виртуальных машин из шаблонов
+
+                    section.section
+                        .row.mb-n4
+                            .mb-4.col-12.col-lg-6
+                                .h5.mb-3.mb-lg-5 В ИС необходимо вносить данные о документах:
+
+                                ul.list-line-accent
+                                    li Выданных с 10.07.1992, в т.ч. тех, для которых подтверждены факты утраты, обмена и уничтожения;
+                                    li Дубликатах документов;
+                                    li Сертификатах о владении русским языком, знании истории России и основ законодательства РФ.
+
+                            .mb-4.col-12.col-lg-6
+                                .h5.mb-3.mb-lg-5 Нормативная база проекта:
+
+                                ul.list-line-accent
+                                    li Федеральный закон от 29.12.2012 № 273-ФЗ «Об образовании в Российской Федерации»;
+                                    li Постановление Правительства РФ от 26.08.2013 № 729 «О федеральной информационной системе „Федеральный реестр сведений о документах об образовании и (или) о квалификации, документах об обучении“.
+
+                    section.software-cards
+                        .title__block
+                            h2 Програмное обеспечение
+
+                        .software-cards__body
+                            .software-cards__list.row
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-brest.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/brest.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title Брест
+                                            .software-cards__item-desc Система виртуализации Astra Linux
+
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-termidesk.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/termidesk.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title Termidesk
+                                            .software-cards__item-desc Виртуализация рабочих мест
+
+                                .software-cards__item.col-12.col-sm-6.col-lg-4
+                                    a.software-cards__item--inner(href="software-rupost.html")
+                                        .software-cards__item-img--wrap
+                                            img.software-cards__item-img(src="img/content/software/rupost.svg" width="280" height="75" alt="Название ПО")
+
+                                        .software-cards__item-info
+                                            .software-cards__item-title RUPost
+                                            .software-cards__item-desc Система управления корпоративной почтой
+
+
+
+                
+
+    
+

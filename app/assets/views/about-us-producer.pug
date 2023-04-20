@@ -1,0 +1,100 @@
+extends layouts/layout.pug
+
+block title
+    title О компании - поставщикам | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="about-us.html") О компании
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Поставщикам
+
+    .main-block 
+        .intro.intro--static
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title Информация для поставщиков
+                        p.intro__desc Уважаемые партнёры, <br><br> ГК «Астра» ценит постоянное партнёрство, предпочитает работать с контрагентами «в долгую», а не «в моменте». <br><br> Давайте делать бизнес вместе!
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/intro/about-us-producer.webp" width="507" height="467" alt="Название")
+
+
+        section.section.features
+            .container
+                .title__block
+                    h2 Основные принципы нашей закупочной деятельности:
+
+                .features__body
+                    .features__list.row
+                        .features__item.col-12.col-md-6.col-lg-4
+                            .features__item--inner
+                                .features__item-img--wrap
+                                    img.features__item-img(src="img/content/features/item_6.svg" width="48" height="48" alt="Название")
+
+                                .features__item-info
+                                    .features__item-title Взаимовыгодное партнёрство
+                                    .features__item-desc Есть возможность дополнительной экономии при обслуживании инфраструктуры: чем больше ВРМ, тем меньше затраты на их создание, настройку, обслуживание, перемещение и так далее
+                
+                        .features__item.col-12.col-md-6.col-lg-4
+                            .features__item--inner
+                                .features__item-img--wrap
+                                    img.features__item-img(src="img/content/features/item_7.svg" width="48" height="48" alt="Название")
+
+                                .features__item-info
+                                    .features__item-title Эффективность
+                                    .features__item-desc Лучшие условия исполнения контракта по достижению запланированных целей
+
+                        .features__item.col-12.col-md-6.col-lg-4
+                            .features__item--inner
+                                .features__item-img--wrap
+                                    img.features__item-img(src="img/content/features/item_8.svg" width="48" height="48" alt="Название")
+
+                                .features__item-info
+                                    .features__item-title Прозрачность
+                                    .features__item-desc Открытость и прозрачность информации о контрактной системе
+
+        section.section.section-panel
+            .container
+                .section-panel__body
+                    .section-panel__info
+                        h2.section-panel__title Стать нашим поставщиком
+                        p.section-panel__desc Для того чтобы стать нашим поставщиков и партнёром отправьте письмо на nvolkov@astralinux.ru
+
+                        .btn--block
+                            button.btn.btn--border-light(aria-label="Open modal") Оставить заявку
+
+                    .section-panel__img--wrap
+                        img.section-panel__img(src="img/content/section-panel/bg-2.svg")
+
+                .section-panel__footer
+                    .section-panel__footer-desc Полное наименование организации: Общество с ограниченной ответственностью «РусБИТех-Астра» <br> Краткое наименование организации: ООО «РусБИТех-Астра» <br> ОГРН: 5167746207459 <br> ИНН/КПП: 7726388700/772601001 <br> Коды: ОКПО05050089
+                    
+                    .btn--block
+                        a.btn.btn--border(href="#") Посмотреть запросы и закупки
+                
+
+            
+        
+
+                
+
+
+
+
+                
+
+
+
+                
+
+    
+

@@ -1,0 +1,38 @@
+.breadcrumbs
+    padding: 24px 0
+    margin: 0 0 24px
+    display: none @sm block
+
+    &__list
+        list-style: none
+        margin: 0
+        padding: 0
+
+        display: flex
+        flex-wrap: wrap
+
+    &__item
+        margin: 0 8px 0 0
+
+        &:after
+            content: ''
+            size: 8px
+            min-width: 8px
+            background: resolve("icons/chevron-tiny-right.svg") no-repeat center / contain
+            display: inline-flex
+            margin: 0 0 0 4px
+
+        &.is-current
+            ^^&__link
+                color: #AFB8BF
+
+            &:after
+                display: none
+
+    &__link
+        color: #071C27
+        text: 400 12px 1.3
+        display: inline-flex
+        align-items: center
+        white-space: nowrap
+            

@@ -1,0 +1,263 @@
+extends layouts/layout.pug
+
+block title
+    title Информация - Учебно-методические и научные публикации | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="info.html") Информация
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Учебно-методические и научные публикации
+
+    .main-block
+        .container
+            .main-aside-container
+                <!-- START ASIDE INFO -->
+                .aside  
+                    .aside__title Информация
+
+                    .aside__nav
+                        ul.aside__nav-list
+                            li.aside__nav-item
+                                a.aside__nav-link(href="info-law.html") Правовая информация
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="info-docs.html") Документы
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="info-reference.html") Справочные разделы
+
+                            li.aside__nav-item
+                                a.aside__nav-link(href="info-library.html") Библиотека
+
+                            li.aside__nav-item.is-current
+                                a.aside__nav-link(href="info-manuals.html") Учебно-методические и научные публикации
+
+                    .aside__btns
+                        ul.aside__btns-list
+                            li.aside__btns-item
+                                a.aside__btns-link(href="press-center.html") Пресс центр
+
+                            li.aside__btns-item
+                                a.aside__btns-link(href="#unknow") Бюллетени безопасности
+
+                    .aside__faq-side
+                        ul.aside__faq-side-list
+                            li.aside__faq-side-item
+                                a.aside__faq-side-link(href="#" target="blank")
+                                    .aside__faq-side-title Виртуальный тур
+                                    .btn.btn--tiny.btn--border.btn--target-after Перейти
+
+                            li.aside__faq-side-item
+                                a.aside__faq-side-link(href="#" target="blank")
+                                    .aside__faq-side-title Wiki
+                                    .btn.btn--tiny.btn--border.btn--target-after Перейти
+
+                            li.aside__faq-side-item
+                                a.aside__faq-side-link(href="#" target="blank")
+                                    .aside__faq-side-title Форум
+                                    .btn.btn--tiny.btn--border.btn--target-after Перейти
+                <!-- END ASIDE INFO -->
+                            
+                .main-container
+                    <!-- START CONTENT INFO -->
+                    .info-page
+                        .info-page__top
+                            .info-page__top-row.row
+                                .info-page__top-col.col-lg-6.col-xl-8
+                                    h1 Библиотека
+
+                                .info-page__top-col.col-lg-6.col-xl-4
+                                    form.info-page__top-search(action="/" method="/")
+                                        input.search__form-input(type="text" placeholder="Название документа" required)
+                                        button.btn.btn--reset.btn--search.search__form-btn(aria-label="Send form")
+
+                                    .catalog__layout
+                                        button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--tables(aria-label="Layout view" data-view="catalog-tables")
+                                        button.btn.btn--reset.catalog__layout-btn.catalog__layout-btn--blocks.is-active(aria-label="Layout view" data-view="catalog-blocks")
+
+                        section.info-page__section
+                            .section__head
+                                .section__head-row.row
+                                    .section__head-col.col-12.col-lg-6
+                                        .h5 Справка и документация к программным продуктам
+
+                                    .section__head-col.col-12.col-lg-6
+                                        a.btn.btn--tiny.btn--border-accent.btn--download-after(href="#" download) Скачать все документы раздела
+
+                            <!-- START CATALOG MATERIALS INFO -->
+                            .catalog.catalog--materials(data-view="catalog-blocks")
+                                .materials.materials--catalog
+                                    .materials__list
+                                        <!-- START CATALOG ELEMENT -->
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-top
+                                                    .materials__item-media--wrap
+                                                        img.materials__item-media(src="img/content/info/catalog/manuals/item_1.webp" width="187" height="187" alt="Название")
+                                                        
+                                                    .materials__item-title Основы безопасности операционной системы Astra Linux Special Edition. Управление доступом
+
+                                                .materials__item-btns
+                                                    a.btn.btn--small.btn--border-accent.btn--download-after(href="#" download) Скачать
+                                        <!-- END CATALOG ELEMENT -->
+
+                                        <!-- Полный список картинок лежит в img/content/info/catalog/manuals/item_.webp -->
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-top
+                                                    .materials__item-media--wrap
+                                                        img.materials__item-media(src="img/content/info/catalog/manuals/item_2.webp" width="187" height="187" alt="Название")
+                                                        
+                                                    .materials__item-title Основы безопасности операционной системы Astra Linux Special Edition. Управление доступом
+
+                                                .materials__item-btns
+                                                    a.btn.btn--small.btn--border-accent.btn--download-after(href="#" download) Скачать
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-top
+                                                    .materials__item-media--wrap
+                                                        img.materials__item-media(src="img/content/info/catalog/manuals/item_3.webp" width="187" height="187" alt="Название")
+                                                        
+                                                    .materials__item-title Формирование методологии разработки безопасного системного программного обеспечения на примере операционных систем
+
+                                                .materials__item-btns
+                                                    a.btn.btn--small.btn--border-accent.btn--download-after(href="#" download) Скачать
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-top
+                                                    .materials__item-media--wrap
+                                                        img.materials__item-media(src="img/content/info/catalog/manuals/item_4.webp" width="187" height="187" alt="Название")
+                                                        
+                                                    .materials__item-title Моделирование и верификация политик безопасности управления доступом в операционных системах
+
+                                                .materials__item-btns
+                                                    a.btn.btn--small.btn--border-accent.btn--download-after(href="#" download) Скачать
+
+                                        .materials__item
+                                            .materials__item--inner
+                                                .materials__item-top
+                                                    .materials__item-media--wrap
+                                                        img.materials__item-media(src="img/content/info/catalog/manuals/item_5.webp" width="187" height="187" alt="Название")
+                                                        
+                                                    .materials__item-title О приёмах по доработке согласованного описания МРОСЛ ДП-модели для ОС и СУБД с целью его верификации инструментами Rodin и ProB
+
+                                                .materials__item-btns
+                                                    a.btn.btn--small.btn--border-accent.btn--download-after(href="#" download) Скачать
+                            <!-- END CATALOG MATERIALS INFO -->
+                    <!-- END CONTENT INFO -->
+
+block scripts
+    script(type="text/javascript").
+        /* START Скрипт для первых активных табов, УДАЛИТЬ НА ПРОДАКШЕНЕ */
+        document.querySelector('.tabs__nav-list').firstElementChild.classList.add('tabs__nav-item--active');
+        document.querySelector('.tabs__body').firstElementChild.classList.add('tabs__content--open');
+        /* END Скрипт для первых активных табов, УДАЛИТЬ НА ПРОДАКШЕНЕ */
+
+        //
+        // Проверка на количество материалов
+        //
+
+        let listMaterials = document.querySelectorAll('.materials__list');
+
+        for (let i = 0; i < listMaterials.length; ++i) {
+            if (listMaterials[i].children.length > 5) {
+                let DOMmore = document.createElement('div');
+                DOMmore.className = 'btn--block materials__more';
+                DOMmore.innerHTML = '<button class=" btn btn--reset btn--more js-show-more" aria-label="Load more" data-text="Развернуть" data-toggle-text="Скрыть">Развернуть</button>';
+                listMaterials[i].parentElement.append(DOMmore);
+
+                listMaterials[i].classList.add('hidden-content')
+            }
+        }
+
+        //
+        // Mobile aside menu
+        //
+
+        function move(){
+            let viewport_width = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            
+            if (viewport_width <= 992) {
+                for(let i = 0; i < document.querySelectorAll('.aside__nav-item').length; ++i) {
+                    document.querySelectorAll('.aside__nav-item')[0].before(document.querySelector('.aside__nav-item.is-current'));
+                }
+            
+                document.querySelector('.aside__nav-item.is-current').addEventListener("click", () => {
+                    let asideNavList = document.querySelector('.aside__nav-list');
+
+                    asideNavList.classList.toggle('is-show');
+                });
+            }
+        }
+
+        window.addEventListener('resize', move);
+        move();
+
+        //
+        // Dropdown
+        //
+
+        document.querySelectorAll('.dropdown__btn').forEach(dropDownFunc);
+
+        function dropDownFunc(dropDown) {
+            dropDown.addEventListener('click', function (e) {
+                e.preventDefault();        
+        
+                if (this.nextElementSibling.classList.contains('dropdown__menu--active') === true) {
+                    this.parentElement.classList.remove('dropdown--open');
+                    this.nextElementSibling.classList.remove('dropdown__menu--active');
+        
+                } else {
+                    closeDropdown();
+                    this.parentElement.classList.add('dropdown--open');
+                    this.nextElementSibling.classList.add('dropdown__menu--active');
+                }
+            });
+        };
+
+        window.addEventListener('click', function (e) {
+            if (e.target.closest('.dropdown') === null) {
+                closeDropdown();
+            }
+        });
+
+        function closeDropdown() { 
+            document.querySelectorAll('.dropdown').forEach(function (container) { 
+                container.classList.remove('dropdown--open')
+            });
+
+            document.querySelectorAll('.dropdown__menu').forEach(function (menu) { 
+                menu.classList.remove('dropdown__menu--active');
+            });
+        }
+
+        //
+        // Toggle view catalog
+        //
+
+        document.querySelector('.catalog__layout').addEventListener('click', function(e) {
+            const view = e.target.dataset.view;
+            
+            if (view && e.target.tagName === 'BUTTON') {
+                document.querySelector('.catalog').dataset.view = view;
+            }
+        });
+
+        let btnsView = document.querySelectorAll(".catalog__layout-btn");
+
+        for (let btnView of btnsView) {
+            btnView.addEventListener('click', function () {
+                btnsView.forEach(i => i.classList.remove('is-active'));
+                this.classList.toggle('is-active');
+            });
+        };

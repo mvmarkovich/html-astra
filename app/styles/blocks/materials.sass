@@ -1,0 +1,192 @@
+.materials
+    &__list
+        &.hidden-content
+            ^^&__item
+                display: none
+
+                &:nth-child(-n + 6)
+                    display: block
+                    
+        &.hidden-content--show
+            ^^&__item
+                display: block
+
+        &--bg
+            margin: 0 0 -16px @sm 0 -12px -24px @lg 0 -16px -32px
+            display: flex
+            flex-wrap: wrap
+
+            ^^&__item
+                margin-bottom: 16px @sm 24px @lg 32px
+                width: 100% @sm 50% @xl 33.3%
+                padding: 0 @sm 0 12px @lg 0 16px
+
+                &--inner
+                    background: #F5FCFF
+                    border: 1px solid #82D0FF
+                    padding: 24px 16px @sm 24px
+                    display: flex
+                    flex-direction: column
+                    align-items: flex-start
+                    min-height: @sm 162px
+                    height: 100%
+
+                &-title
+                    position: relative
+                    font-weight: 700
+                    display: inline-flex
+                    align-items: flex-end
+                    justify-content: space-between
+                    width: 100%
+                    max-width: 800px
+
+                &-text
+                    position: relative
+                    width: 100%
+                    padding: 0 32px 0 0
+
+                    &:after
+                        content: ''
+                        size: 20px
+                        min-width: 20px
+                        background: resolve("icons/download.svg") no-repeat center / contain
+                        margin: 0 0 0 12px
+                        position: absolute
+                        bottom: 0
+                        right: 0
+
+                &:last-child
+                    margin-bottom: 16px @sm 24px @lg 32px
+
+    &__more
+        margin: 16px 0 0
+
+    &__item
+        margin: 0 0 16px
+
+        &--inner
+            background: #F2F5F7
+            padding: 16px 24px
+
+            display: @md flex
+            align-items: @md center
+            justify-content: @md space-between
+
+        &-btns
+            margin: 12px 0 0 @md 0 0 -8px
+            display: flex
+            flex-wrap: wrap @xs nowrap @md wrap
+            justify-content: flex-end
+            max-width: @md 310px
+            width: 100%
+
+            .btn--border
+                color: #6A7E95
+                font-weight: 700
+                background: #fff
+                border-color: #E8ECEF
+                margin: 0 0 8px @xs 0 8px 0 0 @md 0 0 8px 8px
+
+                &:after
+                    background-image: resolve("icons/download.svg")
+
+                &:last-child
+                    margin: @md-down 0
+
+            .btn
+                width: @md-down 100%
+
+        &-info
+            display: @sm flex
+            flex-wrap: @sm nowrap
+
+        &-img
+            &--wrap
+                size: 56px
+                min-width: 56px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin: 0 0 16px
+
+        &-media
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -50%)
+            max-width: 60px @lg 140px @xl 187px
+            max-height: 60px @lg 140px @xl 187px
+            width: 100%
+
+            &--wrap
+                position: relative
+                padding: 0 @lg 100% 0 0
+                overflow: hidden
+                border: 1px solid #E8ECEF
+                size: @lg-down 78px
+                min-width: @lg-down 78px
+                margin: 0 16px 0 0 @sm 0 24px 0 0 @lg 0 0 16px
+
+        &-ver
+            color: #071C27
+            text: 700 14px 1.5
+            margin: 0 0 4spx @sm 0 8px 0 0
+            white-space: nowrap
+
+        &-title
+            color: #071C27
+            text: 400 14px 1.5
+
+        &-desc
+            color: #4A5A68
+            text: 400 14px 1.5
+            margin: 8px 0 0
+
+        &:last-child
+            margin: 0
+
+    &--catalog
+        ^&__list
+            display: flex
+            flex-wrap: wrap
+            margin: @lg 0 -16px -32px
+
+        ^&__item
+            width: 100% @lg 33.3%
+            padding: 24px 0 @lg 0 16px
+            margin: 0 @lg 0 0 32px
+            border-bottom: @lg-down 1px solid #D5DADD
+
+            &--inner
+                background: #fff
+                flex-direction: @lg column
+                align-items: @lg inherit
+                justify-content: space-between
+                height: @lg 100%
+                padding: 0
+
+            &-top
+                display: @lg-down flex
+                flex-wrap: @lg-down nowrap
+                align-items: flex-start @sm center
+
+            &-title
+                color: #6A7E95
+                text: 700 14px 1.5
+
+            &-btns
+                justify-content: flex-start
+                margin: 16px 0 0 @md 0 0 0 24px @lg 16px 0 0
+                max-width: 100%
+                width: auto
+
+                .btn
+                    margin: 0
+                    border-color: #D5DADD
+
+            &:last-child
+                border: @lg-down none
+
+
+
+            

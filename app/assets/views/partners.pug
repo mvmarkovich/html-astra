@@ -1,0 +1,202 @@
+extends layouts/layout.pug
+
+block title
+    title Партнерам | Astra Linux
+
+block content
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Партнерам
+
+    .main-block
+        .intro.intro--static.intro--light.intro--narrow
+            .container
+                .intro__wrap   
+                    .intro__info
+                        h1.intro__title.h1 Стать нашим партнёром
+                        p.intro__desc Программа партнёрского сотрудничества направлена на продвижение и распространение программных продуктов вендора. <br><br> Стать её участниками могут все компании, способные реализовать весь потенциал программных продуктов ГК «Астра». Партнёр имеет право получать информацию о скидках, специальных акциях, а также консультации и дополнительную поддержку после авторизации и присвоения статуса официального партнёра.
+
+                    .intro__img--wrap
+                        img.intro__img(src="img/content/internship/intro.webp" width="457" height="398" alt="Название")
+
+        section.section
+            .container
+                .faq-links.faq-links--bg
+                    .faq-links__body
+                        .faq-links__list.row
+                            .faq-links__item.col-12.col-md-6.col-lg-4.col-xl-3
+                                a.faq-links__item--inner(href="info-law.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/partners/faq-links/item_1.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Стать партнёром
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4.col-xl-3
+                                a.faq-links__item--inner(href="info-docs.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/partners/faq-links/item_2.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Найти партнёра
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4.col-xl-3
+                                a.faq-links__item--inner(href="info-reference.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/partners/faq-links/item_3.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Дистрибьюторы
+
+                            .faq-links__item.col-12.col-md-6.col-lg-4.col-xl-3
+                                a.faq-links__item--inner(href="info-library.html")
+                                    .faq-links__item-img--wrap
+                                        img.faq-links__item-img(src="img/content/partners/faq-links/item_4.svg" width="48" height="48" alt="Название")
+
+                                    .faq-links__info
+                                        .faq-links__item-title Войти в личный кабинет
+
+        section.feedback.feedback--test
+            .container
+                .feedback__body
+                    form#form-steps.form.feedback__form(action="/" method="/")
+                        .feedback__form-header
+                            h3.feedback__title Cтать Партнером и получить ID легко
+
+                            .feedback__form-steps
+                                ul.feedback__form-steps-list
+                                    li.feedback__form-steps-item Шаг 1
+                                    li.feedback__form-steps-item Шаг 2
+                                    li.feedback__form-steps-item Шаг 3
+
+                                span.btn.btn--reset.btn--back-before#feedback__btn-prev(onclick="nextPrev(-1)") Назад
+
+                        .feedback__form-content
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Заявка оформляется официальным письмом
+
+                                        .input
+                                            input.input__elem(type="text" placeholder="ФИО" name="feedback-name")
+
+                                        .form__group
+                                            .input
+                                                input.input__elem(type="text" placeholder="Наименование компании" name="feedback-company")
+
+                                            .input
+                                                input.input__elem(type="text" placeholder="Почта для связи" name="feedback-email")
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-1.webp" width="573" height="514" alt="Шаг 1")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__desc Бланк официального письма-заявки на предоставление операционной системы «Astra Linux Special Edition»
+
+                                        .input
+                                            .feedback__docs
+                                                .feedback__docs-title Бланки:
+                                                .feedback__docs-list
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+                                                    a.feedback__docs-item(href="#" download)
+
+                                            input.input__file#feedback-attach-file(type="file" name="feedback-attach-file")
+                                            label.input__file-label.input__file-label--border(for="feedback-attach-file") 
+                                                i.icons.icons--doc-gray
+                                                .input__file-label-title Прикрепить бланк
+                                                i.icons.icons--attach
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-2.webp" width="573" height="514" alt="Шаг 2")
+
+                            .feedback__form-tab
+                                .feedback__form-tab--inner
+                                    .feedback__form-inputs
+                                        .form__success
+                                            img.form__success-icon(src="img/icons/form-success.svg" width="72" height="72" alt="Success!")
+                                            .form__success-title Вы успешно отправили данные
+                                            p.form__success-desc После получения заявки сотрудники ООО «РусБИТех-Астра» свяжутся с контактным лицом и запросят данные, необходимые для подготовки акта приема передачи операционной системы в демонстрационно - ознакомительных целях, а также договорятся о сроках и способах передачи экземпляра программ
+
+                                    .feedback__img--wrap
+                                        img.feedback__img(src="img/content/feedback-form-steps/step-3.webp" width="573" height="514" alt="Шаг 3")
+
+                        .feedback__form-footer#form-steps-footer
+                            button.btn.btn--accent.btn--arrow-right-after#feedback__btn-next(type="button" onclick="nextPrev(1)" aria-label="Next tab") Далее
+
+                            p.form__agree#form-steps-headline Вопросы по Партнёрской программе: <br> на <a href="mailto:partner@astralinux.ru">partner@astralinux.ru</a>
+
+        section.section
+            .container
+                .title__block
+                    h2 Статусы коммерческих партнёров
+
+                .w-statuses
+                    .w-statuses__row.row
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_1.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title Авторизованный
+                                    .w-statuses__col-desc Конечный заказчик партнёрских устройств на базе процессоров ASTRA LINUX
+
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_2.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title Серебряный
+                                    .w-statuses__col-desc Юридическое лицо (компания), продающее продукты Вендора или собственные устройства на базе продуктов Вендора, зарегистрировавшееся в программе
+
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_3.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title Золотой
+                                    .w-statuses__col-desc Юридическое лицо (компания), продающее продукты Вендора или собственные устройства на базе продуктов Вендора, зарегистрировавшееся в программе
+
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_4.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title Интегратор
+                                    .w-statuses__col-desc Категория партнёров, поставщики решений на базе продуктов ASTRA LINUX, обеспечивающая внедрение таких решений в инфраструктура Клиента
+
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_5.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title Pro
+                                    .w-statuses__col-desc Юридическое лицо (компания), продающее продукты Вендора или собственные устройства на базе продуктов Вендора, зарегистрировавшееся в программе
+
+                        .w-statuses__col.col-12.col-sm-6.col-lg-4
+                            .w-statuses__col--body
+                                .w-statuses__col-icon--wrap
+                                    img.w-statuses__col-icon(src="img/content/partners/statuses/item_6.svg" width="40" height="40" alt="Название")
+
+                                .w-statuses__col-info
+                                    .w-statuses__col-title OEM
+                                    .w-statuses__col-desc Категория партнёров, занимающаяся производством компьютеров, серверов, сетевых и других устройств как под собственным брендом, так и для третьих лиц на базе продуктов ASTRA LINUX
+
+        include blocks/widget-partners
+
+block scripts
+    script(type="text/javascript").
+        document.querySelector('.tabs__nav-list').firstElementChild.classList.add('tabs__nav-item--active');
+        document.querySelector('.tabs__body').firstElementChild.classList.add('tabs__content--open');

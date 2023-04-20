@@ -1,0 +1,398 @@
+extends layouts/layout.pug
+
+block title
+    title Поддержка | Astra Linux
+
+block content
+    .anchors
+        .container.anchors__container
+            .anchors__row
+                .anchors__nav
+                    ul.anchors__nav-list
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-0") Поддержка
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-1") Техническая поддержка
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-2") Получить выделенного менеджера
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-3") Тарифные планы
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-4") Приобрести техническую поддержку
+
+                        li.anchors__nav-item
+                            a.anchors__nav-link(href="#anchor-5") Тестирование
+
+                .anchors__panel
+                    a.btn.btn--tiny.btn--border.anchors__panel-btns(href="#") Стать партнёром
+
+    .breadcrumbs
+        .container
+            ul.breadcrumbs__list
+                li.breadcrumbs__item
+                    a.breadcrumbs__link(href="main.html") Главная
+
+                li.breadcrumbs__item.is-current
+                    span.breadcrumbs__link Поддержка
+
+    .main-block
+        .section-anchor#anchor-0
+            .intro.intro--static.intro--light
+                .container
+                    .intro__wrap   
+                        .intro__info.col-lg-7
+                            h1.intro__title Поддержка
+                            p.intro__desc <strong>Поддержка Astra Linux — это помощь, которую наши клиенты получают именно в те моменты, когда она нужна.</strong> <br><br> По умолчанию каждый клиент вместе с лицензией на использование ОС получает 1 год технической поддержки пакета «Стандартный». Какими услугами и в каком объёме пользоваться после этого срока — клиенты решают сами. Есть пакеты от бесплатного «Начального» до заряженного «Привилегированного».
+
+                        .intro__img--wrap.col-lg-4
+                            img.intro__img(src="img/content/support/intro/plug.svg" width="484" height="384" alt="Название")
+
+        section.section.section-anchor#anchor-1
+            .container
+                .title__block
+                    h2 Техническая поддержка
+
+                .features
+                    .features__body
+                        .features__list.row
+                            <!-- START ELEM FEATURES -->
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/main/item_1.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Всегда будем рядом
+                                        .features__item-desc Эксперты Astra Linux ответят на любое количество обращений и придут на помощь по телефону или на портале технической поддержки в удобное вам время.
+                            <!-- END ELEM FEATURES -->
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/main/item_2.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Предложим сотрудничество
+                                        .features__item-desc Разработчикам собственных решений мы готовы предложить пилотные проекты для тестирования и обеспечения совместимости с нашими продуктами в рамках партнёрской программы Ready for Astra Linux.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/main/item_3.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Быстро решим вопрос любой сложности
+                                        .features__item-desc Защищённость, надёжность и удобство решений Astra Linux для вас обеспечивает команда профессионалов — более 100 экспертов и разработчиков ГК Astra Linux, «серебряного» участника международного консорциума The Linux Foundation и члена сообщества Debian GNU/Linux.
+
+                            .features__item.col-12.col-md-6
+                                .features__item--inner
+                                    .features__item-img--wrap
+                                        img.features__item-img(src="img/content/support/features/main/item_4.svg" width="64" height="64" alt="Название")
+
+                                    .features__item-info
+                                        .features__item-title Обеспечим совместимость всех компонентов Вашей IT-системы
+                                        .features__item-desc В экосистеме Ready for Astra Linux — IT-решения большинства лидеров отечественного и зарубежного рынков, прошедшие экспертную сертификацию на совместимость с нашими продуктами, и их становится все больше. Мы поможем вам не только выбрать компоненты для IT-инфраструктуры, но и диагностировать проблемы взаимодействия с продуктами других производителей, предложить рекомендации для их решения.
+
+        section.section.section-anchor#anchor-2
+            .container
+                .row
+                    .col-lg-5
+                        .title__block
+                            h2 Получить выделенного менеджера
+
+                    .col-lg-7
+                        .text-chapter
+                            p.text-chapter__desc Вместе с лицензией на использование ОС по умолчанию вы на год получаете пакет «Стандартный», он даст вам уверенность в том, что мы всегда придём на помощь. Решение, какими услугами поддержки пользоваться дальше, — за Вами. Вы можете продлить действие стандартного пакета или выбрать иное решение.
+                            p.text-chapter__desc Получить выделенного менеджера, консультации по использованию наших продуктов в гетерогенных сетях, удалённое подключение, круглосуточную поддержку, а также помощь с установкой ПО наших технологических партнёров вы можете с пакетом «Привилегированный».
+                            p.text-chapter__desc По окончании действия пакета «Стандартный», если вы уверены в своих силах, можно выбрать бесплатный пакет «Начальный»— доступ к обновлениям безопасности и открытым ресурсам «Справочного центра», но мы всегда готовы дать вам намного больше. <br><br> Выберите свой пакет поддержки — закажите те услуги, которые актуальны именно для Вас.
+
+        section.hero.hero--bg
+            .container
+                .hero__body
+                    .hero__info.col-12
+                        h3.hero__title ПОЛОЖЕНИЕ О ТЕХНИЧЕСКОЙ ПОДДЕРЖКЕ
+                        p.hero__desc ПОЛОЖЕНИЕ О ТЕХНИЧЕСКОЙ ПОДДЕРЖКЕ
+
+                        .btn--block
+                            a.btn.btn--border-light(href="/") Подробнее
+
+        section.section.section-anchor#anchor-3
+            .container
+                .title__block
+                    h2 Тарифные планы
+
+                    p Техподдержка Astra Linux — это эффективная и быстрая помощь, которую каждый наш клиент получает именно тогда, когда она ему нужна. <br><br> Техническая поддержка сроком на 12, 24 и 36 месяцев
+
+                .tarrifs
+                    .tarrifs__row.row
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «СТАНДАРТНЫЙ»
+                                    .tarrifs__col-desc Обработка обращений через web-портал и по телефону в рабочее время (по Москве)
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="true") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок  (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «СТАНДАРТНЫЙ»
+                                    .tarrifs__col-desc Обработка обращений через web-портал и по телефону в рабочее время (по Москве)
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+                                                    li.item-checked Доступ к новым версиям и обновлениям Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Консультации 
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Консультации по установке и настройке Продукта
+                                                    li.item-checked Каналы приёма запросов Web-портал, телефон
+                                                    li.item-checked Вопросы по установке и настройке Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Решение вопросов
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Анализ совместимости оборудования с Продуктом по предоставленной спецификации
+                                                    li.item-checked Решение вопросов, связанных с совместимостью оборудования, при наличии технической возможности
+                                                    li.item-checked Моделирование проблемных ситуаций на тестовом стенде СТП при наличии технической возможности
+                                                    li.item-checked Время приёма и обработки Запросов Рабочие дни с 09:00 до 18:00 (мск)
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Время реакция на запрос
+                                            .accordion__item-content
+                                                ul.list
+                                                    li Экстренный — 4 часа
+                                                    li Высокий — 8 часов
+                                                    li Средний — 2 рабочих дня
+                                                    li Низкий — 4 рабочих дня
+                                        
+                        .tarrifs__col.col-12.col-md-6.col-lg-4
+                            .tarrifs__col--body
+                                .tarrifs__col-head
+                                    .tarrifs__col-title ПАКЕТ УСЛУГ «ПРИВИЛЕГИРОВАННЫЙ»
+                                    .tarrifs__col-desc Расширенный комплекс услуг технической поддержки и обслуживание в режиме 24/7
+
+                                .tarrifs__col-content
+                                    .tarrifs__col-mark Включает в себя
+
+                                    .accordion.accordion--tiny
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Обновления и доступы
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Обновления и доступы
+                                                    li.item-checked Доступ к «Справочному центру»
+                                                    li.item-checked Доступ к системе отслеживания ошибок (Bug tracker)
+                                                    li.item-checked Доступ к «Личному кабинету»
+                                                    li.item-checked Доступ к новым версиям и обновлениям Продукта
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Консультации 
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Консультации по установке и настройке Продукта
+                                                    li.item-checked Каналы приёма запросов Web-портал, телефон
+                                                    li.item-checked Вопросы по установке и настройке Продукта
+                                                    li.item-checked Консультации по функционированию Продукта в гетерогенных сетях
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Решение вопросов
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Анализ совместимости оборудования с Продуктом по предоставленной спецификации
+                                                    li.item-checked Решение вопросов, связанных с совместимостью оборудования, при наличии технической возможности
+                                                    li.item-checked Моделирование проблемных ситуаций на тестовом стенде СТП при наличии технической возможности
+                                                    li.item-checked Время приёма и обработки Запросов Рабочие дни с 09:00 до 18:00 (мск) <br> Круглосуточно для «экстренного»  и «высокого» уровней критичности
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Сборка и подключение
+                                            .accordion__item-content
+                                                ul.list-icons-inside
+                                                    li.item-checked Удалённое подключение к системе Пользователя для решения Запроса
+                                                    li.item-checked Сборка драйверов для оборудования (возможность сборки драйвера рассматирвается СТП)
+                                                    li.item-checked Консультации по установке программного обеспечения технологических партнёров
+                                                    li.item-checked <strong>Выделенный менеджер</strong>
+
+                                        .accordion__item
+                                            button.btn.btn--reset.accordion__item-btn(aria-label="Toggle accordion" aria-expanded="false") Время реакция на запрос
+                                            .accordion__item-content
+                                                ul.list
+                                                    li Экстренный — 4 часа
+                                                    li Высокий — 8 часов
+                                                    li Средний — 2 рабочих дня
+                                                    li Низкий — 4 рабочих дня
+
+        section.hero.hero--bg.section-anchor#anchor-4
+            .container
+                .hero__body
+                    .hero__img--wrap.col-md-4
+                        img.hero__img(src="img/content/support/hero/plug.svg" width="408" height="460" alt="Название")
+
+                    .hero__info.col-md-8
+                        h3.hero__title Приобрести техническую поддержку
+                        p.hero__desc Техподдержка Astra Linux — это эффективная и быстрая помощь, которую каждый наш клиент получает именно тогда, когда она ему нужна.
+
+                        .btn--block
+                            a.btn.btn--border-light(href="/") Приобрести техподдержку
+
+        section.hero.hero--simple.section-anchor#anchor-5
+            .container
+                .hero__body
+                    .hero__info
+                        h2.hero__title Тестирование
+                        p.hero__desc Для оценки функциональности и возможности использования операционной системой вам может быть предоставлен бесплатно на ограниченный (до 3 месяцев) период времени экземпляр операционной системы с документацией.
+
+                        .btn--block
+                            a.btn.btn--border(href="/") Подробнее
+
+        section.hero.hero--bg
+            .container
+                .hero__body
+                    .hero__img--wrap.col-md-4
+                        img.hero__img(src="img/content/support/hero/plug.svg" width="408" height="460" alt="Название")
+
+                    .hero__info.col-md-8
+                        h3.hero__title Бюллетени безопасности
+                        p.hero__desc Лицензиатам, использующим ОС «Astra Linux Special Edition», сертифицированную по требованиям безопасности информации ФСТЭК России (сертификат № 2557), необходимо применить опубликованные в бюллетенях безопасности методики и обновления программного обеспечения для нейтрализации угроз уязвимостей в информационных системах.
+
+                        .btn--block
+                            a.btn.btn--border-light(href="/") Подробнее
+
+        section.section.section-bg-gray
+            .container
+                .title__block
+                    h2.h3 ПОЛЕЗНЫЕ МАТЕРИАЛЫ
+
+                .os-faq
+                    .os-faq__row.row
+                        .os-faq__col.os-faq__col--sec.col-lg-6.col-xl-4
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/support/faq/item_1.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Вики-библиотека
+                                        .os-faq__col-desc Постоянно актуализируемая база знаний с информацией о наших программных продуктах и практики их использования
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border(href="#") Подробнее
+
+                        .os-faq__col.os-faq__col--sec.col-lg-6.col-xl-4
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/support/faq/item_2.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Портал технической поддержки
+                                        .os-faq__col-desc Если у вас остались вопросы, то свяжитесь напрямую с нашими специалистами техподдержки
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border(href="#") Подробнее
+                                        a.link.link-accent.link--phone-before(href="tel:+74953694816") +7 495 369-48-16
+
+                        .os-faq__col.os-faq__col--sec.col-lg-6.col-xl-4
+                            .os-faq__col--body
+                                .os-faq__col-img--wrap
+                                    img.os-faq__col-img(src="img/content/support/faq/item_3.svg" width="72" height="72" alt="Название")
+
+                                .os-faq__col-info
+                                    .os-faq__col-text
+                                        .os-faq__col-title Астра-форум
+                                        .os-faq__col-desc Сообщество профессионалов, которые делятся своим опытом и наработками, направленными на развитие операционной системы Astra Linux
+
+                                    .os-faq__col-nav
+                                        a.btn.btn--border(href="#") Подробнее
+
+block scripts
+    script(type="text/javascript").
+        //
+        // Accordion
+        //
+
+        let items = document.querySelectorAll(".accordion button");
+        
+        function toggleAccordion() {
+            let itemToggle = this.getAttribute('aria-expanded');
+            
+            if (itemToggle == 'false') {
+                this.setAttribute('aria-expanded', 'true');
+                this.parentElement.classList.add('is-show');
+            } else {
+                this.setAttribute('aria-expanded', 'false');
+                this.parentElement.classList.remove('is-show');
+            }
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+
+        //
+        // Anchors
+        //
+
+        let headerHeight;
+
+        const mq = window.matchMedia('(max-width: 992px)');
+
+        if (mq.matches) {
+            headerHeight = document.querySelector('.header').clientHeight + document.querySelector('.anchors').clientHeight; 
+        } else {
+            headerHeight = document.querySelector('.anchors').clientHeight; 
+        }
+
+        function activeAnchor () {
+            let sectionAnchor = document.querySelectorAll('.section-anchor');
+
+            for (let i = 0; i < sectionAnchor.length; i++) { 
+                document.querySelector('.anchors__nav-link[href="#' + sectionAnchor[i].id + '"]').className=((1 >= sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) && sectionAnchor[i].getBoundingClientRect().top - (headerHeight + 24) >= 1-sectionAnchor[i].offsetHeight) ? 'anchors__nav-link is-current' : 'anchors__nav-link');
+            }
+        }
+
+        window.addEventListener('scroll', activeAnchor, false);
+        window.addEventListener('load', activeAnchor, false);
+
+        let anchorsElem = document.querySelectorAll('.anchors__nav-link');
+        
+        for (let anchor of anchorsElem) {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+        
+                let scrollDistance = window.scrollY;
+                
+                const element = document.querySelector(this.getAttribute('href'));
+                
+                window.scrollTo({
+                    top: element.offsetTop - headerHeight - 24,
+                    behavior: "smooth"
+                });
+            })
+        }
